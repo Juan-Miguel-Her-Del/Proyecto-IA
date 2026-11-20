@@ -1,0 +1,20 @@
+{
+  "fecha_utc": "2026-11-20T15:50:28.831673+00:00",
+  "indice_camara": 0,
+  "maximo_frames": 12,
+  "timeout_segundos": 30,
+  "mock_utilizado": false,
+  "mostrar_ventana": false,
+  "audio_capturado": false,
+  "inferencia_de_validacion_repetida": false,
+  "sha256_seleccion_antes": "a6e75007ce162e843d3fac0b531a5bbd3aed806bee9318a5671ef69f83bbc7c1",
+  "test_evaluado": false,
+  "codigo_salida": 1,
+  "stdout": "",
+  "stderr": "[ WARN:0@4.018] global cap.cpp:477 cv::VideoCapture::open VIDEOIO(DSHOW): backend is generally available but can't be used to capture by index\nTraceback (most recent call last):\n  File \"C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\scripts\\detectar_video.py\", line 38, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\scripts\\detectar_video.py\", line 26, in main\n    r=procesar_fuente(a.video if a.video is not None else a.camara,motor,a.salida,\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\ecowaste\\video.py\", line 157, in procesar_fuente\n    if error is not None:raise error\n                         ^^^^^^^^^^^\n  File \"C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\ecowaste\\video.py\", line 94, in procesar_fuente\n    if not captura.isOpened():raise RuntimeError(f'No se puede abrir la fuente {tipo}')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: No se puede abrir la fuente camara\n",
+  "estado": "no_se_pudo_completar",
+  "captura_real_verificada": false,
+  "limite": "La apertura/lectura falló; el error no identifica por sí solo ausencia de hardware, permisos, dispositivo ocupado o privacidad.",
+  "duracion_segundos": 5.4356395000068005,
+  "sha256_seleccion_despues": "a6e75007ce162e843d3fac0b531a5bbd3aed806bee9318a5671ef69f83bbc7c1"
+}

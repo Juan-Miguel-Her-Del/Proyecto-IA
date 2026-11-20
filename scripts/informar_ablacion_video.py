@@ -13,6 +13,7 @@ def leer(p):return json.loads((RAIZ/p).read_text(encoding='utf-8'))
 
 
 def main():
+    historico=(RAIZ/'documentacion/16_prueba_camara_fisica.md').exists()
     r=leer('resultados/ablacion_fondo_ep19.json');video=leer('resultados/verificacion_video_real.json')
     imagen=leer('resultados/verificacion_video_imagen.json');pruebas=leer('resultados/pruebas_ablacion_video.json')
     if r['estado']!='ablacion_entrenamiento_completada' or not video['correcto'] or not imagen['correcto'] or not pruebas['correcto']:
@@ -109,6 +110,7 @@ def main():
        '## Alcance y pendientes','',
        'La integración funcional experimental de MP4/webcam queda implementada. Siguen pendientes la comprobación con una cámara física y videos independientes, calidad por clase, latencia sostenida y robustez frente a escenas nuevas. El detector mantiene mAP@50 val 2,91 %: esta integración no lo convierte en fiable.','',
        'El video exportado usa FPS nominal de la fuente (30 si no está disponible). El JSONL conserva los tiempos de captura; si la inferencia de cámara es más lenta que la adquisición, la duración/cadencia del MP4 puede diferir del tiempo de captura. No se conserva audio.','']
+    if historico:v[1:1]=['','Informe histórico de implementación y prueba simulada. La prueba física posterior está en [16_prueba_camara_fisica.md](16_prueba_camara_fisica.md).','']
     (RAIZ/'documentacion/14_video_y_webcam_experimental.md').write_text('\n'.join(v),encoding='utf-8')
     resumen={'decision':'conservar_argmax_cinco_vistas_y_checkpoint_origen','adoptar_fondo_uno':False,
         'val_cinco_vistas':{k:resumir_deteccion(d['val']) for k,d in cinco.items()},
@@ -130,7 +132,7 @@ def main():
         '4. Validar la webcam física y videos independientes; medir latencia sostenida y calidad. La integración experimental ya está implementada.')
     if '## MP4 y webcam' not in texto:
         texto+='\n\n## MP4 y webcam\n\n```powershell\n& $pythonEco scripts/detectar_video.py --video \'C:\\ruta\\mi_video.mp4\' --salida resultados/mi_video\n& $pythonEco scripts/detectar_video.py --camara 0 --salida resultados/camara_sesion1 --mostrar\n```\n\nLa carpeta de salida debe ser nueva. Se conserva argmax y cinco vistas; las cajas son experimentales. Ver [salidas, controles y límites](documentacion/14_video_y_webcam_experimental.md).\n'
-    readme.write_text(texto,encoding='utf-8')
+    if not historico:readme.write_text(texto,encoding='utf-8')
     print(json.dumps({'ablacion':'documentacion/13_ablacion_del_fondo.md','video':'documentacion/14_video_y_webcam_experimental.md',
                       'adoptar_fondo_uno':False,'pruebas':pruebas['ejecutadas'],'predeterminado_inalterado':True}))
 

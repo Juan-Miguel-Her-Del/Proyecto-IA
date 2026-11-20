@@ -1,0 +1,352 @@
+{
+  "auditoria_cpu_completada": true,
+  "diagnostico_actual": {
+    "total": {
+      "objetos": 361,
+      "correcto": 74,
+      "sin_cobertura_suficiente": 154,
+      "geometria_incorrecta": 91,
+      "material_equivocado": 42,
+      "fn": 287,
+      "recall50": 0.20498614958448755
+    },
+    "por_clase": {
+      "plastico": {
+        "objetos": 228,
+        "correcto": 63,
+        "sin_cobertura_suficiente": 96,
+        "geometria_incorrecta": 58,
+        "material_equivocado": 11,
+        "fn": 165,
+        "recall50": 0.27631578947368424
+      },
+      "papel": {
+        "objetos": 25,
+        "correcto": 1,
+        "sin_cobertura_suficiente": 14,
+        "geometria_incorrecta": 3,
+        "material_equivocado": 7,
+        "fn": 24,
+        "recall50": 0.04
+      },
+      "carton": {
+        "objetos": 25,
+        "correcto": 0,
+        "sin_cobertura_suficiente": 5,
+        "geometria_incorrecta": 6,
+        "material_equivocado": 14,
+        "fn": 25,
+        "recall50": 0.0
+      },
+      "vidrio": {
+        "objetos": 22,
+        "correcto": 0,
+        "sin_cobertura_suficiente": 16,
+        "geometria_incorrecta": 3,
+        "material_equivocado": 3,
+        "fn": 22,
+        "recall50": 0.0
+      },
+      "metal": {
+        "objetos": 60,
+        "correcto": 10,
+        "sin_cobertura_suficiente": 22,
+        "geometria_incorrecta": 21,
+        "material_equivocado": 7,
+        "fn": 50,
+        "recall50": 0.16666666666666666
+      },
+      "organico": {
+        "objetos": 1,
+        "correcto": 0,
+        "sin_cobertura_suficiente": 1,
+        "geometria_incorrecta": 0,
+        "material_equivocado": 0,
+        "fn": 1,
+        "recall50": 0.0
+      }
+    },
+    "por_tamano": {
+      "menos_8_px": {
+        "objetos": 73,
+        "correcto": 4,
+        "sin_cobertura_suficiente": 50,
+        "geometria_incorrecta": 19,
+        "material_equivocado": 0,
+        "fn": 69,
+        "recall50": 0.0547945205479452
+      },
+      "8_a_16_px": {
+        "objetos": 84,
+        "correcto": 15,
+        "sin_cobertura_suficiente": 34,
+        "geometria_incorrecta": 29,
+        "material_equivocado": 6,
+        "fn": 69,
+        "recall50": 0.17857142857142858
+      },
+      "16_a_32_px": {
+        "objetos": 119,
+        "correcto": 30,
+        "sin_cobertura_suficiente": 45,
+        "geometria_incorrecta": 24,
+        "material_equivocado": 20,
+        "fn": 89,
+        "recall50": 0.25210084033613445
+      },
+      "32_px_o_mas": {
+        "objetos": 85,
+        "correcto": 25,
+        "sin_cobertura_suficiente": 25,
+        "geometria_incorrecta": 19,
+        "material_equivocado": 16,
+        "fn": 60,
+        "recall50": 0.29411764705882354
+      }
+    },
+    "por_clase_y_tamano": {
+      "plastico": {
+        "menos_8_px": {
+          "objetos": 47,
+          "correcto": 4,
+          "sin_cobertura_suficiente": 31,
+          "geometria_incorrecta": 12,
+          "material_equivocado": 0,
+          "fn": 43,
+          "recall50": 0.0851063829787234
+        },
+        "8_a_16_px": {
+          "objetos": 50,
+          "correcto": 12,
+          "sin_cobertura_suficiente": 20,
+          "geometria_incorrecta": 16,
+          "material_equivocado": 2,
+          "fn": 38,
+          "recall50": 0.24
+        },
+        "16_a_32_px": {
+          "objetos": 75,
+          "correcto": 25,
+          "sin_cobertura_suficiente": 29,
+          "geometria_incorrecta": 18,
+          "material_equivocado": 3,
+          "fn": 50,
+          "recall50": 0.3333333333333333
+        },
+        "32_px_o_mas": {
+          "objetos": 56,
+          "correcto": 22,
+          "sin_cobertura_suficiente": 16,
+          "geometria_incorrecta": 12,
+          "material_equivocado": 6,
+          "fn": 34,
+          "recall50": 0.39285714285714285
+        }
+      },
+      "papel": {
+        "menos_8_px": {
+          "objetos": 3,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 3,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 3,
+          "recall50": 0.0
+        },
+        "8_a_16_px": {
+          "objetos": 10,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 6,
+          "geometria_incorrecta": 2,
+          "material_equivocado": 2,
+          "fn": 10,
+          "recall50": 0.0
+        },
+        "16_a_32_px": {
+          "objetos": 5,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 2,
+          "geometria_incorrecta": 1,
+          "material_equivocado": 2,
+          "fn": 5,
+          "recall50": 0.0
+        },
+        "32_px_o_mas": {
+          "objetos": 7,
+          "correcto": 1,
+          "sin_cobertura_suficiente": 3,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 3,
+          "fn": 6,
+          "recall50": 0.14285714285714285
+        }
+      },
+      "carton": {
+        "menos_8_px": {
+          "objetos": 0,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 0,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 0,
+          "recall50": null
+        },
+        "8_a_16_px": {
+          "objetos": 4,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 0,
+          "geometria_incorrecta": 4,
+          "material_equivocado": 0,
+          "fn": 4,
+          "recall50": 0.0
+        },
+        "16_a_32_px": {
+          "objetos": 9,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 2,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 7,
+          "fn": 9,
+          "recall50": 0.0
+        },
+        "32_px_o_mas": {
+          "objetos": 12,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 3,
+          "geometria_incorrecta": 2,
+          "material_equivocado": 7,
+          "fn": 12,
+          "recall50": 0.0
+        }
+      },
+      "vidrio": {
+        "menos_8_px": {
+          "objetos": 1,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 1,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 1,
+          "recall50": 0.0
+        },
+        "8_a_16_px": {
+          "objetos": 8,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 7,
+          "geometria_incorrecta": 1,
+          "material_equivocado": 0,
+          "fn": 8,
+          "recall50": 0.0
+        },
+        "16_a_32_px": {
+          "objetos": 11,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 6,
+          "geometria_incorrecta": 2,
+          "material_equivocado": 3,
+          "fn": 11,
+          "recall50": 0.0
+        },
+        "32_px_o_mas": {
+          "objetos": 2,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 2,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 2,
+          "recall50": 0.0
+        }
+      },
+      "metal": {
+        "menos_8_px": {
+          "objetos": 21,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 14,
+          "geometria_incorrecta": 7,
+          "material_equivocado": 0,
+          "fn": 21,
+          "recall50": 0.0
+        },
+        "8_a_16_px": {
+          "objetos": 12,
+          "correcto": 3,
+          "sin_cobertura_suficiente": 1,
+          "geometria_incorrecta": 6,
+          "material_equivocado": 2,
+          "fn": 9,
+          "recall50": 0.25
+        },
+        "16_a_32_px": {
+          "objetos": 19,
+          "correcto": 5,
+          "sin_cobertura_suficiente": 6,
+          "geometria_incorrecta": 3,
+          "material_equivocado": 5,
+          "fn": 14,
+          "recall50": 0.2631578947368421
+        },
+        "32_px_o_mas": {
+          "objetos": 8,
+          "correcto": 2,
+          "sin_cobertura_suficiente": 1,
+          "geometria_incorrecta": 5,
+          "material_equivocado": 0,
+          "fn": 6,
+          "recall50": 0.25
+        }
+      },
+      "organico": {
+        "menos_8_px": {
+          "objetos": 1,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 1,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 1,
+          "recall50": 0.0
+        },
+        "8_a_16_px": {
+          "objetos": 0,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 0,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 0,
+          "recall50": null
+        },
+        "16_a_32_px": {
+          "objetos": 0,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 0,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 0,
+          "recall50": null
+        },
+        "32_px_o_mas": {
+          "objetos": 0,
+          "correcto": 0,
+          "sin_cobertura_suficiente": 0,
+          "geometria_incorrecta": 0,
+          "material_equivocado": 0,
+          "fn": 0,
+          "recall50": null
+        }
+      }
+    }
+  },
+  "camara_fisica_completada": true,
+  "frames_camara": 12,
+  "resolucion_camara": [
+    640,
+    480
+  ],
+  "camara_es_evaluacion_calidad": false,
+  "instancias_train_organicos": 5,
+  "cola_revision": "datos/reportes/revision_clases_sin_ap.csv",
+  "gt_revision": 48,
+  "inferencias_auditoria": 0,
+  "entrenamientos": 0,
+  "test_evaluado": false,
+  "pruebas": 116
+}

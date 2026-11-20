@@ -4,9 +4,11 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
-Fase actual: los tres modelos Transformer están implementados y entrenados; RealWaste y TACO están preparados y auditados. MP4 y webcam tienen inferencia experimental, exportación y conexión al asistente. **El detector mantiene calidad insuficiente; la cámara física y los videos independientes siguen pendientes de validación.** Los documentos originales están en `../documentos/`.
+Fase actual: modelos propios entrenados, datasets auditados y flujo MP4/webcam/asistente implementado. La cámara física capturó y procesó 12 frames de 640×480. **El detector mantiene calidad insuficiente; faltan videos independientes anotados y una prueba sostenida.** Los documentos originales están en `../documentos/`.
 
 **Detector:** se conserva `detector_mapas_v6_mosaico`, checkpoint de época 19, argmax y cinco vistas; mAP@50 val **2,91 %**, todavía insuficiente. Pasaron 109 pruebas. Las ramas nuevas no sustituyen al predeterminado; ver [ablación](documentacion/13_ablacion_del_fondo.md).
+
+**Auditoría por clase y cámara física:** completadas sin reentrenar. Cartón: 14/25 GT tienen caja razonable con material equivocado; vidrio: 16/22 sin cobertura suficiente en cajas finales; orgánico: cinco GT train y uno val de 6,12 px. Cámara real: 12 frames de 640×480 verificados. Pasaron 116 pruebas; ver [auditoría](documentacion/15_auditoria_clase_y_tamano.md) y [prueba física](documentacion/16_prueba_camara_fisica.md).
 
 **Ablación de fondo y video:** completadas dos ramas de 1.452 actualizaciones desde el mismo estado de época 19; fondo=1 no mejora suficientemente y se conserva el detector actual. MP4/webcam implementados con advertencias y 109 pruebas aprobadas. Ver [ablación](documentacion/13_ablacion_del_fondo.md) y [uso de video/cámara](documentacion/14_video_y_webcam_experimental.md).
 
@@ -66,7 +68,7 @@ Los scripts de descarga, preparación y validación son `scripts/descargar_datos
 1. Ampliar el corpus del asistente y los ejemplos reales de detección orgánica; reservar nuevos videos para prueba externa.
 2. Mejorar localización y cobertura de detección: se compararon centros por instancia y cinco vistas; el AP continúa siendo insuficiente.
 3. Mejorar y validar los modelos con escenas independientes antes de presentar detecciones de video como fiables.
-4. Validar la webcam física y videos independientes; medir latencia sostenida y calidad. La integración experimental ya está implementada.
+4. Probar video independiente anotado y webcam de forma sostenida. La lectura física de cámara ya se verificó; falta calidad y rendimiento en sesiones largas.
 
 La arquitectura del detector está implementada. Resultado seleccionado: `resultados/detector_mapas_v6_mosaico.json`; clasificador: `resultados/clasificador_v3_regularizado.json`. Se conservan todos los ensayos anteriores. Los del asistente están en `resultados/asistente_v1.json` y `resultados/baseline_asistente.json`.
 

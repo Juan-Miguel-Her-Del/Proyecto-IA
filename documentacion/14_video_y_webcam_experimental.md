@@ -1,5 +1,8 @@
 # MP4 y webcam: integración experimental
 
+Informe histórico de implementación y prueba simulada. La prueba física posterior está en [16_prueba_camara_fisica.md](16_prueba_camara_fisica.md).
+
+
 **Implementado: lectura de MP4, captura de cámara explícita, detector persistente, anotación, exportación MP4/JSONL y consulta al asistente sobre el último frame.** La cámara física no se activó en estas pruebas.
 
 ## Uso
