@@ -8,6 +8,8 @@ Fase actual: los tres modelos Transformer están implementados y entrenados; Rea
 
 **Detector:** mejor mAP@50 val **2.91%**, todavía insuficiente. Selección `detector_mapas_v6_mosaico`, modo mosaico_cinco_vistas. Se comparó el entrenamiento de centros con inferencia por zonas. Pasaron 93 pruebas; test reservado. Ver [informe conjunto](documentacion/11_mejora_clasificador_y_centros.md).
 
+**Experimento de propuestas con pesos congelados:** retirar argmax empeoró el detector de cinco vistas: mAP@50 2,91 % → 1,15 %, recall 20,50 % → 16,62 % y FP 2.374 → 13.055 a puntuación ≥0,05. Se conserva la selección actual. Pasaron 98 pruebas; ver [comparación y diagnóstico](documentacion/12_propuestas_por_material_sin_argmax.md).
+
 **Clasificador visual:** 629.382 parámetros, desde cero. Seleccionado `clasificador_v3_regularizado`: **85.74% de exactitud y F1 macro 0.857** en validación, frente a 70,66 % y 0,709 previos. Test reservado. Ver [entrenamientos y límites](documentacion/11_mejora_clasificador_y_centros.md).
 
 Ver el estado, los conteos, resultados y límites en [documentacion/02_datasets_y_asistente.md](documentacion/02_datasets_y_asistente.md). El asistente es un prototipo con comprensión limitada: obtuvo 58,3 % de aciertos sobre 36 preguntas iniciales de prueba y aún no supera la referencia simple. La detección tiene cobertura insuficiente de orgánicos en TACO.

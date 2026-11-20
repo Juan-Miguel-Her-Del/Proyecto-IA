@@ -105,7 +105,11 @@ def etiquetas_mapas(logits,formulacion='softmax7',umbral_presencia=.5):
 
 
 @torch.inference_mode()
-def cajas_desde_mapas(logits, umbral=.35, area_minima=2, geometrias=None,formulacion='softmax7',umbral_presencia=.5):
+def cajas_desde_mapas(logits, umbral=.35, area_minima=2, geometrias=None,formulacion='softmax7',umbral_presencia=.5,
+                     politica='argmax7'):
+    if politica not in ['argmax7','por_material']:raise ValueError('Política de propuestas desconocida')
+    if politica=='por_material' and formulacion!='softmax7':
+        raise ValueError('La comparación sin argmax está definida para softmax7')
     raw=logits.float()
     if formulacion=='presencia_y_material':
         presencia=raw[:,0:1].sigmoid()
@@ -125,7 +129,9 @@ def cajas_desde_mapas(logits, umbral=.35, area_minima=2, geometrias=None,formula
             yy,xx=torch.meshgrid((torch.arange(h)+.5)/h,(torch.arange(w)+.5)/w,indexing='ij')
             valida=(xx>=minimo[0])&(xx<=maximo[0])&(yy>=minimo[1])&(yy<=maximo[1])
         for c in range(1, 7):
-            mascara = ((etiquetas[b] == c) & (probs[b, c] >= umbral) & valida).numpy().astype(np.uint8)
+            elegibles = (probs[b, c] >= umbral) & valida
+            if politica=='argmax7':elegibles &= etiquetas[b] == c
+            mascara = elegibles.numpy().astype(np.uint8)
             n, componentes, estadisticas, _ = cv2.connectedComponentsWithStats(mascara, connectivity=8)
             for j in range(1, n):
                 x, y, ancho, alto, area = estadisticas[j].tolist()

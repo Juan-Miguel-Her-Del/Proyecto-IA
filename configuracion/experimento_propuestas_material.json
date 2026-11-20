@@ -1,0 +1,17 @@
+{
+  "nombre": "mapas_v6_ab_propuestas_material",
+  "checkpoint": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "sha256_checkpoint": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "politicas": ["argmax7", "por_material"],
+  "vistas": [1, 5],
+  "umbral_celda": 0.05,
+  "area_minima_celdas": 2,
+  "conectividad": 8,
+  "nms_iou": 0.5,
+  "maximo_cajas": 100,
+  "filtros_puntuacion_caja": [0.05, 0.35],
+  "precision_mixta_cuda": true,
+  "entrenar": false,
+  "evaluar_test": false,
+  "cambiar_modelo_predeterminado": false
+}

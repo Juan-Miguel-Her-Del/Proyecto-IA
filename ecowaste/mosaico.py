@@ -31,7 +31,8 @@ def proyectar_al_lienzo(boxes, g, ventana, ancho, alto, lado=384):
 
 
 @torch.inference_mode()
-def predecir_mosaico(modelo, imagen, umbral=.05, amp=False, umbral_propuestas=None):
+def predecir_mosaico(modelo, imagen, umbral=.05, amp=False, umbral_propuestas=None,
+                    politica_mapas='argmax7'):
     device = next(modelo.parameters()).device
     zonas = ventanas(imagen.width, imagen.height)
     if umbral_propuestas is None:umbral_propuestas=umbral
@@ -43,10 +44,18 @@ def predecir_mosaico(modelo, imagen, umbral=.05, amp=False, umbral_propuestas=No
     with torch.autocast(device_type=device.type, dtype=torch.float16, enabled=amp):
         raw = modelo(torch.stack(entradas).to(device))
     if isinstance(modelo, DetectorCentros):
+        if politica_mapas!='argmax7':raise ValueError('La política por material requiere mapas softmax7')
         predicciones = postprocesar_centros(raw, geometrias, umbral_propuestas)
     else:
         predicciones = cajas_desde_mapas(raw, umbral=umbral_propuestas, area_minima=2, geometrias=geometrias,
-                                       formulacion=modelo.configuracion_mapas['formulacion'])
+                                       formulacion=modelo.configuracion_mapas['formulacion'],politica=politica_mapas)
+    return combinar_vistas(predicciones,geometrias,zonas,imagen.width,imagen.height,modelo.imagen,umbral)
+
+
+def combinar_vistas(predicciones,geometrias,zonas,ancho,alto,lado=384,umbral=.05):
+    """Combina cajas ya propuestas, sin acceso a logits ni anotaciones."""
+    if not (len(predicciones)==len(geometrias)==len(zonas)) or not zonas:
+        raise ValueError('Vistas y predicciones incompatibles')
     cajas, scores, labels = [], [], []
     for p, g, v in zip(predicciones, geometrias, zonas):
         # Fragmentos que tocan un corte interno se omiten; las otras vistas
@@ -55,9 +64,9 @@ def predecir_mosaico(modelo, imagen, umbral=.05, amp=False, umbral_propuestas=No
         keep = torch.ones(len(originales), dtype=torch.bool)
         if v[0] > 0: keep &= originales[:, 0] > 1
         if v[1] > 0: keep &= originales[:, 1] > 1
-        if v[2] < imagen.width: keep &= originales[:, 2] < (v[2]-v[0]-1)
-        if v[3] < imagen.height: keep &= originales[:, 3] < (v[3]-v[1]-1)
-        cajas.append(proyectar_al_lienzo(p['boxes'][keep], g, v, imagen.width, imagen.height, modelo.imagen))
+        if v[2] < ancho: keep &= originales[:, 2] < (v[2]-v[0]-1)
+        if v[3] < alto: keep &= originales[:, 3] < (v[3]-v[1]-1)
+        cajas.append(proyectar_al_lienzo(p['boxes'][keep], g, v, ancho, alto, lado))
         scores.append(p['scores'][keep])
         labels.append(p['labels'][keep])
     boxes = torch.cat(cajas)
