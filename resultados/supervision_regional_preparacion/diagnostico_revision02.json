@@ -1,0 +1,1888 @@
+{
+  "aprobada": true,
+  "estado": "diagnostico_preparado_entrenamiento_completo_no_iniciado",
+  "protocolo": {
+    "nombre": "supervision_regional_ep19_v1",
+    "checkpoint_origen": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+    "sha256_checkpoint_origen": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+    "ramas": {
+      "A": 0.0,
+      "B": 0.25
+    },
+    "coeficiente_fondo": 3.0,
+    "coeficiente_auxiliar_global": 0.5,
+    "epocas_adicionales": 12,
+    "actualizaciones_por_rama": 1452,
+    "criterio_mejor": "map50_val_una_vista",
+    "desempate": "primera_epoca",
+    "parada_temprana": false,
+    "reiniciar_warmup": false,
+    "evaluar_test": false,
+    "cambiar_predeterminado": false,
+    "politica_mapas": "argmax7",
+    "umbral_evaluacion": 0.05,
+    "umbral_visual": 0.35,
+    "area_minima_celdas": 2,
+    "vistas_evaluacion": [
+      1,
+      5
+    ],
+    "diagnostico": "resultados/supervision_regional_preparacion/diagnostico_revision02.json"
+  },
+  "hashes_codigo": {
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/supervision_regional_materiales.py": "20c6d6ae5c65228dc1e4500e8c38dc6b98938d96276c4f81eb7f90ad1e5120cd",
+    "scripts/diagnosticar_supervision_regional.py": "d2bbb360f2b958510b0ad37c06166621280a1eb912f4bb69d8337bc6b39f2456",
+    "scripts/evaluar_supervision_regional.py": "b0fb03666b6e3dc0c01459b4e93344541fa5d64cf89b7653b9a8a0fc89bf2575",
+    "pruebas/test_supervision_regional.py": "9981646f33b4fa43e0ba087f68c5a4ea37f539054cb223f8c3136cad3d76587d"
+  },
+  "sha256_checkpoint": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "hashes_datos": {
+    "train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "val": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+    "anotaciones_poligonos": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+    "inventario_procedencia": "c549b16f5d1dd64d8d41c0d5192d0cee40aa740ca9bbfe86ffb8c335e7498eef",
+    "clasificacion_auxiliar_train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "cache_clasificacion_auxiliar": "46bd48fc0988ace42fcb282a3da27b0d216e72632d603341cec93ab25315f8d4"
+  },
+  "huella_mascaras_semanticas_originales": "535f105a2f04e72457b4b103c335bb1e3caae04721b5b2cea290cef44153bbff",
+  "huella_regiones": "4e39b2758d65d97657d7eae0cc8228e92c1356e4543e76f26c313c0a69c4d081",
+  "pruebas": {
+    "ejecutadas": 129,
+    "fallos": 0,
+    "errores": 0,
+    "omitidas": 0,
+    "aprobadas": true
+  },
+  "regresion_inferencia": {
+    "aprobada": true,
+    "parametros": 439309,
+    "strict_load": true,
+    "huella_pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+    "casos": [
+      {
+        "id_train": "taco:492",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:492",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:59",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:59",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:1",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:1",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:540",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:540",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:434",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:434",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:92",
+        "amp": false,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      },
+      {
+        "id_train": "taco:92",
+        "amp": true,
+        "logits_exactos": true,
+        "cajas_una_vista_exactas": true,
+        "cajas_cinco_vistas_exactas": true
+      }
+    ],
+    "alcance": "Comparación exacta en seis escenas train, FP32 y AMP, una/cinco vistas; no prueba universal de todos los dispositivos."
+  },
+  "estadistica_regiones": {
+    "version": "regional_poligono_interior_fraccion_sin_ambiguos_v1",
+    "imagenes_train": 964,
+    "orden_materiales": [
+      "plastico",
+      "papel",
+      "carton",
+      "vidrio",
+      "metal",
+      "organico"
+    ],
+    "instancias_originales": [
+      1630,
+      109,
+      149,
+      203,
+      409,
+      5
+    ],
+    "instancias_elegibles": [
+      1589,
+      108,
+      146,
+      201,
+      394,
+      1
+    ],
+    "pesos_clase": [
+      0.6284189224243164,
+      2.410456895828247,
+      2.073169469833374,
+      1.7669048309326172,
+      1.2620108127593994,
+      25.050201416015625
+    ],
+    "formula_pesos": "1/sqrt(n_elegibles_train), normalizado a media por instancia 1",
+    "modos_por_material": {
+      "plastico": {
+        "interior": 861,
+        "fraccion_poligono": 728,
+        "vacia": 41
+      },
+      "papel": {
+        "interior": 78,
+        "fraccion_poligono": 30,
+        "vacia": 1
+      },
+      "carton": {
+        "interior": 122,
+        "vacia": 3,
+        "fraccion_poligono": 24
+      },
+      "vidrio": {
+        "interior": 62,
+        "vacia": 2,
+        "fraccion_poligono": 139
+      },
+      "metal": {
+        "interior": 241,
+        "vacia": 15,
+        "fraccion_poligono": 153
+      },
+      "organico": {
+        "vacia": 4,
+        "interior": 1
+      }
+    },
+    "omitidas": [
+      {
+        "imagen": "taco:12",
+        "id": 38,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:12",
+        "id": 39,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:12",
+        "id": 41,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:35",
+        "id": 96,
+        "clase": 2,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:64",
+        "id": 154,
+        "clase": 3,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:68",
+        "id": 163,
+        "clase": 5,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:72",
+        "id": 171,
+        "clase": 5,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:81",
+        "id": 203,
+        "clase": 5,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:81",
+        "id": 204,
+        "clase": 5,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:82",
+        "id": 210,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:90",
+        "id": 240,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:97",
+        "id": 251,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:97",
+        "id": 252,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:202",
+        "id": 692,
+        "clase": 2,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:204",
+        "id": 697,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:204",
+        "id": 698,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:206",
+        "id": 702,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:209",
+        "id": 708,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:254",
+        "id": 803,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:298",
+        "id": 908,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:305",
+        "id": 933,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:335",
+        "id": 1102,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:385",
+        "id": 1338,
+        "clase": 1,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:417",
+        "id": 1481,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:420",
+        "id": 1488,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:420",
+        "id": 1489,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:426",
+        "id": 1539,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:614",
+        "id": 1927,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:624",
+        "id": 1984,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:656",
+        "id": 2119,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1001",
+        "id": 2987,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1012",
+        "id": 3018,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3067,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3070,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3071,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3072,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3074,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1032",
+        "id": 3079,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1046",
+        "id": 3109,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1052",
+        "id": 3121,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1065",
+        "id": 3165,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3299,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3302,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3343,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3364,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3377,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1107",
+        "id": 3386,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1197",
+        "id": 3694,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1199",
+        "id": 3698,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1209",
+        "id": 3728,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1210",
+        "id": 3736,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1215",
+        "id": 3773,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1215",
+        "id": 3774,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1239",
+        "id": 3851,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1239",
+        "id": 3852,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1246",
+        "id": 3886,
+        "clase": 0,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1323",
+        "id": 4176,
+        "clase": 3,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1328",
+        "id": 4212,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1335",
+        "id": 4261,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1335",
+        "id": 4262,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1335",
+        "id": 4263,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1336",
+        "id": 4266,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1336",
+        "id": 4268,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1337",
+        "id": 4271,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1338",
+        "id": 4274,
+        "clase": 4,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      },
+      {
+        "imagen": "taco:1375",
+        "id": 4428,
+        "clase": 2,
+        "modo": "vacia",
+        "tokens": 0,
+        "cobertura_total_tokens": 0.0,
+        "motivo_omision": "sin_tokens_no_ambiguos_validos"
+      }
+    ],
+    "todas_las_clases_elegibles": true
+  },
+  "ids_taco_memorizacion": [
+    "taco:492",
+    "taco:59",
+    "taco:1",
+    "taco:540",
+    "taco:434",
+    "taco:92"
+  ],
+  "ids_auxiliar_global_memorizacion": [
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_1.jpg"
+  ],
+  "memorizacion": {
+    "aprobada": true,
+    "criterios_prefijados": {
+      "accuracy_regional": 1,
+      "accuracy_auxiliar_global": 1,
+      "map50_min": 0.8,
+      "recall_min": 0.9,
+      "precision_min": 0.7
+    },
+    "pasos": 150,
+    "precision": "FP32; prueba funcional, no réplica del entrenamiento AMP",
+    "inicio": "aleatorio propio semilla42; no el origen A/B",
+    "historial": [
+      {
+        "paso": 25,
+        "loss": 1.1854857206344604,
+        "ce_regional": 0.32401949167251587,
+        "accuracy_regional": 0.5714285969734192,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 0.7508250825082508,
+        "recall50_memorizacion": 0.7142857142857143,
+        "precision50_memorizacion": 0.25,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 1.4067425727844238,
+            "numerador_ponderado": 0.8840236663818359,
+            "contribucion_ce": 0.02506849355995655
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.474418580532074,
+            "numerador_ponderado": 1.1435655355453491,
+            "contribucion_ce": 0.03242839127779007
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 1.0422165393829346,
+            "numerador_ponderado": 4.321382999420166,
+            "contribucion_ce": 0.122542604804039
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 1.4483273029327393,
+            "numerador_ponderado": 2.559056520462036,
+            "contribucion_ce": 0.07256784290075302
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 1.0601909160614014,
+            "numerador_ponderado": 1.3379724025726318,
+            "contribucion_ce": 0.037941236048936844
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.047118544578552246,
+            "numerador_ponderado": 1.1803290843963623,
+            "contribucion_ce": 0.03347090631723404
+          }
+        }
+      },
+      {
+        "paso": 50,
+        "loss": 0.5216767191886902,
+        "ce_regional": 0.12561272084712982,
+        "accuracy_regional": 0.8571429252624512,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 0.8333333333333334,
+        "recall50_memorizacion": 0.8571428571428571,
+        "precision50_memorizacion": 0.5,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 1.9044458866119385,
+            "numerador_ponderado": 1.1967898607254028,
+            "contribucion_ce": 0.033937688916921616
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.17021140456199646,
+            "numerador_ponderado": 0.4102872610092163,
+            "contribucion_ce": 0.011634624563157558
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 0.20616737008094788,
+            "numerador_ponderado": 0.8548398017883301,
+            "contribucion_ce": 0.024240918457508087
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 0.35412684082984924,
+            "numerador_ponderado": 0.6257084012031555,
+            "contribucion_ce": 0.01774337887763977
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 0.7851458787918091,
+            "numerador_ponderado": 0.9908626079559326,
+            "contribucion_ce": 0.028098152950406075
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.014018286019563675,
+            "numerador_ponderado": 0.3511608839035034,
+            "contribucion_ce": 0.009957962669432163
+          }
+        }
+      },
+      {
+        "paso": 75,
+        "loss": 0.3822420835494995,
+        "ce_regional": 0.05813807621598244,
+        "accuracy_regional": 0.8571429252624512,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 1.0,
+        "recall50_memorizacion": 1.0,
+        "precision50_memorizacion": 1.0,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 0.8437700271606445,
+            "numerador_ponderado": 0.530241072177887,
+            "contribucion_ce": 0.015036186203360558
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.04741497337818146,
+            "numerador_ponderado": 0.11429174989461899,
+            "contribucion_ce": 0.003241001395508647
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 0.17478200793266296,
+            "numerador_ponderado": 0.7247054576873779,
+            "contribucion_ce": 0.020550664514303207
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 0.11789354681968689,
+            "numerador_ponderado": 0.2083066701889038,
+            "contribucion_ce": 0.005907007493078709
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 0.2234075963497162,
+            "numerador_ponderado": 0.28194281458854675,
+            "contribucion_ce": 0.007995126768946648
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.007613215129822493,
+            "numerador_ponderado": 0.190712571144104,
+            "contribucion_ce": 0.005408086813986301
+          }
+        }
+      },
+      {
+        "paso": 100,
+        "loss": 0.19730189442634583,
+        "ce_regional": 0.02472197636961937,
+        "accuracy_regional": 1.0,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 1.0,
+        "recall50_memorizacion": 1.0,
+        "precision50_memorizacion": 0.875,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 0.41766175627708435,
+            "numerador_ponderado": 0.26246654987335205,
+            "contribucion_ce": 0.007442833390086889
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.03647785633802414,
+            "numerador_ponderado": 0.08792830258607864,
+            "contribucion_ce": 0.002493406180292368
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 0.03241178020834923,
+            "numerador_ponderado": 0.1343902349472046,
+            "contribucion_ce": 0.00381093961186707
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 0.0853351429104805,
+            "numerador_ponderado": 0.15077908337116241,
+            "contribucion_ce": 0.004275682382285595
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 0.12962812185287476,
+            "numerador_ponderado": 0.16359208524227142,
+            "contribucion_ce": 0.004639023914933205
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.0029000865761190653,
+            "numerador_ponderado": 0.07264775037765503,
+            "contribucion_ce": 0.0020600915886461735
+          }
+        }
+      },
+      {
+        "paso": 125,
+        "loss": 0.0693315714597702,
+        "ce_regional": 0.01138253603130579,
+        "accuracy_regional": 1.0,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 1.0,
+        "recall50_memorizacion": 1.0,
+        "precision50_memorizacion": 1.0,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 0.16719192266464233,
+            "numerador_ponderado": 0.10506656765937805,
+            "contribucion_ce": 0.0029794005677103996
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.030967576429247856,
+            "numerador_ponderado": 0.0746460109949112,
+            "contribucion_ce": 0.002116756746545434
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 0.01566455513238907,
+            "numerador_ponderado": 0.06495055556297302,
+            "contribucion_ce": 0.001841820077970624
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 0.030865749344229698,
+            "numerador_ponderado": 0.0545368418097496,
+            "contribucion_ce": 0.001546515617519617
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 0.036192651838064194,
+            "numerador_ponderado": 0.04567551612854004,
+            "contribucion_ce": 0.001295232679694891
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.002256349427625537,
+            "numerador_ponderado": 0.056522008031606674,
+            "contribucion_ce": 0.0016028095269575715
+          }
+        }
+      },
+      {
+        "paso": 150,
+        "loss": 0.0369853712618351,
+        "ce_regional": 0.005518431309610605,
+        "accuracy_regional": 1.0,
+        "accuracy_auxiliar_global": 1.0,
+        "map50_memorizacion": 1.0,
+        "recall50_memorizacion": 1.0,
+        "precision50_memorizacion": 1.0,
+        "contribuciones": {
+          "plastico": {
+            "regiones": 1,
+            "ce_media": 0.050757404416799545,
+            "numerador_ponderado": 0.031896911561489105,
+            "contribucion_ce": 0.0009045091574080288
+          },
+          "papel": {
+            "regiones": 1,
+            "ce_media": 0.01286492682993412,
+            "numerador_ponderado": 0.031010352075099945,
+            "contribucion_ce": 0.000879368744790554
+          },
+          "carton": {
+            "regiones": 2,
+            "ce_media": 0.005697373300790787,
+            "numerador_ponderado": 0.02362324297428131,
+            "contribucion_ce": 0.0006698905490338802
+          },
+          "vidrio": {
+            "regiones": 1,
+            "ce_media": 0.017357701435685158,
+            "numerador_ponderado": 0.030669406056404114,
+            "contribucion_ce": 0.0008697004523128271
+          },
+          "metal": {
+            "regiones": 1,
+            "ce_media": 0.03456366807222366,
+            "numerador_ponderado": 0.04361972212791443,
+            "contribucion_ce": 0.001236935961060226
+          },
+          "organico": {
+            "regiones": 1,
+            "ce_media": 0.0013486584648489952,
+            "numerador_ponderado": 0.0337841659784317,
+            "contribucion_ce": 0.0009580265614204109
+          }
+        }
+      }
+    ],
+    "confusion_regional_final": {
+      "orden": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "matriz": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "regiones": 7,
+      "accuracy": 1.0,
+      "carton": {
+        "regiones": 2,
+        "a_plastico": 0,
+        "a_metal": 0,
+        "tasa_a_plastico_metal": 0.0
+      },
+      "por_material": {
+        "plastico": {
+          "regiones": 1,
+          "recall": 1.0
+        },
+        "papel": {
+          "regiones": 1,
+          "recall": 1.0
+        },
+        "carton": {
+          "regiones": 2,
+          "recall": 1.0
+        },
+        "vidrio": {
+          "regiones": 1,
+          "recall": 1.0
+        },
+        "metal": {
+          "regiones": 1,
+          "recall": 1.0
+        },
+        "organico": {
+          "regiones": 1,
+          "recall": 1.0
+        }
+      }
+    },
+    "segundos": 11.800069999997504,
+    "memoria_gpu_max_allocated_bytes": 517243904,
+    "pesos_guardados": false,
+    "pesos_reutilizados": false,
+    "solo_train": true,
+    "limite": "Memorizar seis escenas fáciles de train no demuestra generalización."
+  },
+  "coste_diagnostico": {
+    "A": {
+      "coeficiente": 0.0,
+      "segundos_forward_backward_media_sin_primero": 0.057098966664246596,
+      "memoria_gpu_max_allocated_bytes": 519080448,
+      "memoria_gpu_max_reserved_bytes": 616562688,
+      "llamadas_extractor": [
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        }
+      ],
+      "paso_adamw_sin_cambios": 2299,
+      "estado_inicial": {
+        "pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+        "adamw": "1b1d45e084c57330b8a575fa7280c97832d931012bc94bb063953f7724700919",
+        "scaler": "1c0287e48d77f8f597e9979356fb10ee9466307d42240c9a23d4f4e8ca22f701",
+        "rng": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312"
+      },
+      "actualizaciones_optimizador": 0,
+      "lote_taco": 8,
+      "lote_global": 16,
+      "indices_taco": [
+        752,
+        48,
+        667,
+        931,
+        605,
+        317,
+        405,
+        340
+      ],
+      "indices_auxiliar_global": [
+        704,
+        2051,
+        20,
+        1629,
+        2617,
+        1323,
+        1868,
+        510,
+        3,
+        2544,
+        1414,
+        314,
+        2314,
+        594,
+        670,
+        1567
+      ],
+      "limite": "Microbenchmark local de forward/backward, sin AdamW, aumentos ni carga de datos; no coste total de A/B."
+    },
+    "B": {
+      "coeficiente": 0.25,
+      "segundos_forward_backward_media_sin_primero": 0.06259239999538597,
+      "memoria_gpu_max_allocated_bytes": 569006080,
+      "memoria_gpu_max_reserved_bytes": 666894336,
+      "llamadas_extractor": [
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        },
+        {
+          "taco": 1,
+          "total_con_lote_realwaste_distinto": 2
+        }
+      ],
+      "paso_adamw_sin_cambios": 2299,
+      "estado_inicial": {
+        "pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+        "adamw": "1b1d45e084c57330b8a575fa7280c97832d931012bc94bb063953f7724700919",
+        "scaler": "1c0287e48d77f8f597e9979356fb10ee9466307d42240c9a23d4f4e8ca22f701",
+        "rng": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312"
+      },
+      "actualizaciones_optimizador": 0,
+      "lote_taco": 8,
+      "lote_global": 16,
+      "indices_taco": [
+        752,
+        48,
+        667,
+        931,
+        605,
+        317,
+        405,
+        340
+      ],
+      "indices_auxiliar_global": [
+        704,
+        2051,
+        20,
+        1629,
+        2617,
+        1323,
+        1868,
+        510,
+        3,
+        2544,
+        1414,
+        314,
+        2314,
+        594,
+        670,
+        1567
+      ],
+      "limite": "Microbenchmark local de forward/backward, sin AdamW, aumentos ni carga de datos; no coste total de A/B."
+    }
+  },
+  "trazas_preparadas": {
+    "A": [
+      {
+        "epoca": 20,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "67046f378577e39bc24f936fde4291313d15080cad2a3dbea426bac7b92fbc06"
+      },
+      {
+        "epoca": 21,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "6fcc1cc7e0e93fb407cd16e411d3cd5664dbada9f3e9050904ca66f245f646e8"
+      },
+      {
+        "epoca": 22,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "47f20016a9ca170609625c5ae5a31a938a8047b85b89f7a2fdafd14b7bd99ff7"
+      },
+      {
+        "epoca": 23,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "eeb024cd2df4b1ed93bdd4adcec8528fb56957d108e3b744185e989c963ab1c1"
+      },
+      {
+        "epoca": 24,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "a168b8e0e8b6d6e9e364645d81ceb0c0123715092b552b1d27a0a5cb2538e946"
+      },
+      {
+        "epoca": 25,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "8c3540822969f1090d3a91deb157ba524eb36b725c0444638bfde771ebd86e53"
+      },
+      {
+        "epoca": 26,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "038795a90b0a52bdec33419bedac1b01dd0c7f2220b711e7a9828b8272962026"
+      },
+      {
+        "epoca": 27,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "41ffb7bf42ad8db9d92a04e262b5fc0fd249c2796f815b6119213a34167ee5e3"
+      },
+      {
+        "epoca": 28,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "bb4fc153b2784a4eb3011aa3c87faf312c64bb10c1628e7ec9a7aafd6fb50861"
+      },
+      {
+        "epoca": 29,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "86ce1fc7dcefbaaf6a3911439e811eba463e46d0ee49d9ab5b74bbdfdafedb96"
+      },
+      {
+        "epoca": 30,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "b4779056a610ddf81c92e3b717284da6f79506d23678cec0e28fa9c115a5b152"
+      },
+      {
+        "epoca": 31,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "92d03b46f4de37820f1b74b518468aa51b26bd625868b16df31a36c8a5952cd8"
+      }
+    ],
+    "B": [
+      {
+        "epoca": 20,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "67046f378577e39bc24f936fde4291313d15080cad2a3dbea426bac7b92fbc06"
+      },
+      {
+        "epoca": 21,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "6fcc1cc7e0e93fb407cd16e411d3cd5664dbada9f3e9050904ca66f245f646e8"
+      },
+      {
+        "epoca": 22,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "47f20016a9ca170609625c5ae5a31a938a8047b85b89f7a2fdafd14b7bd99ff7"
+      },
+      {
+        "epoca": 23,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "eeb024cd2df4b1ed93bdd4adcec8528fb56957d108e3b744185e989c963ab1c1"
+      },
+      {
+        "epoca": 24,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "a168b8e0e8b6d6e9e364645d81ceb0c0123715092b552b1d27a0a5cb2538e946"
+      },
+      {
+        "epoca": 25,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "8c3540822969f1090d3a91deb157ba524eb36b725c0444638bfde771ebd86e53"
+      },
+      {
+        "epoca": 26,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "038795a90b0a52bdec33419bedac1b01dd0c7f2220b711e7a9828b8272962026"
+      },
+      {
+        "epoca": 27,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "41ffb7bf42ad8db9d92a04e262b5fc0fd249c2796f815b6119213a34167ee5e3"
+      },
+      {
+        "epoca": 28,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "bb4fc153b2784a4eb3011aa3c87faf312c64bb10c1628e7ec9a7aafd6fb50861"
+      },
+      {
+        "epoca": 29,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "86ce1fc7dcefbaaf6a3911439e811eba463e46d0ee49d9ab5b74bbdfdafedb96"
+      },
+      {
+        "epoca": 30,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "b4779056a610ddf81c92e3b717284da6f79506d23678cec0e28fa9c115a5b152"
+      },
+      {
+        "epoca": 31,
+        "pasos": 121,
+        "huella_orden_y_aumentos": "92d03b46f4de37820f1b74b518468aa51b26bd625868b16df31a36c8a5952cd8"
+      }
+    ]
+  },
+  "estados_restaurados_iguales": true,
+  "confusion_regional_train_origen": {
+    "orden": [
+      "plastico",
+      "papel",
+      "carton",
+      "vidrio",
+      "metal",
+      "organico"
+    ],
+    "matriz": [
+      [
+        76,
+        853,
+        199,
+        1,
+        85,
+        375
+      ],
+      [
+        2,
+        72,
+        6,
+        0,
+        1,
+        27
+      ],
+      [
+        2,
+        82,
+        36,
+        0,
+        3,
+        23
+      ],
+      [
+        10,
+        73,
+        6,
+        1,
+        19,
+        92
+      ],
+      [
+        8,
+        275,
+        21,
+        0,
+        22,
+        68
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "regiones": 2439,
+    "accuracy": 0.08528085280852808,
+    "carton": {
+      "regiones": 146,
+      "a_plastico": 2,
+      "a_metal": 3,
+      "tasa_a_plastico_metal": 0.03424657534246575
+    },
+    "por_material": {
+      "plastico": {
+        "regiones": 1589,
+        "recall": 0.04782882315921964
+      },
+      "papel": {
+        "regiones": 108,
+        "recall": 0.6666666666666666
+      },
+      "carton": {
+        "regiones": 146,
+        "recall": 0.2465753424657534
+      },
+      "vidrio": {
+        "regiones": 201,
+        "recall": 0.004975124378109453
+      },
+      "metal": {
+        "regiones": 394,
+        "recall": 0.05583756345177665
+      },
+      "organico": {
+        "regiones": 1,
+        "recall": 1.0
+      }
+    },
+    "ce_regional": 3.529109775091562,
+    "contribucion_ce_por_material": {
+      "plastico": 1.6782060239507273,
+      "papel": 0.12678278883551827,
+      "carton": 0.2120191229547954,
+      "vidrio": 0.8707078856718116,
+      "metal": 0.63987334026385,
+      "organico": 0.0015206134148592714
+    },
+    "cabeza_medida": "auxiliar global compartida aplicada a pooling GT regional, distinta de la cabeza de mapas",
+    "mapas_logits_promediados_por_region": {
+      "matriz_confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          700,
+          772,
+          6,
+          19,
+          1,
+          91,
+          0
+        ],
+        [
+          43,
+          53,
+          6,
+          2,
+          0,
+          4,
+          0
+        ],
+        [
+          47,
+          52,
+          0,
+          33,
+          0,
+          14,
+          0
+        ],
+        [
+          154,
+          25,
+          1,
+          2,
+          4,
+          15,
+          0
+        ],
+        [
+          115,
+          137,
+          4,
+          8,
+          1,
+          129,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "orden": [
+        "fondo",
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_clase": {
+        "fondo": {
+          "celdas_reales": 0,
+          "celdas_predichas": 1059,
+          "iou": 0.0
+        },
+        "plastico": {
+          "celdas_reales": 1589,
+          "celdas_predichas": 1039,
+          "iou": 0.41594827586206895
+        },
+        "papel": {
+          "celdas_reales": 108,
+          "celdas_predichas": 17,
+          "iou": 0.05042016806722689
+        },
+        "carton": {
+          "celdas_reales": 146,
+          "celdas_predichas": 64,
+          "iou": 0.1864406779661017
+        },
+        "vidrio": {
+          "celdas_reales": 201,
+          "celdas_predichas": 6,
+          "iou": 0.019704433497536946
+        },
+        "metal": {
+          "celdas_reales": 394,
+          "celdas_predichas": 253,
+          "iou": 0.24903474903474904
+        },
+        "organico": {
+          "celdas_reales": 1,
+          "celdas_predichas": 1,
+          "iou": 1.0
+        }
+      },
+      "miou_siete_clases": 0.2745069006325262,
+      "miou_materiales": 0.3202580507379473,
+      "material_predicho_fondo": 1059,
+      "fondo_predicho_material": 0,
+      "confusion_binaria_fondo_material": [
+        [
+          0,
+          0
+        ],
+        [
+          1059,
+          1380
+        ]
+      ],
+      "celdas_validas": 2439,
+      "excluye_etiqueta_255": true
+    },
+    "semantica_pixeles_train": {
+      "matriz_confusion": [
+        [
+          1445667,
+          32779,
+          801,
+          5037,
+          178,
+          3308,
+          28
+        ],
+        [
+          27108,
+          42844,
+          268,
+          1450,
+          57,
+          3886,
+          28
+        ],
+        [
+          2128,
+          2983,
+          509,
+          240,
+          3,
+          245,
+          0
+        ],
+        [
+          5742,
+          3504,
+          108,
+          3415,
+          3,
+          856,
+          0
+        ],
+        [
+          2576,
+          959,
+          18,
+          46,
+          75,
+          525,
+          0
+        ],
+        [
+          4242,
+          5003,
+          76,
+          420,
+          112,
+          4335,
+          0
+        ],
+        [
+          10,
+          3,
+          2,
+          1,
+          0,
+          0,
+          60
+        ]
+      ],
+      "orden": [
+        "fondo",
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_clase": {
+        "fondo": {
+          "celdas_reales": 1487798,
+          "celdas_predichas": 1487473,
+          "iou": 0.9451250127483977
+        },
+        "plastico": {
+          "celdas_reales": 75641,
+          "celdas_predichas": 88075,
+          "iou": 0.3544576080481832
+        },
+        "papel": {
+          "celdas_reales": 6108,
+          "celdas_predichas": 1782,
+          "iou": 0.06896084541390056
+        },
+        "carton": {
+          "celdas_reales": 13628,
+          "celdas_predichas": 10609,
+          "iou": 0.16400922101623283
+        },
+        "vidrio": {
+          "celdas_reales": 4199,
+          "celdas_predichas": 428,
+          "iou": 0.016476274165202108
+        },
+        "metal": {
+          "celdas_reales": 14188,
+          "celdas_predichas": 13155,
+          "iou": 0.1884127260083449
+        },
+        "organico": {
+          "celdas_reales": 76,
+          "celdas_predichas": 116,
+          "iou": 0.45454545454545453
+        }
+      },
+      "miou_siete_clases": 0.31314102027795937,
+      "miou_materiales": 0.20781035486621968,
+      "material_predicho_fondo": 41806,
+      "fondo_predicho_material": 42131,
+      "confusion_binaria_fondo_material": [
+        [
+          1445667,
+          42131
+        ],
+        [
+          41806,
+          72034
+        ]
+      ],
+      "celdas_validas": 1601638,
+      "excluye_etiqueta_255": true
+    },
+    "fuente": "GT polígonos TACO train; solo diagnóstico, nunca propuestas de inferencia"
+  },
+  "protegidos_intactos": {
+    "configuracion/arquitectura.json": true,
+    "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt": true,
+    "checkpoints/clasificador_v3_regularizado_mejor.pt": true,
+    "datos/procesados/clasificacion/train.jsonl": true,
+    "datos/procesados/clasificacion/val.jsonl": true,
+    "datos/procesados/clasificacion/test.jsonl": true,
+    "datos/procesados/deteccion/train.jsonl": true,
+    "datos/procesados/deteccion/val.jsonl": true,
+    "datos/procesados/deteccion/test.jsonl": true,
+    "resultados/detector_mapas_v6_auxiliar_ext48_predicciones_val.json": true,
+    "resultados/detector_mapas_v6_mosaico_predicciones_val.json": true
+  },
+  "epoca_origen": 19,
+  "paso_adamw_origen": 2299,
+  "lr_restaurado": 0.0005,
+  "scaler_restaurado": {
+    "scale": 2048.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 299
+  },
+  "actualizaciones_ab_ejecutadas": 0,
+  "test_evaluado": false,
+  "entrenamiento_ab_lanzado": false,
+  "torch": "2.14.1+cu126",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "duracion_segundos": 46.88206309999805
+}

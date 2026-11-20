@@ -130,7 +130,8 @@ def main():
     p.insert(next(i for i,t in enumerate(p) if t.startswith('**Detector:**'))+1,nuevo)
     texto='\n\n'.join(t for t in p if t!='').replace('4. Validar la webcam física y videos independientes; medir latencia sostenida y calidad. La integración experimental ya está implementada.',
         '4. Probar video independiente anotado y webcam de forma sostenida. La lectura física de cámara ya se verificó; falta calidad y rendimiento en sesiones largas.')
-    readme.write_text(texto,encoding='utf-8')
+    if not (RAIZ/'documentacion/17_supervision_regional_materiales.md').exists():
+        readme.write_text(texto,encoding='utf-8')
     print(json.dumps({'auditoria':'documentacion/15_auditoria_clase_y_tamano.md','camara':'documentacion/16_prueba_camara_fisica.md',
                       'pruebas':pruebas['ejecutadas'],'nuevos_entrenamientos':0}))
 

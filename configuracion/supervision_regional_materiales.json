@@ -1,0 +1,23 @@
+{
+  "nombre": "supervision_regional_ep19_v1",
+  "checkpoint_origen": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "sha256_checkpoint_origen": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "ramas": {"A": 0.0, "B": 0.25},
+  "coeficiente_fondo": 3.0,
+  "coeficiente_auxiliar_global": 0.5,
+  "epocas_adicionales": 12,
+  "actualizaciones_por_rama": 1452,
+  "criterio_mejor": "map50_val_una_vista",
+  "desempate": "primera_epoca",
+  "parada_temprana": false,
+  "reiniciar_warmup": false,
+  "evaluar_test": false,
+  "cambiar_predeterminado": false,
+  "politica_mapas": "argmax7",
+  "umbral_evaluacion": 0.05,
+  "umbral_visual": 0.35,
+  "area_minima_celdas": 2,
+  "vistas_evaluacion": [1, 5],
+  "entrenamiento_completo_habilitado": false,
+  "diagnostico": "resultados/supervision_regional_preparacion/diagnostico_revision03.json"
+}

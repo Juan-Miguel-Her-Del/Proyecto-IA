@@ -22,8 +22,11 @@ class DetectorMapas(DetectorResiduos):
             self.cabezal[-1].bias[0] = float(np.log(54)) * (1 if formulacion=='softmax7' else -1)
         self.clasificador_auxiliar=nn.Linear(dimension,6) if auxiliar_clasificacion else None
 
-    def forward(self, imagenes):
-        return self.cabezal(self.caracteristicas(imagenes)).permute(0, 3, 1, 2)
+    def forward(self, imagenes, devolver_caracteristicas=False):
+        # El camino predeterminado conserva las mismas operaciones y parámetros.
+        fusion = self.caracteristicas(imagenes)
+        mapas = self.cabezal(fusion).permute(0, 3, 1, 2)
+        return (mapas, fusion) if devolver_caracteristicas else mapas
 
     def clasificar(self,imagenes):
         if self.clasificador_auxiliar is None:raise ValueError('El modelo no tiene tarea auxiliar')

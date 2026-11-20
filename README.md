@@ -4,6 +4,8 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
+**Supervisión regional:** implementación y diagnóstico aprobados (129 pruebas); A/B con coeficientes 0 y 0,25 preparado desde época 19. **Las 1.452 actualizaciones por rama no se han iniciado.** Se conservan el detector predeterminado y sus resultados. Ver [diagnóstico, datos y protocolo](documentacion/17_supervision_regional_materiales.md).
+
 Fase actual: modelos propios entrenados, datasets auditados y flujo MP4/webcam/asistente implementado. La cámara física capturó y procesó 12 frames de 640×480. **El detector mantiene calidad insuficiente; faltan videos independientes anotados y una prueba sostenida.** Los documentos originales están en `../documentos/`.
 
 **Detector:** se conserva `detector_mapas_v6_mosaico`, checkpoint de época 19, argmax y cinco vistas; mAP@50 val **2,91 %**, todavía insuficiente. Pasaron 109 pruebas. Las ramas nuevas no sustituyen al predeterminado; ver [ablación](documentacion/13_ablacion_del_fondo.md).
