@@ -1,0 +1,84 @@
+{
+  "version": "recortes_taco_originales_contexto2_35_min64_v1",
+  "aprobada": true,
+  "hashes_origen": {
+    "train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "anotaciones_poligonos": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+    "inventario_procedencia": "c549b16f5d1dd64d8d41c0d5192d0cee40aa740ca9bbfe86ffb8c335e7498eef"
+  },
+  "cobertura_minima": 0.015625,
+  "sha256_archivos": {
+    "plan.jsonl": "8d481b34ac0677fa9ca20d3324f547d392630903d480136c00e54a795eff142f",
+    "imagenes.npy": "2cfa71da3b9a0c0651271a2451102827841f3cc7e393484f49d8d68e9433c1d3",
+    "mascaras.npy": "cb8a46866f50452db4fe79cdeaf4d83a23940156d7a71f38f492d0efb84b0a2e"
+  },
+  "recortes": 5010,
+  "imagenes_fuente": 964,
+  "anclas_unicas": 2505,
+  "factores_contexto": [
+    2.0,
+    3.5
+  ],
+  "anclas_por_material": {
+    "vidrio": 406,
+    "carton": 298,
+    "plastico": 3260,
+    "metal": 818,
+    "papel": 218,
+    "organico": 10
+  },
+  "ventanas_unicas": 4822,
+  "celdas_fondo_y_clases": [
+    8849933,
+    1196005,
+    70256,
+    195213,
+    156409,
+    488251,
+    386
+  ],
+  "anotaciones_visibles_acumuladas": 14989,
+  "recortes_sin_celdas_del_material_ancla": [
+    "taco:12/ancla41/escala3.5",
+    "taco:35/ancla96/escala2",
+    "taco:35/ancla96/escala3.5",
+    "taco:68/ancla163/escala2",
+    "taco:68/ancla163/escala3.5",
+    "taco:72/ancla171/escala2",
+    "taco:72/ancla171/escala3.5",
+    "taco:81/ancla203/escala2",
+    "taco:81/ancla203/escala3.5",
+    "taco:81/ancla204/escala2",
+    "taco:81/ancla204/escala3.5",
+    "taco:97/ancla251/escala2",
+    "taco:97/ancla251/escala3.5",
+    "taco:97/ancla252/escala2",
+    "taco:97/ancla252/escala3.5",
+    "taco:206/ancla702/escala2",
+    "taco:206/ancla702/escala3.5",
+    "taco:209/ancla708/escala2",
+    "taco:209/ancla708/escala3.5",
+    "taco:305/ancla933/escala3.5",
+    "taco:460/ancla1638/escala3.5",
+    "taco:624/ancla1984/escala2",
+    "taco:624/ancla1984/escala3.5",
+    "taco:1012/ancla3018/escala2",
+    "taco:1012/ancla3018/escala3.5",
+    "taco:1065/ancla3165/escala2",
+    "taco:1065/ancla3165/escala3.5",
+    "taco:1375/ancla4428/escala2",
+    "taco:1375/ancla4428/escala3.5"
+  ],
+  "grupos_val_test_disjuntos": true,
+  "tamano_menor_ancla_mediana_antes_px": 22.5,
+  "tamano_menor_ancla_mediana_despues_px": 101.10315179326169,
+  "bytes_imagenes_y_mascaras": 2227806720,
+  "duracion_segundos": 239.98440980000305,
+  "test_evaluado": false,
+  "limites": [
+    "Son vistas de las mismas 2.505 anotaciones, no objetos nuevos ni mayor diversidad orgánica.",
+    "Anclas ocluidas por solapes pueden perder su material semántico; se registran sin borrar el recorte.",
+    "No se usan métricas de recortes para declarar calidad; val se evalúa completo."
+  ],
+  "carpeta": "datos/cache/recortes_multiescala_v1"
+}

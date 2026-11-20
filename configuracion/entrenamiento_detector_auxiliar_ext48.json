@@ -1,0 +1,26 @@
+{
+  "nombre": "detector_mapas_v6_auxiliar_ext48",
+  "fuente_supervision": "poligonos",
+  "formulacion": "softmax7",
+  "diagnostico": "resultados/diagnostico_detector_mapas_poligonos_padding.json",
+  "clasificacion_auxiliar": {
+    "diagnostico": "resultados/diagnostico_auxiliar_clasificacion.json",
+    "batch_size": 16,
+    "coeficiente_perdida": 0.5
+  },
+  "postprocesamiento": "componentes_solo_contenido_real_v2",
+  "cobertura_minima": 0.015625,
+  "semilla": 42,
+  "epocas": 48,
+  "min_epocas": 32,
+  "paciencia": 10,
+  "batch_size": 8,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 2,
+  "precision_mixta_cuda": true,
+  "umbral_evaluacion": 0.05,
+  "umbral_visualizacion": 0.35,
+  "area_minima_celdas": 2,
+  "evaluar_test": false
+}

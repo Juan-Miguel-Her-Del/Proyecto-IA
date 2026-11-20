@@ -1,0 +1,538 @@
+{
+  "val_reproducida": true,
+  "imagenes_val": 610,
+  "modelos": {
+    "clasificador_piloto_v1": {
+      "metricas": {
+        "accuracy": 0.7065573770491803,
+        "f1_macro": 0.708818899678223,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.531578947368421,
+            "recall": 0.7651515151515151,
+            "f1": 0.6273291925465838,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6891891891891891,
+            "recall": 0.6375,
+            "f1": 0.6623376623376622,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.78125,
+            "recall": 0.7142857142857143,
+            "f1": 0.7462686567164178,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.6956521739130435,
+            "recall": 0.676056338028169,
+            "f1": 0.6857142857142857,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.7604166666666666,
+            "recall": 0.5615384615384615,
+            "f1": 0.6460176991150441,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.9230769230769231,
+            "recall": 0.8503937007874016,
+            "f1": 0.8852459016393444,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            101,
+            3,
+            6,
+            10,
+            9,
+            3
+          ],
+          [
+            18,
+            51,
+            3,
+            0,
+            7,
+            1
+          ],
+          [
+            11,
+            4,
+            50,
+            3,
+            0,
+            2
+          ],
+          [
+            14,
+            2,
+            2,
+            48,
+            3,
+            2
+          ],
+          [
+            38,
+            14,
+            1,
+            3,
+            73,
+            1
+          ],
+          [
+            8,
+            0,
+            2,
+            5,
+            4,
+            108
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ]
+      },
+      "sha256_checkpoint": "9c3ded5afb82ba04f366e85178ff4ac4a591d186212f3350de2d34f629b0cd2f",
+      "epoca": 14,
+      "sha256_val": "0318a10bf9035c620ac12c935aa84d85bc8f2c64a35af581e8e8bbbb9c6f5dab"
+    },
+    "clasificador_v2_coseno80": {
+      "metricas": {
+        "accuracy": 0.7950819672131147,
+        "f1_macro": 0.7844753747372746,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.6754966887417219,
+            "recall": 0.7727272727272727,
+            "f1": 0.7208480565371024,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.8166666666666667,
+            "recall": 0.6125,
+            "f1": 0.7000000000000001,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.8387096774193549,
+            "recall": 0.7428571428571429,
+            "f1": 0.787878787878788,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.8135593220338984,
+            "recall": 0.676056338028169,
+            "f1": 0.7384615384615385,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.72,
+            "recall": 0.8307692307692308,
+            "f1": 0.7714285714285715,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.984375,
+            "recall": 0.9921259842519685,
+            "f1": 0.988235294117647,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            102,
+            1,
+            2,
+            6,
+            20,
+            1
+          ],
+          [
+            16,
+            49,
+            5,
+            0,
+            10,
+            0
+          ],
+          [
+            11,
+            2,
+            52,
+            3,
+            2,
+            0
+          ],
+          [
+            10,
+            1,
+            2,
+            48,
+            9,
+            1
+          ],
+          [
+            12,
+            7,
+            1,
+            2,
+            108,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            126
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ]
+      },
+      "sha256_checkpoint": "0aaa36bb54318dfacfed3d9c4ce88f71594b61cf5f8d4b22ba35da2ea1ed5ef6",
+      "epoca": 53,
+      "sha256_val": "0318a10bf9035c620ac12c935aa84d85bc8f2c64a35af581e8e8bbbb9c6f5dab"
+    },
+    "clasificador_v3_regularizado": {
+      "metricas": {
+        "accuracy": 0.8573770491803279,
+        "f1_macro": 0.8566456188341559,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.8403361344537815,
+            "recall": 0.7575757575757576,
+            "f1": 0.796812749003984,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.8607594936708861,
+            "recall": 0.85,
+            "f1": 0.8553459119496856,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.8888888888888888,
+            "recall": 0.8,
+            "f1": 0.8421052631578948,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.8227848101265823,
+            "recall": 0.9154929577464789,
+            "f1": 0.8666666666666667,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.782608695652174,
+            "recall": 0.8307692307692308,
+            "f1": 0.8059701492537313,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.9545454545454546,
+            "recall": 0.9921259842519685,
+            "f1": 0.9729729729729729,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            100,
+            3,
+            1,
+            8,
+            19,
+            1
+          ],
+          [
+            4,
+            68,
+            3,
+            0,
+            5,
+            0
+          ],
+          [
+            7,
+            1,
+            56,
+            2,
+            2,
+            2
+          ],
+          [
+            1,
+            1,
+            0,
+            65,
+            4,
+            0
+          ],
+          [
+            7,
+            6,
+            2,
+            4,
+            108,
+            3
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            126
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ]
+      },
+      "sha256_checkpoint": "0bb9fb2ffdad655cd3fa30e27ae66254e02b1280e11fe4b7eaa8284e6c81aed4",
+      "epoca": 92,
+      "sha256_val": "0318a10bf9035c620ac12c935aa84d85bc8f2c64a35af581e8e8bbbb9c6f5dab"
+    }
+  },
+  "seleccionado_por_f1": "clasificador_v3_regularizado",
+  "errores_anteriores_corregidos": 118,
+  "nuevos_errores": 26,
+  "errores_compartidos": 61,
+  "ids_corregidos": [
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_103.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_171.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_432.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_435.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_62.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_67.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_111.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_112.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_113.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_114.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_115.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_116.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_117.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_144.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_146.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_162.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_163.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_168.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_282.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_284.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_342.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_346.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_349.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_131.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_133.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_134.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_135.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_190.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_192.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_278.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_292.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_295.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_298.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_370.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_379.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_74.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_75.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_78.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_79.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_82.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_87.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_150.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_151.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_152.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_182.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_242.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_245.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_247.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_248.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_249.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_260.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_261.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_265.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_266.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_390.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_394.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_395.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_396.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_528.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_529.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_560.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_561.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_564.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_565.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_566.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_567.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_569.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_680.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_681.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_682.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_683.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_684.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_686.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_687.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_688.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_689.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_770.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_771.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_772.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_774.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_779.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_130.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_133.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_136.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_137.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_138.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_139.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_195.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_261.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_264.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_266.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_269.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_365.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_367.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_380.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_381.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_431.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_440.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_441.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_442.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_444.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_115.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_118.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_171.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_250.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_282.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_287.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_288.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_358.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_552.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_554.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_634.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_639.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_647.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_823.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_870.jpg",
+    "realwaste:realwaste-main/RealWaste/Vegetation/Vegetation_131.jpg",
+    "realwaste:realwaste-main/RealWaste/Vegetation/Vegetation_167.jpg"
+  ],
+  "ids_nuevos_errores": [
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_118.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_371.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_157.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_180.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_420.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_520.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_521.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_190.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_386.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_437.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_142.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_143.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_144.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_170.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_176.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_224.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_254.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_256.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_258.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_280.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_284.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_353.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_550.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_553.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_834.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_921.jpg"
+  ],
+  "ids_errores_compartidos": [
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_100.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_104.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_105.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_172.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_173.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_174.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_175.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_176.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_177.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_178.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_430.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_431.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_449.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_63.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_130.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_290.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_297.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_420.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_84.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_155.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_156.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_159.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_181.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_183.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_240.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_241.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_243.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_244.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_262.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_263.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_264.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_398.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_409.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_522.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_562.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_563.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_260.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_262.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_263.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_385.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_430.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_432.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_433.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_435.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_436.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_141.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_226.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_252.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_253.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_281.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_283.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_285.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_286.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_289.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_350.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_351.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_352.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_355.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_555.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_558.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_559.jpg"
+  ],
+  "test_evaluado": false,
+  "limite": "Misma validación usada para seleccionar modelos; no evaluación independiente."
+}

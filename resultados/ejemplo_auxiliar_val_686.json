@@ -1,0 +1,32 @@
+{
+  "origen": "detector_transformer_propio_piloto_imagen_real",
+  "imagen": "datos\\originales\\taco\\imagenes\\batch_2\\000000.JPG",
+  "fecha_utc": "2026-11-20T01:09:33.088609+00:00",
+  "modelo": "EcoWasteFormer-DetMapas piloto",
+  "epoca_checkpoint": 16,
+  "umbral_puntuacion": 0.35,
+  "checkpoint": "C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\checkpoints\\detector_mapas_v6_auxiliar_mejor.pt",
+  "estado_detector": "experimental_validacion_insuficiente",
+  "map50_validacion_checkpoint": 0.012381607144087455,
+  "map50_validacion_checkpoint_modo": "mapas_o_cajas_directos",
+  "fuente_supervision": "poligonos",
+  "postprocesamiento": "componentes_solo_contenido_real_v2",
+  "formulacion": "softmax7",
+  "modo_inferencia": "mapas_o_cajas_directos",
+  "coordenadas": "xyxy_pixeles_imagen_con_orientacion_corregida",
+  "ancho": 2448,
+  "alto": 3264,
+  "detecciones": [
+    {
+      "material": "plastico",
+      "puntuacion": 0.5015592575073242,
+      "bbox_xyxy": [
+        952.0,
+        1088.0,
+        1496.0,
+        2040.0
+      ]
+    }
+  ],
+  "limite": "Prototipo con resultados limitados. La puntuación no está calibrada y no demuestra limpieza o aprovechabilidad."
+}

@@ -1,0 +1,76 @@
+{
+  "fecha_utc": "2026-11-19T21:38:55.368452+00:00",
+  "aprobada": true,
+  "semilla": 42,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "parametros": 629382,
+  "configuracion": {
+    "imagen": 224,
+    "patch": 16,
+    "dimension": 128,
+    "bloques": 4,
+    "cabezas": 4,
+    "mlp": 256,
+    "clases": 6
+  },
+  "imagenes": 18,
+  "por_clase": 3,
+  "ids_solo_train": [
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_292.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_167.jpg",
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_497.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_23.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_22.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_172.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_155.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_455.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_148.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_393.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_113.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_112.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_223.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_435.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_449.jpg",
+    "realwaste:realwaste-main/RealWaste/Vegetation/Vegetation_421.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_132.jpg",
+    "realwaste:realwaste-main/RealWaste/Vegetation/Vegetation_87.jpg"
+  ],
+  "loss_inicial": 1.8347282409667969,
+  "historial": [
+    {
+      "paso": 10,
+      "loss": 1.205512523651123,
+      "accuracy": 0.5
+    },
+    {
+      "paso": 20,
+      "loss": 0.5493035316467285,
+      "accuracy": 0.8333333134651184
+    },
+    {
+      "paso": 30,
+      "loss": 0.20461849868297577,
+      "accuracy": 0.944444477558136
+    },
+    {
+      "paso": 40,
+      "loss": 0.036459021270275116,
+      "accuracy": 1.0
+    },
+    {
+      "paso": 50,
+      "loss": 0.008633643388748169,
+      "accuracy": 1.0
+    },
+    {
+      "paso": 60,
+      "loss": 0.004667183849960566,
+      "accuracy": 1.0
+    }
+  ],
+  "duracion_segundos": 2.2235126000014134,
+  "vram_pico_asignada_bytes": 143243776,
+  "precision_prueba": "FP32",
+  "test_evaluado": false,
+  "limite": "Memorizar estas imágenes prueba capacidad de ajuste, no calidad en imágenes nuevas. Los pesos de esta prueba no se reutilizan en el piloto."
+}

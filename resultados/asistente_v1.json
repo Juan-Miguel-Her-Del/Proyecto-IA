@@ -1,0 +1,674 @@
+{
+  "estado": "prototipo_entrenado_evaluado_en_corpus_inicial",
+  "semilla": 42,
+  "dispositivo": "cuda",
+  "torch": "2.14.1+cu126",
+  "pesos_externos": false,
+  "parametros": 88710,
+  "vocabulario": 332,
+  "epocas_ejecutadas": 48,
+  "mejor_epoca_por_val": 23,
+  "umbral_por_val": 0.65,
+  "duracion_segundos": 10.21481030000723,
+  "sha256_corpus": {
+    "train": "b0ddd5ccaadc8e6de2f14bf2e0c0e94191ee32829eec30d53b857a10f09a262d",
+    "val": "f83ac4dee025e6b666c8bb953af3425c12d30cef71ef6894bf0c0b51bc11698c",
+    "test": "bb856e77f10e2bc7d38705191a1609c109931d2611dd49536158af4e4afc7f0e"
+  },
+  "conteos": {
+    "train": 432,
+    "val": 36,
+    "test": 36
+  },
+  "validacion": {
+    "accuracy": 0.6666666666666666,
+    "f1_macro": 0.673397435897436,
+    "por_clase": {
+      "resumen": {
+        "precision": 0.5,
+        "recall": 0.8333333333333334,
+        "f1": 0.625
+      },
+      "material": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "separacion": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153
+      },
+      "preparacion": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "incertidumbre": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "fuera_de_alcance": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      }
+    },
+    "matriz_confusion": [
+      [
+        5,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        4,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0,
+        3
+      ]
+    ],
+    "orden_clases": [
+      "resumen",
+      "material",
+      "separacion",
+      "preparacion",
+      "incertidumbre",
+      "fuera_de_alcance"
+    ]
+  },
+  "test": {
+    "accuracy": 0.5833333333333334,
+    "f1_macro": 0.569884364002011,
+    "por_clase": {
+      "resumen": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "material": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153
+      },
+      "separacion": {
+        "precision": 0.36363636363636365,
+        "recall": 0.6666666666666666,
+        "f1": 0.4705882352941177
+      },
+      "preparacion": {
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "incertidumbre": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      },
+      "fuera_de_alcance": {
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857
+      }
+    },
+    "matriz_confusion": [
+      [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        4,
+        0,
+        0,
+        1
+      ]
+    ],
+    "orden_clases": [
+      "resumen",
+      "material",
+      "separacion",
+      "preparacion",
+      "incertidumbre",
+      "fuera_de_alcance"
+    ],
+    "cobertura_con_abstencion": 0.6666666666666666,
+    "accuracy_aceptadas": 0.6666666666666666
+  },
+  "ejemplos_test": [
+    {
+      "pregunta": "Recuenta lo que aparece en el último fotograma",
+      "real": "resumen",
+      "predicha": "resumen",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Qué ha identificado el detector en esta foto?",
+      "real": "resumen",
+      "predicha": "resumen",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Quiero consultar las detecciones del video",
+      "real": "resumen",
+      "predicha": "resumen",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Organiza el resultado por tipo y cantidad",
+      "real": "resumen",
+      "predicha": "resumen",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Cuál es el inventario que obtuviste?",
+      "real": "resumen",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Dame una visión general de los residuos encontrados",
+      "real": "resumen",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Con qué material está etiquetado lo que apareció?",
+      "real": "material",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Quisiera conocer la categoría del residuo identificado",
+      "real": "material",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Este objeto pertenece a los orgánicos?",
+      "real": "material",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Interpreta el nombre de material mostrado",
+      "real": "material",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Aclara la clasificación que realizó la cámara",
+      "real": "material",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿El sistema dice que esto es cartón?",
+      "real": "material",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Debo usar la bolsa verde para este objeto?",
+      "real": "separacion",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Necesito elegir el contenedor para lo detectado",
+      "real": "separacion",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Esto se deposita en el recipiente blanco?",
+      "real": "separacion",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Recomiéndame la separación para este material",
+      "real": "separacion",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Lo junto con el reciclaje o con la basura ordinaria?",
+      "real": "separacion",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Indica el destino adecuado del desecho identificado",
+      "real": "separacion",
+      "predicha": "preparacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Qué pasos previos necesita el envase para su entrega?",
+      "real": "preparacion",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Enséñame a dejar el residuo limpio y seco",
+      "real": "preparacion",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Retiro la comida antes de llevarlo a reciclar?",
+      "real": "preparacion",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿En qué estado debo entregar el material aprovechable?",
+      "real": "preparacion",
+      "predicha": "preparacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Quiero saber si debo limpiar la lata",
+      "real": "preparacion",
+      "predicha": "preparacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Cómo elimino los restos del recipiente detectado?",
+      "real": "preparacion",
+      "predicha": "separacion",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿Puedo estar completamente seguro de esta clasificación?",
+      "real": "incertidumbre",
+      "predicha": "incertidumbre",
+      "aceptada": true
+    },
+    {
+      "pregunta": "¿La puntuación del modelo asegura el material real?",
+      "real": "incertidumbre",
+      "predicha": "resumen",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Cuéntame las limitaciones de lo que predijo la cámara",
+      "real": "incertidumbre",
+      "predicha": "material",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Qué datos no demuestra esta foto?",
+      "real": "incertidumbre",
+      "predicha": "incertidumbre",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Es posible que el sistema haya confundido el residuo?",
+      "real": "incertidumbre",
+      "predicha": "material",
+      "aceptada": true
+    },
+    {
+      "pregunta": "Ayúdame a interpretar la duda de la predicción",
+      "real": "incertidumbre",
+      "predicha": "incertidumbre",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Cómo consigo pasajes para viajar a otra ciudad?",
+      "real": "fuera_de_alcance",
+      "predicha": "separacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Ayúdame a elegir una receta para el desayuno",
+      "real": "fuera_de_alcance",
+      "predicha": "separacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Qué libro de aventuras recomiendas?",
+      "real": "fuera_de_alcance",
+      "predicha": "separacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Explícame cómo instalar un juego",
+      "real": "fuera_de_alcance",
+      "predicha": "separacion",
+      "aceptada": false
+    },
+    {
+      "pregunta": "¿Qué temperatura hay hoy en Bogotá?",
+      "real": "fuera_de_alcance",
+      "predicha": "resumen",
+      "aceptada": false
+    },
+    {
+      "pregunta": "Escribe un mensaje para felicitar a mi amiga",
+      "real": "fuera_de_alcance",
+      "predicha": "fuera_de_alcance",
+      "aceptada": true
+    }
+  ],
+  "historial": [
+    {
+      "epoca": 1,
+      "loss_train": 1.8122529365398266,
+      "f1_val": 0.1373873873873874
+    },
+    {
+      "epoca": 2,
+      "loss_train": 1.7550719049241807,
+      "f1_val": 0.15610599078341014
+    },
+    {
+      "epoca": 3,
+      "loss_train": 1.6896235324718334,
+      "f1_val": 0.3020290625553783
+    },
+    {
+      "epoca": 4,
+      "loss_train": 1.5112583107418485,
+      "f1_val": 0.30175248727880305
+    },
+    {
+      "epoca": 5,
+      "loss_train": 1.2001391075275563,
+      "f1_val": 0.5207847707847707
+    },
+    {
+      "epoca": 6,
+      "loss_train": 0.8276713600865117,
+      "f1_val": 0.5037019353195823
+    },
+    {
+      "epoca": 7,
+      "loss_train": 0.5111685704301905,
+      "f1_val": 0.5056277056277056
+    },
+    {
+      "epoca": 8,
+      "loss_train": 0.3270352394492538,
+      "f1_val": 0.6099567099567099
+    },
+    {
+      "epoca": 9,
+      "loss_train": 0.2743293278747135,
+      "f1_val": 0.6406166932482721
+    },
+    {
+      "epoca": 10,
+      "loss_train": 0.2627343965901269,
+      "f1_val": 0.6062530062530063
+    },
+    {
+      "epoca": 11,
+      "loss_train": 0.25776767289197006,
+      "f1_val": 0.6403138528138528
+    },
+    {
+      "epoca": 12,
+      "loss_train": 0.25470898769519945,
+      "f1_val": 0.5700757575757576
+    },
+    {
+      "epoca": 13,
+      "loss_train": 0.2526775609563898,
+      "f1_val": 0.5861344537815126
+    },
+    {
+      "epoca": 14,
+      "loss_train": 0.2512760405187254,
+      "f1_val": 0.6345543345543346
+    },
+    {
+      "epoca": 15,
+      "loss_train": 0.25010095812656263,
+      "f1_val": 0.5924908424908425
+    },
+    {
+      "epoca": 16,
+      "loss_train": 0.24917326591632985,
+      "f1_val": 0.5962301587301587
+    },
+    {
+      "epoca": 17,
+      "loss_train": 0.24834925708947359,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 18,
+      "loss_train": 0.24760441758014537,
+      "f1_val": 0.6382936507936509
+    },
+    {
+      "epoca": 19,
+      "loss_train": 0.2469474297982675,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 20,
+      "loss_train": 0.24639844287324836,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 21,
+      "loss_train": 0.24590942705119098,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 22,
+      "loss_train": 0.24546858778706304,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 23,
+      "loss_train": 0.2450932772071273,
+      "f1_val": 0.673397435897436
+    },
+    {
+      "epoca": 24,
+      "loss_train": 0.24472941347846278,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 25,
+      "loss_train": 0.24440956833185973,
+      "f1_val": 0.673397435897436
+    },
+    {
+      "epoca": 26,
+      "loss_train": 0.24410491961020012,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 27,
+      "loss_train": 0.24384742754477043,
+      "f1_val": 0.673397435897436
+    },
+    {
+      "epoca": 28,
+      "loss_train": 0.2435962458451589,
+      "f1_val": 0.673397435897436
+    },
+    {
+      "epoca": 29,
+      "loss_train": 0.2433803881759997,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 30,
+      "loss_train": 0.2431734800338745,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 31,
+      "loss_train": 0.24298359398488645,
+      "f1_val": 0.673397435897436
+    },
+    {
+      "epoca": 32,
+      "loss_train": 0.24281321741916514,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 33,
+      "loss_train": 0.24265564095090936,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 34,
+      "loss_train": 0.24252547544461708,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 35,
+      "loss_train": 0.2423908257925952,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 36,
+      "loss_train": 0.2422612993805497,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 37,
+      "loss_train": 0.24214794128029435,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 38,
+      "loss_train": 0.24202659395005968,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 39,
+      "loss_train": 0.24193333199730627,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 40,
+      "loss_train": 0.24184391123277169,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 41,
+      "loss_train": 0.24176147469767817,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 42,
+      "loss_train": 0.24167870371430009,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 43,
+      "loss_train": 0.2416073602658731,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 44,
+      "loss_train": 0.24154038065009648,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 45,
+      "loss_train": 0.24147477525251884,
+      "f1_val": 0.6696581196581196
+    },
+    {
+      "epoca": 46,
+      "loss_train": 0.2414149553687484,
+      "f1_val": 0.669047619047619
+    },
+    {
+      "epoca": 47,
+      "loss_train": 0.24135492576493156,
+      "f1_val": 0.669047619047619
+    },
+    {
+      "epoca": 48,
+      "loss_train": 0.24130744956157826,
+      "f1_val": 0.669047619047619
+    }
+  ],
+  "limitacion": "Corpus inicial pequeño con asistencia IA, no validado con usuarios independientes. Estas métricas no miden detección visual ni garantizan generalización lingüística."
+}

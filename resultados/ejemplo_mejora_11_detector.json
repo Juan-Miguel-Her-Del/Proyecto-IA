@@ -1,0 +1,127 @@
+{
+  "origen": "detector_transformer_propio_piloto_imagen_real",
+  "imagen": "datos\\originales\\taco\\imagenes\\batch_2\\000000.JPG",
+  "fecha_utc": "2026-11-20T13:48:56.215045+00:00",
+  "modelo": "EcoWasteFormer-DetMapas piloto",
+  "epoca_checkpoint": 19,
+  "umbral_puntuacion": 0.35,
+  "checkpoint": "C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\checkpoints\\detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "estado_detector": "experimental_validacion_insuficiente",
+  "map50_validacion_checkpoint": null,
+  "mejor_map50_historial_entrenamiento": 0.024462080348541238,
+  "map50_validacion_inferencia_seleccionada": 0.029122882261380503,
+  "map50_validacion_checkpoint_modo": "mapas_o_cajas_directos",
+  "fuente_supervision": "poligonos",
+  "postprocesamiento": "componentes_solo_contenido_real_v2",
+  "formulacion": "softmax7",
+  "modo_inferencia": "completa_cuatro_zonas065_bordes_nms050_v1",
+  "vistas_procesadas": 5,
+  "umbral_formacion_propuestas": 0.05,
+  "descartar_clase_nula": null,
+  "coordenadas": "xyxy_pixeles_imagen_con_orientacion_corregida",
+  "ancho": 2448,
+  "alto": 3264,
+  "detecciones": [
+    {
+      "material": "plastico",
+      "puntuacion": 0.49305689334869385,
+      "bbox_xyxy": [
+        944.44,
+        1149.42,
+        1475.11,
+        2033.58
+      ]
+    },
+    {
+      "material": "plastico",
+      "puntuacion": 0.49155688285827637,
+      "bbox_xyxy": [
+        884.0,
+        952.0,
+        1768.0,
+        2108.0
+      ]
+    },
+    {
+      "material": "plastico",
+      "puntuacion": 0.4655425250530243,
+      "bbox_xyxy": [
+        1430.89,
+        1061.0,
+        1563.56,
+        1237.83
+      ]
+    },
+    {
+      "material": "plastico",
+      "puntuacion": 0.4371238350868225,
+      "bbox_xyxy": [
+        1563.56,
+        1237.83,
+        1652.0,
+        1282.04
+      ]
+    },
+    {
+      "material": "metal",
+      "puntuacion": 0.42174002528190613,
+      "bbox_xyxy": [
+        1020.0,
+        1156.0,
+        1156.0,
+        1292.0
+      ]
+    },
+    {
+      "material": "plastico",
+      "puntuacion": 0.4046265482902527,
+      "bbox_xyxy": [
+        1238.22,
+        1061.0,
+        1370.89,
+        1149.42
+      ]
+    },
+    {
+      "material": "metal",
+      "puntuacion": 0.39873063564300537,
+      "bbox_xyxy": [
+        952.0,
+        1360.0,
+        1088.0,
+        1564.0
+      ]
+    },
+    {
+      "material": "plastico",
+      "puntuacion": 0.37124568223953247,
+      "bbox_xyxy": [
+        1370.89,
+        1679.92,
+        1459.33,
+        1856.75
+      ]
+    },
+    {
+      "material": "metal",
+      "puntuacion": 0.36797189712524414,
+      "bbox_xyxy": [
+        972.89,
+        1407.25,
+        1061.33,
+        1495.67
+      ]
+    },
+    {
+      "material": "papel",
+      "puntuacion": 0.3623988926410675,
+      "bbox_xyxy": [
+        1149.78,
+        1186.21,
+        1326.67,
+        1363.04
+      ]
+    }
+  ],
+  "limite": "Prototipo con resultados limitados. La puntuación no está calibrada y no demuestra limpieza o aprovechabilidad."
+}

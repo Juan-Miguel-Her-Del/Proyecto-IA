@@ -1,0 +1,24 @@
+{
+  "nombre": "clasificador_v3_regularizado",
+  "semilla": 42,
+  "epocas": 100,
+  "min_epocas": 55,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "programacion_lr": "coseno",
+  "fraccion_lr_final": 0.1,
+  "weight_decay": 0.03,
+  "warmup_epocas": 5,
+  "label_smoothing": 0.05,
+  "mixup_alpha": 0.2,
+  "pesos_clase": "inverso_raiz_conteo_solo_train",
+  "precision_mixta_cuda": true,
+  "gradient_clip": 1.0,
+  "paciencia": 20,
+  "aumentos_solo_train": {
+    "flip_horizontal": 0.5, "brillo": [0.85, 1.15], "contraste": [0.85, 1.15],
+    "afin": {"grados": 10, "escala": [0.9, 1.1], "traslacion": 0.05}
+  },
+  "seleccion_checkpoint": "f1_macro_val",
+  "evaluar_test": false
+}

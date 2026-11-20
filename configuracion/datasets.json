@@ -1,0 +1,47 @@
+{
+  "semilla": 42,
+  "particiones": {"train": 0.7, "val": 0.15, "test": 0.15},
+  "clases": ["plastico", "papel", "carton", "vidrio", "metal", "organico"],
+  "realwaste": {
+    "Plastic": "plastico", "Paper": "papel", "Cardboard": "carton",
+    "Glass": "vidrio", "Metal": "metal", "Food Organics": "organico", "Vegetation": "organico"
+  },
+  "taco": {
+    "Aluminium foil": "metal", "Other plastic bottle": "plastico", "Clear plastic bottle": "plastico",
+    "Glass bottle": "vidrio", "Plastic bottle cap": "plastico", "Metal bottle cap": "metal",
+    "Broken glass": "vidrio", "Food Can": "metal", "Drink can": "metal",
+    "Toilet tube": "carton", "Other carton": "carton", "Egg carton": "carton",
+    "Corrugated carton": "carton", "Meal carton": "carton", "Pizza box": "carton",
+    "Disposable plastic cup": "plastico", "Foam cup": "plastico", "Glass cup": "vidrio",
+    "Other plastic cup": "plastico", "Food waste": "organico", "Glass jar": "vidrio",
+    "Plastic lid": "plastico", "Metal lid": "metal", "Other plastic": "plastico",
+    "Magazine paper": "papel", "Tissues": "papel", "Wrapping paper": "papel", "Normal paper": "papel",
+    "Paper bag": "papel", "Plastic film": "plastico", "Six pack rings": "plastico", "Garbage bag": "plastico",
+    "Other plastic wrapper": "plastico", "Single-use carrier bag": "plastico", "Polypropylene bag": "plastico",
+    "Spread tub": "plastico", "Tupperware": "plastico", "Disposable food container": "plastico",
+    "Foam food container": "plastico", "Other plastic container": "plastico", "Plastic glooves": "plastico",
+    "Plastic utensils": "plastico", "Pop tab": "metal", "Scrap metal": "metal",
+    "Plastic straw": "plastico", "Paper straw": "papel", "Styrofoam piece": "plastico"
+  },
+  "categorias_taco_excluidas": {
+    "Battery": "residuo especial fuera de las seis clases",
+    "Aluminium blister pack": "envase compuesto; material dominante no verificado",
+    "Carded blister pack": "mezcla carton/plastico",
+    "Aerosol": "requiere identificar contenido y manejo especial",
+    "Drink carton": "envase multicapa, no equivale a carton simple",
+    "Paper cup": "posible recubrimiento plastico no determinado",
+    "Plastified paper bag": "material compuesto",
+    "Crisp packet": "posible laminado multicapa",
+    "Rope & strings": "material no especificado",
+    "Shoe": "mezcla de materiales fuera de las seis clases",
+    "Squeezable tube": "material no especificado o multicapa",
+    "Unlabeled litter": "material ambiguo",
+    "Cigarette": "residuo compuesto fuera de las seis clases"
+  },
+  "notas": [
+    "Tissues y envases alimentarios se mapean por material; su aprovechabilidad NO se deduce de esta etiqueta.",
+    "Las regiones de categorias excluidas se preservan como ignore_regions; el futuro loader debe enmascararlas.",
+    "No se fabrican cajas para las imagenes de clasificacion.",
+    "Agrupacion de similitud no sustituye una prueba externa con nuevas escenas."
+  ]
+}

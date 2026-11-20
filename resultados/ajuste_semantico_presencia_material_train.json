@@ -1,0 +1,542 @@
+{
+  "test_evaluado": false,
+  "seleccion_recortes": [
+    "taco:1193/ancla3685/escala3.5",
+    "taco:294/ancla891/escala2",
+    "taco:64/ancla153/escala2",
+    "taco:1303/ancla4047/escala3.5",
+    "taco:406/ancla1438/escala2",
+    "taco:387/ancla1360/escala3.5",
+    "taco:365/ancla1302/escala2",
+    "taco:326/ancla1015/escala3.5",
+    "taco:1295/ancla3994/escala2",
+    "taco:280/ancla866/escala3.5",
+    "taco:1197/ancla3695/escala3.5",
+    "taco:1246/ancla3892/escala3.5",
+    "taco:1016/ancla3027/escala3.5",
+    "taco:89/ancla236/escala2",
+    "taco:1064/ancla3161/escala3.5",
+    "taco:642/ancla2087/escala2",
+    "taco:54/ancla138/escala2",
+    "taco:41/ancla105/escala3.5",
+    "taco:89/ancla236/escala3.5",
+    "taco:340/ancla1121/escala3.5",
+    "taco:241/ancla781/escala3.5",
+    "taco:1216/ancla3781/escala2",
+    "taco:48/ancla131/escala3.5",
+    "taco:1364/ancla4362/escala3.5",
+    "taco:213/ancla721/escala3.5",
+    "taco:1344/ancla4287/escala3.5",
+    "taco:1064/ancla3160/escala2",
+    "taco:232/ancla770/escala2",
+    "taco:1119/ancla3417/escala3.5",
+    "taco:387/ancla1359/escala2",
+    "taco:9/ancla22/escala3.5",
+    "taco:1365/ancla4384/escala2",
+    "taco:598/ancla1866/escala3.5",
+    "taco:1365/ancla4368/escala3.5",
+    "taco:1321/ancla4123/escala2",
+    "taco:1044/ancla3105/escala2",
+    "taco:637/ancla2079/escala2",
+    "taco:598/ancla1865/escala3.5",
+    "taco:617/ancla1946/escala2",
+    "taco:1365/ancla4385/escala2",
+    "taco:522/ancla1734/escala2",
+    "taco:46/ancla123/escala2",
+    "taco:45/ancla118/escala2",
+    "taco:601/ancla1885/escala3.5",
+    "taco:45/ancla120/escala3.5",
+    "taco:570/ancla1804/escala3.5",
+    "taco:538/ancla1760/escala2",
+    "taco:1148/ancla3526/escala2",
+    "taco:455/ancla1605/escala2",
+    "taco:27/ancla75/escala2",
+    "taco:81/ancla204/escala3.5",
+    "taco:92/ancla244/escala2",
+    "taco:68/ancla163/escala3.5",
+    "taco:72/ancla171/escala3.5",
+    "taco:68/ancla163/escala2",
+    "taco:81/ancla203/escala2",
+    "taco:72/ancla171/escala2",
+    "taco:81/ancla204/escala2",
+    "taco:92/ancla244/escala3.5",
+    "taco:81/ancla203/escala3.5"
+  ],
+  "limites": [
+    "Las 964 escenas completas son train, no generalización.",
+    "Los 60 recortes se seleccionan por clase de ancla; no estiman la distribución natural.",
+    "IoU semántico no equivale a AP de cajas."
+  ],
+  "experimentos": {
+    "detector_mapas_poligonos_v2": {
+      "sha256_checkpoint": "5fbc3e88bd95983ea6d7a4f65dc4feea019e760d284b3b6a8d69dbf8adb8e8a7",
+      "mediciones": {
+        "completas_train": {
+          "matriz_confusion_filas_gt": [
+            [
+              1458088,
+              24092,
+              0,
+              4539,
+              0,
+              1079,
+              0
+            ],
+            [
+              36249,
+              37465,
+              0,
+              1109,
+              0,
+              818,
+              0
+            ],
+            [
+              2741,
+              3190,
+              0,
+              165,
+              0,
+              12,
+              0
+            ],
+            [
+              7018,
+              4785,
+              0,
+              1776,
+              0,
+              49,
+              0
+            ],
+            [
+              3129,
+              1002,
+              0,
+              21,
+              0,
+              47,
+              0
+            ],
+            [
+              5686,
+              7717,
+              0,
+              335,
+              6,
+              444,
+              0
+            ],
+            [
+              25,
+              50,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "por_clase": {
+            "fondo": {
+              "celdas_gt": 1487798,
+              "celdas_predichas": 1512936,
+              "recall": 0.98003089427948,
+              "iou": 0.9451863765716553
+            },
+            "plastico": {
+              "celdas_gt": 75641,
+              "celdas_predichas": 78301,
+              "recall": 0.49530017375946045,
+              "iou": 0.32165148854255676
+            },
+            "papel": {
+              "celdas_gt": 6108,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "carton": {
+              "celdas_gt": 13628,
+              "celdas_predichas": 7946,
+              "recall": 0.13031992316246033,
+              "iou": 0.08970603346824646
+            },
+            "vidrio": {
+              "celdas_gt": 4199,
+              "celdas_predichas": 6,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "metal": {
+              "celdas_gt": 14188,
+              "celdas_predichas": 2449,
+              "recall": 0.03129405155777931,
+              "iou": 0.027419256046414375
+            },
+            "organico": {
+              "celdas_gt": 76,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            }
+          },
+          "accuracy_solo_foreground_gt": 0.3486033082008362,
+          "accuracy_material_condicionada_a_celdas_GT": 0.6717849613492621,
+          "foreground_gt_predicho_fondo": 0.48179900646209717,
+          "iou_macro_seis_materiales": 0.07312946300953627
+        },
+        "recortes_train_estratificados": {
+          "matriz_confusion_filas_gt": [
+            [
+              96186,
+              1549,
+              0,
+              163,
+              0,
+              108,
+              0
+            ],
+            [
+              5220,
+              1228,
+              0,
+              67,
+              0,
+              4,
+              0
+            ],
+            [
+              422,
+              1163,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              8344,
+              1069,
+              0,
+              129,
+              0,
+              276,
+              0
+            ],
+            [
+              3938,
+              497,
+              0,
+              323,
+              0,
+              9,
+              0
+            ],
+            [
+              7530,
+              2759,
+              0,
+              106,
+              0,
+              266,
+              0
+            ],
+            [
+              186,
+              188,
+              0,
+              12,
+              0,
+              0,
+              0
+            ]
+          ],
+          "por_clase": {
+            "fondo": {
+              "celdas_gt": 98006,
+              "celdas_predichas": 121826,
+              "recall": 0.9814296960830688,
+              "iou": 0.7779143452644348
+            },
+            "plastico": {
+              "celdas_gt": 6519,
+              "celdas_predichas": 8453,
+              "recall": 0.1883724480867386,
+              "iou": 0.08934807777404785
+            },
+            "papel": {
+              "celdas_gt": 1585,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "carton": {
+              "celdas_gt": 9818,
+              "celdas_predichas": 800,
+              "recall": 0.013139132410287857,
+              "iou": 0.012298598885536194
+            },
+            "vidrio": {
+              "celdas_gt": 4767,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "metal": {
+              "celdas_gt": 10661,
+              "celdas_predichas": 663,
+              "recall": 0.024950755760073662,
+              "iou": 0.024054983630776405
+            },
+            "organico": {
+              "celdas_gt": 386,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            }
+          },
+          "accuracy_solo_foreground_gt": 0.048108845949172974,
+          "accuracy_material_condicionada_a_celdas_GT": 0.22468579558928148,
+          "foreground_gt_predicho_fondo": 0.7600189447402954,
+          "iou_macro_seis_materiales": 0.020950276715060074
+        }
+      }
+    },
+    "detector_mapas_v5_presencia_material": {
+      "sha256_checkpoint": "031591bab4d89b1007c331675a33cdb40000ce56b1feb0e9278b3d52823f4be4",
+      "mediciones": {
+        "completas_train": {
+          "matriz_confusion_filas_gt": [
+            [
+              1371391,
+              103433,
+              0,
+              12967,
+              7,
+              0,
+              0
+            ],
+            [
+              24713,
+              49362,
+              0,
+              1566,
+              0,
+              0,
+              0
+            ],
+            [
+              1910,
+              4015,
+              0,
+              183,
+              0,
+              0,
+              0
+            ],
+            [
+              4551,
+              7257,
+              0,
+              1820,
+              0,
+              0,
+              0
+            ],
+            [
+              2268,
+              1872,
+              0,
+              59,
+              0,
+              0,
+              0
+            ],
+            [
+              3258,
+              10314,
+              0,
+              616,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              70,
+              0,
+              6,
+              0,
+              0,
+              0
+            ]
+          ],
+          "por_clase": {
+            "fondo": {
+              "celdas_gt": 1487798,
+              "celdas_predichas": 1408091,
+              "recall": 0.9217588901519775,
+              "iou": 0.8995689153671265
+            },
+            "plastico": {
+              "celdas_gt": 75641,
+              "celdas_predichas": 176323,
+              "recall": 0.652582585811615,
+              "iou": 0.2436402440071106
+            },
+            "papel": {
+              "celdas_gt": 6108,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "carton": {
+              "celdas_gt": 13628,
+              "celdas_predichas": 17217,
+              "recall": 0.1335485726594925,
+              "iou": 0.06270456314086914
+            },
+            "vidrio": {
+              "celdas_gt": 4199,
+              "celdas_predichas": 7,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "metal": {
+              "celdas_gt": 14188,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "organico": {
+              "celdas_gt": 76,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            }
+          },
+          "accuracy_solo_foreground_gt": 0.44959592819213867,
+          "accuracy_material_condicionada_a_celdas_GT": 0.654734715390021,
+          "foreground_gt_predicho_fondo": 0.3223823010921478,
+          "iou_macro_seis_materiales": 0.05105746785799662
+        },
+        "recortes_train_estratificados": {
+          "matriz_confusion_filas_gt": [
+            [
+              86942,
+              9063,
+              0,
+              1998,
+              3,
+              0,
+              0
+            ],
+            [
+              4139,
+              2240,
+              0,
+              140,
+              0,
+              0,
+              0
+            ],
+            [
+              237,
+              1333,
+              0,
+              15,
+              0,
+              0,
+              0
+            ],
+            [
+              5944,
+              2618,
+              0,
+              1256,
+              0,
+              0,
+              0
+            ],
+            [
+              2689,
+              1759,
+              0,
+              319,
+              0,
+              0,
+              0
+            ],
+            [
+              3891,
+              5970,
+              0,
+              800,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              289,
+              0,
+              97,
+              0,
+              0,
+              0
+            ]
+          ],
+          "por_clase": {
+            "fondo": {
+              "celdas_gt": 98006,
+              "celdas_predichas": 103842,
+              "recall": 0.8871089816093445,
+              "iou": 0.756635844707489
+            },
+            "plastico": {
+              "celdas_gt": 6519,
+              "celdas_predichas": 23272,
+              "recall": 0.3436109721660614,
+              "iou": 0.08130376040935516
+            },
+            "papel": {
+              "celdas_gt": 1585,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "carton": {
+              "celdas_gt": 9818,
+              "celdas_predichas": 4625,
+              "recall": 0.12792830169200897,
+              "iou": 0.09524531662464142
+            },
+            "vidrio": {
+              "celdas_gt": 4767,
+              "celdas_predichas": 3,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "metal": {
+              "celdas_gt": 10661,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            },
+            "organico": {
+              "celdas_gt": 386,
+              "celdas_predichas": 0,
+              "recall": 0.0,
+              "iou": 0.0
+            }
+          },
+          "accuracy_solo_foreground_gt": 0.10362817347049713,
+          "accuracy_material_condicionada_a_celdas_GT": 0.2748399336020868,
+          "foreground_gt_predicho_fondo": 0.5009485483169556,
+          "iou_macro_seis_materiales": 0.029424846172332764
+        }
+      }
+    }
+  }
+}

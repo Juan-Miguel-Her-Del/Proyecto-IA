@@ -1,0 +1,41 @@
+{
+  "fecha_utc": "2026-11-19T20:59:14.466732+00:00",
+  "python": "3.12.6",
+  "ejecutable": "C:\\Users\\JUAN M\\.venvs\\EcoWasteFormer\\Scripts\\python.exe",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "tipo_prueba": "operaciones_sinteticas_sin_modelo_entrenado",
+  "correcto": true,
+  "nvidia_smi": "Thu Nov 19 15:59:14 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 616.56                 KMD Version: 616.56        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4060 ...  WDDM  |   00000000:01:00.0 Off |                  N/A |\n| N/A   37C    P8              2W /  125W |       0MiB /   8188MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+",
+  "paquetes": {
+    "torch": "2.14.1+cu126",
+    "numpy": "2.5.5",
+    "pillow": "13.0.0",
+    "opencv-python": "4.14.0.94",
+    "pyyaml": "6.0.3"
+  },
+  "importaciones": {
+    "numpy": "correcta",
+    "PIL": "correcta",
+    "cv2": "correcta",
+    "yaml": "correcta"
+  },
+  "torch": "2.14.1+cu126",
+  "cuda_runtime_torch": "12.6",
+  "cuda_disponible": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram_total_bytes": 8585216000,
+  "capacidad_cuda": [
+    8,
+    9
+  ],
+  "multiplicacion_gpu_vs_cpu": "correcta",
+  "atencion_forward_backward": "correcta",
+  "forma_atencion": [
+    2,
+    4,
+    64,
+    16
+  ],
+  "pico_memoria_asignada_prueba_bytes": 9083392,
+  "nota_memoria": "Solo mide esta prueba sintética; no estima el entrenamiento completo."
+}

@@ -1,0 +1,66 @@
+{
+  "aprobada": true,
+  "tipo": "consultas_espaciales_asignacion_univoca",
+  "arquitectura": {
+    "consultas": 100,
+    "capas": 2,
+    "dimension": 96,
+    "radio_atencion": 0.15
+  },
+  "parametros": 674129,
+  "sha256_train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+  "sha256_clasificacion_train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+  "ids_taco_train": [
+    "taco:492",
+    "taco:59",
+    "taco:1",
+    "taco:540",
+    "taco:434",
+    "taco:92"
+  ],
+  "historial": [
+    {
+      "paso": 25,
+      "loss": 0.6845992803573608,
+      "accuracy_aux": 1.0,
+      "map50": 1.0,
+      "recall50": 1.0,
+      "precision50": 0.6363636363636364,
+      "objetos_asignados": 7,
+      "loss_clase": 0.12331536412239075,
+      "loss_fondo": 0.03873099386692047,
+      "loss_l1": 0.06026596948504448,
+      "loss_giou": 0.12029429525136948
+    },
+    {
+      "paso": 50,
+      "loss": 0.34127533435821533,
+      "accuracy_aux": 1.0,
+      "map50": 1.0,
+      "recall50": 1.0,
+      "precision50": 0.6363636363636364,
+      "objetos_asignados": 7,
+      "loss_clase": 0.040230121463537216,
+      "loss_fondo": 0.03566349670290947,
+      "loss_l1": 0.029995016753673553,
+      "loss_giou": 0.06661919504404068
+    },
+    {
+      "paso": 75,
+      "loss": 0.2208554744720459,
+      "accuracy_aux": 1.0,
+      "map50": 1.0,
+      "recall50": 1.0,
+      "precision50": 0.7,
+      "objetos_asignados": 7,
+      "loss_clase": 0.02772071585059166,
+      "loss_fondo": 0.03026229701936245,
+      "loss_l1": 0.019332673400640488,
+      "loss_giou": 0.04067011550068855
+    }
+  ],
+  "duracion_segundos": 11.43026560000726,
+  "pesos_reutilizados": false,
+  "test_evaluado": false,
+  "limite": "Memorización de ejemplos fáciles train; no mide generalización. Pesos descartados."
+}

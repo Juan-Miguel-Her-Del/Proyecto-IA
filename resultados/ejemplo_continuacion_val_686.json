@@ -1,0 +1,52 @@
+{
+  "origen": "detector_transformer_propio_piloto_imagen_real",
+  "imagen": "datos\\originales\\taco\\imagenes\\batch_2\\000000.JPG",
+  "fecha_utc": "2026-11-20T05:14:57.997109+00:00",
+  "modelo": "EcoWasteFormer-DetMapas piloto",
+  "epoca_checkpoint": 19,
+  "umbral_puntuacion": 0.35,
+  "checkpoint": "C:\\Users\\JUAN M\\OneDrive\\Desktop\\proyecto final IA\\EcoWasteFormer\\checkpoints\\detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "estado_detector": "experimental_validacion_insuficiente",
+  "map50_validacion_checkpoint": 0.024462080348541238,
+  "map50_validacion_checkpoint_modo": "mapas_o_cajas_directos",
+  "fuente_supervision": "poligonos",
+  "postprocesamiento": "componentes_solo_contenido_real_v2",
+  "formulacion": "softmax7",
+  "modo_inferencia": "mapas_o_cajas_directos",
+  "coordenadas": "xyxy_pixeles_imagen_con_orientacion_corregida",
+  "ancho": 2448,
+  "alto": 3264,
+  "detecciones": [
+    {
+      "material": "plastico",
+      "puntuacion": 0.4941069185733795,
+      "bbox_xyxy": [
+        884.0,
+        1020.0,
+        1768.0,
+        2108.0
+      ]
+    },
+    {
+      "material": "metal",
+      "puntuacion": 0.4216046929359436,
+      "bbox_xyxy": [
+        1020.0,
+        1156.0,
+        1156.0,
+        1292.0
+      ]
+    },
+    {
+      "material": "metal",
+      "puntuacion": 0.39880815148353577,
+      "bbox_xyxy": [
+        952.0,
+        1360.0,
+        1088.0,
+        1564.0
+      ]
+    }
+  ],
+  "limite": "Prototipo con resultados limitados. La puntuación no está calibrada y no demuestra limpieza o aprovechabilidad."
+}

@@ -1,0 +1,20 @@
+{
+  "imagen": "datos\\originales\\realwaste\\realwaste-main\\RealWaste\\Cardboard\\Cardboard_100.jpg",
+  "material_predicho": "vidrio",
+  "categoria_operativa": "inorganico",
+  "puntuacion_no_calibrada": 0.5407067537307739,
+  "probabilidades_modelo": {
+    "plastico": 0.09910286962985992,
+    "papel": 0.028115300461649895,
+    "carton": 0.11685598641633987,
+    "vidrio": 0.5407067537307739,
+    "metal": 0.051119036972522736,
+    "organico": 0.1641000658273697
+  },
+  "modelo": "EcoWasteFormer-Cls experimental",
+  "epoca_checkpoint": 92,
+  "checkpoint": "checkpoints\\clasificador_v3_regularizado_mejor.pt",
+  "f1_macro_validacion_checkpoint": 0.8566456188341559,
+  "alcance": "Clasificación de la imagen completa con un residuo predominante; no localiza ni cuenta objetos.",
+  "limitacion": "Prototipo de seis clases cerradas; no identifica automáticamente objetos fuera de alcance, limpieza o aprovechabilidad."
+}

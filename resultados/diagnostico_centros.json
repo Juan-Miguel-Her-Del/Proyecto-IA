@@ -1,0 +1,94 @@
+{
+  "aprobada": true,
+  "version": "centros_focal_gaussiano_dos_escalas_v1",
+  "arquitectura": {
+    "imagen": 384,
+    "dimension": 96
+  },
+  "parametros": 453762,
+  "historial": [
+    {
+      "paso": 25,
+      "loss": 3.720813274383545,
+      "accuracy_aux": 1.0,
+      "map50": 0.0,
+      "recall50": 0.0,
+      "precision50": 0.0,
+      "objetos_asignados": 7,
+      "loss_calor": 2.706366947719029,
+      "loss_l1": 0.12672477109091623,
+      "loss_giou": 0.19041122709001815
+    },
+    {
+      "paso": 50,
+      "loss": 1.2103393077850342,
+      "accuracy_aux": 1.0,
+      "map50": 0.5,
+      "recall50": 0.42857142857142855,
+      "precision50": 0.75,
+      "objetos_asignados": 7,
+      "loss_calor": 0.9388705662318638,
+      "loss_l1": 0.03000387123652867,
+      "loss_giou": 0.06072465011051723
+    },
+    {
+      "paso": 75,
+      "loss": 0.8713973164558411,
+      "accuracy_aux": 1.0,
+      "map50": 0.777777781089147,
+      "recall50": 0.8571428571428571,
+      "precision50": 0.6666666666666666,
+      "objetos_asignados": 7,
+      "loss_calor": 0.5270389829363141,
+      "loss_l1": 0.03647428325244358,
+      "loss_giou": 0.08099345649991717
+    },
+    {
+      "paso": 100,
+      "loss": 0.3244858384132385,
+      "accuracy_aux": 1.0,
+      "map50": 1.0,
+      "recall50": 1.0,
+      "precision50": 0.7,
+      "objetos_asignados": 7,
+      "loss_calor": 0.1486628566469465,
+      "loss_l1": 0.019856393337249756,
+      "loss_giou": 0.038270490510123115
+    }
+  ],
+  "sha256_train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+  "sha256_clasificacion_train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+  "ids_taco_train": [
+    "taco:492",
+    "taco:59",
+    "taco:1",
+    "taco:540",
+    "taco:434",
+    "taco:92"
+  ],
+  "ids_realwaste_train": [
+    "realwaste:realwaste-main/RealWaste/Plastic/Plastic_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Paper/Paper_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Cardboard/Cardboard_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Glass/Glass_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Metal/Metal_1.jpg",
+    "realwaste:realwaste-main/RealWaste/Food Organics/Food Organics_1.jpg"
+  ],
+  "objetos_train_auditados": 2505,
+  "objetos_train_asignados": 2505,
+  "priores_train": [
+    [
+      0.03247550129890442,
+      0.029718130826950073
+    ],
+    [
+      0.1591533124446869,
+      0.14633333683013916
+    ]
+  ],
+  "corte_train": 0.07280523329973221,
+  "duracion_segundos": 12.962456599983852,
+  "pesos_reutilizados": false,
+  "test_evaluado": false,
+  "limite": "Memorización de escenas fáciles train; no generalización. Los pesos se descartan."
+}

@@ -1,0 +1,101 @@
+{
+  "validacion_estructural_correcta": true,
+  "errores": [],
+  "advertencias": [
+    "Cobertura real de orgánicos en detección insuficiente: ocho cajas en la fuente TACO antes de filtrado.",
+    "No hay garantía de independencia por sesión de captura; los grupos son inferidos por similitud.",
+    "Los ignore_regions requieren soporte explícito en el futuro loader del detector.",
+    "Licencias individuales TACO no especificadas en JSON; se conserva fuente y declaración pública de los autores."
+  ],
+  "fugas_detectadas": {
+    "grupos": 0,
+    "adquisicion": 0,
+    "pixeles": 0,
+    "archivos": 0,
+    "grupos_texto": 0,
+    "preguntas_texto": 0
+  },
+  "conteos": {
+    "clasificacion": {
+      "train": {
+        "imagenes": 2714,
+        "clases": {
+          "plastico": 649,
+          "papel": 340,
+          "carton": 319,
+          "vidrio": 279,
+          "metal": 539,
+          "organico": 588
+        }
+      },
+      "val": {
+        "imagenes": 610,
+        "clases": {
+          "plastico": 132,
+          "papel": 80,
+          "carton": 70,
+          "vidrio": 71,
+          "metal": 130,
+          "organico": 127
+        }
+      },
+      "test": {
+        "imagenes": 615,
+        "clases": {
+          "plastico": 140,
+          "papel": 80,
+          "carton": 72,
+          "vidrio": 70,
+          "metal": 121,
+          "organico": 132
+        }
+      }
+    },
+    "deteccion": {
+      "train": {
+        "imagenes": 964,
+        "clases": {
+          "plastico": 1630,
+          "papel": 109,
+          "carton": 149,
+          "vidrio": 203,
+          "metal": 409,
+          "organico": 5
+        }
+      },
+      "val": {
+        "imagenes": 181,
+        "clases": {
+          "plastico": 228,
+          "papel": 25,
+          "carton": 25,
+          "vidrio": 22,
+          "metal": 60,
+          "organico": 1
+        }
+      },
+      "test": {
+        "imagenes": 268,
+        "clases": {
+          "plastico": 348,
+          "papel": 45,
+          "carton": 32,
+          "vidrio": 29,
+          "metal": 65,
+          "organico": 2
+        }
+      }
+    }
+  },
+  "sha256_manifiestos": {
+    "datos/procesados/clasificacion/train.jsonl": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "datos/procesados/clasificacion/val.jsonl": "0318a10bf9035c620ac12c935aa84d85bc8f2c64a35af581e8e8bbbb9c6f5dab",
+    "datos/procesados/clasificacion/test.jsonl": "23db1bd648eaf4dee8248b864d5af59bf12d0d98ba98fe66e6e8553cd41a9122",
+    "datos/procesados/deteccion/train.jsonl": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "datos/procesados/deteccion/val.jsonl": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+    "datos/procesados/deteccion/test.jsonl": "9cc4339fdfde2d0a4fe1e3ed33356bd8766d9a22e74521eaa3246eb79256da2a"
+  },
+  "listo_clasificacion_experimental": true,
+  "listo_detector_seis_clases_con_evaluacion_representativa": false,
+  "motivo_detector": "Faltan ejemplos reales diversos de orgánicos y videos independientes, aunque la geometría y particiones se comprueben correctamente."
+}

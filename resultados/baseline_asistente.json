@@ -1,0 +1,195 @@
+{
+  "modelo": "multinomial_naive_bayes",
+  "smoothing": 1.0,
+  "vocabulario_solo_train": 326,
+  "pesos_preentrenados": false,
+  "val": {
+    "accuracy": 0.6944444444444444,
+    "f1_macro": 0.6942612942612941,
+    "por_clase": {
+      "resumen": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307692
+      },
+      "material": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "separacion": {
+        "precision": 0.75,
+        "recall": 0.5,
+        "f1": 0.6
+      },
+      "preparacion": {
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "incertidumbre": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153
+      },
+      "fuera_de_alcance": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      }
+    },
+    "matriz_confusion": [
+      [
+        5,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1,
+        4
+      ]
+    ],
+    "orden_clases": [
+      "resumen",
+      "material",
+      "separacion",
+      "preparacion",
+      "incertidumbre",
+      "fuera_de_alcance"
+    ]
+  },
+  "test": {
+    "accuracy": 0.6388888888888888,
+    "f1_macro": 0.6324786324786325,
+    "por_clase": {
+      "resumen": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153
+      },
+      "material": {
+        "precision": 0.42857142857142855,
+        "recall": 0.5,
+        "f1": 0.4615384615384615
+      },
+      "separacion": {
+        "precision": 0.7142857142857143,
+        "recall": 0.8333333333333334,
+        "f1": 0.7692307692307692
+      },
+      "preparacion": {
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334
+      },
+      "incertidumbre": {
+        "precision": 0.5714285714285714,
+        "recall": 0.6666666666666666,
+        "f1": 0.6153846153846153
+      },
+      "fuera_de_alcance": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      }
+    },
+    "matriz_confusion": [
+      [
+        4,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        3,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        2
+      ]
+    ],
+    "orden_clases": [
+      "resumen",
+      "material",
+      "separacion",
+      "preparacion",
+      "incertidumbre",
+      "fuera_de_alcance"
+    ]
+  },
+  "nota": "Misma prueba inicial que el Transformer. La comparación no usa pesos externos ni modifica el corpus o el checkpoint; no representa conversaciones con usuarios independientes."
+}

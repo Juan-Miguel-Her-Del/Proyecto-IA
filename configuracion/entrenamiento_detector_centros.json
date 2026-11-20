@@ -1,0 +1,20 @@
+{
+  "nombre": "detector_centros_v11",
+  "diagnostico": "resultados/diagnostico_centros.json",
+  "arquitectura": {"imagen": 384, "dimension": 96},
+  "semilla": 42,
+  "epocas": 80,
+  "min_epocas": 40,
+  "paciencia": 15,
+  "batch_size": 8,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 5,
+  "programacion_lr": "coseno",
+  "fraccion_lr_final": 0.1,
+  "umbral_evaluacion": 0.001,
+  "umbral_visualizacion": 0.35,
+  "nms_iou": 0.5,
+  "aumentos_solo_train": {"flip_horizontal": 0.5, "brillo": [0.85, 1.15], "contraste": [0.85, 1.15]},
+  "evaluar_test": false
+}

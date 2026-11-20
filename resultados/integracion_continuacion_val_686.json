@@ -1,0 +1,33 @@
+{
+  "tipo": "verificacion_tecnica_y_error_en_primera_imagen_val_no_test",
+  "imagen_val": "taco:686",
+  "entrada_json": "resultados/ejemplo_continuacion_val_686.json",
+  "umbral_puntuacion": 0.35,
+  "objetos_gt": 2,
+  "detecciones": 3,
+  "aciertos_material_y_IoU050": 0,
+  "falsos_positivos": 3,
+  "falsos_negativos": 2,
+  "IoU_filas_gt_columnas_pred": [
+    [
+      0.43287739157676697,
+      0.044425442814826965,
+      0.06143726408481598
+    ],
+    [
+      0.008515354245901108,
+      0.33256766200065613,
+      0.0
+    ]
+  ],
+  "pregunta": "Resume los materiales detectados",
+  "salida_asistente": {
+    "intencion": "separacion",
+    "puntuacion": 0.6567468643188477,
+    "respuesta": "Predicciones: 1 de plastico, 2 de metal. plastico: si es aprovechable corresponde al blanco; si es un residuo ordinario no aprovechable corresponde al negro. ¿Está limpio y lo recibe el sistema local de aprovechamiento? metal: si es aprovechable corresponde al blanco; si es un residuo ordinario no aprovechable corresponde al negro. ¿Está limpio y lo recibe el sistema local de aprovechamiento? Fuente del código de colores: https://www.minambiente.gov.co/preguntas-frecuentes/",
+    "origen_detecciones": "detector_transformer_propio_piloto_imagen_real",
+    "estado_detector": "experimental_validacion_insuficiente",
+    "limite_detector": "Prototipo con resultados limitados. La puntuación no está calibrada y no demuestra limpieza o aprovechabilidad."
+  },
+  "test_evaluado": false
+}

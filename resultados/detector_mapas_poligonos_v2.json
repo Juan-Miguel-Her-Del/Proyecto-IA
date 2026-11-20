@@ -1,0 +1,747 @@
+{
+  "estado": "piloto_completado",
+  "fecha_utc": "2026-11-20T00:09:25.850430+00:00",
+  "modelo_tipo": "poligonos_taco_384_promedio48_cualquier_pixel_v2",
+  "arquitectura": {
+    "imagen": 384,
+    "dimension": 96,
+    "escala_posicion": 0.1
+  },
+  "parametros": 438727,
+  "configuracion": {
+    "nombre": "detector_mapas_poligonos_v2",
+    "fuente_supervision": "poligonos",
+    "diagnostico": "resultados/diagnostico_detector_mapas_poligonos_padding.json",
+    "postprocesamiento": "componentes_solo_contenido_real_v2",
+    "cobertura_minima": 0.015625,
+    "semilla": 42,
+    "epocas": 16,
+    "min_epocas": 8,
+    "paciencia": 6,
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_epocas": 2,
+    "precision_mixta_cuda": true,
+    "umbral_evaluacion": 0.05,
+    "umbral_visualizacion": 0.35,
+    "area_minima_celdas": 2,
+    "evaluar_test": false
+  },
+  "mejor_epoca": 6,
+  "epocas_ejecutadas": 12,
+  "historial": [
+    {
+      "epoca": 1,
+      "loss_train": 4.1230429851167925,
+      "map50_val": 0.0025540031000922613,
+      "map50_95_val": 0.000737864959204305,
+      "recall50_val": 0.07479224376731301
+    },
+    {
+      "epoca": 2,
+      "loss_train": 3.7489420704821828,
+      "map50_val": 0.00456149824480019,
+      "map50_95_val": 0.0016082035967766647,
+      "recall50_val": 0.08310249307479224
+    },
+    {
+      "epoca": 3,
+      "loss_train": 3.5915953549112025,
+      "map50_val": 0.005160330865446097,
+      "map50_95_val": 0.0016880426359156965,
+      "recall50_val": 0.0997229916897507
+    },
+    {
+      "epoca": 4,
+      "loss_train": 3.5034400180167675,
+      "map50_val": 0.006285030628391618,
+      "map50_95_val": 0.0020950787536271236,
+      "recall50_val": 0.09418282548476455
+    },
+    {
+      "epoca": 5,
+      "loss_train": 3.4301331997907014,
+      "map50_val": 0.006453829248844595,
+      "map50_95_val": 0.0013692157619660443,
+      "recall50_val": 0.10526315789473684
+    },
+    {
+      "epoca": 6,
+      "loss_train": 3.3419823092543735,
+      "map50_val": 0.009890657102707588,
+      "map50_95_val": 0.002405444608398839,
+      "recall50_val": 0.11080332409972299
+    },
+    {
+      "epoca": 7,
+      "loss_train": 3.3661435511102322,
+      "map50_val": 0.006212015780727856,
+      "map50_95_val": 0.0017003126832788732,
+      "recall50_val": 0.10249307479224377
+    },
+    {
+      "epoca": 8,
+      "loss_train": 3.3271157217223615,
+      "map50_val": 0.007089102855905055,
+      "map50_95_val": 0.0018710237586557277,
+      "recall50_val": 0.07756232686980609
+    },
+    {
+      "epoca": 9,
+      "loss_train": 3.2502173744296634,
+      "map50_val": 0.005951845821718572,
+      "map50_95_val": 0.0017717838619310076,
+      "recall50_val": 0.10526315789473684
+    },
+    {
+      "epoca": 10,
+      "loss_train": 3.1809981126508275,
+      "map50_val": 0.008115998023610698,
+      "map50_95_val": 0.001983688368151585,
+      "recall50_val": 0.11080332409972299
+    },
+    {
+      "epoca": 11,
+      "loss_train": 3.201288088723337,
+      "map50_val": 0.007120869734106285,
+      "map50_95_val": 0.0020534599719341635,
+      "recall50_val": 0.09418282548476455
+    },
+    {
+      "epoca": 12,
+      "loss_train": 3.178057184852505,
+      "map50_val": 0.004002836216302594,
+      "map50_95_val": 0.0013465613354206477,
+      "recall50_val": 0.0997229916897507
+    }
+  ],
+  "val": {
+    "map50": 0.009890657102707588,
+    "map50_95": 0.002405444608398839,
+    "recall50": 0.11080332409972299,
+    "precision50": 0.09925558312655088,
+    "objetos": 361,
+    "clases_con_soporte": 6,
+    "por_clase": {
+      "plastico": {
+        "objetos": 228,
+        "ap50": 0.05439344756674058,
+        "ap50_95": 0.01393761814544254,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.05439344756674058,
+            "tp": 39,
+            "fp": 294,
+            "predicciones_ignoradas": 12,
+            "recall": 0.17105263157894737,
+            "precision": 0.11711711711711711
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.028674597787384938,
+            "tp": 31,
+            "fp": 302,
+            "predicciones_ignoradas": 12,
+            "recall": 0.13596491228070176,
+            "precision": 0.09309309309309309
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.02197363345634819,
+            "tp": 26,
+            "fp": 307,
+            "predicciones_ignoradas": 12,
+            "recall": 0.11403508771929824,
+            "precision": 0.07807807807807808
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.015338996996974,
+            "tp": 20,
+            "fp": 313,
+            "predicciones_ignoradas": 12,
+            "recall": 0.08771929824561403,
+            "precision": 0.06006006006006006
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.013869760207610556,
+            "tp": 17,
+            "fp": 316,
+            "predicciones_ignoradas": 12,
+            "recall": 0.07456140350877193,
+            "precision": 0.05105105105105105
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.003067628065548321,
+            "tp": 10,
+            "fp": 323,
+            "predicciones_ignoradas": 12,
+            "recall": 0.043859649122807015,
+            "precision": 0.03003003003003003
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0010978920329915414,
+            "tp": 4,
+            "fp": 329,
+            "predicciones_ignoradas": 12,
+            "recall": 0.017543859649122806,
+            "precision": 0.012012012012012012
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0008748719782227337,
+            "tp": 3,
+            "fp": 330,
+            "predicciones_ignoradas": 12,
+            "recall": 0.013157894736842105,
+            "precision": 0.009009009009009009
+          },
+          {
+            "iou": 0.9,
+            "ap": 8.535336260453309e-05,
+            "tp": 1,
+            "fp": 332,
+            "predicciones_ignoradas": 12,
+            "recall": 0.0043859649122807015,
+            "precision": 0.003003003003003003
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 333,
+            "predicciones_ignoradas": 12,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "papel": {
+        "objetos": 25,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "carton": {
+        "objetos": 25,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 36,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "vidrio": {
+        "objetos": 22,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "metal": {
+        "objetos": 60,
+        "ap50": 0.0049504950495049506,
+        "ap50_95": 0.0004950495049504951,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0049504950495049506,
+            "tp": 1,
+            "fp": 32,
+            "predicciones_ignoradas": 6,
+            "recall": 0.016666666666666666,
+            "precision": 0.030303030303030304
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 33,
+            "predicciones_ignoradas": 6,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "organico": {
+        "objetos": 1,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      }
+    },
+    "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial"
+  },
+  "hashes_manifiestos": {
+    "train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "val": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+    "anotaciones_poligonos": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+    "inventario_procedencia": "c549b16f5d1dd64d8d41c0d5192d0cee40aa740ca9bbfe86ffb8c335e7498eef"
+  },
+  "celdas_por_clase_train": [
+    75641,
+    6108,
+    13628,
+    4199,
+    14188,
+    76
+  ],
+  "pesos_clase_train": [
+    0.13340365886688232,
+    0.46945813298225403,
+    0.31428980827331543,
+    0.5662046670913696,
+    0.30802488327026367,
+    3.0
+  ],
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.14.1+cu126",
+  "pesos_externos": false,
+  "duracion_segundos": 63.828761400000076,
+  "vram_pico_asignada_bytes": 265960448,
+  "checkpoint_mejor": "checkpoints/detector_mapas_poligonos_v2_mejor.pt",
+  "checkpoint_ultimo": "checkpoints/detector_mapas_poligonos_v2_ultimo.pt",
+  "test_evaluado": false,
+  "limites": [
+    "Contornos originales cuantizados a 48x48; no equivale a segmentación de instancias a resolución original.",
+    "Componentes de igual material pueden fusionarse y objetos pequeños perderse por cuantización.",
+    "Solo cinco orgánicos train y uno val."
+  ]
+}

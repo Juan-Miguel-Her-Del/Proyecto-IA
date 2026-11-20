@@ -1,0 +1,35 @@
+{
+  "nombre": "detector_piloto_v6",
+  "semilla": 42,
+  "epocas": 24,
+  "batch_size": 4,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 2,
+  "gradient_clip": 1.0,
+  "precision_mixta_cuda": true,
+  "paciencia": 8,
+  "seleccion_checkpoint": "map50_val",
+  "umbral_evaluacion": 0.01,
+  "umbral_visualizacion": 0.25,
+  "nms_iou": 0.5,
+  "max_detecciones": 100,
+  "aumentos_solo_train": {
+    "flip_horizontal": 0.5,
+    "brillo": [
+      0.85,
+      1.15
+    ],
+    "contraste": [
+      0.85,
+      1.15
+    ]
+  },
+  "ignorar_interiores_gt": false,
+  "radio_centros": 0,
+  "normalizacion_clases": "global",
+  "diagnostico": "diagnostico_detector_v6.json",
+  "evaluar_test": false,
+  "min_epocas": 12,
+  "escala_posicion": 0.1
+}

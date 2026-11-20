@@ -1,0 +1,20 @@
+{
+  "nombre": "detector_piloto_v2",
+  "semilla": 42,
+  "epocas": 8,
+  "batch_size": 4,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 2,
+  "gradient_clip": 1.0,
+  "precision_mixta_cuda": true,
+  "paciencia": 4,
+  "seleccion_checkpoint": "map50_val",
+  "umbral_evaluacion": 0.01,
+  "umbral_visualizacion": 0.25,
+  "nms_iou": 0.5,
+  "max_detecciones": 100,
+  "aumentos_solo_train": {"flip_horizontal": 0.5, "brillo": [0.85, 1.15], "contraste": [0.85, 1.15]},
+  "ignorar_interiores_gt": true,
+  "evaluar_test": false
+}

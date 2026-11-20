@@ -1,0 +1,1240 @@
+{
+  "estado": "piloto_completado",
+  "fecha_utc": "2026-11-20T13:42:53.466408+00:00",
+  "version": "centros_focal_gaussiano_dos_escalas_v1",
+  "arquitectura": {
+    "imagen": 384,
+    "dimension": 96
+  },
+  "parametros": 453762,
+  "configuracion": {
+    "nombre": "detector_centros_v11",
+    "diagnostico": "resultados/diagnostico_centros.json",
+    "arquitectura": {
+      "imagen": 384,
+      "dimension": 96
+    },
+    "semilla": 42,
+    "epocas": 80,
+    "min_epocas": 40,
+    "paciencia": 15,
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_epocas": 5,
+    "programacion_lr": "coseno",
+    "fraccion_lr_final": 0.1,
+    "umbral_evaluacion": 0.001,
+    "umbral_visualizacion": 0.35,
+    "nms_iou": 0.5,
+    "aumentos_solo_train": {
+      "flip_horizontal": 0.5,
+      "brillo": [
+        0.85,
+        1.15
+      ],
+      "contraste": [
+        0.85,
+        1.15
+      ]
+    },
+    "evaluar_test": false
+  },
+  "historial": [
+    {
+      "epoca": 1,
+      "learning_rate": 0.0001,
+      "loss_train": 6.211445280130474,
+      "loss_aux_train": 1.6360877870528165,
+      "loss_total_train": 7.0294891736568825,
+      "accuracy_aux_train": 0.32954545454545453,
+      "map50_val": 5.160764273926124e-05,
+      "map50_95_val": 1.3550695396111448e-05,
+      "recall50_val": 0.05263157894736842,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 2,
+      "learning_rate": 0.0002,
+      "loss_train": 5.050150697162042,
+      "loss_aux_train": 1.5616007659060895,
+      "loss_total_train": 5.830951080115087,
+      "accuracy_aux_train": 0.37913223140495866,
+      "map50_val": 0.0039002119168553124,
+      "map50_95_val": 0.0008207578693436637,
+      "recall50_val": 0.10803324099722991,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 3,
+      "learning_rate": 0.00030000000000000003,
+      "loss_train": 4.721628921160559,
+      "loss_aux_train": 1.3807292304748346,
+      "loss_total_train": 5.4119935363979765,
+      "accuracy_aux_train": 0.48295454545454547,
+      "map50_val": 0.0037400822782206653,
+      "map50_95_val": 0.0006762857825522965,
+      "recall50_val": 0.12742382271468145,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 4,
+      "learning_rate": 0.0004,
+      "loss_train": 4.6136781961591415,
+      "loss_aux_train": 1.243981578133323,
+      "loss_total_train": 5.235668985225803,
+      "accuracy_aux_train": 0.5330578512396694,
+      "map50_val": 0.005594959504066324,
+      "map50_95_val": 0.001453454097542334,
+      "recall50_val": 0.15789473684210525,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 5,
+      "learning_rate": 0.0005,
+      "loss_train": 4.4781668156509085,
+      "loss_aux_train": 1.1464223556282107,
+      "loss_total_train": 5.051377993465014,
+      "accuracy_aux_train": 0.5785123966942148,
+      "map50_val": 0.004575714983027613,
+      "map50_95_val": 0.0009195761183213762,
+      "recall50_val": 0.15512465373961218,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 6,
+      "learning_rate": 0.0004998026367722432,
+      "loss_train": 4.407089429277602,
+      "loss_aux_train": 1.1118930169373504,
+      "loss_total_train": 4.963035937746277,
+      "accuracy_aux_train": 0.5841942148760331,
+      "map50_val": 0.007490087390828127,
+      "map50_95_val": 0.0014888550974334524,
+      "recall50_val": 0.18559556786703602,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 7,
+      "learning_rate": 0.0004992108933311385,
+      "loss_train": 4.305483936768844,
+      "loss_aux_train": 1.0455944190833195,
+      "loss_total_train": 4.828281146310504,
+      "accuracy_aux_train": 0.6007231404958677,
+      "map50_val": 0.004039858466340075,
+      "map50_95_val": 0.00089375092959179,
+      "recall50_val": 0.18005540166204986,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 8,
+      "learning_rate": 0.0004982258077957575,
+      "loss_train": 4.238518139138756,
+      "loss_aux_train": 0.9594913972310783,
+      "loss_total_train": 4.718263837754295,
+      "accuracy_aux_train": 0.6337809917355371,
+      "map50_val": 0.003153089263319674,
+      "map50_95_val": 0.0007222671298234856,
+      "recall50_val": 0.15512465373961218,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 9,
+      "learning_rate": 0.0004968491083408636,
+      "loss_train": 4.230744266905726,
+      "loss_aux_train": 1.0109792194090599,
+      "loss_total_train": 4.736233876610256,
+      "accuracy_aux_train": 0.621900826446281,
+      "map50_val": 0.0051148678306736075,
+      "map50_95_val": 0.0012805398552169064,
+      "recall50_val": 0.1772853185595568,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 10,
+      "learning_rate": 0.0004950832101651062,
+      "loss_train": 4.192821427499605,
+      "loss_aux_train": 0.9172546883259923,
+      "loss_total_train": 4.651448771662601,
+      "accuracy_aux_train": 0.6518595041322314,
+      "map50_val": 0.024549582289999025,
+      "map50_95_val": 0.0058251002585598365,
+      "recall50_val": 0.1994459833795014,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 11,
+      "learning_rate": 0.000492931211253942,
+      "loss_train": 4.085371490336058,
+      "loss_aux_train": 0.8851046362691675,
+      "loss_total_train": 4.527923808470642,
+      "accuracy_aux_train": 0.6673553719008265,
+      "map50_val": 0.0058861409118798605,
+      "map50_95_val": 0.0013626884193414755,
+      "recall50_val": 0.18559556786703602,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 12,
+      "learning_rate": 0.0004903968869447151,
+      "loss_train": 4.087716258907713,
+      "loss_aux_train": 0.8258904307341772,
+      "loss_total_train": 4.500661474274802,
+      "accuracy_aux_train": 0.6885330578512396,
+      "map50_val": 0.009790674337991221,
+      "map50_95_val": 0.0016842446468229536,
+      "recall50_val": 0.20498614958448755,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 13,
+      "learning_rate": 0.0004874846833034332,
+      "loss_train": 3.995350955432876,
+      "loss_aux_train": 0.7858901346517988,
+      "loss_total_train": 4.388296022758776,
+      "accuracy_aux_train": 0.7091942148760331,
+      "map50_val": 0.020532368786061312,
+      "map50_95_val": 0.0033912675760082423,
+      "recall50_val": 0.23545706371191136,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 14,
+      "learning_rate": 0.0004841997093248566,
+      "loss_train": 3.9461074251356956,
+      "loss_aux_train": 0.8131146280726126,
+      "loss_total_train": 4.352664739172002,
+      "accuracy_aux_train": 0.6864669421487604,
+      "map50_val": 0.007412127927621894,
+      "map50_95_val": 0.0015580438569621506,
+      "recall50_val": 0.2077562326869806,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 15,
+      "learning_rate": 0.00048054772796958517,
+      "loss_train": 3.925315678861626,
+      "loss_aux_train": 0.7916170777368151,
+      "loss_total_train": 4.321124217730033,
+      "accuracy_aux_train": 0.7004132231404959,
+      "map50_val": 0.007817699033736249,
+      "map50_95_val": 0.001832697479643708,
+      "recall50_val": 0.23822714681440443,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 16,
+      "learning_rate": 0.0004765351460538679,
+      "loss_train": 3.89790980944495,
+      "loss_aux_train": 0.7701616033542255,
+      "loss_total_train": 4.282990611122063,
+      "accuracy_aux_train": 0.7086776859504132,
+      "map50_val": 0.014160867005881697,
+      "map50_95_val": 0.002318863282840785,
+      "recall50_val": 0.23268698060941828,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 17,
+      "learning_rate": 0.0004721690030098693,
+      "loss_train": 3.8401314608783643,
+      "loss_aux_train": 0.7703541197067449,
+      "loss_total_train": 4.225308520731737,
+      "accuracy_aux_train": 0.6952479338842975,
+      "map50_val": 0.009048274230663803,
+      "map50_95_val": 0.002056077503708342,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 18,
+      "learning_rate": 0.000467456958536114,
+      "loss_train": 3.7646516447739975,
+      "loss_aux_train": 0.7273407994715635,
+      "loss_total_train": 4.12832204450978,
+      "accuracy_aux_train": 0.7241735537190083,
+      "map50_val": 0.011103109790860573,
+      "map50_95_val": 0.002837587226867651,
+      "recall50_val": 0.24930747922437674,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 19,
+      "learning_rate": 0.00046240727915977236,
+      "loss_train": 3.71702684406423,
+      "loss_aux_train": 0.7288571741462739,
+      "loss_total_train": 4.081455431137367,
+      "accuracy_aux_train": 0.7215909090909091,
+      "map50_val": 0.010509584363390117,
+      "map50_95_val": 0.0024380651898159595,
+      "recall50_val": 0.23822714681440443,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 20,
+      "learning_rate": 0.00045702882373436317,
+      "loss_train": 3.6945564321462543,
+      "loss_aux_train": 0.7320657602765344,
+      "loss_total_train": 4.060589312284521,
+      "accuracy_aux_train": 0.7205578512396694,
+      "map50_val": 0.009235947906184117,
+      "map50_95_val": 0.002393312771687831,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 21,
+      "learning_rate": 0.000451331027898314,
+      "loss_train": 3.637734759398021,
+      "loss_aux_train": 0.6416744919847851,
+      "loss_total_train": 3.9585720053904137,
+      "accuracy_aux_train": 0.753099173553719,
+      "map50_val": 0.012013433359735476,
+      "map50_95_val": 0.0029936231221318267,
+      "recall50_val": 0.24376731301939059,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 22,
+      "learning_rate": 0.0004453238875216452,
+      "loss_train": 3.5991905932604524,
+      "loss_aux_train": 0.6608191832037996,
+      "loss_total_train": 3.9296001848623523,
+      "accuracy_aux_train": 0.7391528925619835,
+      "map50_val": 0.007977666470096154,
+      "map50_95_val": 0.0015333306214256558,
+      "recall50_val": 0.26869806094182824,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 23,
+      "learning_rate": 0.0004390179411698176,
+      "loss_train": 3.5509711439678777,
+      "loss_aux_train": 0.6010446385903792,
+      "loss_total_train": 3.8514934632630675,
+      "accuracy_aux_train": 0.7716942148760331,
+      "map50_val": 0.009052668443401482,
+      "map50_95_val": 0.0018263094080688904,
+      "recall50_val": 0.2299168975069252,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 24,
+      "learning_rate": 0.00043242425161550723,
+      "loss_train": 3.4801466237459935,
+      "loss_aux_train": 0.6193924286395065,
+      "loss_total_train": 3.7898428380657467,
+      "accuracy_aux_train": 0.7675619834710744,
+      "map50_val": 0.008319294026348949,
+      "map50_95_val": 0.0019637932781923083,
+      "recall50_val": 0.23545706371191136,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 25,
+      "learning_rate": 0.0004255543864307431,
+      "loss_train": 3.456975079176337,
+      "loss_aux_train": 0.6139681749353724,
+      "loss_total_train": 3.7639591666440233,
+      "accuracy_aux_train": 0.7675619834710744,
+      "map50_val": 0.008129123978704066,
+      "map50_95_val": 0.002171911386348055,
+      "recall50_val": 0.24653739612188366,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 26,
+      "learning_rate": 0.0004184203976934552,
+      "loss_train": 3.3597137482829114,
+      "loss_aux_train": 0.6054909423855711,
+      "loss_total_train": 3.662459219475697,
+      "accuracy_aux_train": 0.7706611570247934,
+      "map50_val": 0.013471039967986419,
+      "map50_95_val": 0.0024175263067212557,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 27,
+      "learning_rate": 0.0004110348008440344,
+      "loss_train": 3.3246619938814788,
+      "loss_aux_train": 0.5863144203158449,
+      "loss_total_train": 3.6178192040394013,
+      "accuracy_aux_train": 0.7701446280991735,
+      "map50_val": 0.01209643596887785,
+      "map50_95_val": 0.0024842013465567175,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 28,
+      "learning_rate": 0.00040341055272899716,
+      "loss_train": 3.3030959659592245,
+      "loss_aux_train": 0.5808746292571391,
+      "loss_total_train": 3.593533280587794,
+      "accuracy_aux_train": 0.7706611570247934,
+      "map50_val": 0.011544633094642447,
+      "map50_95_val": 0.0029911113442355926,
+      "recall50_val": 0.2631578947368421,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 29,
+      "learning_rate": 0.00039556102887027423,
+      "loss_train": 3.264299534168481,
+      "loss_aux_train": 0.5597341652990373,
+      "loss_total_train": 3.5441666168179995,
+      "accuracy_aux_train": 0.7871900826446281,
+      "map50_val": 0.007641474092409949,
+      "map50_95_val": 0.0017902078933048707,
+      "recall50_val": 0.25761772853185594,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 30,
+      "learning_rate": 0.00038750000000000004,
+      "loss_train": 3.2004604517671575,
+      "loss_aux_train": 0.5386146412900656,
+      "loss_total_train": 3.4697677724121903,
+      "accuracy_aux_train": 0.806301652892562,
+      "map50_val": 0.011982418317040397,
+      "map50_95_val": 0.0028856831595548294,
+      "recall50_val": 0.26869806094182824,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 31,
+      "learning_rate": 0.00037924160790196894,
+      "loss_train": 3.139099659266808,
+      "loss_aux_train": 0.5710332063603992,
+      "loss_total_train": 3.4246162624470076,
+      "accuracy_aux_train": 0.7866735537190083,
+      "map50_val": 0.007536863960231972,
+      "map50_95_val": 0.001487044002242208,
+      "recall50_val": 0.2520775623268698,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 32,
+      "learning_rate": 0.00037080034060214134,
+      "loss_train": 3.079412041858024,
+      "loss_aux_train": 0.5256745231545661,
+      "loss_total_train": 3.3422493034353074,
+      "accuracy_aux_train": 0.8026859504132231,
+      "map50_val": 0.010112333030396882,
+      "map50_95_val": 0.0019234940196616458,
+      "recall50_val": 0.21052631578947367,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 33,
+      "learning_rate": 0.0003621910069517232,
+      "loss_train": 3.0320367921932108,
+      "loss_aux_train": 0.5467418699471418,
+      "loss_total_train": 3.3054077271667817,
+      "accuracy_aux_train": 0.7897727272727273,
+      "map50_val": 0.008644469335549219,
+      "map50_95_val": 0.001862027891479331,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 34,
+      "learning_rate": 0.00035342871064740846,
+      "loss_train": 2.9591972125516395,
+      "loss_aux_train": 0.5087942520448984,
+      "loss_total_train": 3.213594338574089,
+      "accuracy_aux_train": 0.8021694214876033,
+      "map50_val": 0.010572160103914664,
+      "map50_95_val": 0.0022977677832734878,
+      "recall50_val": 0.2659279778393352,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 35,
+      "learning_rate": 0.0003445288237343632,
+      "loss_train": 2.9312456099324207,
+      "loss_aux_train": 0.49254743588611116,
+      "loss_total_train": 3.1775193278754763,
+      "accuracy_aux_train": 0.8176652892561983,
+      "map50_val": 0.010325756478015787,
+      "map50_95_val": 0.002516760772498318,
+      "recall50_val": 0.24653739612188366,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 36,
+      "learning_rate": 0.00033550695963843475,
+      "loss_train": 2.870177387696579,
+      "loss_aux_train": 0.4863191857810848,
+      "loss_total_train": 3.113336980587121,
+      "accuracy_aux_train": 0.8181818181818182,
+      "map50_val": 0.01322766087208521,
+      "map50_95_val": 0.002725257573567835,
+      "recall50_val": 0.26038781163434904,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 37,
+      "learning_rate": 0.0003263789457748976,
+      "loss_train": 2.825282897197359,
+      "loss_aux_train": 0.4812493670331545,
+      "loss_total_train": 3.065907580713936,
+      "accuracy_aux_train": 0.8145661157024794,
+      "map50_val": 0.010395152566542621,
+      "map50_95_val": 0.002432359297561579,
+      "recall50_val": 0.23545706371191136,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 38,
+      "learning_rate": 0.0003171607957817881,
+      "loss_train": 2.769745541806043,
+      "loss_aux_train": 0.4775239280925309,
+      "loss_total_train": 3.0085075058523083,
+      "accuracy_aux_train": 0.8331611570247934,
+      "map50_val": 0.008129704709429133,
+      "map50_95_val": 0.0019541122141277273,
+      "recall50_val": 0.2299168975069252,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 39,
+      "learning_rate": 0.0003078686814265426,
+      "loss_train": 2.7239363153940412,
+      "loss_aux_train": 0.48627823665122355,
+      "loss_total_train": 2.967075433719653,
+      "accuracy_aux_train": 0.8176652892561983,
+      "map50_val": 0.011059409014874124,
+      "map50_95_val": 0.0025839725295425603,
+      "recall50_val": 0.22714681440443213,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    },
+    {
+      "epoca": 40,
+      "learning_rate": 0.000298518904235222,
+      "loss_train": 2.7179018501424195,
+      "loss_aux_train": 0.47354370429496134,
+      "loss_total_train": 2.9546737022899,
+      "accuracy_aux_train": 0.8217975206611571,
+      "map50_val": 0.010350061415617043,
+      "map50_95_val": 0.0020663938717820555,
+      "recall50_val": 0.2409972299168975,
+      "objetos_asignados_train": 2505,
+      "muestras_train": 964,
+      "muestras_aux_train": 1936
+    }
+  ],
+  "mejor_epoca": 10,
+  "epocas_ejecutadas": 40,
+  "val": {
+    "map50": 0.024549582289999025,
+    "map50_95": 0.0058251002585598365,
+    "recall50": 0.1994459833795014,
+    "precision50": 0.004061600947706888,
+    "objetos": 361,
+    "clases_con_soporte": 6,
+    "por_clase": {
+      "plastico": {
+        "objetos": 228,
+        "ap50": 0.031347606381825585,
+        "ap50_95": 0.008739166689511055,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.031347606381825585,
+            "tp": 49,
+            "fp": 11593,
+            "predicciones_ignoradas": 165,
+            "recall": 0.2149122807017544,
+            "precision": 0.00420889881463666
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.01883984178691955,
+            "tp": 31,
+            "fp": 11611,
+            "predicciones_ignoradas": 165,
+            "recall": 0.13596491228070176,
+            "precision": 0.0026627727194640095
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.013104386132044515,
+            "tp": 20,
+            "fp": 11622,
+            "predicciones_ignoradas": 165,
+            "recall": 0.08771929824561403,
+            "precision": 0.0017179178835251675
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.01143431982560323,
+            "tp": 13,
+            "fp": 11628,
+            "predicciones_ignoradas": 166,
+            "recall": 0.05701754385964912,
+            "precision": 0.0011167425478910747
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.01106832854767874,
+            "tp": 11,
+            "fp": 11630,
+            "predicciones_ignoradas": 166,
+            "recall": 0.04824561403508772,
+            "precision": 0.0009449360020616786
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0010259732325091074,
+            "tp": 7,
+            "fp": 11634,
+            "predicciones_ignoradas": 166,
+            "recall": 0.03070175438596491,
+            "precision": 0.0006013229104028864
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.00019040366284327933,
+            "tp": 2,
+            "fp": 11639,
+            "predicciones_ignoradas": 166,
+            "recall": 0.008771929824561403,
+            "precision": 0.0001718065458293961
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.00019040366284327933,
+            "tp": 2,
+            "fp": 11639,
+            "predicciones_ignoradas": 166,
+            "recall": 0.008771929824561403,
+            "precision": 0.0001718065458293961
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.00019040366284327933,
+            "tp": 1,
+            "fp": 11640,
+            "predicciones_ignoradas": 166,
+            "recall": 0.0043859649122807015,
+            "precision": 8.590327291469805e-05
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 11641,
+            "predicciones_ignoradas": 166,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "papel": {
+        "objetos": 25,
+        "ap50": 0.002241081899345511,
+        "ap50_95": 0.0005677477392082166,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.002241081899345511,
+            "tp": 6,
+            "fp": 1052,
+            "predicciones_ignoradas": 49,
+            "recall": 0.24,
+            "precision": 0.005671077504725898
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0015336146006489743,
+            "tp": 4,
+            "fp": 1054,
+            "predicciones_ignoradas": 49,
+            "recall": 0.16,
+            "precision": 0.003780718336483932
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0010026909115881022,
+            "tp": 2,
+            "fp": 1056,
+            "predicciones_ignoradas": 49,
+            "recall": 0.08,
+            "precision": 0.001890359168241966
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0009000899804995792,
+            "tp": 1,
+            "fp": 1056,
+            "predicciones_ignoradas": 50,
+            "recall": 0.04,
+            "precision": 0.000946073793755913
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1057,
+            "predicciones_ignoradas": 50,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "carton": {
+        "objetos": 25,
+        "ap50": 0.10437640237926256,
+        "ap50_95": 0.023687016359060117,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.10437640237926256,
+            "tp": 10,
+            "fp": 1006,
+            "predicciones_ignoradas": 40,
+            "recall": 0.4,
+            "precision": 0.00984251968503937
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.05600292065946182,
+            "tp": 8,
+            "fp": 1008,
+            "predicciones_ignoradas": 40,
+            "recall": 0.32,
+            "precision": 0.007874015748031496
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.049288119715039096,
+            "tp": 7,
+            "fp": 1009,
+            "predicciones_ignoradas": 40,
+            "recall": 0.28,
+            "precision": 0.006889763779527559
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.016201620644862108,
+            "tp": 2,
+            "fp": 1014,
+            "predicciones_ignoradas": 40,
+            "recall": 0.08,
+            "precision": 0.001968503937007874
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.005500550095987792,
+            "tp": 1,
+            "fp": 1014,
+            "predicciones_ignoradas": 41,
+            "recall": 0.04,
+            "precision": 0.0009852216748768472
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.005500550095987792,
+            "tp": 1,
+            "fp": 1014,
+            "predicciones_ignoradas": 41,
+            "recall": 0.04,
+            "precision": 0.0009852216748768472
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1015,
+            "predicciones_ignoradas": 41,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1015,
+            "predicciones_ignoradas": 41,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1015,
+            "predicciones_ignoradas": 41,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 1015,
+            "predicciones_ignoradas": 41,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "vidrio": {
+        "objetos": 22,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 615,
+            "predicciones_ignoradas": 26,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "metal": {
+        "objetos": 60,
+        "ap50": 0.009332403079560488,
+        "ap50_95": 0.0019566707635796307,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.009332403079560488,
+            "tp": 7,
+            "fp": 3389,
+            "predicciones_ignoradas": 93,
+            "recall": 0.11666666666666667,
+            "precision": 0.002061248527679623
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.006816805902831625,
+            "tp": 6,
+            "fp": 3390,
+            "predicciones_ignoradas": 93,
+            "recall": 0.1,
+            "precision": 0.0017667844522968198
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.00177880590504939,
+            "tp": 4,
+            "fp": 3392,
+            "predicciones_ignoradas": 93,
+            "recall": 0.06666666666666667,
+            "precision": 0.001177856301531213
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0016386927483548032,
+            "tp": 2,
+            "fp": 3393,
+            "predicciones_ignoradas": 94,
+            "recall": 0.03333333333333333,
+            "precision": 0.000589101620029455
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3394,
+            "predicciones_ignoradas": 95,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "organico": {
+        "objetos": 1,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 0,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      }
+    },
+    "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial"
+  },
+  "hashes_manifiestos": {
+    "train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "val": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+    "clasificacion_auxiliar_train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "cache_clasificacion_auxiliar": "46bd48fc0988ace42fcb282a3da27b0d216e72632d603341cec93ab25315f8d4"
+  },
+  "priores_wh_train": [
+    [
+      0.03247550129890442,
+      0.029718130826950073
+    ],
+    [
+      0.1591533124446869,
+      0.14633333683013916
+    ]
+  ],
+  "corte_escala_train": 0.07280523329973221,
+  "clasificacion_auxiliar": {
+    "coeficiente_perdida": 0.5,
+    "imagenes_train": 2714,
+    "conteos_clase_train": [
+      649,
+      340,
+      319,
+      279,
+      539,
+      588
+    ]
+  },
+  "checkpoint_mejor": "checkpoints/detector_centros_v11_mejor.pt",
+  "checkpoint_ultimo": "checkpoints/detector_centros_v11_ultimo.pt",
+  "pesos_externos": false,
+  "test_evaluado": false,
+  "duracion_segundos": 1316.6219115999993,
+  "vram_pico_asignada_bytes": 517841408,
+  "limites": [
+    "Aprendizaje desde cero; validación reiterada no es prueba final.",
+    "Cinco objetos orgánicos train y uno val.",
+    "La tarea auxiliar global no aporta cajas nuevas."
+  ]
+}

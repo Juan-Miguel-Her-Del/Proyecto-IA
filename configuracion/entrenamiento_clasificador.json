@@ -1,0 +1,17 @@
+{
+  "nombre": "clasificador_piloto_v1",
+  "semilla": 42,
+  "epocas": 15,
+  "batch_size": 32,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 2,
+  "label_smoothing": 0.05,
+  "pesos_clase": "inverso_raiz_conteo_solo_train",
+  "precision_mixta_cuda": true,
+  "gradient_clip": 1.0,
+  "paciencia": 6,
+  "aumentos_solo_train": {"flip_horizontal": 0.5, "brillo": [0.85, 1.15], "contraste": [0.85, 1.15]},
+  "seleccion_checkpoint": "f1_macro_val",
+  "evaluar_test": false
+}

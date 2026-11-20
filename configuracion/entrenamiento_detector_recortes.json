@@ -1,0 +1,23 @@
+{
+  "nombre": "detector_mapas_recortes_v3",
+  "fuente_supervision": "poligonos",
+  "diagnostico": "resultados/diagnostico_detector_mapas_poligonos_padding.json",
+  "diagnostico_recortes": "resultados/diagnostico_recortes.json",
+  "recortes_train": "datos/cache/recortes_multiescala_v1",
+  "probabilidad_recorte": 0.5,
+  "postprocesamiento": "componentes_solo_contenido_real_v2",
+  "cobertura_minima": 0.015625,
+  "semilla": 42,
+  "epocas": 16,
+  "min_epocas": 8,
+  "paciencia": 6,
+  "batch_size": 8,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_epocas": 2,
+  "precision_mixta_cuda": true,
+  "umbral_evaluacion": 0.05,
+  "umbral_visualizacion": 0.35,
+  "area_minima_celdas": 2,
+  "evaluar_test": false
+}

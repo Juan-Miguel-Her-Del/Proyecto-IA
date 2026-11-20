@@ -1,0 +1,1982 @@
+{
+  "estado": "piloto_completado",
+  "fecha_utc": "2026-11-19T21:40:43.737094+00:00",
+  "configuracion": {
+    "nombre": "clasificador_piloto_v1",
+    "semilla": 42,
+    "epocas": 15,
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_epocas": 2,
+    "label_smoothing": 0.05,
+    "pesos_clase": "inverso_raiz_conteo_solo_train",
+    "precision_mixta_cuda": true,
+    "gradient_clip": 1.0,
+    "paciencia": 6,
+    "aumentos_solo_train": {
+      "flip_horizontal": 0.5,
+      "brillo": [
+        0.85,
+        1.15
+      ],
+      "contraste": [
+        0.85,
+        1.15
+      ]
+    },
+    "seleccion_checkpoint": "f1_macro_val",
+    "evaluar_test": false
+  },
+  "arquitectura": {
+    "imagen": 224,
+    "patch": 16,
+    "dimension": 128,
+    "bloques": 4,
+    "cabezas": 4,
+    "mlp": 256,
+    "clases": 6
+  },
+  "parametros": 629382,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch": "2.14.1+cu126",
+  "inicializacion": "aleatoria_de_PyTorch_sin_pesos_externos; biases_y_normas_con_inicializacion_estandar",
+  "precision": "AMP FP16",
+  "mejor_epoca": 14,
+  "epocas_ejecutadas": 15,
+  "historial": [
+    {
+      "epoca": 1,
+      "learning_rate": 0.00025,
+      "loss_train_ponderada_con_aumentos": 1.704638047963271,
+      "accuracy_train_durante_actualizaciones": 0.30655858511422257,
+      "val": {
+        "accuracy": 0.3721311475409836,
+        "f1_macro": 0.2983482210348146,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.28888888888888886,
+            "recall": 0.49242424242424243,
+            "f1": 0.3641456582633053,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.875,
+            "recall": 0.0875,
+            "f1": 0.15909090909090906,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.2857142857142857,
+            "recall": 0.11428571428571428,
+            "f1": 0.16326530612244897,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.19444444444444445,
+            "recall": 0.09859154929577464,
+            "f1": 0.1308411214953271,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.45901639344262296,
+            "recall": 0.4307692307692308,
+            "f1": 0.4444444444444444,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.4397905759162304,
+            "recall": 0.6614173228346457,
+            "f1": 0.5283018867924529,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            65,
+            0,
+            4,
+            17,
+            28,
+            18
+          ],
+          [
+            42,
+            7,
+            3,
+            4,
+            17,
+            7
+          ],
+          [
+            29,
+            1,
+            8,
+            0,
+            2,
+            30
+          ],
+          [
+            42,
+            0,
+            2,
+            7,
+            10,
+            10
+          ],
+          [
+            26,
+            0,
+            1,
+            5,
+            56,
+            42
+          ],
+          [
+            21,
+            0,
+            10,
+            3,
+            9,
+            84
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 1.5837670498206968
+      }
+    },
+    {
+      "epoca": 2,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 1.4735370757567505,
+      "accuracy_train_durante_actualizaciones": 0.45541635961680177,
+      "val": {
+        "accuracy": 0.4721311475409836,
+        "f1_macro": 0.4192315932677315,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.26,
+            "recall": 0.09848484848484848,
+            "f1": 0.14285714285714282,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.2894736842105263,
+            "recall": 0.15714285714285714,
+            "f1": 0.20370370370370372,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.3958333333333333,
+            "recall": 0.5352112676056338,
+            "f1": 0.45508982035928147,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.5735294117647058,
+            "recall": 0.6,
+            "f1": 0.5864661654135338,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.6352941176470588,
+            "recall": 0.8503937007874016,
+            "f1": 0.7272727272727273,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            13,
+            22,
+            14,
+            39,
+            28,
+            16
+          ],
+          [
+            21,
+            40,
+            2,
+            5,
+            9,
+            3
+          ],
+          [
+            8,
+            28,
+            11,
+            0,
+            3,
+            20
+          ],
+          [
+            2,
+            8,
+            2,
+            38,
+            11,
+            10
+          ],
+          [
+            6,
+            20,
+            5,
+            8,
+            78,
+            13
+          ],
+          [
+            0,
+            2,
+            4,
+            6,
+            7,
+            108
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 1.32703607277792
+      }
+    },
+    {
+      "epoca": 3,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 1.2359639231826596,
+      "accuracy_train_durante_actualizaciones": 0.5611643330876934,
+      "val": {
+        "accuracy": 0.5344262295081967,
+        "f1_macro": 0.5115703913585777,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.375,
+            "recall": 0.36363636363636365,
+            "f1": 0.3692307692307692,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6136363636363636,
+            "recall": 0.3375,
+            "f1": 0.43548387096774194,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.5641025641025641,
+            "recall": 0.3142857142857143,
+            "f1": 0.40366972477064217,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.5211267605633803,
+            "recall": 0.5211267605633803,
+            "f1": 0.5211267605633803,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.4766355140186916,
+            "recall": 0.7846153846153846,
+            "f1": 0.5930232558139534,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.7894736842105263,
+            "recall": 0.7086614173228346,
+            "f1": 0.7468879668049794,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            48,
+            6,
+            3,
+            17,
+            54,
+            4
+          ],
+          [
+            27,
+            27,
+            6,
+            3,
+            16,
+            1
+          ],
+          [
+            20,
+            6,
+            22,
+            5,
+            13,
+            4
+          ],
+          [
+            7,
+            1,
+            1,
+            37,
+            20,
+            5
+          ],
+          [
+            12,
+            1,
+            0,
+            5,
+            102,
+            10
+          ],
+          [
+            14,
+            3,
+            7,
+            4,
+            9,
+            90
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 1.200071566222144
+      }
+    },
+    {
+      "epoca": 4,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 1.1169699123877326,
+      "accuracy_train_durante_actualizaciones": 0.6179071481208548,
+      "val": {
+        "accuracy": 0.5754098360655737,
+        "f1_macro": 0.5633709205932501,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.39893617021276595,
+            "recall": 0.5681818181818182,
+            "f1": 0.46875,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6078431372549019,
+            "recall": 0.3875,
+            "f1": 0.4732824427480916,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.7272727272727273,
+            "recall": 0.45714285714285713,
+            "f1": 0.5614035087719298,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.7631578947368421,
+            "recall": 0.4084507042253521,
+            "f1": 0.5321100917431193,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.5652173913043478,
+            "recall": 0.6,
+            "f1": 0.582089552238806,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.7019867549668874,
+            "recall": 0.8346456692913385,
+            "f1": 0.762589928057554,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            75,
+            4,
+            5,
+            6,
+            33,
+            9
+          ],
+          [
+            31,
+            31,
+            4,
+            0,
+            10,
+            4
+          ],
+          [
+            25,
+            3,
+            32,
+            2,
+            1,
+            7
+          ],
+          [
+            17,
+            1,
+            0,
+            29,
+            13,
+            11
+          ],
+          [
+            22,
+            12,
+            3,
+            1,
+            78,
+            14
+          ],
+          [
+            18,
+            0,
+            0,
+            0,
+            3,
+            106
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 1.12000732421875
+      }
+    },
+    {
+      "epoca": 5,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 1.0318694370321781,
+      "accuracy_train_durante_actualizaciones": 0.6558585114222549,
+      "val": {
+        "accuracy": 0.6426229508196721,
+        "f1_macro": 0.6306692575398493,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.4474885844748858,
+            "recall": 0.7424242424242424,
+            "f1": 0.5584045584045584,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6290322580645161,
+            "recall": 0.4875,
+            "f1": 0.5492957746478874,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.8461538461538461,
+            "recall": 0.4714285714285714,
+            "f1": 0.6055045871559632,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.7346938775510204,
+            "recall": 0.5070422535211268,
+            "f1": 0.6,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.7865168539325843,
+            "recall": 0.5384615384615384,
+            "f1": 0.639269406392694,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.7631578947368421,
+            "recall": 0.9133858267716536,
+            "f1": 0.8315412186379928,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            98,
+            5,
+            6,
+            8,
+            10,
+            5
+          ],
+          [
+            31,
+            39,
+            0,
+            0,
+            5,
+            5
+          ],
+          [
+            17,
+            10,
+            33,
+            2,
+            1,
+            7
+          ],
+          [
+            24,
+            2,
+            0,
+            36,
+            1,
+            8
+          ],
+          [
+            41,
+            6,
+            0,
+            2,
+            70,
+            11
+          ],
+          [
+            8,
+            0,
+            0,
+            1,
+            2,
+            116
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.9925244065581775
+      }
+    },
+    {
+      "epoca": 6,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.9782241972474904,
+      "accuracy_train_durante_actualizaciones": 0.6842299189388357,
+      "val": {
+        "accuracy": 0.6278688524590164,
+        "f1_macro": 0.6222301035767748,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.5,
+            "recall": 0.4621212121212121,
+            "f1": 0.48031496062992124,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.4827586206896552,
+            "recall": 0.525,
+            "f1": 0.5029940119760479,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.6376811594202898,
+            "recall": 0.6285714285714286,
+            "f1": 0.6330935251798562,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.5666666666666667,
+            "recall": 0.7183098591549296,
+            "f1": 0.6335403726708074,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.65,
+            "recall": 0.6,
+            "f1": 0.624,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.8770491803278688,
+            "recall": 0.84251968503937,
+            "f1": 0.859437751004016,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            61,
+            8,
+            12,
+            21,
+            26,
+            4
+          ],
+          [
+            18,
+            42,
+            7,
+            2,
+            10,
+            1
+          ],
+          [
+            11,
+            8,
+            44,
+            4,
+            2,
+            1
+          ],
+          [
+            10,
+            3,
+            0,
+            51,
+            2,
+            5
+          ],
+          [
+            15,
+            19,
+            3,
+            11,
+            78,
+            4
+          ],
+          [
+            7,
+            7,
+            3,
+            1,
+            2,
+            107
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.9657673569976306
+      }
+    },
+    {
+      "epoca": 7,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.9069562288620231,
+      "accuracy_train_durante_actualizaciones": 0.7148120854826824,
+      "val": {
+        "accuracy": 0.6409836065573771,
+        "f1_macro": 0.6190122546962297,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.44025157232704404,
+            "recall": 0.5303030303030303,
+            "f1": 0.48109965635738833,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.8888888888888888,
+            "recall": 0.4,
+            "f1": 0.5517241379310346,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6857142857142857,
+            "f1": 0.676056338028169,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.627906976744186,
+            "recall": 0.38028169014084506,
+            "f1": 0.4736842105263158,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6911764705882353,
+            "recall": 0.7230769230769231,
+            "f1": 0.7067669172932332,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.7317073170731707,
+            "recall": 0.9448818897637795,
+            "f1": 0.8247422680412372,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            70,
+            2,
+            13,
+            9,
+            27,
+            11
+          ],
+          [
+            27,
+            32,
+            5,
+            1,
+            11,
+            4
+          ],
+          [
+            14,
+            2,
+            48,
+            4,
+            0,
+            2
+          ],
+          [
+            24,
+            0,
+            3,
+            27,
+            3,
+            14
+          ],
+          [
+            18,
+            0,
+            3,
+            2,
+            94,
+            13
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            1,
+            120
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 1.033586720951268
+      }
+    },
+    {
+      "epoca": 8,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.8788682869803668,
+      "accuracy_train_durante_actualizaciones": 0.7243920412675019,
+      "val": {
+        "accuracy": 0.6426229508196721,
+        "f1_macro": 0.6313066499820169,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.5179856115107914,
+            "recall": 0.5454545454545454,
+            "f1": 0.5313653136531366,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.5104166666666666,
+            "recall": 0.6125,
+            "f1": 0.5568181818181818,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.967741935483871,
+            "recall": 0.42857142857142855,
+            "f1": 0.594059405940594,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.8421052631578947,
+            "recall": 0.4507042253521127,
+            "f1": 0.5871559633027522,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.5412371134020618,
+            "recall": 0.8076923076923077,
+            "f1": 0.6481481481481481,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.9285714285714286,
+            "recall": 0.8188976377952756,
+            "f1": 0.8702928870292886,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            72,
+            8,
+            1,
+            3,
+            44,
+            4
+          ],
+          [
+            18,
+            49,
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            14,
+            17,
+            30,
+            3,
+            4,
+            2
+          ],
+          [
+            13,
+            8,
+            0,
+            32,
+            16,
+            2
+          ],
+          [
+            12,
+            13,
+            0,
+            0,
+            105,
+            0
+          ],
+          [
+            10,
+            1,
+            0,
+            0,
+            12,
+            104
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.9375032268586706
+      }
+    },
+    {
+      "epoca": 9,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.8346039318124775,
+      "accuracy_train_durante_actualizaciones": 0.7630803242446573,
+      "val": {
+        "accuracy": 0.639344262295082,
+        "f1_macro": 0.6324785696159031,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.5384615384615384,
+            "recall": 0.3712121212121212,
+            "f1": 0.43946188340807174,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.4214876033057851,
+            "recall": 0.6375,
+            "f1": 0.5074626865671642,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.7627118644067796,
+            "recall": 0.6428571428571429,
+            "f1": 0.6976744186046511,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.6176470588235294,
+            "recall": 0.5915492957746479,
+            "f1": 0.60431654676259,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6126760563380281,
+            "recall": 0.6692307692307692,
+            "f1": 0.6397058823529411,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.8992248062015504,
+            "recall": 0.9133858267716536,
+            "f1": 0.9062500000000001,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            49,
+            14,
+            7,
+            19,
+            36,
+            7
+          ],
+          [
+            14,
+            51,
+            5,
+            0,
+            10,
+            0
+          ],
+          [
+            8,
+            12,
+            45,
+            3,
+            2,
+            0
+          ],
+          [
+            7,
+            10,
+            1,
+            42,
+            7,
+            4
+          ],
+          [
+            8,
+            29,
+            0,
+            4,
+            87,
+            2
+          ],
+          [
+            5,
+            5,
+            1,
+            0,
+            0,
+            116
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.9079416994188653
+      }
+    },
+    {
+      "epoca": 10,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.7813755428870109,
+      "accuracy_train_durante_actualizaciones": 0.7756079587324981,
+      "val": {
+        "accuracy": 0.6557377049180327,
+        "f1_macro": 0.6417983465667544,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.6206896551724138,
+            "recall": 0.4090909090909091,
+            "f1": 0.49315068493150693,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.5365853658536586,
+            "recall": 0.55,
+            "f1": 0.54320987654321,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.8636363636363636,
+            "recall": 0.5428571428571428,
+            "f1": 0.6666666666666666,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.5679012345679012,
+            "recall": 0.647887323943662,
+            "f1": 0.6052631578947368,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.5555555555555556,
+            "recall": 0.7692307692307693,
+            "f1": 0.6451612903225806,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.8676470588235294,
+            "recall": 0.9291338582677166,
+            "f1": 0.8973384030418251,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            54,
+            6,
+            1,
+            24,
+            40,
+            7
+          ],
+          [
+            15,
+            44,
+            4,
+            2,
+            14,
+            1
+          ],
+          [
+            4,
+            5,
+            38,
+            5,
+            13,
+            5
+          ],
+          [
+            4,
+            4,
+            1,
+            46,
+            12,
+            4
+          ],
+          [
+            5,
+            21,
+            0,
+            3,
+            100,
+            1
+          ],
+          [
+            5,
+            2,
+            0,
+            1,
+            1,
+            118
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.9484702313532595
+      }
+    },
+    {
+      "epoca": 11,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.7726086359649523,
+      "accuracy_train_durante_actualizaciones": 0.7767133382461312,
+      "val": {
+        "accuracy": 0.7065573770491803,
+        "f1_macro": 0.6973578458548889,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.5555555555555556,
+            "recall": 0.6060606060606061,
+            "f1": 0.5797101449275361,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.8125,
+            "recall": 0.4875,
+            "f1": 0.6093749999999999,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.7666666666666667,
+            "recall": 0.6571428571428571,
+            "f1": 0.7076923076923077,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.6233766233766234,
+            "recall": 0.676056338028169,
+            "f1": 0.6486486486486486,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6352201257861635,
+            "recall": 0.7769230769230769,
+            "f1": 0.6989619377162629,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.9590163934426229,
+            "recall": 0.9212598425196851,
+            "f1": 0.9397590361445783,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            80,
+            1,
+            6,
+            13,
+            28,
+            4
+          ],
+          [
+            22,
+            39,
+            5,
+            2,
+            12,
+            0
+          ],
+          [
+            12,
+            1,
+            46,
+            6,
+            5,
+            0
+          ],
+          [
+            10,
+            1,
+            3,
+            48,
+            8,
+            1
+          ],
+          [
+            15,
+            6,
+            0,
+            8,
+            101,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            5,
+            117
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.8250619606893571
+      }
+    },
+    {
+      "epoca": 12,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.7169588579794196,
+      "accuracy_train_durante_actualizaciones": 0.8124539425202653,
+      "val": {
+        "accuracy": 0.6836065573770492,
+        "f1_macro": 0.6682074268459669,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.6578947368421053,
+            "recall": 0.3787878787878788,
+            "f1": 0.4807692307692307,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.625,
+            "recall": 0.5625,
+            "f1": 0.5921052631578947,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.7101449275362319,
+            "recall": 0.7,
+            "f1": 0.7050359712230215,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.6375,
+            "recall": 0.7183098591549296,
+            "f1": 0.6754966887417218,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6556291390728477,
+            "recall": 0.7615384615384615,
+            "f1": 0.7046263345195729,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.7592592592592593,
+            "recall": 0.968503937007874,
+            "f1": 0.8512110726643599,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            50,
+            7,
+            12,
+            20,
+            32,
+            11
+          ],
+          [
+            11,
+            45,
+            5,
+            1,
+            13,
+            5
+          ],
+          [
+            5,
+            5,
+            49,
+            1,
+            2,
+            8
+          ],
+          [
+            5,
+            4,
+            2,
+            51,
+            5,
+            4
+          ],
+          [
+            2,
+            11,
+            1,
+            6,
+            99,
+            11
+          ],
+          [
+            3,
+            0,
+            0,
+            1,
+            0,
+            123
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.8402301475649975
+      }
+    },
+    {
+      "epoca": 13,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.6921929603960028,
+      "accuracy_train_durante_actualizaciones": 0.8201915991156964,
+      "val": {
+        "accuracy": 0.7081967213114754,
+        "f1_macro": 0.6982289922888278,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.5375,
+            "recall": 0.6515151515151515,
+            "f1": 0.589041095890411,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.8913043478260869,
+            "recall": 0.5125,
+            "f1": 0.6507936507936508,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.8541666666666666,
+            "recall": 0.5857142857142857,
+            "f1": 0.6949152542372882,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.76,
+            "recall": 0.5352112676056338,
+            "f1": 0.628099173553719,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6132596685082873,
+            "recall": 0.8538461538461538,
+            "f1": 0.7138263665594855,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.92,
+            "recall": 0.905511811023622,
+            "f1": 0.9126984126984127,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            86,
+            1,
+            2,
+            7,
+            34,
+            2
+          ],
+          [
+            17,
+            41,
+            5,
+            0,
+            15,
+            2
+          ],
+          [
+            17,
+            2,
+            41,
+            1,
+            6,
+            3
+          ],
+          [
+            18,
+            1,
+            0,
+            38,
+            11,
+            3
+          ],
+          [
+            15,
+            1,
+            0,
+            3,
+            111,
+            0
+          ],
+          [
+            7,
+            0,
+            0,
+            1,
+            4,
+            115
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.8016904612056545
+      }
+    },
+    {
+      "epoca": 14,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.6431502014640156,
+      "accuracy_train_durante_actualizaciones": 0.8279292557111275,
+      "val": {
+        "accuracy": 0.7065573770491803,
+        "f1_macro": 0.708818899678223,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.531578947368421,
+            "recall": 0.7651515151515151,
+            "f1": 0.6273291925465838,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6891891891891891,
+            "recall": 0.6375,
+            "f1": 0.6623376623376622,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.78125,
+            "recall": 0.7142857142857143,
+            "f1": 0.7462686567164178,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.6956521739130435,
+            "recall": 0.676056338028169,
+            "f1": 0.6857142857142857,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.7604166666666666,
+            "recall": 0.5615384615384615,
+            "f1": 0.6460176991150441,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.9230769230769231,
+            "recall": 0.8503937007874016,
+            "f1": 0.8852459016393444,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            101,
+            3,
+            6,
+            10,
+            9,
+            3
+          ],
+          [
+            18,
+            51,
+            3,
+            0,
+            7,
+            1
+          ],
+          [
+            11,
+            4,
+            50,
+            3,
+            0,
+            2
+          ],
+          [
+            14,
+            2,
+            2,
+            48,
+            3,
+            2
+          ],
+          [
+            38,
+            14,
+            1,
+            3,
+            73,
+            1
+          ],
+          [
+            8,
+            0,
+            2,
+            5,
+            4,
+            108
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.7716546981061091
+      }
+    },
+    {
+      "epoca": 15,
+      "learning_rate": 0.0005,
+      "loss_train_ponderada_con_aumentos": 0.6376281224723765,
+      "accuracy_train_durante_actualizaciones": 0.8389830508474576,
+      "val": {
+        "accuracy": 0.7147540983606557,
+        "f1_macro": 0.7077097111087892,
+        "por_clase": {
+          "plastico": {
+            "precision": 0.6448598130841121,
+            "recall": 0.5227272727272727,
+            "f1": 0.5774058577405857,
+            "soporte": 132
+          },
+          "papel": {
+            "precision": 0.6470588235294118,
+            "recall": 0.55,
+            "f1": 0.5945945945945946,
+            "soporte": 80
+          },
+          "carton": {
+            "precision": 0.7571428571428571,
+            "recall": 0.7571428571428571,
+            "f1": 0.7571428571428571,
+            "soporte": 70
+          },
+          "vidrio": {
+            "precision": 0.7704918032786885,
+            "recall": 0.6619718309859155,
+            "f1": 0.712121212121212,
+            "soporte": 71
+          },
+          "metal": {
+            "precision": 0.6094674556213018,
+            "recall": 0.7923076923076923,
+            "f1": 0.6889632107023411,
+            "soporte": 130
+          },
+          "organico": {
+            "precision": 0.8888888888888888,
+            "recall": 0.9448818897637795,
+            "f1": 0.916030534351145,
+            "soporte": 127
+          }
+        },
+        "matriz_confusion": [
+          [
+            69,
+            6,
+            4,
+            7,
+            39,
+            7
+          ],
+          [
+            16,
+            44,
+            5,
+            0,
+            14,
+            1
+          ],
+          [
+            6,
+            4,
+            53,
+            1,
+            3,
+            3
+          ],
+          [
+            6,
+            4,
+            4,
+            47,
+            8,
+            2
+          ],
+          [
+            6,
+            10,
+            4,
+            5,
+            103,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            1,
+            2,
+            120
+          ]
+        ],
+        "orden_clases": [
+          "plastico",
+          "papel",
+          "carton",
+          "vidrio",
+          "metal",
+          "organico"
+        ],
+        "loss_ce_no_ponderada": 0.7924262250056032
+      }
+    }
+  ],
+  "train": {
+    "accuracy": 0.8448784082535004,
+    "f1_macro": 0.8471704561224414,
+    "por_clase": {
+      "plastico": {
+        "precision": 0.7151515151515152,
+        "recall": 0.9090909090909091,
+        "f1": 0.8005427408412483,
+        "soporte": 649
+      },
+      "papel": {
+        "precision": 0.8645533141210374,
+        "recall": 0.8823529411764706,
+        "f1": 0.8733624454148471,
+        "soporte": 340
+      },
+      "carton": {
+        "precision": 0.864951768488746,
+        "recall": 0.8432601880877743,
+        "f1": 0.853968253968254,
+        "soporte": 319
+      },
+      "vidrio": {
+        "precision": 0.8445229681978799,
+        "recall": 0.8566308243727598,
+        "f1": 0.8505338078291814,
+        "soporte": 279
+      },
+      "metal": {
+        "precision": 0.8997429305912596,
+        "recall": 0.6493506493506493,
+        "f1": 0.7543103448275862,
+        "soporte": 539
+      },
+      "organico": {
+        "precision": 0.9749552772808586,
+        "recall": 0.9268707482993197,
+        "f1": 0.9503051438535309,
+        "soporte": 588
+      }
+    },
+    "matriz_confusion": [
+      [
+        590,
+        19,
+        11,
+        15,
+        9,
+        5
+      ],
+      [
+        11,
+        300,
+        8,
+        1,
+        18,
+        2
+      ],
+      [
+        36,
+        6,
+        269,
+        3,
+        2,
+        3
+      ],
+      [
+        26,
+        1,
+        7,
+        239,
+        5,
+        1
+      ],
+      [
+        141,
+        21,
+        5,
+        19,
+        350,
+        3
+      ],
+      [
+        21,
+        0,
+        11,
+        6,
+        5,
+        545
+      ]
+    ],
+    "orden_clases": [
+      "plastico",
+      "papel",
+      "carton",
+      "vidrio",
+      "metal",
+      "organico"
+    ],
+    "loss_ce_no_ponderada": 0.4513207128712072
+  },
+  "val": {
+    "accuracy": 0.7065573770491803,
+    "f1_macro": 0.708818899678223,
+    "por_clase": {
+      "plastico": {
+        "precision": 0.531578947368421,
+        "recall": 0.7651515151515151,
+        "f1": 0.6273291925465838,
+        "soporte": 132
+      },
+      "papel": {
+        "precision": 0.6891891891891891,
+        "recall": 0.6375,
+        "f1": 0.6623376623376622,
+        "soporte": 80
+      },
+      "carton": {
+        "precision": 0.78125,
+        "recall": 0.7142857142857143,
+        "f1": 0.7462686567164178,
+        "soporte": 70
+      },
+      "vidrio": {
+        "precision": 0.6956521739130435,
+        "recall": 0.676056338028169,
+        "f1": 0.6857142857142857,
+        "soporte": 71
+      },
+      "metal": {
+        "precision": 0.7604166666666666,
+        "recall": 0.5615384615384615,
+        "f1": 0.6460176991150441,
+        "soporte": 130
+      },
+      "organico": {
+        "precision": 0.9230769230769231,
+        "recall": 0.8503937007874016,
+        "f1": 0.8852459016393444,
+        "soporte": 127
+      }
+    },
+    "matriz_confusion": [
+      [
+        101,
+        3,
+        6,
+        10,
+        9,
+        3
+      ],
+      [
+        18,
+        51,
+        3,
+        0,
+        7,
+        1
+      ],
+      [
+        11,
+        4,
+        50,
+        3,
+        0,
+        2
+      ],
+      [
+        14,
+        2,
+        2,
+        48,
+        3,
+        2
+      ],
+      [
+        38,
+        14,
+        1,
+        3,
+        73,
+        1
+      ],
+      [
+        8,
+        0,
+        2,
+        5,
+        4,
+        108
+      ]
+    ],
+    "orden_clases": [
+      "plastico",
+      "papel",
+      "carton",
+      "vidrio",
+      "metal",
+      "organico"
+    ],
+    "loss_ce_no_ponderada": 0.7716546981061091
+  },
+  "baseline_mayoritaria_train_sobre_val": {
+    "accuracy": 0.21639344262295082,
+    "f1_macro": 0.05929919137466307,
+    "por_clase": {
+      "plastico": {
+        "precision": 0.21639344262295082,
+        "recall": 1.0,
+        "f1": 0.3557951482479784,
+        "soporte": 132
+      },
+      "papel": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "soporte": 80
+      },
+      "carton": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "soporte": 70
+      },
+      "vidrio": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "soporte": 71
+      },
+      "metal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "soporte": 130
+      },
+      "organico": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "soporte": 127
+      }
+    },
+    "matriz_confusion": [
+      [
+        132,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        80,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        70,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        71,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        130,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        127,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "orden_clases": [
+      "plastico",
+      "papel",
+      "carton",
+      "vidrio",
+      "metal",
+      "organico"
+    ]
+  },
+  "pesos_clases_train": [
+    0.8020286560058594,
+    1.1080843210220337,
+    1.1439759731292725,
+    1.2232357263565063,
+    0.8800713419914246,
+    0.8426041603088379
+  ],
+  "conteos_train": {
+    "carton": 319,
+    "organico": 588,
+    "vidrio": 279,
+    "metal": 539,
+    "papel": 340,
+    "plastico": 649
+  },
+  "hashes_manifiestos": {
+    "train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "val": "0318a10bf9035c620ac12c935aa84d85bc8f2c64a35af581e8e8bbbb9c6f5dab"
+  },
+  "vram_pico_asignada_bytes": 160440832,
+  "duracion_entrenamiento_segundos": 39.00513469999714,
+  "checkpoint_mejor": "checkpoints/clasificador_piloto_v1_mejor.pt",
+  "checkpoint_ultimo": "checkpoints/clasificador_piloto_v1_ultimo.pt",
+  "test_evaluado": false,
+  "limitacion": "Piloto sobre un solo dataset. Val se usa para seleccionar checkpoint; no equivale a prueba final ni demuestra detección o generalización en webcam."
+}
