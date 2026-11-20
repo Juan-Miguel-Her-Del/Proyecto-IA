@@ -4,9 +4,11 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
-Fase actual: los tres modelos Transformer están implementados y entrenados; RealWaste y TACO están preparados y auditados. Son entrenamientos reales de desarrollo con selección en validación. **El detector mantiene calidad insuficiente y el MVP de video aún no está completado.** Los documentos originales están en `../documentos/`.
+Fase actual: los tres modelos Transformer están implementados y entrenados; RealWaste y TACO están preparados y auditados. MP4 y webcam tienen inferencia experimental, exportación y conexión al asistente. **El detector mantiene calidad insuficiente; la cámara física y los videos independientes siguen pendientes de validación.** Los documentos originales están en `../documentos/`.
 
-**Detector:** mejor mAP@50 val **2.91%**, todavía insuficiente. Selección `detector_mapas_v6_mosaico`, modo mosaico_cinco_vistas. Se comparó el entrenamiento de centros con inferencia por zonas. Pasaron 93 pruebas; test reservado. Ver [informe conjunto](documentacion/11_mejora_clasificador_y_centros.md).
+**Detector:** se conserva `detector_mapas_v6_mosaico`, checkpoint de época 19, argmax y cinco vistas; mAP@50 val **2,91 %**, todavía insuficiente. Pasaron 109 pruebas. Las ramas nuevas no sustituyen al predeterminado; ver [ablación](documentacion/13_ablacion_del_fondo.md).
+
+**Ablación de fondo y video:** completadas dos ramas de 1.452 actualizaciones desde el mismo estado de época 19; fondo=1 no mejora suficientemente y se conserva el detector actual. MP4/webcam implementados con advertencias y 109 pruebas aprobadas. Ver [ablación](documentacion/13_ablacion_del_fondo.md) y [uso de video/cámara](documentacion/14_video_y_webcam_experimental.md).
 
 **Experimento de propuestas con pesos congelados:** retirar argmax empeoró el detector de cinco vistas: mAP@50 2,91 % → 1,15 %, recall 20,50 % → 16,62 % y FP 2.374 → 13.055 a puntuación ≥0,05. Se conserva la selección actual. Pasaron 98 pruebas; ver [comparación y diagnóstico](documentacion/12_propuestas_por_material_sin_argmax.md).
 
@@ -64,7 +66,7 @@ Los scripts de descarga, preparación y validación son `scripts/descargar_datos
 1. Ampliar el corpus del asistente y los ejemplos reales de detección orgánica; reservar nuevos videos para prueba externa.
 2. Mejorar localización y cobertura de detección: se compararon centros por instancia y cinco vistas; el AP continúa siendo insuficiente.
 3. Mejorar y validar los modelos con escenas independientes antes de presentar detecciones de video como fiables.
-4. Integrar imagen, webcam, video y asistente; medir latencia y calidad con datos independientes.
+4. Validar la webcam física y videos independientes; medir latencia sostenida y calidad. La integración experimental ya está implementada.
 
 La arquitectura del detector está implementada. Resultado seleccionado: `resultados/detector_mapas_v6_mosaico.json`; clasificador: `resultados/clasificador_v3_regularizado.json`. Se conservan todos los ensayos anteriores. Los del asistente están en `resultados/asistente_v1.json` y `resultados/baseline_asistente.json`.
 
@@ -81,3 +83,13 @@ Esta función clasifica la imagen completa. Para inspeccionar técnicamente el d
 ```
 
 Las cajas de este piloto contienen numerosos errores; la conexión al asistente es una prueba de integración y no acredita la validez de esas detecciones.
+
+
+## MP4 y webcam
+
+```powershell
+& $pythonEco scripts/detectar_video.py --video 'C:\ruta\mi_video.mp4' --salida resultados/mi_video
+& $pythonEco scripts/detectar_video.py --camara 0 --salida resultados/camara_sesion1 --mostrar
+```
+
+La carpeta de salida debe ser nueva. Se conserva argmax y cinco vistas; las cajas son experimentales. Ver [salidas, controles y límites](documentacion/14_video_y_webcam_experimental.md).

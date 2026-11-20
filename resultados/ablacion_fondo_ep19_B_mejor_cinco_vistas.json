@@ -1,0 +1,615 @@
+{
+  "estado": "reevaluacion_val_completada",
+  "fecha_utc": "2026-11-20T15:10:38.178855+00:00",
+  "version": "completa_cuatro_zonas065_bordes_nms050_v1",
+  "checkpoint": "checkpoints/ablacion_fondo_ep19_B_mejor.pt",
+  "sha256_checkpoint": "0ad1835c0c19b7f88d1ab65f82d9cffce8168328b69b040f2cc786721c569d31",
+  "epoca": 24,
+  "hashes_manifiestos": {
+    "train": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "val": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+    "anotaciones_poligonos": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+    "inventario_procedencia": "c549b16f5d1dd64d8d41c0d5192d0cee40aa740ca9bbfe86ffb8c335e7498eef",
+    "clasificacion_auxiliar_train": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "cache_clasificacion_auxiliar": "46bd48fc0988ace42fcb282a3da27b0d216e72632d603341cec93ab25315f8d4"
+  },
+  "val": {
+    "map50": 0.013508638748192157,
+    "map50_95": 0.005789725241180595,
+    "recall50": 0.24930747922437674,
+    "precision50": 0.024291497975708502,
+    "objetos": 361,
+    "clases_con_soporte": 6,
+    "por_clase": {
+      "plastico": {
+        "objetos": 228,
+        "ap50": 0.043187403774792604,
+        "ap50_95": 0.014754842976015984,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.043187403774792604,
+            "tp": 80,
+            "fp": 2107,
+            "predicciones_ignoradas": 40,
+            "recall": 0.3508771929824561,
+            "precision": 0.03657978966620942
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0386242131785591,
+            "tp": 72,
+            "fp": 2115,
+            "predicciones_ignoradas": 40,
+            "recall": 0.3157894736842105,
+            "precision": 0.03292181069958848
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.03279219730065601,
+            "tp": 61,
+            "fp": 2126,
+            "predicciones_ignoradas": 40,
+            "recall": 0.2675438596491228,
+            "precision": 0.027892089620484683
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.018851711423975407,
+            "tp": 44,
+            "fp": 2143,
+            "predicciones_ignoradas": 40,
+            "recall": 0.19298245614035087,
+            "precision": 0.020118884316415182
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.007026633137080929,
+            "tp": 24,
+            "fp": 2163,
+            "predicciones_ignoradas": 40,
+            "recall": 0.10526315789473684,
+            "precision": 0.010973936899862825
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.004497757946869524,
+            "tp": 17,
+            "fp": 2170,
+            "predicciones_ignoradas": 40,
+            "recall": 0.07456140350877193,
+            "precision": 0.007773205304069501
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0022645960423615897,
+            "tp": 10,
+            "fp": 2177,
+            "predicciones_ignoradas": 40,
+            "recall": 0.043859649122807015,
+            "precision": 0.004572473708276178
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0003039169558646655,
+            "tp": 3,
+            "fp": 2184,
+            "predicciones_ignoradas": 40,
+            "recall": 0.013157894736842105,
+            "precision": 0.0013717421124828531
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 2187,
+            "predicciones_ignoradas": 40,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 2187,
+            "predicciones_ignoradas": 40,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "papel": {
+        "objetos": 25,
+        "ap50": 0.027817068418653886,
+        "ap50_95": 0.01810466827142357,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.027817068418653886,
+            "tp": 2,
+            "fp": 281,
+            "predicciones_ignoradas": 9,
+            "recall": 0.08,
+            "precision": 0.007067137809187279
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.007072136101156178,
+            "tp": 1,
+            "fp": 282,
+            "predicciones_ignoradas": 9,
+            "recall": 0.04,
+            "precision": 0.0035335689045936395
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.007072136101156178,
+            "tp": 1,
+            "fp": 282,
+            "predicciones_ignoradas": 9,
+            "recall": 0.04,
+            "precision": 0.0035335689045936395
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 283,
+            "predicciones_ignoradas": 9,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 283,
+            "predicciones_ignoradas": 9,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "carton": {
+        "objetos": 25,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 346,
+            "predicciones_ignoradas": 10,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "vidrio": {
+        "objetos": 22,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 431,
+            "predicciones_ignoradas": 11,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "metal": {
+        "objetos": 60,
+        "ap50": 0.010047360295706456,
+        "ap50_95": 0.0018788401996440226,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.010047360295706456,
+            "tp": 8,
+            "fp": 447,
+            "predicciones_ignoradas": 17,
+            "recall": 0.13333333333333333,
+            "precision": 0.017582417582417582
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.006456197746614418,
+            "tp": 5,
+            "fp": 450,
+            "predicciones_ignoradas": 17,
+            "recall": 0.08333333333333333,
+            "precision": 0.01098901098901099
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0007616146513731173,
+            "tp": 1,
+            "fp": 454,
+            "predicciones_ignoradas": 17,
+            "recall": 0.016666666666666666,
+            "precision": 0.002197802197802198
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0007616146513731173,
+            "tp": 1,
+            "fp": 454,
+            "predicciones_ignoradas": 17,
+            "recall": 0.016666666666666666,
+            "precision": 0.002197802197802198
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0007616146513731173,
+            "tp": 1,
+            "fp": 454,
+            "predicciones_ignoradas": 17,
+            "recall": 0.016666666666666666,
+            "precision": 0.002197802197802198
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 455,
+            "predicciones_ignoradas": 17,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 455,
+            "predicciones_ignoradas": 17,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 455,
+            "predicciones_ignoradas": 17,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 455,
+            "predicciones_ignoradas": 17,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 455,
+            "predicciones_ignoradas": 17,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      },
+      "organico": {
+        "objetos": 1,
+        "ap50": 0.0,
+        "ap50_95": 0.0,
+        "por_umbral": [
+          {
+            "iou": 0.5,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.55,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.6,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.65,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.7,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.75,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.8,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.85,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.9,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          },
+          {
+            "iou": 0.95,
+            "ap": 0.0,
+            "tp": 0,
+            "fp": 3,
+            "predicciones_ignoradas": 0,
+            "recall": 0.0,
+            "precision": 0.0
+          }
+        ]
+      }
+    },
+    "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial"
+  },
+  "umbral_evaluacion": 0.05,
+  "vistas_por_imagen": 5,
+  "test_evaluado": false,
+  "pesos_externos": false,
+  "duracion_segundos": 59.674938999989536,
+  "limite": "Inferencia experimental de mayor coste, con la misma validación de desarrollo y sin nuevos pesos."
+}

@@ -10,6 +10,7 @@ def leer(p): return json.loads((RAIZ / p).read_text(encoding='utf-8'))
 
 
 def main():
+    historico=(RAIZ/'documentacion/13_ablacion_del_fondo.md').exists()
     nombres_cls = ['clasificador_piloto_v1', 'clasificador_v2_coseno80', 'clasificador_v3_regularizado']
     cs = {n: leer(f'resultados/{n}.json') for n in nombres_cls}
     nombres_det = ['detector_mapas_v6_auxiliar_ext48', 'detector_centros_v11']
@@ -62,7 +63,7 @@ def main():
             version_mosaico=det['version'], sha256_checkpoint_inferencia=det['sha256_checkpoint'])
     else:
         for k in ['vistas_por_imagen','version_mosaico','sha256_checkpoint_inferencia']:seleccion.pop(k,None)
-    (RAIZ / 'configuracion/arquitectura.json').write_text(json.dumps(config, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
+    if not historico:(RAIZ / 'configuracion/arquitectura.json').write_text(json.dumps(config, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
     base_c, base_d = cs[nombres_cls[0]], ds[nombres_det[0]]
     diag = leer('resultados/diagnostico_centros.json')
     errores = leer('resultados/analisis_clasificadores_11.json')
@@ -133,6 +134,7 @@ def main():
           '& $pythonEco scripts/entrenar_detector_centros.py', '```', '',
           'Verificación posterior: `& $pythonEco scripts/verificar_mejora_11.py`. Para regenerar gráficos se usan graficar_clasificador.py con --nombre, graficar_detector.py con --nombre y graficar_mejora_11.py.', '',
           'Para repetir entrenamientos se deben usar nombres nuevos; los resultados previos se protegen contra sobrescritura. La reanudación requiere configuración y hashes coincidentes, y restaura optimizador, scaler y estados aleatorios. Test se mantiene reservado.', '']
+    if historico:l[1:1]=['','Informe histórico. La ablación posterior y el estado actual del video están en [13_ablacion_del_fondo.md](13_ablacion_del_fondo.md) y [14_video_y_webcam_experimental.md](14_video_y_webcam_experimental.md).','']
     (RAIZ / INFORME).write_text('\n'.join(l), encoding='utf-8')
     p = (RAIZ / 'README.md').read_text(encoding='utf-8').split('\n\n')
     for i, t in enumerate(p):
@@ -146,7 +148,7 @@ def main():
             p[i] = f"La arquitectura del detector está implementada. Resultado seleccionado: `resultados/{d}.json`; clasificador: `resultados/{c}.json`. Se conservan todos los ensayos anteriores. Los del asistente están en `resultados/asistente_v1.json` y `resultados/baseline_asistente.json`."
     texto = '\n\n'.join(p).replace('2. Mejorar la representación espacial y la localización: el modelo conjunto mejoró AP50, pero su continuación dejó de mejorar después de la época 19.',
         '2. Mejorar localización y cobertura de detección: se compararon centros por instancia y cinco vistas; el AP continúa siendo insuficiente.')
-    (RAIZ / 'README.md').write_text(texto, encoding='utf-8')
+    if not historico:(RAIZ / 'README.md').write_text(texto, encoding='utf-8')
     print(json.dumps({'clasificador': c, 'accuracy_val': clas['val']['accuracy'], 'f1_macro_val': clas['val']['f1_macro'],
                       'detector': d, 'map50_val': det['val']['map50'], 'test_evaluado': False}, indent=2))
 

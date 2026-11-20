@@ -1,5 +1,6 @@
 """Transformer de mapas de materiales; cajas obtenidas por componentes conexos."""
 from pathlib import Path
+import math
 import cv2
 import numpy as np
 import torch
@@ -57,7 +58,10 @@ def rasterizar(objetivo, lado=48):
     return resultado
 
 
-def perdida_mapas(logits, etiquetas, pesos_clase=None, formulacion='softmax7'):
+def perdida_mapas(logits, etiquetas, pesos_clase=None, formulacion='softmax7',coeficiente_fondo=3.):
+    if not math.isfinite(coeficiente_fondo) or coeficiente_fondo<0:raise ValueError('Coeficiente de fondo inválido')
+    if formulacion!='softmax7' and coeficiente_fondo!=3.:
+        raise ValueError('La ablación del fondo está definida para softmax7')
     if formulacion=='presencia_y_material':return perdida_presencia_material(logits,etiquetas,pesos_clase)
     if formulacion!='softmax7':raise ValueError('Formulación desconocida')
     raw = logits.float()
@@ -77,7 +81,7 @@ def perdida_mapas(logits, etiquetas, pesos_clase=None, formulacion='softmax7'):
     presentes = gt.sum((0, 2, 3)) > 0
     dice = 1 - (2 * (probs * gt).sum((0, 2, 3)) + 1e-6) / (probs.square().sum((0, 2, 3)) + gt.square().sum((0, 2, 3)) + 1e-6)
     loss_dice = dice[presentes].mean() if bool(presentes.any()) else cero
-    return loss_fg + 3 * loss_bg + loss_dice
+    return loss_fg + coeficiente_fondo * loss_bg + loss_dice
 
 
 def perdida_presencia_material(logits,etiquetas,pesos_clase=None):

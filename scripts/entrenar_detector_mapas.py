@@ -194,7 +194,7 @@ def main():
             x=((x-.5)*contraste+.5).mul(brillo).clamp(0,1)
             opt.zero_grad(set_to_none=True)
             with torch.autocast(device_type=dispositivo,dtype=torch.float16,enabled=amp):raw=modelo(x)
-            loss=perdida_mapas(raw,y,pesos,formulacion)
+            loss=perdida_mapas(raw,y,pesos,formulacion,coeficiente_fondo=cfg.get('coeficiente_fondo',3.))
             if not bool(torch.isfinite(loss)):raise RuntimeError('Pérdida no finita')
             scaler.scale(loss).backward()
             if aux_cfg:

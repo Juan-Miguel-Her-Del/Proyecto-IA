@@ -22,7 +22,12 @@ def main():
     exigir(sha(r['checkpoint'])==r['sha256_checkpoint_antes']==r['sha256_checkpoint_despues'],'Checkpoint modificado')
     exigir(sha('configuracion/arquitectura.json')==r['sha256_seleccion_antes']==r['sha256_seleccion_despues'],'Selección modificada')
     for p,h in r['sha256_manifiestos_invariantes'].items():exigir(sha(p)==h,f'Manifiesto: {p}')
-    for p,h in r['sha256_codigo'].items():exigir(sha(p)==h,f'Código del experimento modificado: {p}')
+    fuentes_historicas=[]
+    for p,h in r['sha256_codigo'].items():
+        if sha(p)!=h:
+            copia=f'resultados/codigo_propuestas_material/{p}'
+            exigir((RAIZ/copia).is_file() and sha(copia)==h,f'Código histórico ausente o modificado: {p}')
+            fuentes_historicas.append(copia)
     previo=leer('resultados/verificacion_mejora_11.json')
     clas=leer('configuracion/arquitectura.json')['clasificador']
     exigir(sha(clas['checkpoint'])==previo['checkpoints_sha256'][clas['experimento_seleccionado']],'Clasificador modificado')
@@ -63,6 +68,7 @@ def main():
         'cajas_con_redondeo_float32_en_borde':bordes_redondeados,'maximo_exceso_normalizado':maximo_exceso,
         'checkpoint_y_clasificador_inalterados':True,'seis_manifiestos_invariantes':True,
         'bases_reproducidas_exactamente':True,'seleccion_modificada':False,'entrenamiento_realizado':False,'test_evaluado':False}
+    informe['codigo_historico_verificado_desde_copias']=fuentes_historicas
     escribir_json(RAIZ/'resultados/verificacion_propuestas_material.json',informe)
     print(json.dumps(informe))
 

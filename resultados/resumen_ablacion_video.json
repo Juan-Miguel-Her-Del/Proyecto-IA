@@ -1,0 +1,113 @@
+{
+  "decision": "conservar_argmax_cinco_vistas_y_checkpoint_origen",
+  "adoptar_fondo_uno": false,
+  "val_cinco_vistas": {
+    "A_final": {
+      "map50": 0.016444999515616853,
+      "map50_95": 0.004874772150430632,
+      "recall50": 0.20221606648199447,
+      "precision50": 0.03374942209893666,
+      "tp50": 73,
+      "fp50": 2090,
+      "fn50": 288,
+      "ap50_por_material": {
+        "plastico": 0.0589517402914491,
+        "papel": 0.002447210805545939,
+        "carton": 0.0,
+        "vidrio": 0.0,
+        "metal": 0.03727104599670608,
+        "organico": 0.0
+      }
+    },
+    "A_mejor": {
+      "map50": 0.017521718393998964,
+      "map50_95": 0.006852556812414045,
+      "recall50": 0.21606648199445982,
+      "precision50": 0.03724928366762178,
+      "tp50": 78,
+      "fp50": 2016,
+      "fn50": 283,
+      "ap50_por_material": {
+        "plastico": 0.05077935098716528,
+        "papel": 0.011731425576870985,
+        "carton": 0.0,
+        "vidrio": 0.0,
+        "metal": 0.04261953379995752,
+        "organico": 0.0
+      }
+    },
+    "B_final": {
+      "map50": 0.016552319193855174,
+      "map50_95": 0.004679914443483177,
+      "recall50": 0.21606648199445982,
+      "precision50": 0.0173256330519769,
+      "tp50": 78,
+      "fp50": 4424,
+      "fn50": 283,
+      "ap50_por_material": {
+        "plastico": 0.0514905616862349,
+        "papel": 0.004705121814466939,
+        "carton": 0.0,
+        "vidrio": 0.0,
+        "metal": 0.04311823166242921,
+        "organico": 0.0
+      }
+    },
+    "B_mejor": {
+      "map50": 0.013508638748192157,
+      "map50_95": 0.005789725241180595,
+      "recall50": 0.24930747922437674,
+      "precision50": 0.024291497975708502,
+      "tp50": 90,
+      "fp50": 3615,
+      "fn50": 271,
+      "ap50_por_material": {
+        "plastico": 0.043187403774792604,
+        "papel": 0.027817068418653886,
+        "carton": 0.0,
+        "vidrio": 0.0,
+        "metal": 0.010047360295706456,
+        "organico": 0.0
+      }
+    }
+  },
+  "estado_video": "implementado_experimental_con_camara_simulada",
+  "verificacion_mp4_real": {
+    "correcto": true,
+    "entrada": "resultados/demo_video_entrada.mp4",
+    "salida": "resultados/demo_video_experimental",
+    "frames_entrada": 8,
+    "frames_inferidos": 8,
+    "frames_mp4_exportados": 8,
+    "vistas": 5,
+    "politica": "argmax7",
+    "camara_real_activada": false,
+    "video_independiente": false,
+    "fuentes_fotos_val": [
+      "taco:686",
+      "taco:687",
+      "taco:688",
+      "taco:689"
+    ],
+    "proposito": "Prueba de lectura, inferencia real, anotación, exportación y conexión al asistente; no mide precisión de video.",
+    "mediana_inferencia_ms": 47.26585000753403,
+    "p95_inferencia_ms": 254.84800500998955,
+    "fps_procesamiento": 11.089143825133082,
+    "asistente_ultimo_frame_verificado": true,
+    "sha256_entrada": "ce89123f285f671117a93aefb1bd85ae3dae0fe691db7310e6ae3ecbc8eb0818",
+    "sha256_salida": "bcc4e58304b6ce93481c5f55a264eac44691f36d9376a3f82094ef03b0bd0dcc",
+    "sha256_seleccion_inalterada": "a6e75007ce162e843d3fac0b531a5bbd3aed806bee9318a5671ef69f83bbc7c1",
+    "audio_exportado": false,
+    "test_evaluado": false
+  },
+  "pruebas": {
+    "correcto": true,
+    "ejecutadas": 109,
+    "fallos": 0,
+    "errores": 0,
+    "duracion_segundos": 8.244963499979349
+  },
+  "test_evaluado": false,
+  "seleccion_modificada": false,
+  "sha256_ablacion": "dfdc0b40bfbf8e1848dbd49ab5ff5fd20ced005dabc31aadb90ca370c79e086e"
+}

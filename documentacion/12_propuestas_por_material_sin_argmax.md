@@ -97,11 +97,13 @@ Ambas bases reproducen exactamente las 181 listas anteriores de cajas, etiquetas
 
 El resultado completo y hashes están en resultados/mapas_v6_ab_propuestas_material.json; cada condición conserva sus predicciones por ID. La configuración predeterminada sigue en detector_mapas_v6_mosaico con argmax y el mismo checkpoint.
 
+El código original del experimento está conservado bajo resultados/codigo_propuestas_material/ y verificado contra los SHA-256 registrados. Esto permite seguir auditando el A/B aunque la pérdida de entrenamiento incorpore después un coeficiente de fondo configurable.
+
 ## Ponderación del fondo: experimento siguiente separado
 
 La pérdida actual usa CE de material, tres veces CE de fondo y Dice. Esta comparación no identifica el coeficiente de fondo óptimo y no demuestra que deba reducirse. El fondo continúa influyendo en softmax aunque se retire la condición argmax.
 
-Para estudiarlo con entrenamiento: ramificar el mismo checkpoint propio en un control con coeficiente tres y una variante con coeficiente uno; igualar datos, máscaras, inicialización de optimizador, semillas, orden de lotes, aumentos, pérdida auxiliar, tasa de aprendizaje y número de pasos. Mantener argmax en ambas inferencias. Comparar el mismo presupuesto final además de registrar el mejor checkpoint de cada rama. No combinar simultáneamente el cambio de pérdida con la política sin argmax. Este entrenamiento queda pendiente; no se ejecutó como parte del A/B congelado.
+Para estudiarlo con entrenamiento: ramificar el mismo checkpoint propio en un control con coeficiente tres y una variante con coeficiente uno; igualar datos, máscaras, inicialización de optimizador, semillas, orden de lotes, aumentos, pérdida auxiliar, tasa de aprendizaje y número de pasos. Mantener argmax en ambas inferencias. Comparar el mismo presupuesto final además de registrar el mejor checkpoint de cada rama. No combinar simultáneamente el cambio de pérdida con la política sin argmax. Este A/B congelado no entrena. La ablación posterior ya se ejecutó por separado: [13_ablacion_del_fondo.md](13_ablacion_del_fondo.md).
 
 ## Reproducción
 

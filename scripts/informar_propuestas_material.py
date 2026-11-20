@@ -122,6 +122,7 @@ def main():
         f"Pasaron {pruebas['ejecutadas']} pruebas. Se verifican, entre otros casos, propuestas cuando gana fondo, dos materiales sobre la misma celda, riesgo de propuestas en un mapa uniforme, padding, umbral y área mínima. El comportamiento anterior sigue siendo la opción predeterminada.",'',
         'Ambas bases reproducen exactamente las 181 listas anteriores de cajas, etiquetas y puntuaciones, con delta máximo de puntuación cero. Se comparó el state_dict antes/después, se congelaron los parámetros y se comprobó ausencia de gradientes. Los hashes del checkpoint, seis manifiestos y configuración de selección permanecen intactos. No se modificó el clasificador.','',
         'El resultado completo y hashes están en resultados/mapas_v6_ab_propuestas_material.json; cada condición conserva sus predicciones por ID. La configuración predeterminada sigue en detector_mapas_v6_mosaico con argmax y el mismo checkpoint.','',
+        'El código original del experimento está conservado bajo resultados/codigo_propuestas_material/ y verificado contra los SHA-256 registrados. Esto permite seguir auditando el A/B aunque la pérdida de entrenamiento incorpore después un coeficiente de fondo configurable.','',
         '## Ponderación del fondo: experimento siguiente separado','',
         'La pérdida actual usa CE de material, tres veces CE de fondo y Dice. Esta comparación no identifica el coeficiente de fondo óptimo y no demuestra que deba reducirse. El fondo continúa influyendo en softmax aunque se retire la condición argmax.','',
         'Para estudiarlo con entrenamiento: ramificar el mismo checkpoint propio en un control con coeficiente tres y una variante con coeficiente uno; igualar datos, máscaras, inicialización de optimizador, semillas, orden de lotes, aumentos, pérdida auxiliar, tasa de aprendizaje y número de pasos. Mantener argmax en ambas inferencias. Comparar el mismo presupuesto final además de registrar el mejor checkpoint de cada rama. No combinar simultáneamente el cambio de pérdida con la política sin argmax. Este entrenamiento queda pendiente; no se ejecutó como parte del A/B congelado.','',
@@ -133,7 +134,11 @@ def main():
         'python scripts/graficar_propuestas_material.py',
         '& $pythonEco scripts/verificar_propuestas_material.py','```','',
         'Para repetir el A/B se debe copiar la configuración y elegir otro nombre; los resultados se protegen contra sobrescritura. La validación se usa reiteradamente durante desarrollo, de modo que no es una prueba independiente final. Test permanece reservado; la detección sigue teniendo calidad insuficiente.','']
-    (RAIZ/DOC).write_text('\n'.join(l),encoding='utf-8')
+    texto='\n'.join(l)
+    if (RAIZ/'documentacion/13_ablacion_del_fondo.md').exists():
+        texto=texto.replace('Este entrenamiento queda pendiente; no se ejecutó como parte del A/B congelado.',
+            'Este A/B congelado no entrena. La ablación posterior ya se ejecutó por separado: [13_ablacion_del_fondo.md](13_ablacion_del_fondo.md).')
+    (RAIZ/DOC).write_text(texto,encoding='utf-8')
     readme=RAIZ/'README.md';p=readme.read_text(encoding='utf-8').split('\n\n')
     parrafo=f"**Experimento de propuestas con pesos congelados:** retirar argmax empeoró el detector de cinco vistas: mAP@50 2,91 % → 1,15 %, recall 20,50 % → 16,62 % y FP 2.374 → 13.055 a puntuación ≥0,05. Se conserva la selección actual. Pasaron {pruebas['ejecutadas']} pruebas; ver [comparación y diagnóstico]({DOC})."
     anterior=next((i for i,t in enumerate(p) if t.startswith('**Experimento de propuestas con pesos congelados:**')),None)

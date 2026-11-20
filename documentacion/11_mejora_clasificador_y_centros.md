@@ -1,5 +1,8 @@
 # Mejora del clasificador y detector de centros
 
+Informe histórico. La ablación posterior y el estado actual del video están en [13_ablacion_del_fondo.md](13_ablacion_del_fondo.md) y [14_video_y_webcam_experimental.md](14_video_y_webcam_experimental.md).
+
+
 **Clasificador elegido: clasificador_v3_regularizado, exactitud val 85.74%, F1 macro 0.857.**
 **Detector elegido: detector_mapas_v6_mosaico, mAP@50 val 2.912%; calidad todavía insuficiente.**
 
