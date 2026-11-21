@@ -1,0 +1,122 @@
+{
+  "aprobada": true,
+  "pruebas": {
+    "ejecutadas": 165,
+    "aprobadas": true,
+    "fallos": 0,
+    "errores": 0,
+    "omitidas": 0
+  },
+  "sha256_diagnostico": "498ccf13d6d03bf7b11c43c0673566728304760754d4a661b57675d81a4c0ca5",
+  "hashes_codigo": {
+    "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/supervision_regional_materiales.py": "17c78fd4de77e1d41f1b23f5bdc57528b1352899a6c4653c6f0cc0f81984c431",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/preparar_v20.py": "720a8f05ca632919051411bb694fe5097a22a5ccb4345cba1da9ac8f18794bdc",
+    "scripts/diagnosticar_v20.py": "223e2e69beaf7d1c1623be1d648ee5d5c0f550c383efeeb125a555f34bd53148",
+    "scripts/evaluar_v20.py": "53809f3035b3a2ac9b2038f144388e3a3740b4c2d0b030d812120e8f2d515e2e",
+    "pruebas/test_discriminacion_mapas.py": "2a54df18e70b06275e7cbbfdc9d276fbbfeac74222f212b4d6c47aa659976480"
+  },
+  "sha256_verificador": "67d6db685c771f849fcf3a21b842dab1506a7cd82fe353a4c0d9c819e7731bb9",
+  "historicos_intactos": 746,
+  "geometria_y_mascaras_identicas_v17": true,
+  "trazas_pareadas_1452": true,
+  "estados_iniciales_identicos": true,
+  "actividad_train": {
+    "plastico": {
+      "instancias": 1589,
+      "activas": 1181,
+      "tokens_validos": 49953,
+      "tokens_dificiles": 9607,
+      "peso": 1.0,
+      "solo_fondo_con_ranking_condicional_correcto": 647,
+      "inactivas_entre_fondo_condicional_correcto": 221
+    },
+    "papel": {
+      "instancias": 108,
+      "activas": 108,
+      "tokens_validos": 3746,
+      "tokens_dificiles": 982,
+      "peso": 1.0,
+      "solo_fondo_con_ranking_condicional_correcto": 7,
+      "inactivas_entre_fondo_condicional_correcto": 0
+    },
+    "carton": {
+      "instancias": 146,
+      "activas": 139,
+      "tokens_validos": 9405,
+      "tokens_dificiles": 2106,
+      "peso": 2.0,
+      "solo_fondo_con_ranking_condicional_correcto": 13,
+      "inactivas_entre_fondo_condicional_correcto": 0
+    },
+    "vidrio": {
+      "instancias": 201,
+      "activas": 201,
+      "tokens_validos": 2513,
+      "tokens_dificiles": 709,
+      "peso": 2.0,
+      "solo_fondo_con_ranking_condicional_correcto": 62,
+      "inactivas_entre_fondo_condicional_correcto": 0
+    },
+    "metal": {
+      "instancias": 394,
+      "activas": 388,
+      "tokens_validos": 8933,
+      "tokens_dificiles": 2366,
+      "peso": 1.0,
+      "solo_fondo_con_ranking_condicional_correcto": 7,
+      "inactivas_entre_fondo_condicional_correcto": 0
+    },
+    "organico": {
+      "instancias": 1,
+      "activas": 0,
+      "tokens_validos": 40,
+      "tokens_dificiles": 0,
+      "peso": 1.0,
+      "solo_fondo_con_ranking_condicional_correcto": 0,
+      "inactivas_entre_fondo_condicional_correcto": 0
+    }
+  },
+  "organico": [
+    {
+      "imagen_lote": 5,
+      "id_region": 244,
+      "clase": 5,
+      "material": "organico",
+      "peso_clase": 1.0,
+      "tokens_validos": 40,
+      "tokens_seleccionados": 0,
+      "indices_tokens": [],
+      "rivales": [],
+      "loss_instancia": -0.0,
+      "numerador_ponderado": -0.0,
+      "fraccion_peso_instancia": 0.045454545454545456,
+      "contribucion": -0.0,
+      "cota_l1_grad_logits": 0.09090909090909091,
+      "imagen": "taco:92",
+      "pred_principal": 6,
+      "pred_condicional": 5,
+      "cohorte_fondo_condicional_correcto": false
+    }
+  ],
+  "arquitectura_inalterada": true,
+  "checkpoint_inalterado": true,
+  "actualizaciones_ab": 0,
+  "entrenamiento_completo_habilitado": false,
+  "validacion_evaluada": false,
+  "test_evaluado": false
+}

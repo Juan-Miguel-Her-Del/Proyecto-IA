@@ -1,0 +1,963 @@
+{
+  "estado": "captura_completa_sin_gt",
+  "configuracion": {
+    "nombre": "auditoria_propuestas_internas_v1",
+    "checkpoint": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+    "sha256_checkpoint": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+    "split": "val",
+    "imagenes": 181,
+    "vistas": 5,
+    "politica": "argmax7",
+    "umbral": 0.05,
+    "umbral_visual": 0.35,
+    "area_minima": 2,
+    "nms_iou": 0.5,
+    "top": 100,
+    "analisis": {
+      "iou_razonable": 0.5,
+      "visibilidad_bbox_minima": 0.8,
+      "fraccion_gt_minima_por_fragmento": 0.1,
+      "cobertura_gt_minima_union_fragmentos": 0.5,
+      "cobertura_gt_minima_por_objeto_fusionado": 0.5
+    },
+    "entrenar": false,
+    "evaluar_test": false,
+    "modificar_inferencia": false
+  },
+  "cache": "datos/cache/logits_auditoria_4178d5d68d65e4749545",
+  "sha256_cache_indice": "ead8d0ce9a9c0c46d375ab774034d1399fd406bd43539f4b5e1f1241603ecde7",
+  "imagenes": 181,
+  "vistas": 905,
+  "llamadas_modelo": 181,
+  "imagenes_logits_reutilizados": 0,
+  "predicciones_exactas": 181,
+  "trazas": [
+    {
+      "imagen": "taco:686",
+      "ruta": "trazas/000.pt",
+      "sha256": "0c3f608bd6e7b41bec16fe182b20eff772ad9a27a09d0e7e5a1889b76d35d027"
+    },
+    {
+      "imagen": "taco:687",
+      "ruta": "trazas/001.pt",
+      "sha256": "0c973ce3c3e99aeb4e5cb3c9e95c20ca28993754e150d1d40029a5486f56606b"
+    },
+    {
+      "imagen": "taco:688",
+      "ruta": "trazas/002.pt",
+      "sha256": "60d6d0db363ed86186f69d040dede5b70f57345f5ac6110435ffe5056701b170"
+    },
+    {
+      "imagen": "taco:689",
+      "ruta": "trazas/003.pt",
+      "sha256": "7242c4dbe1a199b0cfe3ddcb6b9ee4f989ed8c6d128427b288cc10f3907462a7"
+    },
+    {
+      "imagen": "taco:691",
+      "ruta": "trazas/004.pt",
+      "sha256": "8c09386b22bef2c916616ee0f970cde2ab095b1e80efb169aa49f897bfcb5025"
+    },
+    {
+      "imagen": "taco:692",
+      "ruta": "trazas/005.pt",
+      "sha256": "2926d692fab29bd5c98719036500ef57cef46bcad0b5e54040ce69de46fc196a"
+    },
+    {
+      "imagen": "taco:693",
+      "ruta": "trazas/006.pt",
+      "sha256": "5cdfb0d2f1ea942b3a67b745a489ca76b7b5f73239c3235032e5a193d44bbb77"
+    },
+    {
+      "imagen": "taco:694",
+      "ruta": "trazas/007.pt",
+      "sha256": "bdfbb69b9d87b46821c156fd01e16e3d11aa8d1d10ba0909f6eb4f4e65a67ce9"
+    },
+    {
+      "imagen": "taco:695",
+      "ruta": "trazas/008.pt",
+      "sha256": "65a4b1fd55b3e0fbcea681a14870ea8ea4427c9141a092b507f2151625e3796d"
+    },
+    {
+      "imagen": "taco:696",
+      "ruta": "trazas/009.pt",
+      "sha256": "cdb5cef04d7828de2c054837b04fe5fe7d7db81ac24c078a53e8379bc7ff50c8"
+    },
+    {
+      "imagen": "taco:697",
+      "ruta": "trazas/010.pt",
+      "sha256": "da6bdb6df9fd07766d147773b7276ee29c517d281c3f583e3b16fdffa5beb324"
+    },
+    {
+      "imagen": "taco:699",
+      "ruta": "trazas/011.pt",
+      "sha256": "c38dd9ecccb87d976116c4f630e9048a3a7e4e408d70b9704a9f7279e7713c52"
+    },
+    {
+      "imagen": "taco:700",
+      "ruta": "trazas/012.pt",
+      "sha256": "f2e90f66e418ef9ce1281e9558f6136b9cde24351cade7cc9a3ea6a1ae448c69"
+    },
+    {
+      "imagen": "taco:701",
+      "ruta": "trazas/013.pt",
+      "sha256": "eb6e81918561bf1f9758a2d48ad29bcc38ec1d9d1ffc0b051533a69e51f2de7b"
+    },
+    {
+      "imagen": "taco:702",
+      "ruta": "trazas/014.pt",
+      "sha256": "72884fae54539383e183d2e59e7d18cb526f7c39a45d773b58be1c23c333607c"
+    },
+    {
+      "imagen": "taco:703",
+      "ruta": "trazas/015.pt",
+      "sha256": "ec917aa39bfca7dc4a4dc1e61819f0cca75eb4972b8050a7e19cc32d0a1eb6d2"
+    },
+    {
+      "imagen": "taco:704",
+      "ruta": "trazas/016.pt",
+      "sha256": "571f4a8440a0437ef72ecc6580a5f49b73a12d5654a99ce46ed2b5cf7eed9c38"
+    },
+    {
+      "imagen": "taco:705",
+      "ruta": "trazas/017.pt",
+      "sha256": "1280f358b5927d89a6b41bb3fa2caf74e24701d1d3b1fd99cf46df0da8bed48b"
+    },
+    {
+      "imagen": "taco:706",
+      "ruta": "trazas/018.pt",
+      "sha256": "43e96401e85c346c3b30e0c9e1ab7b99fd4720e6801459e96abe2023afd559f6"
+    },
+    {
+      "imagen": "taco:707",
+      "ruta": "trazas/019.pt",
+      "sha256": "f59b46024efbe85787062333c9eb46f6679637c0984bf0c51cab1594f68c17cb"
+    },
+    {
+      "imagen": "taco:708",
+      "ruta": "trazas/020.pt",
+      "sha256": "46bc64cad90c7df439cb97ba08b3ced7368424aa40e94fbf88d952224e73cff7"
+    },
+    {
+      "imagen": "taco:709",
+      "ruta": "trazas/021.pt",
+      "sha256": "0caef56344a3b2a915f5bd1b05eb24bf24fb56da077f293e73574982f56c2cd9"
+    },
+    {
+      "imagen": "taco:710",
+      "ruta": "trazas/022.pt",
+      "sha256": "f465c14d4c19f3affecf9e352e7d9b250e26fd6fccfd8ddc3aa8bcce2c2394ff"
+    },
+    {
+      "imagen": "taco:711",
+      "ruta": "trazas/023.pt",
+      "sha256": "8cd885ce97eaacf77011975fa686b44679b6294f47dbec33ab03bb5535f17fd9"
+    },
+    {
+      "imagen": "taco:712",
+      "ruta": "trazas/024.pt",
+      "sha256": "d1a4574bd9ada6143457b43a34c5d68128bab9f6c0d2befb056a2a5276812a27"
+    },
+    {
+      "imagen": "taco:713",
+      "ruta": "trazas/025.pt",
+      "sha256": "226c0ff48a7b456b464161af058c057703dcbd983b8f05d7c871f07c1ea5959f"
+    },
+    {
+      "imagen": "taco:714",
+      "ruta": "trazas/026.pt",
+      "sha256": "c756a74e09dd3b52cb72426546a29e5fe43f700e550e592c52ead6129af1d723"
+    },
+    {
+      "imagen": "taco:715",
+      "ruta": "trazas/027.pt",
+      "sha256": "25c24b76585c8421b5fdacb9988caf4a36c7e5012e2e754d7334b77f805866ec"
+    },
+    {
+      "imagen": "taco:716",
+      "ruta": "trazas/028.pt",
+      "sha256": "531dab0414584449b51844e9bcaa39fcddcc14bf3082d4c856490a3e077cc48d"
+    },
+    {
+      "imagen": "taco:717",
+      "ruta": "trazas/029.pt",
+      "sha256": "68157af54caa18c79f0b6811f4902fa5c521e9e2253b3c2b2076af2a671a1884"
+    },
+    {
+      "imagen": "taco:718",
+      "ruta": "trazas/030.pt",
+      "sha256": "40f770f9a32be254c74c2acc7b047e52a5c88aabb820228c19287b60122fd94d"
+    },
+    {
+      "imagen": "taco:719",
+      "ruta": "trazas/031.pt",
+      "sha256": "f1f429e0154416d0ca52a144499cd4c1613106e0ec5e5db7b0d882669be7e0aa"
+    },
+    {
+      "imagen": "taco:720",
+      "ruta": "trazas/032.pt",
+      "sha256": "9655c21084339d8a19222a81438cb3f1e18efec82c8766fedf70312f5e3d1513"
+    },
+    {
+      "imagen": "taco:721",
+      "ruta": "trazas/033.pt",
+      "sha256": "5a8fdde5b5e8fbdb59a1e3f2efcbcfe7d915a872125ef4a6fda6b76b877654ad"
+    },
+    {
+      "imagen": "taco:722",
+      "ruta": "trazas/034.pt",
+      "sha256": "398d1d7e220798d3c86a7df86f83116ec807fa96e13fc9f3793549612975269e"
+    },
+    {
+      "imagen": "taco:723",
+      "ruta": "trazas/035.pt",
+      "sha256": "a7eb97095fa9bbc0666ae967d8027f051fbaa34573d8fa842b4d48af523b90c6"
+    },
+    {
+      "imagen": "taco:724",
+      "ruta": "trazas/036.pt",
+      "sha256": "afff57bfd8eb13e293792a973c6675b87a3bfa64d3be886e228195bd5e1444f4"
+    },
+    {
+      "imagen": "taco:725",
+      "ruta": "trazas/037.pt",
+      "sha256": "ac7e4800eca2bbeb11a26790c707aca2abd43e127d82b28bc121726a0ee799af"
+    },
+    {
+      "imagen": "taco:726",
+      "ruta": "trazas/038.pt",
+      "sha256": "f4f492da9b53a8081f10888f97b29226e402d9bbca0eff95b9783b9f9679e039"
+    },
+    {
+      "imagen": "taco:727",
+      "ruta": "trazas/039.pt",
+      "sha256": "a151dd20b88af9cba57a1c64f24c7fe08e10d4f56a139648eb39caec053c20bc"
+    },
+    {
+      "imagen": "taco:728",
+      "ruta": "trazas/040.pt",
+      "sha256": "7fe2e85ad8d34fa5e2032c42c8dc6a5d9981af20150da877f985ccc4a67ef11f"
+    },
+    {
+      "imagen": "taco:729",
+      "ruta": "trazas/041.pt",
+      "sha256": "77f098e92fe362b6c893012d7938839630417d39cb8329b0e8b2d2f9a68dfd3b"
+    },
+    {
+      "imagen": "taco:730",
+      "ruta": "trazas/042.pt",
+      "sha256": "5fa7cf2b62107015308473296c3a0b4e961c256b1d9eef5e06d075d14187f35c"
+    },
+    {
+      "imagen": "taco:731",
+      "ruta": "trazas/043.pt",
+      "sha256": "e18e168d9ae77b2ecc217d1cdd05acad52ff1a39f04e744481411416fb80d813"
+    },
+    {
+      "imagen": "taco:732",
+      "ruta": "trazas/044.pt",
+      "sha256": "73271b92aba950f6d5ef93d359c75fff17336f293bdc75af3ec3d12dc3baabeb"
+    },
+    {
+      "imagen": "taco:733",
+      "ruta": "trazas/045.pt",
+      "sha256": "d345bcebd7c21b87fcfb584a422cfbc5ae6c61a437edc815781ac17ea98cabf8"
+    },
+    {
+      "imagen": "taco:735",
+      "ruta": "trazas/046.pt",
+      "sha256": "d08c89d8014cb140fde430051a8b4c501c732b9611b718272414a96e952dd4cc"
+    },
+    {
+      "imagen": "taco:736",
+      "ruta": "trazas/047.pt",
+      "sha256": "4eddd5a0b692a4980e78f9386dd079ee2ae3ac07ee7aedd82ff40403ecdc0f85"
+    },
+    {
+      "imagen": "taco:737",
+      "ruta": "trazas/048.pt",
+      "sha256": "8d82046cc198d363f8d41e8ee8f18b61e68b430590c879d8238cada69ab8d150"
+    },
+    {
+      "imagen": "taco:739",
+      "ruta": "trazas/049.pt",
+      "sha256": "f2149fdf1cb3fefb40bc170c4f25cd78c46b95edfbd6d542d9855f5b0ddd0880"
+    },
+    {
+      "imagen": "taco:740",
+      "ruta": "trazas/050.pt",
+      "sha256": "80b3ac20e9648b8140f4241c43a3eb6ac26b1ed4f421e048ccdf7c26e17e563b"
+    },
+    {
+      "imagen": "taco:741",
+      "ruta": "trazas/051.pt",
+      "sha256": "e394d3787285c2ca4f09022918cd8aa574740a45875e5910823f77d431ca04f3"
+    },
+    {
+      "imagen": "taco:742",
+      "ruta": "trazas/052.pt",
+      "sha256": "942ea57934befc5cf570539f5245de8fa6bfbe7a9ac5ed7d080dec3d74a9bfe1"
+    },
+    {
+      "imagen": "taco:743",
+      "ruta": "trazas/053.pt",
+      "sha256": "f62290916a578f1cad6a0848ba039fd111bb85479e57be9f40afc9a7cffe366e"
+    },
+    {
+      "imagen": "taco:744",
+      "ruta": "trazas/054.pt",
+      "sha256": "f8082aa25d02526c62f79d6e022df0b63d6140abe2648060481c8ce01488a953"
+    },
+    {
+      "imagen": "taco:745",
+      "ruta": "trazas/055.pt",
+      "sha256": "cb766454e754d77d61e7304e225ec03c0368328599fd918b989a7e6afd02e221"
+    },
+    {
+      "imagen": "taco:746",
+      "ruta": "trazas/056.pt",
+      "sha256": "37c73aa74a737ea2de942ab2eb4d2034b47a93028919630439b2d486996fd9b2"
+    },
+    {
+      "imagen": "taco:748",
+      "ruta": "trazas/057.pt",
+      "sha256": "b78d6ce34d8ede37f84ad741e697eee5655a4a4572fc3d899163317af505f869"
+    },
+    {
+      "imagen": "taco:749",
+      "ruta": "trazas/058.pt",
+      "sha256": "ce39bf22796bca372eefec9a58e1b42cebf7e83310a8e0bd348cd04087eb676a"
+    },
+    {
+      "imagen": "taco:750",
+      "ruta": "trazas/059.pt",
+      "sha256": "3101d60d2d1fc7a9ce04b3e074749ac7ee938291cc08230cf56d60d5fc22ad2d"
+    },
+    {
+      "imagen": "taco:751",
+      "ruta": "trazas/060.pt",
+      "sha256": "46241d6496e41f13dd7457286ebee47e5373d18f0bfc4c29ef7c40da949e80f3"
+    },
+    {
+      "imagen": "taco:752",
+      "ruta": "trazas/061.pt",
+      "sha256": "ac30235ff6e41d91bd51396b630ee0a44ec9663b060164b9bdfcb0f59e5b7213"
+    },
+    {
+      "imagen": "taco:753",
+      "ruta": "trazas/062.pt",
+      "sha256": "4ca621c59845bcbcf3579a902cc8ce705d32593b68c3df0d732b2eaf5fc0f624"
+    },
+    {
+      "imagen": "taco:754",
+      "ruta": "trazas/063.pt",
+      "sha256": "c4ce4e238ac69a798e559a836e5e13180c4b93e9d404de5d0b8849312a739e80"
+    },
+    {
+      "imagen": "taco:755",
+      "ruta": "trazas/064.pt",
+      "sha256": "603e92a0778fabecc5321b2c724e8b56aa773bfb96c331154e803caacf956db4"
+    },
+    {
+      "imagen": "taco:756",
+      "ruta": "trazas/065.pt",
+      "sha256": "af6b4ec66f654288e5a800b7b0118816a091a5bda2026c4adc4b23e52dca5d3e"
+    },
+    {
+      "imagen": "taco:758",
+      "ruta": "trazas/066.pt",
+      "sha256": "7e5fad9b7459f4c44cedd8e48525952b3b7cd5bf966515a384dc7052c56eeacb"
+    },
+    {
+      "imagen": "taco:759",
+      "ruta": "trazas/067.pt",
+      "sha256": "9ac11db28c1678f177eca64e710fe0449384522834a8689c0161b9653f1261bf"
+    },
+    {
+      "imagen": "taco:760",
+      "ruta": "trazas/068.pt",
+      "sha256": "88948f40bfcc73356efa24f5ed24200587d72510ce31ca84b398fa27a36c5afc"
+    },
+    {
+      "imagen": "taco:761",
+      "ruta": "trazas/069.pt",
+      "sha256": "c7692e34c26f90e11a3ce6074f0b6ca241efcb746dde0493c37624e91dac56bd"
+    },
+    {
+      "imagen": "taco:762",
+      "ruta": "trazas/070.pt",
+      "sha256": "c7bf08cf3699434308c6f96b28a3287070dd3798d7a55c6dc1781f3d9c8973de"
+    },
+    {
+      "imagen": "taco:763",
+      "ruta": "trazas/071.pt",
+      "sha256": "28fdf8c629ac75076b617bd610548abf49db887aaa870fbfd0291932756436b8"
+    },
+    {
+      "imagen": "taco:764",
+      "ruta": "trazas/072.pt",
+      "sha256": "3d34fb2add8a2c0834a5c42e617fc972618ef33f9faacd880ae9547de413de68"
+    },
+    {
+      "imagen": "taco:765",
+      "ruta": "trazas/073.pt",
+      "sha256": "244fa7bbbebe83b695398bbecab34ec09a47e2195bd0bc58d5e0c2a301b4370b"
+    },
+    {
+      "imagen": "taco:766",
+      "ruta": "trazas/074.pt",
+      "sha256": "177faf41c4dbf759f96683f73cadf7c87586aa0b5a42a84d66825865114bcadb"
+    },
+    {
+      "imagen": "taco:767",
+      "ruta": "trazas/075.pt",
+      "sha256": "c173e43d36dc1dd4f39d97aa22aaf42b42c8863ae920b8981791184fdfdc2b39"
+    },
+    {
+      "imagen": "taco:768",
+      "ruta": "trazas/076.pt",
+      "sha256": "68c7b3e7d5a9bf723aee6523d5119528d38584a8e2bea050c0c6a41ea9e2c721"
+    },
+    {
+      "imagen": "taco:769",
+      "ruta": "trazas/077.pt",
+      "sha256": "1eca054e95c6e3e996bc30bf28a364cabc1625a397c1e5047120d34660d6abe0"
+    },
+    {
+      "imagen": "taco:770",
+      "ruta": "trazas/078.pt",
+      "sha256": "5b35e9bdc552fc2bbbf45e71879b452467c71a24fdfa09d7eca36acc7246a91c"
+    },
+    {
+      "imagen": "taco:773",
+      "ruta": "trazas/079.pt",
+      "sha256": "dfc3ff154454f00bbdf04198fe676d9be4e2db6dcea2f3513e43161ff69ec362"
+    },
+    {
+      "imagen": "taco:774",
+      "ruta": "trazas/080.pt",
+      "sha256": "ea9bd6519a52bc4d0adee4b12805f54a4c03db10734fda08aa0ae719648291fc"
+    },
+    {
+      "imagen": "taco:775",
+      "ruta": "trazas/081.pt",
+      "sha256": "4fe932675fa1ebf93809c8bc895b6ce3f87ebb1969c3ee2053577a9a02d2d7a9"
+    },
+    {
+      "imagen": "taco:776",
+      "ruta": "trazas/082.pt",
+      "sha256": "9962a7803d59cd144f1b7355e831a3a54c9282e04115904afaab7e810b0f4089"
+    },
+    {
+      "imagen": "taco:777",
+      "ruta": "trazas/083.pt",
+      "sha256": "7c826ab1dbc5b97e75cff29da49a62a3d3e298bbf5e7ebe3dca112a34646cf42"
+    },
+    {
+      "imagen": "taco:1400",
+      "ruta": "trazas/084.pt",
+      "sha256": "eb89e1c15482a7732caffd198ead7cac348a5b8e03072e05047a0a774ac673f4"
+    },
+    {
+      "imagen": "taco:1401",
+      "ruta": "trazas/085.pt",
+      "sha256": "874cc5a8835c320e89e5394feacdd47c3772ec361d169b06f0f416c2189107b6"
+    },
+    {
+      "imagen": "taco:1402",
+      "ruta": "trazas/086.pt",
+      "sha256": "6e5c25542999054edbc4e3ac7ef6252112766b009b1d1fec1cb057f987e601c3"
+    },
+    {
+      "imagen": "taco:1403",
+      "ruta": "trazas/087.pt",
+      "sha256": "8b7282012cdbed8352d0da5b52dfd47a068277620aa21644421fd759f5660798"
+    },
+    {
+      "imagen": "taco:1404",
+      "ruta": "trazas/088.pt",
+      "sha256": "6d123c1dfb532de094d6ace91c777065721cac8093415fe8af110c356c84880f"
+    },
+    {
+      "imagen": "taco:1405",
+      "ruta": "trazas/089.pt",
+      "sha256": "95599b0d3844e76350c8e685019429fe37ceaaacaf40dda66ac3720bf90aac39"
+    },
+    {
+      "imagen": "taco:1406",
+      "ruta": "trazas/090.pt",
+      "sha256": "4f748ea6dcc8bb96b8c0b09a0a57ee16d9dd7d5c4ff31580b2ec50b8370b34b8"
+    },
+    {
+      "imagen": "taco:1407",
+      "ruta": "trazas/091.pt",
+      "sha256": "d8b0012177345cf3670c132b020f5549afc6818d28e9d939532db66cb6885fdf"
+    },
+    {
+      "imagen": "taco:1408",
+      "ruta": "trazas/092.pt",
+      "sha256": "dd36f3d69ecb787c39785f33c5f53d899d73e4a54745f742d55d6a3086908141"
+    },
+    {
+      "imagen": "taco:1409",
+      "ruta": "trazas/093.pt",
+      "sha256": "d23888994b25c7ed6c5116eae122a09d28858af71248dd99d7902785f5043cab"
+    },
+    {
+      "imagen": "taco:1410",
+      "ruta": "trazas/094.pt",
+      "sha256": "b883dcfea64a79da576332263110b2b9f55e75e03211f1f3ccce6ea626327cbd"
+    },
+    {
+      "imagen": "taco:1411",
+      "ruta": "trazas/095.pt",
+      "sha256": "c49c193f58d2d33abe4251d601dbfcc308155b43ccf8edf0fc941fd76533ba6d"
+    },
+    {
+      "imagen": "taco:1412",
+      "ruta": "trazas/096.pt",
+      "sha256": "25d87353b2c20a648715478cd5b5d3eba9d1ab33bace8b6928268c601e408ee7"
+    },
+    {
+      "imagen": "taco:1414",
+      "ruta": "trazas/097.pt",
+      "sha256": "9b75768686201137875f31154bf8c958b15edc39b95da3ebef2180a6e4bce10f"
+    },
+    {
+      "imagen": "taco:1415",
+      "ruta": "trazas/098.pt",
+      "sha256": "427ad12c28c62c4f39b4ba15cf6e7ae95e6228e1f331c1c5904246575e2739e9"
+    },
+    {
+      "imagen": "taco:1416",
+      "ruta": "trazas/099.pt",
+      "sha256": "5890594f4dd35aec0adb1717244bd33637668748a67bcf467c79b1e8eecb796d"
+    },
+    {
+      "imagen": "taco:1417",
+      "ruta": "trazas/100.pt",
+      "sha256": "2cbbd1a7d0fd5d1d2837bbb164b2bdcbb0089760e35f6dc7738c3b858236f92a"
+    },
+    {
+      "imagen": "taco:1418",
+      "ruta": "trazas/101.pt",
+      "sha256": "9fa5ae2d986dbf41f5ffee4868172ed90ae31c4af43c19e96844c2005b062d18"
+    },
+    {
+      "imagen": "taco:1419",
+      "ruta": "trazas/102.pt",
+      "sha256": "24e5515ba16012f1ed47a407c208e5493f223edc4a9118a9917d78bfbf402ab9"
+    },
+    {
+      "imagen": "taco:1420",
+      "ruta": "trazas/103.pt",
+      "sha256": "1b452e0b4aca86e8cb8459c58f4f84cf6da10dae64b59c306dc85f7605f9f96f"
+    },
+    {
+      "imagen": "taco:1421",
+      "ruta": "trazas/104.pt",
+      "sha256": "8fbfa1e55dd1f887f88cbd8e3e7b9406c4cadb20fb566b9c19fc3819e37d8706"
+    },
+    {
+      "imagen": "taco:1422",
+      "ruta": "trazas/105.pt",
+      "sha256": "5ec1990f44f00549ad0b67b35dc4477e9f8094b5a4dc16779edbaee48c36020e"
+    },
+    {
+      "imagen": "taco:1423",
+      "ruta": "trazas/106.pt",
+      "sha256": "43cffe10759b1e4336d702e1d629f11acbff423f8820c383df27b419bc2b8949"
+    },
+    {
+      "imagen": "taco:1424",
+      "ruta": "trazas/107.pt",
+      "sha256": "173bdf872783018b4bb84f41359ef5981a823febccb8dfd979f9b01de76afa93"
+    },
+    {
+      "imagen": "taco:1425",
+      "ruta": "trazas/108.pt",
+      "sha256": "633e8ed6f8c5dc4c9727f9b3eeb23d2af7631dc19849b65279f1c150e07c0d18"
+    },
+    {
+      "imagen": "taco:1426",
+      "ruta": "trazas/109.pt",
+      "sha256": "c442f9c8d84902fbbcbb2770acf451aa73aae04b0cd07a05669314cf952d8454"
+    },
+    {
+      "imagen": "taco:1427",
+      "ruta": "trazas/110.pt",
+      "sha256": "cc3a1ec7828abac0bcfda0bcc113462a4af8b30feed02182ac577452b8ac6ba4"
+    },
+    {
+      "imagen": "taco:1428",
+      "ruta": "trazas/111.pt",
+      "sha256": "69dad64ab06c86c1c4a46bdb66d0236439e889451383d54994714cdcf7a723be"
+    },
+    {
+      "imagen": "taco:1429",
+      "ruta": "trazas/112.pt",
+      "sha256": "cea5e1e9a6593a1082a2cb38d1b575166437c7385d301474b1376c1e8e18173b"
+    },
+    {
+      "imagen": "taco:1430",
+      "ruta": "trazas/113.pt",
+      "sha256": "c98b1718d9cd13b79ee7c9f59781f0ac591dfca807ffcea6f773489baaf765d2"
+    },
+    {
+      "imagen": "taco:1431",
+      "ruta": "trazas/114.pt",
+      "sha256": "7d75482aa21a6cd2b6fe3346b013a9ec70287c62592e4631a60c31c39e1a26e4"
+    },
+    {
+      "imagen": "taco:1432",
+      "ruta": "trazas/115.pt",
+      "sha256": "7ca56296ef3d519ab581e2477ebe62df3f6d5b54b3d66fbb4b661b00dfe8a055"
+    },
+    {
+      "imagen": "taco:1434",
+      "ruta": "trazas/116.pt",
+      "sha256": "7e2dd8426e27d7f2abab25d96fdc8cdca926f0a71166eb675651fe6b9f6cfad0"
+    },
+    {
+      "imagen": "taco:1435",
+      "ruta": "trazas/117.pt",
+      "sha256": "46616defb1b79424c47fb49311b2b7676df2341b960693a70378f56e46bad053"
+    },
+    {
+      "imagen": "taco:1436",
+      "ruta": "trazas/118.pt",
+      "sha256": "d8528bf9d5804734055921a5f609dfc3d42183c182a700ece66b98a1cc7f422e"
+    },
+    {
+      "imagen": "taco:1437",
+      "ruta": "trazas/119.pt",
+      "sha256": "ecaaf5a39a7c6428bd9e3192a709c97366aa88235a76b2b8aacc669520cedbc9"
+    },
+    {
+      "imagen": "taco:1438",
+      "ruta": "trazas/120.pt",
+      "sha256": "84c7d60eecda85e46ed777db08e86232fd1d090bb9e1655429a9bf926c7e0039"
+    },
+    {
+      "imagen": "taco:1439",
+      "ruta": "trazas/121.pt",
+      "sha256": "b586cbbb9636b5ef409ce511086889e96d37aac8218327f86f04419ac9df13e6"
+    },
+    {
+      "imagen": "taco:1440",
+      "ruta": "trazas/122.pt",
+      "sha256": "b0642ad1037eda868a36d7cb24b4c9436c3af2445a9a862298300abeee76f761"
+    },
+    {
+      "imagen": "taco:1441",
+      "ruta": "trazas/123.pt",
+      "sha256": "86de6837f10cdbe435c4b1890b1f3caf37a62e1f228734fe2334fb3829a34a6f"
+    },
+    {
+      "imagen": "taco:1442",
+      "ruta": "trazas/124.pt",
+      "sha256": "e8b3190530d346212896798e6b9ce6e2c880cc7f62aa0792e99c547de5b2ddd8"
+    },
+    {
+      "imagen": "taco:1443",
+      "ruta": "trazas/125.pt",
+      "sha256": "afd535a79d07ad17982bffc61373f1643018dc3d2f4d18f3fb224c6b23a40aee"
+    },
+    {
+      "imagen": "taco:1444",
+      "ruta": "trazas/126.pt",
+      "sha256": "a95b8ac38dbf582c6b27cfdb4359607e2f8df41846d9daa0b6b68143e8bab51c"
+    },
+    {
+      "imagen": "taco:1445",
+      "ruta": "trazas/127.pt",
+      "sha256": "2dc59b69cee9bbe84a6c16e7795c302c80c2c862a5d69945fe088e032190e366"
+    },
+    {
+      "imagen": "taco:1446",
+      "ruta": "trazas/128.pt",
+      "sha256": "9f68b71374337321bf8b47b854ff6fe21a40221d0cb8fc67242f541febc0580a"
+    },
+    {
+      "imagen": "taco:1447",
+      "ruta": "trazas/129.pt",
+      "sha256": "ea3ee67f03f0a8c43bf9a7e4fb7125e1caa197c1bd42dff49c4cb118e169dd15"
+    },
+    {
+      "imagen": "taco:1448",
+      "ruta": "trazas/130.pt",
+      "sha256": "00e18ece1d76d2749e6362ade6e2ed00d21269ee791f4719117021e54949440e"
+    },
+    {
+      "imagen": "taco:1450",
+      "ruta": "trazas/131.pt",
+      "sha256": "bccd505231a42eb32b793b6b0afcdd38765f23f570ca91b52ac199178d898a19"
+    },
+    {
+      "imagen": "taco:1451",
+      "ruta": "trazas/132.pt",
+      "sha256": "7126937c946db2022894cf4b93101161ac70e0b276a8d98a99761766775c87d3"
+    },
+    {
+      "imagen": "taco:1452",
+      "ruta": "trazas/133.pt",
+      "sha256": "d9de45834afcd8cb536fda8e9b1646ac9e2567d5df75b9c80338c805a94ddc13"
+    },
+    {
+      "imagen": "taco:1453",
+      "ruta": "trazas/134.pt",
+      "sha256": "9137834602ccaee6126553f41094d71bec71587c56834db742e467f3509f3ef2"
+    },
+    {
+      "imagen": "taco:1454",
+      "ruta": "trazas/135.pt",
+      "sha256": "73e0dd40bbebbdb9ec3a0b910b9f26afec631e649befdff9b4a1b4231c1a4f49"
+    },
+    {
+      "imagen": "taco:1455",
+      "ruta": "trazas/136.pt",
+      "sha256": "c9176452221483396821c1f945404dfe747e45d5c8e1cd0611e16a44eb26b081"
+    },
+    {
+      "imagen": "taco:1456",
+      "ruta": "trazas/137.pt",
+      "sha256": "f3ad51f908b4951a3dd9e4878bdd9dbf0ab18144862eaa4137f1a9b1f027be3e"
+    },
+    {
+      "imagen": "taco:1457",
+      "ruta": "trazas/138.pt",
+      "sha256": "17a5b6d23f6d6ff8f9314254188230894e173fd11e7fa137069f5d5c35ff4880"
+    },
+    {
+      "imagen": "taco:1458",
+      "ruta": "trazas/139.pt",
+      "sha256": "5c0a29107bdb9c746dda4c1b12f2c36ef10b5105c985e98940c548b2d547b655"
+    },
+    {
+      "imagen": "taco:1459",
+      "ruta": "trazas/140.pt",
+      "sha256": "e40c5d7ccd48acc425a0f1f15d2c8fec0c4666ea7fef5ced14ff5258c5b141f3"
+    },
+    {
+      "imagen": "taco:1460",
+      "ruta": "trazas/141.pt",
+      "sha256": "198f215f2e52ff73b29394cc401e78183d1de11e78552e321173875aef81dd5f"
+    },
+    {
+      "imagen": "taco:1461",
+      "ruta": "trazas/142.pt",
+      "sha256": "9d9cf8a66561f27e1b5ca563474e2612519e38063ac713df9d6980d21d7d7fc4"
+    },
+    {
+      "imagen": "taco:1462",
+      "ruta": "trazas/143.pt",
+      "sha256": "fabe4db00f5015ed6999abd949a62e4620291aadef95f6767f8ea9d74e1c7c2b"
+    },
+    {
+      "imagen": "taco:1463",
+      "ruta": "trazas/144.pt",
+      "sha256": "2bee76f8acc7badce51f1cd62829fc06a7848075647530de0a27fb9713815cfc"
+    },
+    {
+      "imagen": "taco:1464",
+      "ruta": "trazas/145.pt",
+      "sha256": "a17bb5f127eb7b221ec8d0cd23d635dc892a91d1763949865497f3d0472fc7db"
+    },
+    {
+      "imagen": "taco:1465",
+      "ruta": "trazas/146.pt",
+      "sha256": "507320943141c3092b9b58ced51408f656b64de518273cc76708ca59d35e8fe5"
+    },
+    {
+      "imagen": "taco:1466",
+      "ruta": "trazas/147.pt",
+      "sha256": "5ade4f811519d8c37475de376182d6fc24ddd59793dd57ad4ad80f400571084f"
+    },
+    {
+      "imagen": "taco:1467",
+      "ruta": "trazas/148.pt",
+      "sha256": "77ab69b7ddbdb5668c06a7e1ea16f79b44b253fcd9cd0ac0b1a0efe792484f21"
+    },
+    {
+      "imagen": "taco:1468",
+      "ruta": "trazas/149.pt",
+      "sha256": "9feb11bb835cf3cbc790fe27fa2d7feb303652ad4ead0a3801760e18d734859b"
+    },
+    {
+      "imagen": "taco:1469",
+      "ruta": "trazas/150.pt",
+      "sha256": "cc89470da90a571836169964761875c961347c4774939e0d32462701df98472b"
+    },
+    {
+      "imagen": "taco:1470",
+      "ruta": "trazas/151.pt",
+      "sha256": "291b85263ad7f018189ea5ad29af1c170beb01fba868c512273aca255d3c6732"
+    },
+    {
+      "imagen": "taco:1471",
+      "ruta": "trazas/152.pt",
+      "sha256": "962b2ae4009b2a5b89712c9812a02eedf21005b15e940707fa4d45c89e3acf55"
+    },
+    {
+      "imagen": "taco:1472",
+      "ruta": "trazas/153.pt",
+      "sha256": "08e1779e504d82d361b642ea136d80833176a1c42eb10784d3ec67cd8b8c8e41"
+    },
+    {
+      "imagen": "taco:1473",
+      "ruta": "trazas/154.pt",
+      "sha256": "48d18c375bb5405e71cb59001a0ef442a09e54534d50daaf75b3bf1cbc25f688"
+    },
+    {
+      "imagen": "taco:1474",
+      "ruta": "trazas/155.pt",
+      "sha256": "e54bb2607f77038fcf84af20912fa73f32fc04151190d1b62c71acb0c57ad5a8"
+    },
+    {
+      "imagen": "taco:1475",
+      "ruta": "trazas/156.pt",
+      "sha256": "453fea6146ea8db64278870065b4954d40c1c50021b253f9aa44ebacf6d22a5d"
+    },
+    {
+      "imagen": "taco:1476",
+      "ruta": "trazas/157.pt",
+      "sha256": "a7a3e92da28e570f0f1f3c6a6057074af7badb65a67cc38d3bc7a496eee13bfe"
+    },
+    {
+      "imagen": "taco:1477",
+      "ruta": "trazas/158.pt",
+      "sha256": "a7500e3f47659e8903524e471b217e3f2ee12a3d1667c97768778b674f6d480a"
+    },
+    {
+      "imagen": "taco:1478",
+      "ruta": "trazas/159.pt",
+      "sha256": "98792ac4bcc622f527bdd5908db93c748412b69dc5a77acf1c2c89700e969b67"
+    },
+    {
+      "imagen": "taco:1479",
+      "ruta": "trazas/160.pt",
+      "sha256": "e9fadb51feef8e55b5194fd306c74cdca180091696bd0909a601f7944577bca4"
+    },
+    {
+      "imagen": "taco:1480",
+      "ruta": "trazas/161.pt",
+      "sha256": "222f8fd4b52ab33566e2a736a698b11140cc05c301d781da37362e19706f5119"
+    },
+    {
+      "imagen": "taco:1481",
+      "ruta": "trazas/162.pt",
+      "sha256": "5283b43bb3e440c7543f2210285357f8b48c100257a77bac596f32cd533dec27"
+    },
+    {
+      "imagen": "taco:1482",
+      "ruta": "trazas/163.pt",
+      "sha256": "259c0596499647f2a74913cb8600581cc83a06192851b0256a500b56f007521a"
+    },
+    {
+      "imagen": "taco:1483",
+      "ruta": "trazas/164.pt",
+      "sha256": "148dcdb8f46f3d60772cf65319cb6d9748fe782846d59d6bca32a972aced3ec7"
+    },
+    {
+      "imagen": "taco:1484",
+      "ruta": "trazas/165.pt",
+      "sha256": "1d26afa8695cd0778dd44c271460bab7f480236783257f334c6e33705ac35925"
+    },
+    {
+      "imagen": "taco:1485",
+      "ruta": "trazas/166.pt",
+      "sha256": "38e1382e8045038f7ef02425ab657a14d80902d5703f435ea360b3e402191ddf"
+    },
+    {
+      "imagen": "taco:1486",
+      "ruta": "trazas/167.pt",
+      "sha256": "64c9d1d304d5269276ca53cd4bf474806ca59e771e197732eca6ec1be96e4425"
+    },
+    {
+      "imagen": "taco:1487",
+      "ruta": "trazas/168.pt",
+      "sha256": "a98fb056385dc29e6390c3fde692daf9d0d0040e7933ad9af9eed0888920c493"
+    },
+    {
+      "imagen": "taco:1488",
+      "ruta": "trazas/169.pt",
+      "sha256": "f2a33c075befbe725219ec90b23610d3b49d33a362328c5d9873002ebf63aa53"
+    },
+    {
+      "imagen": "taco:1489",
+      "ruta": "trazas/170.pt",
+      "sha256": "da5e465b14d591a8ffe7f5f1769aa5648ebb43e663dd4a87909fce56f7d94158"
+    },
+    {
+      "imagen": "taco:1490",
+      "ruta": "trazas/171.pt",
+      "sha256": "7e464da924c4736549d6183087ebb5a0fa4ae38feeff50c01a38f0a0202252c4"
+    },
+    {
+      "imagen": "taco:1491",
+      "ruta": "trazas/172.pt",
+      "sha256": "603db374002f621049fee20220f6b98fd4835bacfed59f779f00c6841d6a290e"
+    },
+    {
+      "imagen": "taco:1492",
+      "ruta": "trazas/173.pt",
+      "sha256": "14885d8ed290214d3cda4c6cdf00e2d014fe5eac76c20878471941404cd490db"
+    },
+    {
+      "imagen": "taco:1493",
+      "ruta": "trazas/174.pt",
+      "sha256": "0d7762fae8cc6885967c127d61402299ba2a1654cbbe6d4914dd358b2986f3fd"
+    },
+    {
+      "imagen": "taco:1494",
+      "ruta": "trazas/175.pt",
+      "sha256": "6c10d81cddcedd816f1a039661cc52d7f4ffdd99157c43124a2aa6c6a29b8873"
+    },
+    {
+      "imagen": "taco:1495",
+      "ruta": "trazas/176.pt",
+      "sha256": "02df247c487bfbec0b669387b22ce34315b52d6475b53baf59504277e37fcc1f"
+    },
+    {
+      "imagen": "taco:1496",
+      "ruta": "trazas/177.pt",
+      "sha256": "ca06ba6448293f08cebd090e8da9b9dda4579e36c331bc4cf00895d82a4f59be"
+    },
+    {
+      "imagen": "taco:1497",
+      "ruta": "trazas/178.pt",
+      "sha256": "4cb3cbdfd4263bebc5d82d85591e66f48d738551409215b6f3aaa57410aef93f"
+    },
+    {
+      "imagen": "taco:1498",
+      "ruta": "trazas/179.pt",
+      "sha256": "692e16d7b1ca263395e494e65ac3cae67ead5b6cc191c732902af5190d41b1ab"
+    },
+    {
+      "imagen": "taco:1499",
+      "ruta": "trazas/180.pt",
+      "sha256": "56572d633f7e2868399539820ca61b6d71102b771d562ca09ddf7aa148c8be33"
+    }
+  ],
+  "hashes_codigo": {
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+    "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+    "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+    "pruebas/test_propuestas_internas.py": "bae9fad738c7d0badf058f3947896bc968e7236d9e7795905227c7cd34e9a6c9"
+  },
+  "sha256_predicciones": "094f84a4804363b2a52c28aef932be2f40128b5fcae01e3481d8c80c57a9ed84",
+  "sha256_propuestas": "329f51fb588012a53554e7ec6f52c3781b029d57cf08755e0f72debf94171199",
+  "segundos": 78.58575600001495,
+  "torch": "2.14.1+cu126",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "traza_version": "observador_argmax7_c8_area2_nms050_top100_v1",
+  "entrenamiento": false,
+  "test_evaluado": false,
+  "gt_utilizado_en_inferencia": false
+}

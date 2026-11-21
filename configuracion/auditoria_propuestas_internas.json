@@ -1,0 +1,24 @@
+{
+  "nombre": "auditoria_propuestas_internas_v1",
+  "checkpoint": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "sha256_checkpoint": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "split": "val",
+  "imagenes": 181,
+  "vistas": 5,
+  "politica": "argmax7",
+  "umbral": 0.05,
+  "umbral_visual": 0.35,
+  "area_minima": 2,
+  "nms_iou": 0.5,
+  "top": 100,
+  "analisis": {
+    "iou_razonable": 0.5,
+    "visibilidad_bbox_minima": 0.8,
+    "fraccion_gt_minima_por_fragmento": 0.1,
+    "cobertura_gt_minima_union_fragmentos": 0.5,
+    "cobertura_gt_minima_por_objeto_fusionado": 0.5
+  },
+  "entrenar": false,
+  "evaluar_test": false,
+  "modificar_inferencia": false
+}

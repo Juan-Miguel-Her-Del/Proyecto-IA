@@ -4,6 +4,10 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
+**V20 preparada, A/B sin iniciar:** pérdida discriminativa sobre logits de la cabeza principal, con margen Huber, tokens difíciles y normalización por instancia. Diagnóstico train-only aprobado y 165 pruebas; gradientes distintos de CE aun usando los mismos tokens/pesos. No se volvió a evaluar val ni se modificó el detector elegido. Ver [auditoría de la pérdida, pruebas y límites](documentacion/20_aprendizaje_discriminativo_mapas.md).
+
+**Auditoría de propuestas internas:** completadas las 181 escenas val y 905 vistas, con predicciones finales idénticas y 149 pruebas aprobadas. Cartón y vidrio no generan ninguna caja correcta IoU≥0,5 ni antes de los filtros. La prioridad es investigar la cabeza de mapas; no se entrenó otra variante ni se adoptó B. Ver [evidencia, tamaños y ejemplos](documentacion/19_auditoria_propuestas_internas.md).
+
 **Supervisión regional A/B completada:** 1.452 actualizaciones por rama con reanudación comprobada; 136 pruebas aprobadas. B−A final de cinco vistas: AP50 cartón +0.000 pp; mAP50 global +0.312 pp. Referencia original intacta. Ver [comparación y límites](documentacion/18_reanudacion_y_comparacion_regional.md).
 
 Fase actual: modelos propios entrenados, datasets auditados y flujo MP4/webcam/asistente implementado. La cámara física capturó y procesó 12 frames de 640×480. **El detector mantiene calidad insuficiente; faltan videos independientes anotados y una prueba sostenida.** Los documentos originales están en `../documentos/`.
