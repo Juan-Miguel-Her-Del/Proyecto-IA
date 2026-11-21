@@ -1,5 +1,6 @@
 """Protocolo V20 y operación de lote. Esta preparación no ejecuta entrenamiento A/B."""
 import argparse
+import ast
 import json
 from pathlib import Path
 import sys
@@ -24,11 +25,30 @@ CODIGOS=['ecowaste/discriminacion_mapas.py','ecowaste/detector_mapas.py','ecowas
     'ecowaste/reanudacion_regional.py','ecowaste/ablacion_fondo.py','ecowaste/mosaico.py','ecowaste/cajas.py',
     'scripts/entrenar_detector_mapas.py','scripts/supervision_regional_materiales.py','scripts/ablacion_fondo.py',
     'scripts/preparar_v20.py','scripts/diagnosticar_v20.py','scripts/evaluar_v20.py',
-    'pruebas/test_discriminacion_mapas.py']
+    'pruebas/test_discriminacion_mapas.py','ecowaste/reanudacion_v20.py',
+    'scripts/entrenar_v20.py','scripts/probar_entrenamiento_v20.py','pruebas/test_entrenamiento_v20.py']
 
 
 def leer_cfg():return json.loads(CONFIG.read_text(encoding='utf-8'))
-def huellas_codigo():return {p:sha(RAIZ/p) for p in CODIGOS}
+def dependencias_locales(raices):
+    pendientes=list(raices);visitados=set()
+    while pendientes:
+        p=pendientes.pop()
+        if p in visitados:continue
+        path=RAIZ/p
+        if not path.is_file():raise ValueError('Dependencia local ausente: '+p)
+        visitados.add(p);arbol=ast.parse(path.read_text(encoding='utf-8-sig'),filename=p)
+        for nodo in ast.walk(arbol):
+            nombres=[]
+            if isinstance(nodo,ast.Import):nombres=[a.name for a in nodo.names]
+            elif isinstance(nodo,ast.ImportFrom) and nodo.module:
+                nombres=[nodo.module]+[nodo.module+'.'+a.name for a in nodo.names]
+            for nombre in nombres:
+                ruta=Path(*nombre.split('.')).with_suffix('.py')
+                if (RAIZ/ruta).is_file():pendientes.append(ruta.as_posix())
+    return sorted(visitados)
+
+def huellas_codigo():return {p:sha(RAIZ/p) for p in dependencias_locales(CODIGOS)}
 def protocolo(cfg):return {k:v for k,v in cfg.items() if k!='entrenamiento_completo_habilitado'}
 
 
@@ -50,6 +70,11 @@ def exigir_autorizacion(cfg):
     d=json.loads((RAIZ/cfg['diagnostico']).read_text(encoding='utf-8'))
     if not d['aprobada'] or d['hashes_codigo']!=huellas_codigo() or d['protocolo']!=protocolo(cfg):
         raise ValueError('Diagnóstico V20 no aprobado o desactualizado')
+    if d['torch']!=str(torch.__version__) or not torch.cuda.is_available() or d['gpu']!=torch.cuda.get_device_name():
+        raise ValueError('Entorno distinto del diagnóstico')
+    corta=json.loads((RAIZ/cfg['prueba_corta']).read_text(encoding='utf-8'))
+    if not corta['aprobada'] or corta['hashes_codigo']!=huellas_codigo() or corta['sha256_diagnostico']!=sha(RAIZ/cfg['diagnostico']):
+        raise ValueError('Prueba corta real ausente o desactualizada')
 
 
 def contexto_train(cfg):
@@ -118,7 +143,9 @@ def main():
     cfg=leer_cfg();validar(cfg)
     if a.entrenar:
         exigir_autorizacion(cfg)
-        raise ValueError('Esta entrega solo prepara V20; no contiene un lanzador de entrenamiento completo')
+        from scripts.entrenar_v20 import entrenar
+        entrenar(cfg)
+        return
     print(json.dumps({'protocolo':protocolo(cfg),'entrenamiento_ab_lanzado':False,
         'operacion_de_lote':'calcular_lote, con una sola pasada TACO y auxiliar global separada sin cambios'},ensure_ascii=False))
 

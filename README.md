@@ -4,6 +4,8 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
+**V20 detenida antes del A/B completo:** entrenador, diarios por época y evaluación preparados; diagnóstico regenerado y 171 pruebas aprobadas. El piloto AdamW falló la comparación numérica de reanudación: se detuvo sin ejecutar las 1.452 actualizaciones de ninguna rama, sin relajar tolerancias y sin modificar la referencia. Ver [incidencia, controles y métricas pendientes](documentacion/21_resultados_aprendizaje_discriminativo.md).
+
 **V20 preparada, A/B sin iniciar:** pérdida discriminativa sobre logits de la cabeza principal, con margen Huber, tokens difíciles y normalización por instancia. Diagnóstico train-only aprobado y 165 pruebas; gradientes distintos de CE aun usando los mismos tokens/pesos. No se volvió a evaluar val ni se modificó el detector elegido. Ver [auditoría de la pérdida, pruebas y límites](documentacion/20_aprendizaje_discriminativo_mapas.md).
 
 **Auditoría de propuestas internas:** completadas las 181 escenas val y 905 vistas, con predicciones finales idénticas y 149 pruebas aprobadas. Cartón y vidrio no generan ninguna caja correcta IoU≥0,5 ni antes de los filtros. La prioridad es investigar la cabeza de mapas; no se entrenó otra variante ni se adoptó B. Ver [evidencia, tamaños y ejemplos](documentacion/19_auditoria_propuestas_internas.md).

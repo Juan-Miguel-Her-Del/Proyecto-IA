@@ -96,7 +96,7 @@ def probar_gradientes(m,train,regiones,pm,ids):
     por_clase={}
     for c in range(6):
         fg=(y==c+1);n=int(fg.sum())
-        por_clase[str(c)]={'tokens_fg':n,'ce_media':float(F.cross_entropy(raw.float(),y,ignore_index=255,reduction='none')[fg].mean()) if n else None,
+        por_clase[str(c)]={'tokens_fg':n,'ce_media':float(F.cross_entropy(raw.float(),y,ignore_index=255,reduction='none')[fg].detach().mean()) if n else None,
             'grad_ce_gt_norma':float(grads_refs['ce_foreground_existente'][:,c+1][fg].norm()) if n else 0.}
     resultado={'ids_train':[train.base.origen.registros[i]['id'] for i in ids],
         'loss_original':{k:float(v.detach()) for k,v in partes.items()},'loss_nueva':float(nuevo.detach()),
@@ -167,7 +167,7 @@ def memorizacion(train,aux,regiones,pm,ids,ia):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--salida',type=Path);a=p.parse_args()
-    cfg=leer_cfg();salida=(a.salida or RAIZ/'resultados/v20_preparacion').resolve()
+    cfg=leer_cfg();salida=(a.salida or (RAIZ/cfg['diagnostico']).parent).resolve()
     if salida.exists():raise FileExistsError('Diagnóstico existente: usar una carpeta nueva')
     torch.set_num_threads(4);inicio=time.perf_counter()
     suite=unittest.defaultTestLoader.discover(str(RAIZ/'pruebas'),pattern='test_*.py');r=unittest.TextTestRunner(verbosity=1).run(suite)
@@ -198,6 +198,8 @@ def main():
     resultado={'aprobada':aprobada,'estado':'preparacion_train_only_ab_no_iniciado','protocolo':protocolo(cfg),
         'pruebas':pruebas,'revision_informes':['08','13','17','18','19'],'hashes_codigo':huellas_codigo(),
         'hashes_datos':ck['hashes_manifiestos'],'huella_regiones':huella(regiones),
+        'organico_elegible':next({'imagen':r['id'],'id_region':ident} for r,rs in zip(train.base.origen.registros,regiones)
+            for ident,y in zip(rs['ids'],rs['labels']) if int(y)==5),
         'huella_mascaras_originales':huella(train.mascaras),'pesos_fg_originales':pm.cpu().tolist(),'regiones_train':est,
         'comparacion_gradientes':pruebas_grad,'senal_adicional':{'margenes_seleccionados_mejoran':util,
             'probes_con_descenso_local_parametros':descenso,'fracciones_ortogonales_vs_ce6_matched':ort},

@@ -1,0 +1,25 @@
+Comando: python scripts/probar_entrenamiento_v20.py
+Codigo de salida: 1
+Transcripcion del stderr observado; no se repitio el piloto.
+
+Traceback (most recent call last):
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\scripts\probar_entrenamiento_v20.py", line 98, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\scripts\probar_entrenamiento_v20.py", line 80, in main
+    pesos=comparar(continuo['pesos'],final['pesos']);adam=comparar(continuo['optimizador'],final['optimizador'])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\scripts\probar_entrenamiento_v20.py", line 39, in comparar
+    visitar(a,b)
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\scripts\probar_entrenamiento_v20.py", line 34, in visitar
+    for k in x:visitar(x[k],y[k])
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\scripts\probar_entrenamiento_v20.py", line 30, in visitar
+    torch.testing.assert_close(x,y,rtol=1e-4,atol=1e-5)
+  File "C:\Users\JUAN M\.venvs\EcoWasteFormer\Lib\site-packages\torch\testing\_comparison.py", line 1689, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not close!
+
+Mismatched elements: 69 / 288 (24.0%)
+Greatest absolute difference: 0.000195428729057312 at index (168,) (up to 1e-05 allowed)
+Greatest relative difference: 0.011974018067121506 at index (104,) (up to 0.0001 allowed)

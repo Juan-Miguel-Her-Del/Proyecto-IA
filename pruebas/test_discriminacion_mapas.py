@@ -141,10 +141,11 @@ class DiscriminacionTests(unittest.TestCase):
     def test_preparacion_bloquea_ab_y_evaluacion_sin_cargar_datos(self):
         from scripts.preparar_v20 import leer_cfg,exigir_autorizacion,validar
         from scripts.evaluar_v20 import exigir_entrenamiento_completo
-        cfg=leer_cfg()
+        cfg=leer_cfg();cfg['entrenamiento_completo_habilitado']=False
         with patch('scripts.preparar_v20.contexto_train') as preparar:
             with self.assertRaisesRegex(ValueError,'deshabilitado'):exigir_autorizacion(cfg)
-            with self.assertRaisesRegex(ValueError,'no ejecutado'):exigir_entrenamiento_completo(cfg)
+            with patch('scripts.evaluar_v20.Path.exists',return_value=False):
+                with self.assertRaisesRegex(ValueError,'no ejecutado'):exigir_entrenamiento_completo(cfg)
             preparar.assert_not_called()
         for cambio in [{'fraccion_dificiles':.5},{'margen_logits':2},{'ramas':{'A':0,'B':.5}},
             {'pesos_clase_fijos':[1,1,2,2,1,25]}]:
