@@ -166,8 +166,9 @@ def memorizacion(train,aux,regiones,pm,ids,ia):
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--salida',type=Path);a=p.parse_args()
-    cfg=leer_cfg();salida=(a.salida or (RAIZ/cfg['diagnostico']).parent).resolve()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--salida',type=Path);p.add_argument('--config',type=Path);a=p.parse_args()
+    cfg=json.loads(a.config.read_text(encoding='utf-8')) if a.config else leer_cfg()
+    salida=(a.salida or (RAIZ/cfg['diagnostico']).parent).resolve()
     if salida.exists():raise FileExistsError('Diagnóstico existente: usar una carpeta nueva')
     torch.set_num_threads(4);inicio=time.perf_counter()
     suite=unittest.defaultTestLoader.discover(str(RAIZ/'pruebas'),pattern='test_*.py');r=unittest.TextTestRunner(verbosity=1).run(suite)
@@ -209,6 +210,8 @@ def main():
         'coeficiente_prefijado_antes_val':.25,'validacion_evaluada_en_v20':False,'test_evaluado':False,
         'actualizaciones_ab_ejecutadas':0,'pesos_diagnostico_descartados':True,'historicos_intactos':len(protegido),
         'torch':str(torch.__version__),'gpu':torch.cuda.get_device_name(),'segundos':time.perf_counter()-inicio}
+    resultado['alcance_numerico']='Comprobaciones de pérdida y regresión de inferencia histórica; el backend de entrenamiento se valida en controles C1/C2/R separados.'
+    resultado['control_backend_externo']=cfg.get('control_backend')
     publicar(salida/'diagnostico.json',resultado)
     print(json.dumps({'aprobada':aprobada,'senal_adicional':resultado['senal_adicional'],'actualizaciones_ab':0},ensure_ascii=False))
     if not aprobada:raise RuntimeError('Diagnóstico insuficiente: no habilitar entrenamiento')

@@ -1,0 +1,39 @@
+{
+  "actualizaciones": 125,
+  "paso_adamw": 2424,
+  "huellas_estado": {
+    "pesos": "ea53319727bb08f7cb132bd079cd8edb65a2408a6e4077f735da9a10790f11d9",
+    "adamw": "81dc45227b0f37d228c2bd6abbdbc36d5c51417a72cc19cb1ef080da8bfb5ed9",
+    "scaler": "c27acd42d36ba8ba29e9d0f89afa04c44fb937e231f2190d3e18a7a90e5ead93",
+    "rng": "9471ec063f91ffba25dfb2bef274d3829ef5f0f7fff8d218ae2f4c80482e161a"
+  },
+  "backend_efectivo": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": [
+      {
+        "foreach": false,
+        "fused": false
+      }
+    ]
+  },
+  "entrenamiento_AB": false,
+  "epoca_21_parcial_sin_commit": true
+}

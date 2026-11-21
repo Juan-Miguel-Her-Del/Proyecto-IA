@@ -3,6 +3,7 @@ import json
 import math
 import torch
 from ecowaste.reanudacion_regional import DiarioRama,publicar,sha,huellas_estado
+from ecowaste.backend_numerico import verificar_registro
 
 
 def validar_estado_v20(ck,cfg,rama,diag,codigos,previo):
@@ -10,6 +11,9 @@ def validar_estado_v20(ck,cfg,rama,diag,codigos,previo):
     r=ck['reanudacion'];hist=ck['historial'];ep=ck['epoca']
     if ck.get('protocolo_v20')!=p or ck.get('hashes_codigo_v20')!=codigos:
         raise ValueError('Protocolo o código V20 incompatible; no adoptar V18')
+    if cfg.get('backend_numerico'):
+        if ck.get('backend_numerico')!=cfg['backend_numerico']:raise ValueError('Checkpoint de otro backend numérico')
+        verificar_registro(cfg['backend_numerico'],ck['backend_efectivo'])
     if r.get('tipo')!='v20_margen_huber' or r['rama']!=rama or r['commit_previo_sha256']!=previo or not r['epoca_completa']:
         raise ValueError('Rama, cadena o época incompatible')
     if ck['sha256_origen']!=cfg['sha256_checkpoint_origen'] or r['sha256_diagnostico']!=diag['sha256_archivo']:
@@ -39,11 +43,20 @@ def validar_estado_v20(ck,cfg,rama,diag,codigos,previo):
     if any(g['lr']!=.0005 for g in ck['optimizador']['param_groups']):raise ValueError('LR diferente')
     esperado={'coeficiente':cfg['ramas'][rama],'margen':1.,'fraccion':.25,'delta_huber':1.,'pesos':[1.,1.,2.,2.,1.,1.]}
     if ck['config_entrenamiento']['v20']!=esperado:raise ValueError('Hipótesis modificada')
-    mejor=max(hist,key=lambda h:h['map50_val'])
-    if ck['mejor_epoca']!=mejor['epoca'] or ck['mejor_map']!=mejor['map50_val']:raise ValueError('Selección del mejor alterada')
+    if cfg.get('diagnostico_reanudacion_larga'):
+        if not cfg['nombre'].startswith('v23_control_') or cfg['entrenamiento_completo_habilitado'] or ep!=20:
+            raise ValueError('Diario diagnóstico ajeno al límite de época aprobado')
+        if any('map50_val' in h for h in hist) or ck.get('mejor_epoca') is not None or ck.get('mejor_map') is not None:
+            raise ValueError('El control train-only no selecciona modelos')
+    else:
+        mejor=max(hist,key=lambda h:h['map50_val'])
+        if ck['mejor_epoca']!=mejor['epoca'] or ck['mejor_map']!=mejor['map50_val']:raise ValueError('Selección del mejor alterada')
 
 
 class DiarioV20(DiarioRama):
+    def actualizar_alias(self,registros):
+        if self.cfg.get('diagnostico_reanudacion_larga'):return # checkpoints inmutables; sin selección
+        return super().actualizar_alias(registros)
     def evento(self,ck,path,recuperado=False):
         return {**super().evento(ck,path,recuperado),'version':20,'tipo':'v20_margen_huber'}
 

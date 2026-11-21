@@ -1,0 +1,46 @@
+[
+  {
+    "operador": "Optimizer.zero_grad#AdamW.zero_grad",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::layer_norm",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::native_layer_norm",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::scaled_dot_product_attention",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_scaled_dot_product_attention_math",
+    "llamadas": 8
+  },
+  {
+    "operador": "autograd::engine::evaluate_function: NativeLayerNormBackward0",
+    "llamadas": 18
+  },
+  {
+    "operador": "NativeLayerNormBackward0",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::native_layer_norm_backward",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::_amp_foreach_non_finite_check_and_unscale_",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::linalg_vector_norm",
+    "llamadas": 65
+  },
+  {
+    "operador": "Optimizer.step#AdamW.step",
+    "llamadas": 1
+  }
+]

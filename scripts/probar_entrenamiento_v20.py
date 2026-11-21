@@ -18,6 +18,7 @@ from ecowaste.reproducibilidad_v20 import cpu,gradientes,adam_nominal,comparar_a
 from scripts.preparar_v20 import leer_cfg,protocolo,huellas_codigo,contexto_train,calcular_lote
 from scripts.supervision_regional_materiales import restaurar,loaders
 from scripts.ablacion_fondo import aumentar
+from ecowaste.backend_numerico import aplicar_backend,politica
 
 CONFIG=RAIZ/'configuracion/diagnostico_reproducibilidad_v20.json'
 
@@ -47,6 +48,7 @@ def crear_plan():
 
 def opciones(modo,opt):
     """Cada cambio es diagnóstico y queda limitado al proceso worker."""
+    if modo=='sdpa_math_cudnn':return aplicar_backend(politica('minimo'))
     if modo=='determinista':
         if os.environ.get('CUBLAS_WORKSPACE_CONFIG')!=':4096:8':raise ValueError('Configurar cuBLAS antes de iniciar Python')
         torch.use_deterministic_algorithms(True)
@@ -155,9 +157,12 @@ def worker(modo,rama,trayectoria,fase):
 
 
 def main():
+    global CONFIG
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--crear-plan',action='store_true')
-    p.add_argument('--modo',choices=leer(CONFIG)['modos']);p.add_argument('--rama',choices=['A','B'])
+    p.add_argument('--config',type=Path,default=CONFIG)
+    p.add_argument('--modo',choices=[*leer(CONFIG)['modos'],'sdpa_math_cudnn']);p.add_argument('--rama',choices=['A','B'])
     p.add_argument('--trayectoria',choices=['C1','C2','R']);p.add_argument('--fase',choices=['inicio','reanudar'],default='inicio');a=p.parse_args()
+    CONFIG=a.config
     if a.crear_plan:crear_plan();return
     if not all([a.modo,a.rama,a.trayectoria]):p.error('Usar --crear-plan o modo/rama/trayectoria; no ejecuta A/B')
     try:worker(a.modo,a.rama,a.trayectoria,a.fase)

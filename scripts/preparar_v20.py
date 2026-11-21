@@ -27,7 +27,8 @@ CODIGOS=['ecowaste/discriminacion_mapas.py','ecowaste/detector_mapas.py','ecowas
     'scripts/preparar_v20.py','scripts/diagnosticar_v20.py','scripts/evaluar_v20.py',
     'pruebas/test_discriminacion_mapas.py','ecowaste/reanudacion_v20.py',
     'scripts/entrenar_v20.py','scripts/probar_entrenamiento_v20.py','pruebas/test_entrenamiento_v20.py',
-    'scripts/ejecutar_diagnostico_reproducibilidad_v20.py','pruebas/test_reproducibilidad_v20.py']
+    'scripts/ejecutar_diagnostico_reproducibilidad_v20.py','pruebas/test_reproducibilidad_v20.py',
+    'scripts/validar_backend_v23.py','pruebas/test_backend_numerico.py']
 
 
 def leer_cfg():return json.loads(CONFIG.read_text(encoding='utf-8'))
@@ -62,6 +63,10 @@ def validar(cfg):
         'area_minima_celdas':2,'evaluar_test':False,'cambiar_predeterminado':False}
     if any(cfg.get(k)!=v for k,v in esperado.items()):raise ValueError('Protocolo V20 incompatible')
     if Path(cfg['nombre']).name!=cfg['nombre']:raise ValueError('Nombre inválido')
+    if cfg.get('backend_numerico'):
+        from ecowaste.backend_numerico import validar_politica,VERSION
+        validar_politica(cfg['backend_numerico'])
+        if cfg.get('version_protocolo')!=VERSION:raise ValueError('Protocolo numérico sin versionar')
 
 
 def exigir_autorizacion(cfg):
@@ -76,6 +81,10 @@ def exigir_autorizacion(cfg):
     corta=json.loads((RAIZ/cfg['prueba_corta']).read_text(encoding='utf-8'))
     if not corta['aprobada'] or corta['hashes_codigo']!=huellas_codigo() or corta['sha256_diagnostico']!=sha(RAIZ/cfg['diagnostico']):
         raise ValueError('Prueba corta real ausente o desactualizada')
+    if cfg.get('backend_numerico'):
+        control=json.loads((RAIZ/cfg['control_backend']).read_text(encoding='utf-8'))
+        if not control['aprobada'] or control['backend_numerico']!=cfg['backend_numerico'] or control['hashes_codigo']!=huellas_codigo():
+            raise ValueError('Control prolongado del backend ausente o incompatible')
 
 
 def contexto_train(cfg):

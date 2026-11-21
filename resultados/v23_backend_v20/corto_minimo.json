@@ -1,0 +1,1812 @@
+{
+  "modo": "minimo",
+  "aprobada": false,
+  "ramas": {
+    "A": {
+      "pasos": [
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 4,
+            "max_diferencia_absoluta": 0.001953125,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 2,
+                "max_delta": 0.001953125,
+                "max_error_normalizado": 6.943480072212192
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 2,
+                "max_delta": 0.001953125,
+                "max_error_normalizado": 5.614980768690867
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 9.5367431640625e-07,
+                "max_error_normalizado": 0.0938197637899807
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.408334355801344e-07,
+                "max_error_normalizado": 0.01404766930813189
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.4901161193847656e-08,
+                "max_error_normalizado": 0.0012319678670190623
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.4082615962252021e-08,
+                "max_error_normalizado": 0.0014081433620106046
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.gradientes_taco_escalados"
+          },
+          "R": {
+            "exacto": true,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 0.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": null
+          }
+        },
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 2.9802322387695312e-08,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.4901161193847656e-08,
+                "max_error_normalizado": 0.0012319678670190623
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.4082615962252021e-08,
+                "max_error_normalizado": 0.0014081433620106046
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.9802322387695312e-08,
+                "max_error_normalizado": 0.002382001177244121
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.267835614271462e-08,
+                "max_error_normalizado": 0.0012674204343213163
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          },
+          "R": {
+            "exacto": true,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 0.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": null
+          }
+        },
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 112,
+            "max_diferencia_absoluta": 0.0078125,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.9802322387695312e-08,
+                "max_error_normalizado": 0.002382001177244121
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.267835614271462e-08,
+                "max_error_normalizado": 0.0012674204343213163
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 66,
+                "max_delta": 0.0078125,
+                "max_error_normalizado": 61.576354679802954
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 46,
+                "max_delta": 0.0078125,
+                "max_error_normalizado": 51.75983436853002
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.814697265625e-06,
+                "max_error_normalizado": 0.3766279744194279
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.732420736923814e-07,
+                "max_error_normalizado": 0.037277318427220894
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.146728992462158e-08,
+                "max_error_normalizado": 0.004818315542233695
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.7325662560760975e-08,
+                "max_error_normalizado": 0.003732138532814398
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          },
+          "R": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 112,
+            "max_diferencia_absoluta": 0.0078125,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 66,
+                "max_delta": 0.0078125,
+                "max_error_normalizado": 61.576354679802954
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 46,
+                "max_delta": 0.0078125,
+                "max_error_normalizado": 51.75983436853002
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.814697265625e-06,
+                "max_error_normalizado": 0.3766279744194279
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.732420736923814e-07,
+                "max_error_normalizado": 0.037277318427220894
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.146728992462158e-08,
+                "max_error_normalizado": 0.004818315542233695
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.7325662560760975e-08,
+                "max_error_normalizado": 0.003732138532814398
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.gradientes_taco_escalados"
+          }
+        },
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 131120,
+            "max_diferencia_absoluta": 0.546875,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.146728992462158e-08,
+                "max_error_normalizado": 0.004818315542233695
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.7325662560760975e-08,
+                "max_error_normalizado": 0.003732138532814398
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": false,
+                "fuera_tolerancia": 3734,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 49.70852727190564
+              },
+              "pre.losses": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.384185791015625e-06,
+                "max_error_normalizado": 0.011100443091946723
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 56283,
+                "max_delta": 0.5,
+                "max_error_normalizado": 1045.016077170418
+              },
+              "pre.logits_auxiliar": {
+                "exacta": false,
+                "fuera_tolerancia": 1,
+                "max_delta": 0.000244140625,
+                "max_error_normalizado": 4.5795933321121085
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 70053,
+                "max_delta": 0.546875,
+                "max_error_normalizado": 3020.1342281879192
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 1042,
+                "max_delta": 0.00026702880859375,
+                "max_error_normalizado": 9.775489589103588
+              },
+              "pre.norma_antes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 8.58306884765625e-06,
+                "max_error_normalizado": 0.006795173155961395
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 7,
+                "max_delta": 2.133287489414215e-05,
+                "max_error_normalizado": 1.6300385444268448
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.5480985641479492e-05,
+                "max_error_normalizado": 0.7991714249856947
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.1334271878004074e-06,
+                "max_error_normalizado": 0.2108734975029715
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          },
+          "R": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 131120,
+            "max_diferencia_absoluta": 0.546875,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.146728992462158e-08,
+                "max_error_normalizado": 0.004818315542233695
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.7325662560760975e-08,
+                "max_error_normalizado": 0.003732138532814398
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": false,
+                "fuera_tolerancia": 3734,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 49.70852727190564
+              },
+              "pre.losses": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.384185791015625e-06,
+                "max_error_normalizado": 0.011100443091946723
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 56283,
+                "max_delta": 0.5,
+                "max_error_normalizado": 1045.016077170418
+              },
+              "pre.logits_auxiliar": {
+                "exacta": false,
+                "fuera_tolerancia": 1,
+                "max_delta": 0.000244140625,
+                "max_error_normalizado": 4.5795933321121085
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 70053,
+                "max_delta": 0.546875,
+                "max_error_normalizado": 3020.1342281879192
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 1042,
+                "max_delta": 0.00026702880859375,
+                "max_error_normalizado": 9.775489589103588
+              },
+              "pre.norma_antes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 8.58306884765625e-06,
+                "max_error_normalizado": 0.006795173155961395
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 7,
+                "max_delta": 2.133287489414215e-05,
+                "max_error_normalizado": 1.6300385444268448
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.5480985641479492e-05,
+                "max_error_normalizado": 0.7991714249856947
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.1334271878004074e-06,
+                "max_error_normalizado": 0.2108734975029715
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          }
+        }
+      ],
+      "restauracion_exacta": true,
+      "entradas_y_RNG_exactos": true,
+      "aprobada": false
+    },
+    "B": {
+      "pasos": [
+        {
+          "C2": {
+            "exacto": true,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 0.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": null
+          },
+          "R": {
+            "exacto": true,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 0.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": null
+          }
+        },
+        {
+          "C2": {
+            "exacto": true,
+            "dentro_tolerancia": true,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 0,
+            "max_diferencia_absoluta": 0.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": null
+          },
+          "R": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 8,
+            "max_diferencia_absoluta": 0.00390625,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 4,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 9.127418765972982
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 4,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 94.87666034155598
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.9073486328125e-06,
+                "max_error_normalizado": 0.18537639750631668
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.154273144900799e-07,
+                "max_error_normalizado": 0.03139267441905349
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.4586915969848633e-07,
+                "max_error_normalizado": 0.013735037507973396
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.15430952468887e-08,
+                "max_error_normalizado": 0.0031538394220277893
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.gradientes_taco_escalados"
+          }
+        },
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 4058,
+            "max_diferencia_absoluta": 0.015625,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.adamw": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 2140,
+                "max_delta": 0.015625,
+                "max_error_normalizado": 156.98587127158555
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 1918,
+                "max_delta": 0.015625,
+                "max_error_normalizado": 405.67951318458415
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.62939453125e-06,
+                "max_error_normalizado": 0.7618786403513784
+              },
+              "pre.norma_antes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 9.5367431640625e-07,
+                "max_error_normalizado": 0.000894812900259877
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.227063179016113e-07,
+                "max_error_normalizado": 0.07225355417972501
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.3746321201324463e-06,
+                "max_error_normalizado": 0.10434602140610273
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.227936293929815e-08,
+                "max_error_normalizado": 0.007224936154951804
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.gradientes_taco_escalados"
+          },
+          "R": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 1706,
+            "max_diferencia_absoluta": 0.015625,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 2.4586915969848633e-07,
+                "max_error_normalizado": 0.013735037507973396
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.15430952468887e-08,
+                "max_error_normalizado": 0.0031538394220277893
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.losses": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 913,
+                "max_delta": 0.015625,
+                "max_error_normalizado": 156.98587127158555
+              },
+              "pre.logits_auxiliar": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 793,
+                "max_delta": 0.015625,
+                "max_error_normalizado": 172.11703958691908
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.62939453125e-06,
+                "max_error_normalizado": 0.716565929439753
+              },
+              "pre.norma_antes_clip": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.226481102406979e-07,
+                "max_error_normalizado": 0.07182454707000645
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.398186087608337e-07,
+                "max_error_normalizado": 0.05671224157608044
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.227936293929815e-08,
+                "max_error_normalizado": 0.007224978591517843
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          }
+        },
+        {
+          "C2": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 426092,
+            "max_diferencia_absoluta": 2.0,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.3746321201324463e-06,
+                "max_error_normalizado": 0.10434602140610273
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.227936293929815e-08,
+                "max_error_normalizado": 0.007224936154951804
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": false,
+                "fuera_tolerancia": 20360,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 70.44206960990422
+              },
+              "pre.losses": {
+                "exacta": false,
+                "fuera_tolerancia": 1,
+                "max_delta": 0.00017699599266052246,
+                "max_error_normalizado": 3.7709418069073086
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 190893,
+                "max_delta": 2.0,
+                "max_error_normalizado": 1423.4875444839859
+              },
+              "pre.logits_auxiliar": {
+                "exacta": false,
+                "fuera_tolerancia": 1,
+                "max_delta": 0.0009765625,
+                "max_error_normalizado": 5.626195566557893
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 208196,
+                "max_delta": 2.0,
+                "max_error_normalizado": 3124.9999999999995
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 6586,
+                "max_delta": 0.0009765625,
+                "max_error_normalizado": 9.566631589017508
+              },
+              "pre.norma_antes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0005435943603515625,
+                "max_error_normalizado": 0.4078060488168452
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 39,
+                "max_delta": 6.839632987976074e-05,
+                "max_error_normalizado": 2.9474011415650634
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 16,
+                "max_delta": 4.1991472244262695e-05,
+                "max_error_normalizado": 2.3958218363499975
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.839632987976074e-06,
+                "max_error_normalizado": 0.6237969389295508
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          },
+          "R": {
+            "exacto": false,
+            "dentro_tolerancia": false,
+            "tensores": 803,
+            "elementos_fuera_tolerancia": 272324,
+            "max_diferencia_absoluta": 0.53125,
+            "rtol": 0.0001,
+            "atol": 1e-05,
+            "etapas": {
+              "pre.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 6.398186087608337e-07,
+                "max_error_normalizado": 0.05671224157608044
+              },
+              "pre.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 7.227936293929815e-08,
+                "max_error_normalizado": 0.007224978591517843
+              },
+              "pre.rng_inicio": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.entradas": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "pre.logits_taco": {
+                "exacta": false,
+                "fuera_tolerancia": 8530,
+                "max_delta": 0.00390625,
+                "max_error_normalizado": 40.825415676959615
+              },
+              "pre.losses": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 3.0308961868286133e-05,
+                "max_error_normalizado": 0.6459415258924867
+              },
+              "pre.gradientes_taco_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 122886,
+                "max_delta": 0.5,
+                "max_error_normalizado": 867.0520231213872
+              },
+              "pre.logits_auxiliar": {
+                "exacta": false,
+                "fuera_tolerancia": 1,
+                "max_delta": 0.0009765625,
+                "max_error_normalizado": 5.626195566557893
+              },
+              "pre.gradientes_total_escalados": {
+                "exacta": false,
+                "fuera_tolerancia": 138500,
+                "max_delta": 0.53125,
+                "max_error_normalizado": 1923.0769230769229
+              },
+              "pre.gradientes_sin_escala": {
+                "exacta": false,
+                "fuera_tolerancia": 2398,
+                "max_delta": 0.0002593994140625,
+                "max_error_normalizado": 6.678883457657966
+              },
+              "pre.norma_antes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 4.100799560546875e-05,
+                "max_error_normalizado": 0.03076547595021247
+              },
+              "pre.gradientes_clip": {
+                "exacta": false,
+                "fuera_tolerancia": 7,
+                "max_delta": 1.9686296582221985e-05,
+                "max_error_normalizado": 1.5746242454005506
+              },
+              "post.pesos": {
+                "exacta": false,
+                "fuera_tolerancia": 2,
+                "max_delta": 1.4290213584899902e-05,
+                "max_error_normalizado": 1.2353167975924109
+              },
+              "post.adamw": {
+                "exacta": false,
+                "fuera_tolerancia": 0,
+                "max_delta": 1.9686995074152946e-06,
+                "max_error_normalizado": 0.19453113223405935
+              },
+              "post.scaler": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              },
+              "post.rng_fin": {
+                "exacta": true,
+                "fuera_tolerancia": 0,
+                "max_delta": 0.0,
+                "max_error_normalizado": 0.0
+              }
+            },
+            "primera_etapa_no_exacta": "pre.pesos"
+          }
+        }
+      ],
+      "restauracion_exacta": true,
+      "entradas_y_RNG_exactos": true,
+      "aprobada": false
+    }
+  },
+  "hashes_codigo": {
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+    "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/backend_numerico.py": "3df9ce74b9e58a64c1ccaeb49357c5af232fc173e11d495c5ffb30d03b720b1a",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/continuacion.py": "016e6bffe9c64d309cb6b20c3eb2ebe97152fd0c9409550e8a21251731c691a0",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/detector_centros.py": "508fa240f46f6b0931942644c7669684f202bd5e06a798c058214da1c230926c",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+    "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+    "ecowaste/evaluacion.py": "4943ac34c4b8472ea8bacd5f9626a7f02735ccf24fb99332f954167f474edfc4",
+    "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+    "ecowaste/inferencia_detector.py": "1c6a8c43183aa6c5e8959a9d089992117265ac606ef4de6bc180c1e398caae1a",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/observacion_backend.py": "04848e7835d46c4f8171d8cf1c7d693f9d35455ade6f5109b067f94162a2891e",
+    "ecowaste/perdida_detector.py": "a6ea83a6b3645c65aafc89341415b8ec33f7961c983af7813587264175ff28bf",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+    "ecowaste/reanudacion_v20.py": "bcd9cabc1e5100d29f1ebe9823083dc36ed46217c2077287ea6d2f44f7b4fea5",
+    "ecowaste/recortes.py": "98557c5c8d74f64ae79d263fa5cfda29808fb07a042194c8f01a7d06eb459976",
+    "ecowaste/reproducibilidad_v20.py": "0005cc41e1adc1ed2c176ebc5650a28118737ea2377520444dcb5933352007b5",
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+    "pruebas/test_backend_numerico.py": "a344db7872569cfd79c3213c28faa5b6d531eb4c052671161dfcfcf00f67b84f",
+    "pruebas/test_discriminacion_mapas.py": "c09564a40af1a2879971dd5308d9fd8ba8642cbac45d398abc9a2d72da63ade4",
+    "pruebas/test_entrenamiento_v20.py": "109abecf40145e417dea9ea3cd4606cdbda0d5e30c9ec2b2791d732b9232c978",
+    "pruebas/test_reanudacion_regional.py": "2f3538d67c1dccdcb9af9094af12d6b875bf4f5a320fc3716358d6cad4202e88",
+    "pruebas/test_reproducibilidad_v20.py": "bb85097600009d15fa7926665bb79777a17f70798700427e33c2e57c6dd6b884",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+    "scripts/diagnosticar_supervision_regional.py": "1d380b087d48dbd42a8e9e6ba1732883de9817321d0e92cab4efeed98536d166",
+    "scripts/diagnosticar_v20.py": "20f7c352449c8a933a3ba0383d26811c01b3f69bfff053602b999f49eaccc87a",
+    "scripts/ejecutar_diagnostico_reproducibilidad_v20.py": "01f4a63c6dd734f62345e0b2329b67c637ea352c2ef2bebb4b836947fa4249b1",
+    "scripts/entrenar_clasificador.py": "6934850b885a99670fe7c3d8b20fe50419baab78917e74c65f312d40a309b964",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/entrenar_v20.py": "a315e3cd89278aefa2f920123d504ef964b2c583b6044d9dd6efc87a0fd975a2",
+    "scripts/evaluar_v20.py": "ac42f4764815079bc69d6d2363ab23c72510f54761fcc334f193a7e2557ab32f",
+    "scripts/preparar_v20.py": "afb5c31691bbe4c4ce7cd1aa780f0108f2f62c5962ca1256a81f3e5bb11afbc9",
+    "scripts/probar_entrenamiento_v20.py": "1a6866bfcb62a8126d1d120398f09b0df50c97ef8caeba57c644a523be50aed7",
+    "scripts/supervision_regional_materiales.py": "17c78fd4de77e1d41f1b23f5bdc57528b1352899a6c4653c6f0cc0f81984c431",
+    "scripts/validar_backend_v23.py": "eeb2c68afcee4bf557f1d7e29569c947362c26169de07445ee7b996b344bcd3d"
+  }
+}

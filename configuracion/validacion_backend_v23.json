@@ -1,0 +1,17 @@
+{
+  "version": 23,
+  "salida": "resultados/v23_backend_v20/corto",
+  "diagnostico_regenerado": "resultados/v23_backend_v20/preparacion_codigo/diagnostico.json",
+  "ramas": ["A", "B"],
+  "trayectorias": ["C1", "C2", "R"],
+  "modos": ["sdpa_math_cudnn"],
+  "rtol": 0.0001,
+  "atol": 0.00001,
+  "criterio_corto": "Restauracion e inputs exactos; C1-C2 y C1-R dentro de tolerancia en todos los tensores y etapas de los cuatro pasos; no basta un maximo absoluto pequeno.",
+  "seleccion": "Probar minimo; si falla cualquier criterio, candidato completo de V22. Si el minimo falla en el control largo, registrar fallo y probar completo en rutas nuevas. No relajar tolerancias.",
+  "control_largo": {"actualizaciones_por_trayectoria": 125, "epoca_completa": 121, "pasos_epoca_siguiente": 4, "reanudar_despues_de": 121, "sin_validacion": true, "sin_seleccion": true},
+  "criterio_largo": "Diario y recarga exactos; huellas y contadores por etapa/paso iguales o comparacion exhaustiva con rtol=1e-4, atol=1e-5 si difieren. Comparar C1-C2 y C1-R, incluidos los pasos 121 y 122.",
+  "entrenamiento_AB": false,
+  "validacion": false,
+  "test": false
+}

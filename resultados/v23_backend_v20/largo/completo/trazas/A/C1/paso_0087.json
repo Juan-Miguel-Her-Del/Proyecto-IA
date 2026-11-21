@@ -1,0 +1,939 @@
+{
+  "paso": 87,
+  "paso_adamw": 2386,
+  "hashes_etapas": {
+    "pesos_antes": "5104756e91ef9723b433d8f94ce6a5d94a1b9de209ec7e309dc962c39cd2a99e",
+    "adamw_antes": "68e5f88357e8a9be635e7bdbdd348a4d8ff9e9a523838b50ce8d2e810a4d5cba",
+    "scaler_antes": "3c1c553656086de733e42b41a1947d1ecaf47f1e859ab00b6e64989dc2441edd",
+    "rng_inicio": "11dd09b5357d65cfc49be830157e019ce9446de65c12b9b741119a6123a5f942",
+    "logits_taco": "51ccb9cbebd62a9d3395df429283d811b2bcf6c04344527e3a0a30b2bd2b6a03",
+    "losses_taco": "a5795de6386b8baf151905988f4faeba21a1364a9ce6cade50080e076dde86ae",
+    "grad_taco": "eed7b61ff38dc7742e45f466e1c32ca9836757a0d81c91d29a1c0f47ec207e23",
+    "logits_aux": "70406757ac6c41beeaebf5ee8377f9ec5230cf1cf32429629ba2ab647840de17",
+    "loss_global": "0b3c2ac04efbe3a9e744c60921a9ca614e9e9f42269507219a6a3aec380e9f64",
+    "grad_total": "55ee6c02a90fc28697b0456d0ef6cce4c171bb0f0902cc9925c4d907d9ed7ec5",
+    "sin_escala": "d60b53ed7a5622c325cde464322a298ed54ec5fe6e4c1426413bd3b78f9e98d3",
+    "grad_clip": "e2065e30a20b730c8690ce19a55fee076e9bee05d749ed64a054227729c37f7a",
+    "norma": "afa9f503e8d4eb2b1e8f93429136cf1cf69237fd2bb53ce8ed7b881e108f8d9b",
+    "entradas": "790b2add017e8ade812be94bd15afd41cf698c30a27a2a91d4fcb0d0a6307572",
+    "pesos_despues": "4339b2fcde23a39ce60b585d4bc6250a25a0ec48c9b31006f3ae2fac64857ff5",
+    "adamw_despues": "fd91b38c86d2cfb7467aec7a5e1f290afe18e7df2350412cb9aad1641d9c22a1",
+    "scaler_despues": "27977a0b8485cd7e7f48f3f6f0dbe40185fe882e128fb8763abd75cc318df9c1",
+    "rng_fin": "3bac9d2f6d08ba18b611a4c4a785f3fd59a3c97130272c3c182f3496271eb9dd"
+  },
+  "loss_original": 2.536193370819092,
+  "loss_nueva": 0.5325471758842468,
+  "loss_global": 1.0682857036590576,
+  "norma_antes_clip": 5.713921070098877,
+  "huella_entrada": "790b2add017e8ade812be94bd15afd41cf698c30a27a2a91d4fcb0d0a6307572",
+  "scaler": {
+    "scale": 2048.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 386
+  },
+  "instantanea_completa": true,
+  "sha256_instantanea": "e77501e1e270abc57ee8d4a5cf9ac8dfa0cfb80ae7cbe05c09d7f8cab05cfee4",
+  "detalle_regional": {
+    "version": "margen_huber_rival_max_top025_instancia_v1",
+    "instancias": 32,
+    "denominador_instancias": 33.0,
+    "filas": [
+      {
+        "imagen_lote": 0,
+        "id_region": 3025,
+        "clase": 2,
+        "material": "carton",
+        "peso_clase": 2.0,
+        "tokens_validos": 16,
+        "tokens_seleccionados": 4,
+        "indices_tokens": [
+          1649,
+          1697,
+          1700,
+          1701
+        ],
+        "rivales": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "loss_instancia": 2.8733482360839844,
+        "numerador_ponderado": 5.746696472167969,
+        "fraccion_peso_instancia": 0.06060606060606061,
+        "contribucion": 0.1741423173384233,
+        "cota_l1_grad_logits": 0.12121212121212122
+      },
+      {
+        "imagen_lote": 0,
+        "id_region": 3026,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 2,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1599
+        ],
+        "rivales": [
+          1
+        ],
+        "loss_instancia": 0.708984375,
+        "numerador_ponderado": 0.708984375,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.021484375,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 1,
+        "id_region": 1566,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 170,
+        "tokens_seleccionados": 43,
+        "indices_tokens": [
+          1562,
+          1563,
+          1704,
+          1799,
+          1751,
+          1610,
+          1703,
+          1656,
+          1753,
+          1611,
+          1564,
+          1801,
+          1511,
+          1560,
+          1752,
+          1800,
+          1561,
+          1655,
+          1510,
+          1565,
+          1609,
+          1608,
+          1516,
+          1559,
+          1658,
+          1657,
+          1514,
+          1419,
+          1421,
+          983,
+          1469,
+          935,
+          1515,
+          1606,
+          1607,
+          1509,
+          1467,
+          1705,
+          1271,
+          1558,
+          1754,
+          1420,
+          1468
+        ],
+        "rivales": [
+          3,
+          3,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "loss_instancia": 0.34919655323028564,
+        "numerador_ponderado": 0.34919655323028564,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.01058171373425108,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 2,
+        "id_region": 3964,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 7,
+        "tokens_seleccionados": 2,
+        "indices_tokens": [
+          1180,
+          1035
+        ],
+        "rivales": [
+          4,
+          4
+        ],
+        "loss_instancia": 0.08748340606689453,
+        "numerador_ponderado": 0.08748340606689453,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0026510123050574102,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 2,
+        "id_region": 3965,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 5,
+        "tokens_seleccionados": 2,
+        "indices_tokens": [
+          1323,
+          1371
+        ],
+        "rivales": [
+          4,
+          4
+        ],
+        "loss_instancia": 0.04613208770751953,
+        "numerador_ponderado": 0.04613208770751953,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.001397942051743016,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 2,
+        "id_region": 3966,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 4,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1821
+        ],
+        "rivales": [
+          3
+        ],
+        "loss_instancia": 0.11849510669708252,
+        "numerador_ponderado": 0.11849510669708252,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0035907608090025005,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 2,
+        "id_region": 3967,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 3,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1624
+        ],
+        "rivales": [
+          3
+        ],
+        "loss_instancia": 0.32888901233673096,
+        "numerador_ponderado": 0.32888901233673096,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.009966333707173666,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 2,
+        "id_region": 3968,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 2,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1578
+        ],
+        "rivales": [
+          3
+        ],
+        "loss_instancia": 0.14542582631111145,
+        "numerador_ponderado": 0.14542582631111145,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.004406843221548832,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 756,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 28,
+        "tokens_seleccionados": 7,
+        "indices_tokens": [
+          1319,
+          1271,
+          1270,
+          1318,
+          1222,
+          1223,
+          1221
+        ],
+        "rivales": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "loss_instancia": 1.3596540689468384,
+        "numerador_ponderado": 1.3596540689468384,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.041201638452934494,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 757,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 13,
+        "tokens_seleccionados": 4,
+        "indices_tokens": [
+          1269,
+          1268,
+          1367,
+          1413
+        ],
+        "rivales": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "loss_instancia": 1.1583402156829834,
+        "numerador_ponderado": 1.1583402156829834,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.035101218657060104,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 758,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 33,
+        "tokens_seleccionados": 9,
+        "indices_tokens": [
+          1461,
+          1462,
+          1463,
+          1460,
+          1459,
+          1507,
+          1508,
+          1511,
+          1509
+        ],
+        "rivales": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "loss_instancia": 0.6129491329193115,
+        "numerador_ponderado": 0.6129491329193115,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.018574216149070046,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 759,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 37,
+        "tokens_seleccionados": 10,
+        "indices_tokens": [
+          1807,
+          1757,
+          1855,
+          1756,
+          1854,
+          1805,
+          1806,
+          1804,
+          2145,
+          2193
+        ],
+        "rivales": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "loss_instancia": 0.6240447163581848,
+        "numerador_ponderado": 0.6240447163581848,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.018910445950248024,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 760,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 1,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1758
+        ],
+        "rivales": [
+          4
+        ],
+        "loss_instancia": 0.7216796875,
+        "numerador_ponderado": 0.7216796875,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.02186908143939394,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 761,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 83,
+        "tokens_seleccionados": 21,
+        "indices_tokens": [
+          1947,
+          1995,
+          2236,
+          2037,
+          2139,
+          1845,
+          2187,
+          1896,
+          1848,
+          2235,
+          1895,
+          1853,
+          2043,
+          1897,
+          1951,
+          1902,
+          1703,
+          1950,
+          1946,
+          2186,
+          2188
+        ],
+        "rivales": [
+          1,
+          1,
+          1,
+          3,
+          1,
+          1,
+          1,
+          4,
+          4,
+          1,
+          1,
+          4,
+          1,
+          4,
+          1,
+          4,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "loss_instancia": 0.2520463466644287,
+        "numerador_ponderado": 0.2520463466644287,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.007637768080740264,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 762,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 6,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1312
+        ],
+        "rivales": [
+          4
+        ],
+        "loss_instancia": 1.9073486328125e-06,
+        "numerador_ponderado": 1.9073486328125e-06,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 5.779844341856061e-08,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 763,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 8,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1357
+        ],
+        "rivales": [
+          4
+        ],
+        "loss_instancia": 0.011753559112548828,
+        "numerador_ponderado": 0.011753559112548828,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0003561684579560251,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 764,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 3,
+        "tokens_seleccionados": 0,
+        "indices_tokens": [],
+        "rivales": [],
+        "loss_instancia": -0.0,
+        "numerador_ponderado": -0.0,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": -0.0,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 765,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 13,
+        "tokens_seleccionados": 4,
+        "indices_tokens": [
+          1795,
+          1843,
+          1700,
+          1749
+        ],
+        "rivales": [
+          3,
+          3,
+          1,
+          1
+        ],
+        "loss_instancia": 0.7653462290763855,
+        "numerador_ponderado": 0.7653462290763855,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.02319230997201168,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 3,
+        "id_region": 766,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 25,
+        "tokens_seleccionados": 7,
+        "indices_tokens": [
+          1549,
+          1695,
+          1597,
+          1505,
+          1694,
+          1645,
+          1647
+        ],
+        "rivales": [
+          1,
+          1,
+          1,
+          4,
+          1,
+          1,
+          1
+        ],
+        "loss_instancia": 0.28298822045326233,
+        "numerador_ponderado": 0.28298822045326233,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.008575400619795828,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 4,
+        "id_region": 3407,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 11,
+        "tokens_seleccionados": 0,
+        "indices_tokens": [],
+        "rivales": [],
+        "loss_instancia": -0.0,
+        "numerador_ponderado": -0.0,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": -0.0,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 4,
+        "id_region": 3408,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 1,
+        "tokens_seleccionados": 0,
+        "indices_tokens": [],
+        "rivales": [],
+        "loss_instancia": -0.0,
+        "numerador_ponderado": -0.0,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": -0.0,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 5,
+        "id_region": 3932,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 1,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1027
+        ],
+        "rivales": [
+          4
+        ],
+        "loss_instancia": 0.04093599319458008,
+        "numerador_ponderado": 0.04093599319458008,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0012404846422600024,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 5,
+        "id_region": 3933,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 4,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          978
+        ],
+        "rivales": [
+          4
+        ],
+        "loss_instancia": 0.20084428787231445,
+        "numerador_ponderado": 0.20084428787231445,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.006086190541585286,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 5,
+        "id_region": 3934,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 7,
+        "tokens_seleccionados": 2,
+        "indices_tokens": [
+          1507,
+          1459
+        ],
+        "rivales": [
+          3,
+          3
+        ],
+        "loss_instancia": 0.7905530333518982,
+        "numerador_ponderado": 0.7905530333518982,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.023956152525815098,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1091,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 12,
+        "tokens_seleccionados": 0,
+        "indices_tokens": [],
+        "rivales": [],
+        "loss_instancia": -0.0,
+        "numerador_ponderado": -0.0,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": -0.0,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1093,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 3,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1321
+        ],
+        "rivales": [
+          3
+        ],
+        "loss_instancia": 0.136993408203125,
+        "numerador_ponderado": 0.136993408203125,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.004151315400094697,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1094,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 1,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          1746
+        ],
+        "rivales": [
+          3
+        ],
+        "loss_instancia": 1.0703125,
+        "numerador_ponderado": 1.0703125,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.03243371212121212,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1095,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 8,
+        "tokens_seleccionados": 2,
+        "indices_tokens": [
+          937,
+          938
+        ],
+        "rivales": [
+          3,
+          3
+        ],
+        "loss_instancia": 0.30602312088012695,
+        "numerador_ponderado": 0.30602312088012695,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.009273427905458393,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1096,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 5,
+        "tokens_seleccionados": 2,
+        "indices_tokens": [
+          889,
+          888
+        ],
+        "rivales": [
+          3,
+          3
+        ],
+        "loss_instancia": 0.02262115478515625,
+        "numerador_ponderado": 0.02262115478515625,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0006854895389441288,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 6,
+        "id_region": 1097,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 8,
+        "tokens_seleccionados": 0,
+        "indices_tokens": [],
+        "rivales": [],
+        "loss_instancia": -0.0,
+        "numerador_ponderado": -0.0,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": -0.0,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 7,
+        "id_region": 810,
+        "clase": 4,
+        "material": "metal",
+        "peso_clase": 1.0,
+        "tokens_validos": 53,
+        "tokens_seleccionados": 14,
+        "indices_tokens": [
+          1608,
+          1800,
+          1656,
+          1560,
+          1704,
+          1752,
+          1796,
+          1512,
+          1844,
+          1747,
+          1795,
+          1797,
+          1843,
+          1749
+        ],
+        "rivales": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loss_instancia": 1.5654994249343872,
+        "numerador_ponderado": 1.5654994249343872,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.047439376513163246,
+        "cota_l1_grad_logits": 0.06060606060606061
+      },
+      {
+        "imagen_lote": 7,
+        "id_region": 812,
+        "clase": 0,
+        "material": "plastico",
+        "peso_clase": 1.0,
+        "tokens_validos": 1,
+        "tokens_seleccionados": 1,
+        "indices_tokens": [
+          991
+        ],
+        "rivales": [
+          1
+        ],
+        "loss_instancia": 0.12016487121582031,
+        "numerador_ponderado": 0.12016487121582031,
+        "fraccion_peso_instancia": 0.030303030303030304,
+        "contribucion": 0.0036413597338127365,
+        "cota_l1_grad_logits": 0.06060606060606061
+      }
+    ],
+    "por_material": {
+      "plastico": {
+        "instancias": 30,
+        "activas": 25,
+        "tokens_seleccionados": 127,
+        "contribucion": 0.3109654188156128
+      },
+      "papel": {
+        "instancias": 0,
+        "activas": 0,
+        "tokens_seleccionados": 0,
+        "contribucion": 0
+      },
+      "carton": {
+        "instancias": 1,
+        "activas": 1,
+        "tokens_seleccionados": 4,
+        "contribucion": 0.1741423173384233
+      },
+      "vidrio": {
+        "instancias": 0,
+        "activas": 0,
+        "tokens_seleccionados": 0,
+        "contribucion": 0
+      },
+      "metal": {
+        "instancias": 1,
+        "activas": 1,
+        "tokens_seleccionados": 14,
+        "contribucion": 0.047439376513163246
+      },
+      "organico": {
+        "instancias": 0,
+        "activas": 0,
+        "tokens_seleccionados": 0,
+        "contribucion": 0
+      }
+    }
+  }
+}
