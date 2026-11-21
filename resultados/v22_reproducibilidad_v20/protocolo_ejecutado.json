@@ -1,0 +1,103 @@
+{
+  "protocolo": {
+    "version": 22,
+    "salida": "resultados/v22_reproducibilidad_v20",
+    "diagnostico_regenerado": "resultados/v22_reproducibilidad_v20/preparacion/diagnostico.json",
+    "ramas": [
+      "A",
+      "B"
+    ],
+    "trayectorias": [
+      "C1",
+      "C2",
+      "R"
+    ],
+    "actualizaciones": 4,
+    "restaurar_despues_de": 2,
+    "rtol": 0.0001,
+    "atol": 1e-05,
+    "modos": [
+      "historico",
+      "sdpa_math",
+      "sin_autocast",
+      "clip_serial",
+      "adam_serial",
+      "determinista"
+    ],
+    "comparaciones": [
+      "C1_C2",
+      "C1_R"
+    ],
+    "criterio_predefinido": {
+      "restauracion": "Estado completo de R paso 2 y estado recargado exactos, incluidos pesos, AdamW, scaler, RNG y plan restante.",
+      "entradas": "Indices, aumentos y RNG exactos entre las tres trayectorias en cada paso.",
+      "historico_no_divergencia_adicional": "En cada paso, tensor y etapa: maximo error normalizado C1-R <= max(1, error C1-C2) y elementos fuera de tolerancia C1-R <= C1-C2. Sin multiplicar ni ampliar tolerancias.",
+      "error_normalizado": "max(abs(a-b)/(atol+rtol*abs(b))); a=C1, b=C2 o R; mismo criterio por elemento del piloto original.",
+      "determinista": "C1-C2 y C1-R deben satisfacer la tolerancia original en todos los tensores y pasos; restauracion e inputs exactos.",
+      "limite_inferencia": "Un par continuo no estima una distribucion ni garantiza reproducibilidad larga. Pasar solo en modo determinista no autoriza el entrenamiento historico.",
+      "habilitar_AB": false
+    },
+    "hipotesis_aisladas": {
+      "historico": "Opciones originales del proceso; AMP y defaults de SDPA, clipping y AdamW.",
+      "sdpa_math": "Solo restringir SDPA a MATH; conservar AMP, scaler, clipping y AdamW originales.",
+      "sin_autocast": "Solo desactivar autocast; conservar el scaler y los estados de origen.",
+      "clip_serial": "Solo foreach=False en clip_grad_norm_; no cambiar el backward.",
+      "adam_serial": "Solo foreach=False y fused=False en AdamW despues de restaurar exactamente el estado original.",
+      "determinista": "CUBLAS_WORKSPACE_CONFIG=:4096:8 antes de iniciar Python; deterministic_algorithms=True, SDPA MATH, cuDNN deterministic=True y benchmark=False, TF32=False, clipping/AdamW sin foreach/fused. Solo diagnostico."
+    },
+    "replay_adam": "Repetir AdamW desde los mismos pesos, momentos y gradientes pre-step archivados, sin extractor ni nueva inferencia.",
+    "validacion": false,
+    "test": false,
+    "entrenamiento_AB": false,
+    "conservar_checkpoints_paso2": true,
+    "condicion_errores": "Persistir error del proceso y registros completos anteriores; no publicar aprobacion ni habilitar entrenamiento. Diferencias numericas no interrumpen el registro."
+  },
+  "hashes_codigo": {
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+    "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/continuacion.py": "016e6bffe9c64d309cb6b20c3eb2ebe97152fd0c9409550e8a21251731c691a0",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/detector_centros.py": "508fa240f46f6b0931942644c7669684f202bd5e06a798c058214da1c230926c",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+    "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+    "ecowaste/evaluacion.py": "4943ac34c4b8472ea8bacd5f9626a7f02735ccf24fb99332f954167f474edfc4",
+    "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+    "ecowaste/inferencia_detector.py": "1c6a8c43183aa6c5e8959a9d089992117265ac606ef4de6bc180c1e398caae1a",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/perdida_detector.py": "a6ea83a6b3645c65aafc89341415b8ec33f7961c983af7813587264175ff28bf",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+    "ecowaste/reanudacion_v20.py": "e3cfc9542d66d4b2449b960fefb173bee8819cdf7d2ebadb9f26bd1e76d7396d",
+    "ecowaste/recortes.py": "98557c5c8d74f64ae79d263fa5cfda29808fb07a042194c8f01a7d06eb459976",
+    "ecowaste/reproducibilidad_v20.py": "0005cc41e1adc1ed2c176ebc5650a28118737ea2377520444dcb5933352007b5",
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+    "pruebas/test_discriminacion_mapas.py": "c09564a40af1a2879971dd5308d9fd8ba8642cbac45d398abc9a2d72da63ade4",
+    "pruebas/test_entrenamiento_v20.py": "109abecf40145e417dea9ea3cd4606cdbda0d5e30c9ec2b2791d732b9232c978",
+    "pruebas/test_reanudacion_regional.py": "2f3538d67c1dccdcb9af9094af12d6b875bf4f5a320fc3716358d6cad4202e88",
+    "pruebas/test_reproducibilidad_v20.py": "bb85097600009d15fa7926665bb79777a17f70798700427e33c2e57c6dd6b884",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+    "scripts/diagnosticar_supervision_regional.py": "1d380b087d48dbd42a8e9e6ba1732883de9817321d0e92cab4efeed98536d166",
+    "scripts/diagnosticar_v20.py": "db3d79ac34e2e0c008d161041ae0fcf20ca010062259129f66ef5b38ea22e0b0",
+    "scripts/ejecutar_diagnostico_reproducibilidad_v20.py": "01f4a63c6dd734f62345e0b2329b67c637ea352c2ef2bebb4b836947fa4249b1",
+    "scripts/entrenar_clasificador.py": "6934850b885a99670fe7c3d8b20fe50419baab78917e74c65f312d40a309b964",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/entrenar_v20.py": "9a2e8ccdd2753340b69ad2255d2ddd8976b251e8e2b688bbf6df6fc01011e571",
+    "scripts/evaluar_v20.py": "ac42f4764815079bc69d6d2363ab23c72510f54761fcc334f193a7e2557ab32f",
+    "scripts/preparar_v20.py": "9c211a8520d0f5400e18ec114a318c7ceb867ef8d6a713891d321fdb0ce4f389",
+    "scripts/probar_entrenamiento_v20.py": "e4bd0b92091627dd28ceffca831b56f58cc1e7b44eeefa1496f0a8eb4764fec8",
+    "scripts/supervision_regional_materiales.py": "17c78fd4de77e1d41f1b23f5bdc57528b1352899a6c4653c6f0cc0f81984c431"
+  },
+  "sha256_configuracion_diagnostica": "4b6a424623148c51eb199bddf9902681a0ec8a0a0316f30ba6a5025df507bbc7",
+  "sha256_diagnostico": "438ad1067119eaac6a673fc3f5bf4da5f64be2f58d8b4d5396165a9e66135c4b",
+  "AB_habilitado": false,
+  "fijado_antes_de_las_trayectorias": true
+}

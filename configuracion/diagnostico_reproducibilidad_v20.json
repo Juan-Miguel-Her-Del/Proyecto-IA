@@ -1,0 +1,36 @@
+{
+  "version": 22,
+  "salida": "resultados/v22_reproducibilidad_v20",
+  "diagnostico_regenerado": "resultados/v22_reproducibilidad_v20/preparacion/diagnostico.json",
+  "ramas": ["A", "B"],
+  "trayectorias": ["C1", "C2", "R"],
+  "actualizaciones": 4,
+  "restaurar_despues_de": 2,
+  "rtol": 0.0001,
+  "atol": 0.00001,
+  "modos": ["historico", "sdpa_math", "sin_autocast", "clip_serial", "adam_serial", "determinista"],
+  "comparaciones": ["C1_C2", "C1_R"],
+  "criterio_predefinido": {
+    "restauracion": "Estado completo de R paso 2 y estado recargado exactos, incluidos pesos, AdamW, scaler, RNG y plan restante.",
+    "entradas": "Indices, aumentos y RNG exactos entre las tres trayectorias en cada paso.",
+    "historico_no_divergencia_adicional": "En cada paso, tensor y etapa: maximo error normalizado C1-R <= max(1, error C1-C2) y elementos fuera de tolerancia C1-R <= C1-C2. Sin multiplicar ni ampliar tolerancias.",
+    "error_normalizado": "max(abs(a-b)/(atol+rtol*abs(b))); a=C1, b=C2 o R; mismo criterio por elemento del piloto original.",
+    "determinista": "C1-C2 y C1-R deben satisfacer la tolerancia original en todos los tensores y pasos; restauracion e inputs exactos.",
+    "limite_inferencia": "Un par continuo no estima una distribucion ni garantiza reproducibilidad larga. Pasar solo en modo determinista no autoriza el entrenamiento historico.",
+    "habilitar_AB": false
+  },
+  "hipotesis_aisladas": {
+    "historico": "Opciones originales del proceso; AMP y defaults de SDPA, clipping y AdamW.",
+    "sdpa_math": "Solo restringir SDPA a MATH; conservar AMP, scaler, clipping y AdamW originales.",
+    "sin_autocast": "Solo desactivar autocast; conservar el scaler y los estados de origen.",
+    "clip_serial": "Solo foreach=False en clip_grad_norm_; no cambiar el backward.",
+    "adam_serial": "Solo foreach=False y fused=False en AdamW despues de restaurar exactamente el estado original.",
+    "determinista": "CUBLAS_WORKSPACE_CONFIG=:4096:8 antes de iniciar Python; deterministic_algorithms=True, SDPA MATH, cuDNN deterministic=True y benchmark=False, TF32=False, clipping/AdamW sin foreach/fused. Solo diagnostico."
+  },
+  "replay_adam": "Repetir AdamW desde los mismos pesos, momentos y gradientes pre-step archivados, sin extractor ni nueva inferencia.",
+  "validacion": false,
+  "test": false,
+  "entrenamiento_AB": false,
+  "conservar_checkpoints_paso2": true,
+  "condicion_errores": "Persistir error del proceso y registros completos anteriores; no publicar aprobacion ni habilitar entrenamiento. Diferencias numericas no interrumpen el registro."
+}

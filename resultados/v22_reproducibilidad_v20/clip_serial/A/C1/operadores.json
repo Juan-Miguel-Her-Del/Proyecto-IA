@@ -1,0 +1,94 @@
+[
+  {
+    "operador": "Optimizer.zero_grad#AdamW.zero_grad",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::layer_norm",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::native_layer_norm",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::scaled_dot_product_attention",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_scaled_dot_product_efficient_attention",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_efficient_attention_forward",
+    "llamadas": 8
+  },
+  {
+    "operador": "autograd::engine::evaluate_function: NativeLayerNormBackward0",
+    "llamadas": 18
+  },
+  {
+    "operador": "NativeLayerNormBackward0",
+    "llamadas": 18
+  },
+  {
+    "operador": "aten::native_layer_norm_backward",
+    "llamadas": 18
+  },
+  {
+    "operador": "autograd::engine::evaluate_function: ScaledDotProductEfficientAttentionBackward0",
+    "llamadas": 8
+  },
+  {
+    "operador": "ScaledDotProductEfficientAttentionBackward0",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_scaled_dot_product_efficient_attention_backward",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_efficient_attention_backward",
+    "llamadas": 8
+  },
+  {
+    "operador": "aten::_amp_foreach_non_finite_check_and_unscale_",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::linalg_vector_norm",
+    "llamadas": 65
+  },
+  {
+    "operador": "Optimizer.step#AdamW.step",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::_foreach_add_",
+    "llamadas": 2
+  },
+  {
+    "operador": "aten::_foreach_mul_",
+    "llamadas": 2
+  },
+  {
+    "operador": "aten::_foreach_lerp_",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::_foreach_addcmul_",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::_foreach_sqrt",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::_foreach_div_",
+    "llamadas": 1
+  },
+  {
+    "operador": "aten::_foreach_addcdiv_",
+    "llamadas": 1
+  }
+]

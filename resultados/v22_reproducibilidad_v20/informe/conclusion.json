@@ -1,0 +1,10 @@
+{
+  "causa_localizada": "Se localiza variabilidad numérica del backward CUDA anterior a cualquier restauración, que llega a los gradientes y es amplificada por AdamW en sesgos QKV. La recarga de los estados es exacta. No se encontró evidencia de corrupción del checkpoint ni de RNG desalineado. La identificación de un único kernel nativo como causa exclusiva requiere más aislamiento: SDPA y reducciones del extractor pueden coexistir.",
+  "criterio_historico_satisfecho": false,
+  "criterio_determinista_satisfecho": true,
+  "identidad_exacta_determinista_comprobada_solo_estas_trayectorias": true,
+  "replay_AdamW_exacto": true,
+  "AB_habilitado": false,
+  "piloto_historico_original_no_reclasificado_como_aprobado": true,
+  "hipotesis_perdida_y_presupuesto_intactos": true
+}
