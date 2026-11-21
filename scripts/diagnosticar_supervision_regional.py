@@ -150,7 +150,7 @@ def main():
         escribir_json(a.salida,{'aprobada':False,'pruebas':pruebas,'entrenamiento_ab_lanzado':False});raise RuntimeError('Pruebas fallidas')
     ck,train,aux,regiones,w,estadistica,pm=contexto(cfg)
     preparacion=RAIZ/'resultados/supervision_regional_preparacion'
-    escribir_json(preparacion/'regiones_train.json',estadistica)
+    escribir_json(a.salida.with_name(a.salida.stem+'_regiones_train.json'),estadistica)
     fijo=json.loads((RAIZ/'resultados/diagnostico_auxiliar_clasificacion.json').read_text(encoding='utf-8'))
     indices=[next(i for i,r in enumerate(train.base.origen.registros) if r['id']==ident) for ident in fijo['ids_taco_train']]
     ia=[aux.ids.index(ident) for ident in fijo['ids_realwaste_train']]
@@ -172,6 +172,9 @@ def main():
         'hashes_datos':ck['hashes_manifiestos'],'huella_mascaras_semanticas_originales':huella(train.mascaras),
         'huella_regiones':huella(regiones),'pruebas':pruebas,'regresion_inferencia':reg,
         'estadistica_regiones':estadistica,'ids_taco_memorizacion':fijo['ids_taco_train'],
+        'region_organica_elegible':next({'imagen':r['id'],'id_region':ident,'indice_train':i,'peso':float(w[5])}
+            for i,(r,rs) in enumerate(zip(train.base.origen.registros,regiones))
+            for ident,y in zip(rs['ids'],rs['labels']) if int(y)==5),
         'ids_auxiliar_global_memorizacion':fijo['ids_realwaste_train'],'memorizacion':memoria,
         'coste_diagnostico':coste,'trazas_preparadas':trazas,'estados_restaurados_iguales':coste['A']['estado_inicial']==coste['B']['estado_inicial'],
         'confusion_regional_train_origen':confusion,'protegidos_intactos':intactos,

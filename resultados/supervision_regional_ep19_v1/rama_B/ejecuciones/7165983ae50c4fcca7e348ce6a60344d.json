@@ -1,0 +1,67 @@
+{
+  "rama": "B",
+  "reanudar": true,
+  "desde_epoca": 20,
+  "pasos_comprometidos": 121,
+  "huellas_restauradas": {
+    "pesos": "d9a9d5d88a5d6b8dfe6a6c43fce500e25128eea2f612e04d2a6f4bd10a97de41",
+    "adamw": "b9b79cb42764e2259540589b095153b1805b23a49ebb3867df83e680f8059049",
+    "scaler": "17aaed71e1c23641e133896bdc9e034c98886716c9fe0e4934b644c5dddb023b",
+    "rng": "cbd0de23fc5d1a0da8b49e618bb31298332ae41d8a8f647836eb921fe8ef3a01"
+  },
+  "protocolo": {
+    "nombre": "supervision_regional_ep19_v1",
+    "checkpoint_origen": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+    "sha256_checkpoint_origen": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+    "ramas": {
+      "A": 0.0,
+      "B": 0.25
+    },
+    "coeficiente_fondo": 3.0,
+    "coeficiente_auxiliar_global": 0.5,
+    "epocas_adicionales": 12,
+    "actualizaciones_por_rama": 1452,
+    "criterio_mejor": "map50_val_una_vista",
+    "desempate": "primera_epoca",
+    "parada_temprana": false,
+    "reiniciar_warmup": false,
+    "evaluar_test": false,
+    "cambiar_predeterminado": false,
+    "politica_mapas": "argmax7",
+    "umbral_evaluacion": 0.05,
+    "umbral_visual": 0.35,
+    "area_minima_celdas": 2,
+    "vistas_evaluacion": [
+      1,
+      5
+    ],
+    "diagnostico": "resultados/supervision_regional_preparacion/diagnostico_revision04.json",
+    "verificacion": "resultados/supervision_regional_preparacion/regresion_val_revision04.json"
+  },
+  "hashes_codigo": {
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+    "pruebas/test_reanudacion_regional.py": "2f3538d67c1dccdcb9af9094af12d6b875bf4f5a320fc3716358d6cad4202e88",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+    "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+    "scripts/entrenar_clasificador.py": "6934850b885a99670fe7c3d8b20fe50419baab78917e74c65f312d40a309b964",
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/supervision_regional_materiales.py": "17c78fd4de77e1d41f1b23f5bdc57528b1352899a6c4653c6f0cc0f81984c431",
+    "scripts/diagnosticar_supervision_regional.py": "1d380b087d48dbd42a8e9e6ba1732883de9817321d0e92cab4efeed98536d166",
+    "scripts/evaluar_supervision_regional.py": "f969a5d524b045a55f6a458e7c0fa16d73d59a4837803f6627c37e47d747da18",
+    "pruebas/test_supervision_regional.py": "0d19ef5b32e03f37fabc94f2c14924670cf4f8c73009c63fa3e5fa66eeff7c88",
+    "scripts/verificar_supervision_regional.py": "dadb66eb81e3bbf573f3728f5f347eaa7e62df303cd6b41cc5cc1e3320f2651d"
+  }
+}

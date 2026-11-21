@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "rama": "A",
+  "epoca": 25,
+  "checkpoint": "checkpoints/supervision_regional_ep19_v1_A_epoca_025.pt",
+  "sha256_checkpoint": "14c7560f19f95fff494ef915db67d82a71a0318c3c7a133a42615791b06c0277",
+  "commit_previo_sha256": "bae2fe503b70c44f0734d0ecf4b8f9a1fd8697fcf44c306e7e07e056113fdcf6",
+  "huellas_estado": {
+    "pesos": "f6848faa11ca704a8b0d8b5f2f0ca84c8384a190a89c5cdb124d9f738e8b7052",
+    "adamw": "bc2ea7f08ea09ceb05184c58f77860055480f3f1c5abe0b9349bdf392f35e7df",
+    "scaler": "61833f32ac96c4133f879cc23022a0b04acb4951fbd15bf73471b6256f544a4f",
+    "rng": "5fca3830607105c590998e1c531b10d97298254d25a2270047c29116d46458e4"
+  },
+  "historial_epoca": {
+    "epoca": 25,
+    "actualizaciones": 726,
+    "paso_adamw": 3025,
+    "learning_rate": 0.0005,
+    "loss_mapas": 2.727578152264797,
+    "loss_global": 0.670516418099898,
+    "loss_regional_media_lotes_ponderada_imagen": 3.455326344462351,
+    "coeficiente_regional": 0.0,
+    "region_organica": {
+      "presencia": 1,
+      "peso": 25.050201416015625,
+      "eventos": [
+        {
+          "actualizacion": 638,
+          "imagen": "taco:92",
+          "id_region": 244,
+          "indice_train": 85,
+          "peso_sin_modificar": 25.050201416015625,
+          "denominador_lote": 37.412139892578125,
+          "regiones": 1,
+          "ce_media": 0.7309678792953491,
+          "numerador_ponderado": 18.31089210510254,
+          "contribucion_ce": 0.48943716287612915,
+          "contribucion_loss_total": 0.0,
+          "con_gradiente_regional": false
+        }
+      ]
+    },
+    "contribucion_ce_regional_por_material": {
+      "plastico": {
+        "regiones": 1589,
+        "numerador_ponderado": 4099.458904266357,
+        "contribucion_ce": 1.6807949067793413
+      },
+      "papel": {
+        "regiones": 108,
+        "numerador_ponderado": 358.63936971873045,
+        "contribucion_ce": 0.1470436074786491
+      },
+      "carton": {
+        "regiones": 146,
+        "numerador_ponderado": 522.8893393948674,
+        "contribucion_ce": 0.2143867663972572
+      },
+      "vidrio": {
+        "regiones": 201,
+        "numerador_ponderado": 2344.4650173187256,
+        "contribucion_ce": 0.9612402398108345
+      },
+      "metal": {
+        "regiones": 394,
+        "numerador_ponderado": 1450.3139688372612,
+        "contribucion_ce": 0.5946346552018553
+      },
+      "organico": {
+        "regiones": 1,
+        "numerador_ponderado": 18.31089210510254,
+        "contribucion_ce": 0.007507540606593848
+      }
+    },
+    "map50_val": 0.01653128058308422,
+    "map50_95_val": 0.003919616698751551,
+    "huella_orden_y_aumentos": "8c3540822969f1090d3a91deb157ba524eb36b725c0444638bfde771ebd86e53"
+  },
+  "recuperado_tras_interrupcion": false
+}

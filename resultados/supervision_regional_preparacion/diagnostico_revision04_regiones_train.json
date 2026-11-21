@@ -1,0 +1,665 @@
+{
+  "version": "regional_poligono_interior_fraccion_sin_ambiguos_v1",
+  "imagenes_train": 964,
+  "orden_materiales": [
+    "plastico",
+    "papel",
+    "carton",
+    "vidrio",
+    "metal",
+    "organico"
+  ],
+  "instancias_originales": [
+    1630,
+    109,
+    149,
+    203,
+    409,
+    5
+  ],
+  "instancias_elegibles": [
+    1589,
+    108,
+    146,
+    201,
+    394,
+    1
+  ],
+  "pesos_clase": [
+    0.6284189224243164,
+    2.410456895828247,
+    2.073169469833374,
+    1.7669048309326172,
+    1.2620108127593994,
+    25.050201416015625
+  ],
+  "formula_pesos": "1/sqrt(n_elegibles_train), normalizado a media por instancia 1",
+  "modos_por_material": {
+    "plastico": {
+      "interior": 861,
+      "fraccion_poligono": 728,
+      "vacia": 41
+    },
+    "papel": {
+      "interior": 78,
+      "fraccion_poligono": 30,
+      "vacia": 1
+    },
+    "carton": {
+      "interior": 122,
+      "vacia": 3,
+      "fraccion_poligono": 24
+    },
+    "vidrio": {
+      "interior": 62,
+      "vacia": 2,
+      "fraccion_poligono": 139
+    },
+    "metal": {
+      "interior": 241,
+      "vacia": 15,
+      "fraccion_poligono": 153
+    },
+    "organico": {
+      "vacia": 4,
+      "interior": 1
+    }
+  },
+  "omitidas": [
+    {
+      "imagen": "taco:12",
+      "id": 38,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:12",
+      "id": 39,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:12",
+      "id": 41,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:35",
+      "id": 96,
+      "clase": 2,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:64",
+      "id": 154,
+      "clase": 3,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:68",
+      "id": 163,
+      "clase": 5,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:72",
+      "id": 171,
+      "clase": 5,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:81",
+      "id": 203,
+      "clase": 5,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:81",
+      "id": 204,
+      "clase": 5,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:82",
+      "id": 210,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:90",
+      "id": 240,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:97",
+      "id": 251,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:97",
+      "id": 252,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:202",
+      "id": 692,
+      "clase": 2,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:204",
+      "id": 697,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:204",
+      "id": 698,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:206",
+      "id": 702,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:209",
+      "id": 708,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:254",
+      "id": 803,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:298",
+      "id": 908,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:305",
+      "id": 933,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:335",
+      "id": 1102,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:385",
+      "id": 1338,
+      "clase": 1,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:417",
+      "id": 1481,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:420",
+      "id": 1488,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:420",
+      "id": 1489,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:426",
+      "id": 1539,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:614",
+      "id": 1927,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:624",
+      "id": 1984,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:656",
+      "id": 2119,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1001",
+      "id": 2987,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1012",
+      "id": 3018,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3067,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3070,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3071,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3072,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3074,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1032",
+      "id": 3079,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1046",
+      "id": 3109,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1052",
+      "id": 3121,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1065",
+      "id": 3165,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3299,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3302,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3343,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3364,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3377,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1107",
+      "id": 3386,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1197",
+      "id": 3694,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1199",
+      "id": 3698,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1209",
+      "id": 3728,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1210",
+      "id": 3736,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1215",
+      "id": 3773,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1215",
+      "id": 3774,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1239",
+      "id": 3851,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1239",
+      "id": 3852,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1246",
+      "id": 3886,
+      "clase": 0,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1323",
+      "id": 4176,
+      "clase": 3,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1328",
+      "id": 4212,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1335",
+      "id": 4261,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1335",
+      "id": 4262,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1335",
+      "id": 4263,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1336",
+      "id": 4266,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1336",
+      "id": 4268,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1337",
+      "id": 4271,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1338",
+      "id": 4274,
+      "clase": 4,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    },
+    {
+      "imagen": "taco:1375",
+      "id": 4428,
+      "clase": 2,
+      "modo": "vacia",
+      "tokens": 0,
+      "cobertura_total_tokens": 0.0,
+      "motivo_omision": "sin_tokens_no_ambiguos_validos"
+    }
+  ],
+  "todas_las_clases_elegibles": true
+}

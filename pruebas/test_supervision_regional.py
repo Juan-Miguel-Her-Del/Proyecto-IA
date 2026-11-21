@@ -114,6 +114,7 @@ class RegionalTests(unittest.TestCase):
         import json
         from scripts.supervision_regional_materiales import CONFIG,entrenar,validar_protocolo
         cfg=json.loads(CONFIG.read_text(encoding='utf-8'))
+        cfg['entrenamiento_completo_habilitado']=False
         with patch('scripts.supervision_regional_materiales.contexto') as preparar:
             with self.assertRaisesRegex(ValueError,'deshabilitado'):entrenar(cfg)
             preparar.assert_not_called()

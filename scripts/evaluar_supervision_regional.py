@@ -17,7 +17,8 @@ from scripts.entrenar_detector_mapas import DatosMapas,evaluar
 from ecowaste.poligonos import ContornosTACO
 from ecowaste.detector_mapas import DetectorMapas
 from scripts.entrenar_clasificador import escribir_json
-from scripts.supervision_regional_materiales import (CONFIG,contexto,sha,evaluar_regiones,validar_protocolo)
+from scripts.supervision_regional_materiales import (CONFIG,contexto,sha,evaluar_regiones,validar_protocolo,hashes_codigo,exigir_habilitacion)
+from ecowaste.reanudacion_regional import DiarioRama
 
 
 @torch.inference_mode()
@@ -59,6 +60,13 @@ def main():
     if not all(p.is_file() for p in paths.values()):raise ValueError('A/B completo aún no disponible; no se evalúan pilotos como resultados finales')
     informe=json.loads((RAIZ/f"resultados/{cfg['nombre']}.json").read_text(encoding='utf-8'))
     if any(r['actualizaciones']!=1452 for r in informe['ramas'].values()):raise ValueError('Presupuesto incompleto')
+    exigir_habilitacion(cfg)
+    diag=json.loads((RAIZ/cfg['diagnostico']).read_text(encoding='utf-8'));diag['sha256_archivo']=sha(RAIZ/cfg['diagnostico'])
+    for rama in cfg['ramas']:
+        d=DiarioRama(RAIZ,cfg,rama,diag,hashes_codigo());final,registros,_=d.leer()
+        if final['actualizaciones_desde_origen']!=1452 or len(registros)!=12:raise ValueError('Diario incompleto')
+        conocidos={r['sha256_checkpoint'] for r in registros}
+        if any(sha(paths[f'{rama}_{s}']) not in conocidos for s in ['ultimo','mejor']):raise ValueError('Aliases fuera del diario')
     ck,train,aux,regiones,w,estadistica,pm=contexto(cfg)
     val=DatosMapas('val',ContornosTACO(RAIZ,ck['config_entrenamiento']['cobertura_minima']))
     paths={'origen':RAIZ/cfg['checkpoint_origen'],**paths};resultados={}
@@ -78,8 +86,12 @@ def main():
     deltas={}
     for tipo in ['ultimo','mejor']:
         aa=resultados['A_'+tipo];bb=resultados['B_'+tipo]
-        deltas[tipo]={'vistas':{},'delta_carton_a_plastico_metal_train':
+        deltas[tipo]={'vistas':{},'delta_carton_a_plastico_metal_cabeza_auxiliar_train':
             bb['confusion_regional_train']['carton']['tasa_a_plastico_metal']-aa['confusion_regional_train']['carton']['tasa_a_plastico_metal']}
+        def tasa_mapas(x):
+            cm=x['confusion_regional_train']['mapas_logits_promediados_por_region']['matriz_confusion']
+            return (cm[3][1]+cm[3][5])/sum(cm[3])
+        deltas[tipo]['delta_carton_a_plastico_metal_cabeza_mapas_train']=tasa_mapas(bb)-tasa_mapas(aa)
         for v in ['1','5']:
             x=aa['vistas'][v]['resumen'];y=bb['vistas'][v]['resumen']
             deltas[tipo]['vistas'][v]={k:y[k]-x[k] for k in x if isinstance(x[k],(int,float))}

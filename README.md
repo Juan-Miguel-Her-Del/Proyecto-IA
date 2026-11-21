@@ -4,7 +4,7 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
-**Supervisión regional:** implementación y diagnóstico aprobados (129 pruebas); A/B con coeficientes 0 y 0,25 preparado desde época 19. **Las 1.452 actualizaciones por rama no se han iniciado.** Se conservan el detector predeterminado y sus resultados. Ver [diagnóstico, datos y protocolo](documentacion/17_supervision_regional_materiales.md).
+**Supervisión regional A/B completada:** 1.452 actualizaciones por rama con reanudación comprobada; 136 pruebas aprobadas. B−A final de cinco vistas: AP50 cartón +0.000 pp; mAP50 global +0.312 pp. Referencia original intacta. Ver [comparación y límites](documentacion/18_reanudacion_y_comparacion_regional.md).
 
 Fase actual: modelos propios entrenados, datasets auditados y flujo MP4/webcam/asistente implementado. La cámara física capturó y procesó 12 frames de 640×480. **El detector mantiene calidad insuficiente; faltan videos independientes anotados y una prueba sostenida.** Los documentos originales están en `../documentos/`.
 

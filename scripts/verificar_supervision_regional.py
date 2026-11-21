@@ -51,7 +51,7 @@ def gradientes_amp(cfg):
 
 def main():
     cfg=json.loads(CONFIG.read_text(encoding='utf-8'));base=RAIZ/'resultados/supervision_regional_preparacion'
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--salida',type=Path,default=base/'regresion_val_revision03.json')
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--salida',type=Path,default=RAIZ/cfg['verificacion'])
     salida=p.parse_args().salida
     if salida.exists():raise FileExistsError('Verificación existente')
     diag=json.loads((RAIZ/cfg['diagnostico']).read_text(encoding='utf-8'))
