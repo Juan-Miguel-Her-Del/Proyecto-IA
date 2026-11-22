@@ -1,0 +1,22 @@
+{
+  "version": "propuesta_exploratoria_datos_auxiliares_v27_2_1",
+  "estado": "estudio_pendiente_anotaciones_y_autorizacion_especifica",
+  "entrenamiento_autorizado": false,
+  "evaluacion_autorizada": false,
+  "coleccion_congelada": false,
+  "propuesta": {
+    "objetivo": "Comprobar capacidad de aprender material y geometría de nuevas escenas; no afirmar generalización",
+    "imagenes_candidatas": [40, 60],
+    "minimo_poligonos_corregidos_por_material": 8,
+    "organic_prioritario": "Restos de comida visibles; no completar el mínimo con vegetación ambigua",
+    "revision": "Imagen completa corregida por usuario; revisión independiente y discrepancias registradas como tales",
+    "control_futuro": "Mismo origen ep19, presupuesto y protocolo; única diferencia sería incorporar datos auxiliares revisados",
+    "presupuesto_actualizaciones": null,
+    "criterio_presupuesto": "Fijar y autorizar antes de entrenar; no reutilizar automáticamente protocolos V17/V20",
+    "agrupacion": "Mantener fuente unida; nombres de origen/bonid/duplicados amplían grupos sin afirmar identidad física",
+    "evaluacion": "Si no existe un control independiente por origen, limitarse a diagnóstico train; no usar val de desarrollo para otra selección",
+    "evaluacion_final": "Solo una colección nueva separada, bajo el protocolo bloqueado, cuando exista autorización"
+  },
+  "exclusiones": ["test original", "colección de generalización bloqueada", "DWSD sin leyenda ni instancias", "variantes aumentadas WSC train", "RealWaste histórico como supuesta adquisición nueva", "aprobaciones V26 inferidas desde correcciones de un usuario"],
+  "no_es_promesa_de_mejora_mAP": true
+}

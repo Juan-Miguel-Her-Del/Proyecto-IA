@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proyecto auxiliar público V27.2: no es un paquete aceptado V26",
+  "type": "object",
+  "required": ["version", "coleccion_id", "imagenes", "huella", "entrenamiento_autorizado", "aceptadas_V26", "generalizacion_desbloqueada"],
+  "properties": {
+    "version": {"const": "ecowaste_auxiliares_publicos_v27_2_1"},
+    "coleccion_id": {"type": "string", "minLength": 1},
+    "huella": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "entrenamiento_autorizado": {"const": false},
+    "aceptadas_V26": {"const": 0},
+    "generalizacion_desbloqueada": {"const": false},
+    "imagenes": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "fuente", "archivo", "licencia", "width", "height", "sha256_archivo", "objeto_fisico_id", "sitio_id", "sesion_id", "dispositivo_id", "capturado_en", "anotaciones"],
+        "properties": {
+          "id": {"type": "string"}, "fuente": {"type": "string"}, "archivo": {"type": "string"},
+          "licencia": {"type": "string", "minLength": 1},
+          "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+          "sha256_archivo": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "objeto_fisico_id": {"type": "null"}, "sitio_id": {"type": "null"},
+          "sesion_id": {"type": "null"}, "dispositivo_id": {"type": "null"}, "capturado_en": {"type": "null"},
+          "anotaciones": {"type": "array", "items": {"type": "object", "required": ["id", "material", "poligonos", "origen", "aceptada_V26"],
+            "properties": {"aceptada_V26": {"const": false}, "material": {"enum": ["plastico", "papel", "carton", "vidrio", "metal", "organico", "ambiguo", "compuesto", "fuera_alcance", "sin_asignar"]}}}
+        }
+      }
+    }
+  }
+}

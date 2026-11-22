@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoWasteFormer · Anotación asistida</title><link rel="stylesheet" href="/estilo.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div><b>EcoWasteFormer</b><span class="subtitle">Anotación asistida · V27.2</span></div><span class="badge">SAM 2.1 Tiny · CPU · GPU libre</span></header>
+<main><aside>
+<section><h1>Corregir, sin empezar de cero</h1><p>Las máscaras son propuestas. Guardar una corrección no acepta datos en V26 ni inicia entrenamiento.</p>
+<label for="persona">Tu identificador personal</label><input id="persona" placeholder="Ej.: juan_miguel" autocomplete="off"><small>Usa siempre el mismo identificador. No representa al objeto fotografiado.</small></section>
+<section><div class="fila"><button id="anterior">← Anterior</button><button id="siguiente">Siguiente →</button></div>
+<label for="fuente">Fuente</label><select id="fuente"><option value="">Todas las fuentes</option><option value="warp">WaRP · vidrio y envases</option><option value="zerowaste">ZeroWaste · cartón y otros</option><option value="wsc">WasteSegCluster · papel y otros</option><option value="hpi">HPI · restos de comida</option></select>
+<label for="imagen">Imagen</label><select id="imagen"></select><div id="contador" class="nota"></div><div id="estado" class="estado"></div></section>
+<section><label for="objetos">Objetos / propuestas</label><select id="objetos" size="5"></select>
+<label for="material">Material del objeto seleccionado o nuevo</label><select id="material"></select>
+<label for="motivo">Motivo de ambigüedad o descarte</label><input id="motivo" placeholder="Necesario para ambiguo, compuesto o descarte">
+<div class="fila"><button id="nuevo">+ Otro objeto</button><button id="descartar">Descartar propuesta</button></div></section>
+<section><label for="modo">Herramienta</label><select id="modo"><option value="caja">Caja para SAM</option><option value="positivo">Clic positivo · incluir</option><option value="negativo">Clic negativo · excluir</option><option value="editar">Mover vértices</option><option value="poligono">Polígono manual opcional</option></select>
+<div class="fila"><button id="sam" class="primario">Proponer / refinar con SAM</button><button id="limpiar">Limpiar clics</button></div>
+<button id="deshacer" class="ancho">Deshacer último cambio</button>
+<p class="ayuda">Dibuja una caja alrededor de un objeto y pulsa SAM. Si ya tiene caja o máscara, selecciónalo y añade clics verdes/rojos para corregir. SAM no identifica el material.</p>
+<details><summary>Edición de contornos y objetos omitidos</summary><p>«Otro objeto» crea una propuesta nueva. En «Mover vértices», arrastra puntos; Shift+clic inserta un vértice y Alt+clic lo elimina. El polígono manual termina con doble clic o Enter. Para cambiar de forma por completo, dibuja otra caja y usa SAM. Los huecos y fragmentos requieren inspección.</p></details></section>
+<section><label class="check"><input type="checkbox" id="completa"> Revisé toda la imagen, incluidos materiales y objetos omitidos.</label>
+<button id="guardar" class="primario ancho">Guardar corrección / borrador</button>
+<button id="independiente" class="ancho">Revisión independiente · otra persona</button>
+<button id="exportar" class="ancho">Exportar COCO pendiente</button><button id="liberar" class="ancho discreto">Liberar SAM de la memoria CPU</button>
+<p class="nota">Sin la casilla, se guarda un borrador. La revisión independiente comienza sin las propuestas anteriores y requiere otro identificador personal. No sustituye la adjudicación V26.</p></section>
+</aside><article><div id="mensaje" role="status">Cargando proyecto local…</div>
+<div class="barra"><span id="titulo"></span><label>Zoom <input id="zoom" type="range" min="40" max="200" value="100"></label><label><input id="mostrar" type="checkbox" checked> Mostrar contornos</label></div>
+<div id="visor"><canvas id="lienzo"></canvas></div><div id="detalle" class="nota"></div>
+<p class="pie">Fotografías y correcciones permanecen en este equipo. No se publican en servicios externos. Todas las tareas siguen pendientes de aceptación formal.</p>
+</article></main>
+</body></html>
