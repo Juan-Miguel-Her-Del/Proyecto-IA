@@ -1,0 +1,37 @@
+{
+  "paso_inicial": 100,
+  "restauracion_exacta": {
+    "pesos": "7323b8f934f22a17772f6116207e9d3033cb2ddcf58533f6420f8b6be2218999",
+    "adamw": "451d6b2a384a62fa38e37c799667521cd461ed8b97d6fb80c30014a5b354d408",
+    "scaler": "d2f4d435482cb0cf67d43426846fd6769296dffb91ad81daab6c31d6cbe7ab7a",
+    "rng": "195f7326b5b466620cfbb005437e8241387084775440175265e3f11dbab674f2"
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": [
+      {
+        "foreach": false,
+        "fused": false
+      }
+    ]
+  },
+  "contrato_sha256": "07f1da25bf4c166bf363234361a5e7c5ae8b263bd2db38b8db0be26f7040fd8f"
+}

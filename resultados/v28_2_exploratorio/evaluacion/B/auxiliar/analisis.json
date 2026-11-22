@@ -1,0 +1,5718 @@
+{
+  "cabeza_principal": {
+    "semantica": {
+      "matriz_confusion": [
+        [
+          31462,
+          303,
+          474,
+          158,
+          14,
+          30,
+          967
+        ],
+        [
+          1298,
+          180,
+          91,
+          49,
+          3,
+          20,
+          131
+        ],
+        [
+          152,
+          16,
+          682,
+          18,
+          0,
+          0,
+          5
+        ],
+        [
+          311,
+          48,
+          10,
+          382,
+          0,
+          17,
+          31
+        ],
+        [
+          148,
+          9,
+          13,
+          9,
+          7,
+          0,
+          0
+        ],
+        [
+          91,
+          7,
+          1,
+          15,
+          0,
+          0,
+          5
+        ],
+        [
+          81,
+          3,
+          0,
+          0,
+          0,
+          0,
+          1683
+        ]
+      ],
+      "orden": [
+        "fondo",
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_clase": {
+        "fondo": {
+          "celdas_reales": 33408,
+          "celdas_predichas": 33543,
+          "iou": 0.8865282200118346
+        },
+        "plastico": {
+          "celdas_reales": 1772,
+          "celdas_predichas": 566,
+          "iou": 0.08341056533827618
+        },
+        "papel": {
+          "celdas_reales": 873,
+          "celdas_predichas": 1271,
+          "iou": 0.466484268125855
+        },
+        "carton": {
+          "celdas_reales": 799,
+          "celdas_predichas": 631,
+          "iou": 0.36450381679389315
+        },
+        "vidrio": {
+          "celdas_reales": 186,
+          "celdas_predichas": 24,
+          "iou": 0.034482758620689655
+        },
+        "metal": {
+          "celdas_reales": 119,
+          "celdas_predichas": 67,
+          "iou": 0.0
+        },
+        "organico": {
+          "celdas_reales": 1767,
+          "celdas_predichas": 2822,
+          "iou": 0.5791465932553338
+        }
+      },
+      "miou_siete_clases": 0.34493660316369745,
+      "miou_materiales": 0.25467133368900796,
+      "material_predicho_fondo": 2081,
+      "fondo_predicho_material": 1946,
+      "confusion_binaria_fondo_material": [
+        [
+          31462,
+          1946
+        ],
+        [
+          2081,
+          3435
+        ]
+      ],
+      "celdas_validas": 38924,
+      "excluye_etiqueta_255": true
+    },
+    "matriz_instancias_con_fondo": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        44,
+        4,
+        3,
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        5,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        0,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ]
+    ],
+    "matriz_instancias_material_condicional": [
+      [
+        35,
+        5,
+        4,
+        1,
+        1,
+        9
+      ],
+      [
+        3,
+        16,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        11,
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        1,
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9
+      ]
+    ],
+    "instancias": [
+      {
+        "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+        "id": "warp_0",
+        "clase": 3,
+        "tokens": 29,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+        "id": "usuario_0956c875e49949c4b4325773e4cc1fcb",
+        "clase": 1,
+        "tokens": 24,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+        "id": "usuario_e54da2c9ee2c49d3a6ccf03afd476d19",
+        "clase": 1,
+        "tokens": 25,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 20,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "warp_1",
+        "clase": 4,
+        "tokens": 16,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "warp_2",
+        "clase": 4,
+        "tokens": 20,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 17,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "usuario_bc8b14b275ed43a1bdb94d70156b29b8",
+        "clase": 0,
+        "tokens": 31,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "id": "usuario_516192d0b3dc4c22a7702549acdf3efb",
+        "clase": 2,
+        "tokens": 51,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+        "id": "warp_0",
+        "clase": 3,
+        "tokens": 28,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 30,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 18,
+        "prediccion_con_fondo": 5,
+        "prediccion_condicional_material": 4
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 30,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_2",
+        "clase": 0,
+        "tokens": 43,
+        "prediccion_con_fondo": 1,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 22,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_4",
+        "clase": 0,
+        "tokens": 23,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "id": "warp_5",
+        "clase": 0,
+        "tokens": 33,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "id": "warp_0",
+        "clase": 3,
+        "tokens": 26,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 22,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "id": "warp_2",
+        "clase": 0,
+        "tokens": 42,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 26,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "id": "warp_4",
+        "clase": 0,
+        "tokens": 27,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 30,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 35,
+        "prediccion_con_fondo": 1,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_2",
+        "clase": 0,
+        "tokens": 45,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 40,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_4",
+        "clase": 0,
+        "tokens": 27,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_5",
+        "clase": 0,
+        "tokens": 49,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_6",
+        "clase": 0,
+        "tokens": 46,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "id": "warp_7",
+        "clase": 3,
+        "tokens": 34,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 7,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_1",
+        "clase": 3,
+        "tokens": 15,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_2",
+        "clase": 0,
+        "tokens": 49,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 42,
+        "prediccion_con_fondo": 1,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_4",
+        "clase": 0,
+        "tokens": 49,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_5",
+        "clase": 0,
+        "tokens": 35,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "id": "warp_6",
+        "clase": 0,
+        "tokens": 45,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 31,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 24,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "warp_2",
+        "clase": 4,
+        "tokens": 13,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "warp_3",
+        "clase": 0,
+        "tokens": 35,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "warp_4",
+        "clase": 3,
+        "tokens": 19,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "usuario_330171c5bb4949b899896f14fd3fdb94",
+        "clase": 0,
+        "tokens": 16,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "id": "usuario_d3607256d29d41dab1beb646aeaf4926",
+        "clase": 1,
+        "tokens": 15,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 35,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "id": "usuario_f441285adf5646f8b6e38cb351e597fb",
+        "clase": 1,
+        "tokens": 23,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "id": "usuario_04440172049c4877a40498985fa121aa",
+        "clase": 1,
+        "tokens": 22,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "id": "usuario_aa392d8fb0f5458cb555cc381fd15aad",
+        "clase": 1,
+        "tokens": 50,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "id": "usuario_e7d6a6432c73422dae6b3c5f5abba3e2",
+        "clase": 0,
+        "tokens": 33,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "warp_0",
+        "clase": 0,
+        "tokens": 27,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "warp_1",
+        "clase": 0,
+        "tokens": 72,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "warp_2",
+        "clase": 3,
+        "tokens": 14,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "usuario_589fe56362dc45a0ac54d71d4f206df1",
+        "clase": 2,
+        "tokens": 16,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "usuario_b70743e780d948b0a8f08f9934c032e4",
+        "clase": 2,
+        "tokens": 14,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "usuario_62ea097425784613be05d93ade80ae97",
+        "clase": 3,
+        "tokens": 21,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 3
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "usuario_500031af4c6445509d336ac4e3376112",
+        "clase": 0,
+        "tokens": 18,
+        "prediccion_con_fondo": 1,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "id": "usuario_fa78a0d2fdbf4d249158f31ceb181467",
+        "clase": 0,
+        "tokens": 17,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "hpi:40",
+        "id": "usuario_80027a5a1f874a41868181c7455a1947",
+        "clase": 5,
+        "tokens": 46,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "hpi:40",
+        "id": "usuario_992f12b311c54ce6b3ee8b3cd479bd62",
+        "clase": 5,
+        "tokens": 20,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "hpi:66",
+        "id": "usuario_3c83abe841da4e67b4a032eb966e9f88",
+        "clase": 5,
+        "tokens": 66,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "zerowaste_0",
+        "clase": 2,
+        "tokens": 96,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "zerowaste_1",
+        "clase": 0,
+        "tokens": 20,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "usuario_2f236845a28e4528bec6ddadd0d878e9",
+        "clase": 1,
+        "tokens": 67,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "usuario_0a5b964f1de44abd914b9e57e846ac0a",
+        "clase": 1,
+        "tokens": 52,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "usuario_1a9885a6c5014c1c8770f4ce84045ede",
+        "clase": 1,
+        "tokens": 46,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "id": "usuario_6bfe0ebcfb03452bb4f39bb37c807d83",
+        "clase": 1,
+        "tokens": 45,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "zerowaste_0",
+        "clase": 4,
+        "tokens": 26,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "zerowaste_1",
+        "clase": 0,
+        "tokens": 110,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "zerowaste_2",
+        "clase": 2,
+        "tokens": 105,
+        "prediccion_con_fondo": 1,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "zerowaste_3",
+        "clase": 2,
+        "tokens": 89,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "usuario_9e6fbaaf97ca427488e52a619e62977b",
+        "clase": 1,
+        "tokens": 74,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "usuario_c03ab988dedf4ba7b54494e6e97e7bb4",
+        "clase": 1,
+        "tokens": 28,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:24",
+        "id": "usuario_91f446c5acfc493abed839576c67a59f",
+        "clase": 1,
+        "tokens": 43,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "id": "zerowaste_0",
+        "clase": 2,
+        "tokens": 35,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "id": "zerowaste_1",
+        "clase": 0,
+        "tokens": 91,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "id": "zerowaste_2",
+        "clase": 1,
+        "tokens": 88,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "id": "usuario_b0ca918d8fde475d99ae6502b172a3f4",
+        "clase": 1,
+        "tokens": 37,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "id": "usuario_340f6c90a359487da853cd4be9976d59",
+        "clase": 1,
+        "tokens": 177,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_0",
+        "clase": 2,
+        "tokens": 45,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_1",
+        "clase": 2,
+        "tokens": 48,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_2",
+        "clase": 2,
+        "tokens": 34,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_3",
+        "clase": 2,
+        "tokens": 10,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_4",
+        "clase": 2,
+        "tokens": 43,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:369",
+        "id": "zerowaste_5",
+        "clase": 0,
+        "tokens": 38,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_0",
+        "clase": 2,
+        "tokens": 64,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_1",
+        "clase": 2,
+        "tokens": 46,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_2",
+        "clase": 2,
+        "tokens": 32,
+        "prediccion_con_fondo": 3,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_3",
+        "clase": 2,
+        "tokens": 89,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_4",
+        "clase": 4,
+        "tokens": 21,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_5",
+        "clase": 0,
+        "tokens": 25,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 2
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_6",
+        "clase": 0,
+        "tokens": 66,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "zerowaste:456",
+        "id": "zerowaste_7",
+        "clase": 4,
+        "tokens": 23,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:23",
+        "id": "wsc_51",
+        "clase": 0,
+        "tokens": 33,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:23",
+        "id": "wsc_52",
+        "clase": 1,
+        "tokens": 4,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:7",
+        "id": "wsc_17",
+        "clase": 1,
+        "tokens": 41,
+        "prediccion_con_fondo": 2,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "wsc:30",
+        "id": "wsc_79",
+        "clase": 1,
+        "tokens": 12,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:30",
+        "id": "wsc_81",
+        "clase": 0,
+        "tokens": 18,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:30",
+        "id": "wsc_82",
+        "clase": 0,
+        "tokens": 5,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:45",
+        "id": "wsc_125",
+        "clase": 5,
+        "tokens": 775,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:56",
+        "id": "wsc_140",
+        "clase": 5,
+        "tokens": 586,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:93",
+        "id": "wsc_228",
+        "clase": 5,
+        "tokens": 41,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:93",
+        "id": "usuario_ba567272cbde4ef594342aa58a87e77f",
+        "clase": 0,
+        "tokens": 14,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:93",
+        "id": "usuario_93e0151dbd4b4c6f86e75f8fec756193",
+        "clase": 0,
+        "tokens": 45,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:93",
+        "id": "usuario_0b5a722292514522ba36803adc157624",
+        "clase": 5,
+        "tokens": 16,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:93",
+        "id": "usuario_a5fc8f9a7ecc4ebea83ed9b775d41070",
+        "clase": 5,
+        "tokens": 101,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:72",
+        "id": "wsc_181",
+        "clase": 0,
+        "tokens": 67,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:72",
+        "id": "wsc_182",
+        "clase": 5,
+        "tokens": 116,
+        "prediccion_con_fondo": 6,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:11",
+        "id": "wsc_22",
+        "clase": 0,
+        "tokens": 28,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:11",
+        "id": "wsc_23",
+        "clase": 0,
+        "tokens": 11,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:60",
+        "id": "wsc_145",
+        "clase": 0,
+        "tokens": 14,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 1
+      },
+      {
+        "imagen": "wsc:95",
+        "id": "wsc_230",
+        "clase": 0,
+        "tokens": 4,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      },
+      {
+        "imagen": "wsc:61",
+        "id": "wsc_146",
+        "clase": 0,
+        "tokens": 15,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 5
+      },
+      {
+        "imagen": "wsc:61",
+        "id": "wsc_147",
+        "clase": 0,
+        "tokens": 6,
+        "prediccion_con_fondo": 0,
+        "prediccion_condicional_material": 0
+      }
+    ],
+    "criterio": "voto mayoritario sobre tokens GT válidos de cada instancia; excluye ignore y mezclas de material"
+  },
+  "1": {
+    "metricas": {
+      "map50": 0.21762881961592748,
+      "map50_95": 0.10884768416238304,
+      "recall50": 0.20353982300884957,
+      "precision50": 0.107981220657277,
+      "tp50": 23,
+      "fp50": 190,
+      "fn50": 90,
+      "ap50_por_material": {
+        "plastico": 0.0,
+        "papel": 0.46831416965711237,
+        "carton": 0.4282178217821782,
+        "vidrio": 0.0,
+        "metal": 0.0,
+        "organico": 0.40924092625627423
+      }
+    },
+    "detalle_metricas": {
+      "map50": 0.21762881961592748,
+      "map50_95": 0.10884768416238304,
+      "recall50": 0.20353982300884957,
+      "precision50": 0.107981220657277,
+      "objetos": 113,
+      "clases_con_soporte": 6,
+      "por_clase": {
+        "plastico": {
+          "objetos": 55,
+          "ap50": 0.0,
+          "ap50_95": 0.0,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "papel": {
+          "objetos": 19,
+          "ap50": 0.46831416965711237,
+          "ap50_95": 0.25712900900899777,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.46831416965711237,
+              "tp": 12,
+              "fp": 43,
+              "predicciones_ignoradas": 0,
+              "recall": 0.631578947368421,
+              "precision": 0.21818181818181817
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.44105520195300035,
+              "tp": 11,
+              "fp": 44,
+              "predicciones_ignoradas": 0,
+              "recall": 0.5789473684210527,
+              "precision": 0.2
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.3886852217192697,
+              "tp": 10,
+              "fp": 45,
+              "predicciones_ignoradas": 0,
+              "recall": 0.5263157894736842,
+              "precision": 0.18181818181818182
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.3721101496479299,
+              "tp": 9,
+              "fp": 46,
+              "predicciones_ignoradas": 0,
+              "recall": 0.47368421052631576,
+              "precision": 0.16363636363636364
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.3721101496479299,
+              "tp": 9,
+              "fp": 46,
+              "predicciones_ignoradas": 0,
+              "recall": 0.47368421052631576,
+              "precision": 0.16363636363636364
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.2971311350270073,
+              "tp": 8,
+              "fp": 47,
+              "predicciones_ignoradas": 0,
+              "recall": 0.42105263157894735,
+              "precision": 0.14545454545454545
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.1559764711868645,
+              "tp": 5,
+              "fp": 50,
+              "predicciones_ignoradas": 0,
+              "recall": 0.2631578947368421,
+              "precision": 0.09090909090909091
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0462046209538337,
+              "tp": 2,
+              "fp": 53,
+              "predicciones_ignoradas": 0,
+              "recall": 0.10526315789473684,
+              "precision": 0.03636363636363636
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0297029702970297,
+              "tp": 1,
+              "fp": 54,
+              "predicciones_ignoradas": 0,
+              "recall": 0.05263157894736842,
+              "precision": 0.01818181818181818
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 55,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "carton": {
+          "objetos": 16,
+          "ap50": 0.4282178217821782,
+          "ap50_95": 0.13919141853209768,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.4282178217821782,
+              "tp": 7,
+              "fp": 24,
+              "predicciones_ignoradas": 0,
+              "recall": 0.4375,
+              "precision": 0.22580645161290322
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.33003299956274507,
+              "tp": 6,
+              "fp": 25,
+              "predicciones_ignoradas": 0,
+              "recall": 0.375,
+              "precision": 0.1935483870967742
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.2854785441172005,
+              "tp": 5,
+              "fp": 26,
+              "predicciones_ignoradas": 0,
+              "recall": 0.3125,
+              "precision": 0.16129032258064516
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.21947194857172447,
+              "tp": 4,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.25,
+              "precision": 0.12903225806451613
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.09405940594059406,
+              "tp": 3,
+              "fp": 28,
+              "predicciones_ignoradas": 0,
+              "recall": 0.1875,
+              "precision": 0.0967741935483871
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.017326732673267328,
+              "tp": 1,
+              "fp": 30,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0625,
+              "precision": 0.03225806451612903
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.017326732673267328,
+              "tp": 1,
+              "fp": 30,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0625,
+              "precision": 0.03225806451612903
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 31,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 31,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 31,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "vidrio": {
+          "objetos": 8,
+          "ap50": 0.0,
+          "ap50_95": 0.0,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 2,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "metal": {
+          "objetos": 6,
+          "ap50": 0.0,
+          "ap50_95": 0.0,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 6,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "organico": {
+          "objetos": 9,
+          "ap50": 0.40924092625627423,
+          "ap50_95": 0.2567656774332028,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.40924092625627423,
+              "tp": 4,
+              "fp": 68,
+              "predicciones_ignoradas": 2,
+              "recall": 0.4444444444444444,
+              "precision": 0.05555555555555555
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.40924092625627423,
+              "tp": 4,
+              "fp": 68,
+              "predicciones_ignoradas": 2,
+              "recall": 0.4444444444444444,
+              "precision": 0.05555555555555555
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.33663366336633666,
+              "tp": 3,
+              "fp": 69,
+              "predicciones_ignoradas": 2,
+              "recall": 0.3333333333333333,
+              "precision": 0.041666666666666664
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.33663366336633666,
+              "tp": 3,
+              "fp": 69,
+              "predicciones_ignoradas": 2,
+              "recall": 0.3333333333333333,
+              "precision": 0.041666666666666664
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.33663366336633666,
+              "tp": 3,
+              "fp": 69,
+              "predicciones_ignoradas": 2,
+              "recall": 0.3333333333333333,
+              "precision": 0.041666666666666664
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.1914191440780564,
+              "tp": 2,
+              "fp": 70,
+              "predicciones_ignoradas": 2,
+              "recall": 0.2222222222222222,
+              "precision": 0.027777777777777776
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.1914191440780564,
+              "tp": 2,
+              "fp": 70,
+              "predicciones_ignoradas": 2,
+              "recall": 0.2222222222222222,
+              "precision": 0.027777777777777776
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 71,
+              "predicciones_ignoradas": 2,
+              "recall": 0.1111111111111111,
+              "precision": 0.013888888888888888
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 71,
+              "predicciones_ignoradas": 2,
+              "recall": 0.1111111111111111,
+              "precision": 0.013888888888888888
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 71,
+              "predicciones_ignoradas": 2,
+              "recall": 0.1111111111111111,
+              "precision": 0.013888888888888888
+            }
+          ]
+        }
+      },
+      "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial"
+    },
+    "geometria": {
+      "por_material": {
+        "plastico": {
+          "sin_caja_correcta_solapada": 31,
+          "indicador_fusion_bbox": 3,
+          "indicador_fragmentacion_bbox": 0,
+          "geometria_insuficiente": 24
+        },
+        "papel": {
+          "correcto": 12,
+          "indicador_fusion_bbox": 2,
+          "indicador_fragmentacion_bbox": 1,
+          "sin_caja_correcta_solapada": 3,
+          "geometria_insuficiente": 4
+        },
+        "carton": {
+          "correcto": 7,
+          "indicador_fusion_bbox": 4,
+          "indicador_fragmentacion_bbox": 0,
+          "sin_caja_correcta_solapada": 3,
+          "material_incorrecto_iou50": 1,
+          "geometria_insuficiente": 5
+        },
+        "vidrio": {
+          "sin_caja_correcta_solapada": 6,
+          "indicador_fusion_bbox": 0,
+          "indicador_fragmentacion_bbox": 0,
+          "geometria_insuficiente": 1,
+          "material_incorrecto_iou50": 1
+        },
+        "metal": {
+          "sin_caja_correcta_solapada": 4,
+          "indicador_fusion_bbox": 0,
+          "indicador_fragmentacion_bbox": 0,
+          "material_incorrecto_iou50": 2
+        },
+        "organico": {
+          "geometria_insuficiente": 5,
+          "indicador_fusion_bbox": 5,
+          "indicador_fragmentacion_bbox": 0,
+          "correcto": 4
+        }
+      },
+      "objetos": [
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8612995147705078,
+          "max_iou_material_correcto": 0.8612995147705078,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.589893639087677,
+          "max_iou_material_correcto": 0.589893639087677,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 1,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 2,
+          "material": "metal",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.6251246333122253,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.17453916370868683,
+          "max_iou_material_correcto": 0.17453916370868683,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 5,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7481459379196167,
+          "max_iou_material_correcto": 0.7481459379196167,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.29507583379745483,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.03694949671626091,
+          "max_iou_material_correcto": 0.03694949671626091,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.4351983964443207,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.4614272713661194,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2149253934621811,
+          "max_iou_material_correcto": 0.2149253934621811,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.21704019606113434,
+          "max_iou_material_correcto": 0.21704019606113434,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.005841032601892948,
+          "max_iou_material_correcto": 0.005841032601892948,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.292357474565506,
+          "max_iou_material_correcto": 0.02424790896475315,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.409442275762558,
+          "max_iou_material_correcto": 0.409442275762558,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11237087100744247,
+          "max_iou_material_correcto": 0.11237087100744247,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.34999990463256836,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2714795470237732,
+          "max_iou_material_correcto": 0.10969474911689758,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.37107160687446594,
+          "max_iou_material_correcto": 0.37107160687446594,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.09660360962152481,
+          "max_iou_material_correcto": 0.09660360962152481,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.08090036362409592,
+          "max_iou_material_correcto": 0.08090036362409592,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.03857841715216637,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.16044144332408905,
+          "max_iou_material_correcto": 0.16044144332408905,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 7,
+          "material": "vidrio",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5642629861831665,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 1,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.11474480479955673,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.20092961192131042,
+          "max_iou_material_correcto": 0.20092961192131042,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.3383805751800537,
+          "max_iou_material_correcto": 0.3383805751800537,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2516096532344818,
+          "max_iou_material_correcto": 0.2516096532344818,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.2205805629491806,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.29750731587409973,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.13171735405921936,
+          "max_iou_material_correcto": 0.13171735405921936,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 2,
+          "material": "metal",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5949996709823608,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.44602152705192566,
+          "max_iou_material_correcto": 0.44602152705192566,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 4,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.034312546253204346,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.373882919549942,
+          "max_iou_material_correcto": 0.062087029218673706,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 6,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.624578595161438,
+          "max_iou_material_correcto": 0.624578595161438,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.1051681861281395,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.11356385797262192,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.39398154616355896,
+          "max_iou_material_correcto": 0.39398154616355896,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.37671327590942383,
+          "max_iou_material_correcto": 0.37671327590942383,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.33408060669898987,
+          "max_iou_material_correcto": 0.33408060669898987,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 2,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 4,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5787674784660339,
+          "max_iou_material_correcto": 0.5787674784660339,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 5,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.17435334622859955,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.40044888854026794,
+          "max_iou_material_correcto": 0.40044888854026794,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 7,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:40",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.12478452920913696,
+          "max_iou_material_correcto": 0.12478452920913696,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:40",
+          "indice_gt": 1,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.045082345604896545,
+          "max_iou_material_correcto": 0.045082345604896545,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:66",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7444968819618225,
+          "max_iou_material_correcto": 0.7444968819618225,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6844930052757263,
+          "max_iou_material_correcto": 0.6844930052757263,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.09340811520814896,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.9161929488182068,
+          "max_iou_material_correcto": 0.9161929488182068,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.22696338593959808,
+          "max_iou_material_correcto": 0.22696338593959808,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": true
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8289090394973755,
+          "max_iou_material_correcto": 0.8289090394973755,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 5,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11297633498907089,
+          "max_iou_material_correcto": 0.11297633498907089,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 0,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.1284632831811905,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11852191388607025,
+          "max_iou_material_correcto": 0.024578317999839783,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5086255073547363,
+          "max_iou_material_correcto": 0.0773579329252243,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.741692066192627,
+          "max_iou_material_correcto": 0.741692066192627,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.15093819797039032,
+          "max_iou_material_correcto": 0.15093819797039032,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 5,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8109472990036011,
+          "max_iou_material_correcto": 0.8109472990036011,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 6,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7520508766174316,
+          "max_iou_material_correcto": 0.7520508766174316,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8474156260490417,
+          "max_iou_material_correcto": 0.8474156260490417,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.20924979448318481,
+          "max_iou_material_correcto": 0.18754686415195465,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7567613124847412,
+          "max_iou_material_correcto": 0.7567613124847412,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7351192831993103,
+          "max_iou_material_correcto": 0.7351192831993103,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.845436155796051,
+          "max_iou_material_correcto": 0.845436155796051,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.11798401921987534,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 1,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.25605496764183044,
+          "max_iou_material_correcto": 0.13361506164073944,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.13732953369617462,
+          "max_iou_material_correcto": 0.13732953369617462,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11160717904567719,
+          "max_iou_material_correcto": 0.0732421949505806,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 4,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.601105272769928,
+          "max_iou_material_correcto": 0.601105272769928,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.04673662409186363,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.20434477925300598,
+          "max_iou_material_correcto": 0.20434477925300598,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 1,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.4192967414855957,
+          "max_iou_material_correcto": 0.4192967414855957,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5344406962394714,
+          "max_iou_material_correcto": 0.5344406962394714,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.03619503602385521,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 4,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2940356433391571,
+          "max_iou_material_correcto": 0.027527615427970886,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.05766545608639717,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 7,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.07109340280294418,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:23",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.39874762296676636,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:23",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:7",
+          "indice_gt": 0,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7867952585220337,
+          "max_iou_material_correcto": 0.7867952585220337,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 0,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5169689655303955,
+          "max_iou_material_correcto": 0.5169689655303955,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.19389507174491882,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:45",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.9774743318557739,
+          "max_iou_material_correcto": 0.9774743318557739,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:56",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5840240716934204,
+          "max_iou_material_correcto": 0.5840240716934204,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.23937003314495087,
+          "max_iou_material_correcto": 0.23937003314495087,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.01779513992369175,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.22914214432239532,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 3,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.014973978511989117,
+          "max_iou_material_correcto": 0.014973978511989117,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 4,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.1950000524520874,
+          "max_iou_material_correcto": 0.1950000524520874,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:72",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.12342870235443115,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:72",
+          "indice_gt": 1,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8293349146842957,
+          "max_iou_material_correcto": 0.8293349146842957,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:11",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:11",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:60",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.238788440823555,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:95",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:61",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:61",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        }
+      ],
+      "limitacion": "fusión y fragmentación son indicadores geométricos de cajas, no adjudicación visual"
+    }
+  },
+  "5": {
+    "metricas": {
+      "map50": 0.20362350084932623,
+      "map50_95": 0.1086078771660504,
+      "recall50": 0.25663716814159293,
+      "precision50": 0.03431952662721893,
+      "tp50": 29,
+      "fp50": 816,
+      "fn50": 84,
+      "ap50_por_material": {
+        "plastico": 0.0008609556768200185,
+        "papel": 0.4254964206478383,
+        "carton": 0.39367894666029674,
+        "vidrio": 0.0,
+        "metal": 0.0,
+        "organico": 0.4017046821110024
+      }
+    },
+    "detalle_metricas": {
+      "map50": 0.20362350084932623,
+      "map50_95": 0.1086078771660504,
+      "recall50": 0.25663716814159293,
+      "precision50": 0.03431952662721893,
+      "objetos": 113,
+      "clases_con_soporte": 6,
+      "por_clase": {
+        "plastico": {
+          "objetos": 55,
+          "ap50": 0.0008609556768200185,
+          "ap50_95": 0.00043047783841000924,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0008609556768200185,
+              "tp": 1,
+              "fp": 161,
+              "predicciones_ignoradas": 0,
+              "recall": 0.01818181818181818,
+              "precision": 0.006172839506172839
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0008609556768200185,
+              "tp": 1,
+              "fp": 161,
+              "predicciones_ignoradas": 0,
+              "recall": 0.01818181818181818,
+              "precision": 0.006172839506172839
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0008609556768200185,
+              "tp": 1,
+              "fp": 161,
+              "predicciones_ignoradas": 0,
+              "recall": 0.01818181818181818,
+              "precision": 0.006172839506172839
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0008609556768200185,
+              "tp": 1,
+              "fp": 161,
+              "predicciones_ignoradas": 0,
+              "recall": 0.01818181818181818,
+              "precision": 0.006172839506172839
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0008609556768200185,
+              "tp": 1,
+              "fp": 161,
+              "predicciones_ignoradas": 0,
+              "recall": 0.01818181818181818,
+              "precision": 0.006172839506172839
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 162,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 162,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 162,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 162,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 162,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "papel": {
+          "objetos": 19,
+          "ap50": 0.4254964206478383,
+          "ap50_95": 0.24907991832288187,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.4254964206478383,
+              "tp": 14,
+              "fp": 196,
+              "predicciones_ignoradas": 0,
+              "recall": 0.7368421052631579,
+              "precision": 0.06666666666666667
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.4254964206478383,
+              "tp": 14,
+              "fp": 196,
+              "predicciones_ignoradas": 0,
+              "recall": 0.7368421052631579,
+              "precision": 0.06666666666666667
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.37983599482196395,
+              "tp": 12,
+              "fp": 198,
+              "predicciones_ignoradas": 0,
+              "recall": 0.631578947368421,
+              "precision": 0.05714285714285714
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.37983599482196395,
+              "tp": 12,
+              "fp": 198,
+              "predicciones_ignoradas": 0,
+              "recall": 0.631578947368421,
+              "precision": 0.05714285714285714
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.3565615034191915,
+              "tp": 10,
+              "fp": 200,
+              "predicciones_ignoradas": 0,
+              "recall": 0.5263157894736842,
+              "precision": 0.047619047619047616
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.2832720584355959,
+              "tp": 9,
+              "fp": 201,
+              "predicciones_ignoradas": 0,
+              "recall": 0.47368421052631576,
+              "precision": 0.04285714285714286
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.15908909729211637,
+              "tp": 6,
+              "fp": 204,
+              "predicciones_ignoradas": 0,
+              "recall": 0.3157894736842105,
+              "precision": 0.02857142857142857
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.051508722845280526,
+              "tp": 3,
+              "fp": 207,
+              "predicciones_ignoradas": 0,
+              "recall": 0.15789473684210525,
+              "precision": 0.014285714285714285
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0297029702970297,
+              "tp": 1,
+              "fp": 209,
+              "predicciones_ignoradas": 0,
+              "recall": 0.05263157894736842,
+              "precision": 0.004761904761904762
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 210,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "carton": {
+          "objetos": 16,
+          "ap50": 0.39367894666029674,
+          "ap50_95": 0.14665154053433108,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.39367894666029674,
+              "tp": 9,
+              "fp": 118,
+              "predicciones_ignoradas": 1,
+              "recall": 0.5625,
+              "precision": 0.07086614173228346
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.2992299264020259,
+              "tp": 8,
+              "fp": 119,
+              "predicciones_ignoradas": 1,
+              "recall": 0.5,
+              "precision": 0.06299212598425197
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.28190319372875855,
+              "tp": 7,
+              "fp": 120,
+              "predicciones_ignoradas": 1,
+              "recall": 0.4375,
+              "precision": 0.05511811023622047
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.2376237638516001,
+              "tp": 6,
+              "fp": 121,
+              "predicciones_ignoradas": 1,
+              "recall": 0.375,
+              "precision": 0.047244094488188976
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.09690135687884718,
+              "tp": 4,
+              "fp": 123,
+              "predicciones_ignoradas": 1,
+              "recall": 0.25,
+              "precision": 0.031496062992125984
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.04950495049504951,
+              "tp": 2,
+              "fp": 125,
+              "predicciones_ignoradas": 1,
+              "recall": 0.125,
+              "precision": 0.015748031496062992
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.04950495049504951,
+              "tp": 2,
+              "fp": 125,
+              "predicciones_ignoradas": 1,
+              "recall": 0.125,
+              "precision": 0.015748031496062992
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.04950495049504951,
+              "tp": 2,
+              "fp": 125,
+              "predicciones_ignoradas": 1,
+              "recall": 0.125,
+              "precision": 0.015748031496062992
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.008663366336633664,
+              "tp": 1,
+              "fp": 126,
+              "predicciones_ignoradas": 1,
+              "recall": 0.0625,
+              "precision": 0.007874015748031496
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 127,
+              "predicciones_ignoradas": 1,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "vidrio": {
+          "objetos": 8,
+          "ap50": 0.0,
+          "ap50_95": 0.0,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 11,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "metal": {
+          "objetos": 6,
+          "ap50": 0.0,
+          "ap50_95": 0.0,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.0,
+              "tp": 0,
+              "fp": 27,
+              "predicciones_ignoradas": 0,
+              "recall": 0.0,
+              "precision": 0.0
+            }
+          ]
+        },
+        "organico": {
+          "objetos": 9,
+          "ap50": 0.4017046821110024,
+          "ap50_95": 0.25548532630067944,
+          "por_umbral": [
+            {
+              "iou": 0.5,
+              "ap": 0.4017046821110024,
+              "tp": 5,
+              "fp": 303,
+              "predicciones_ignoradas": 7,
+              "recall": 0.5555555555555556,
+              "precision": 0.016233766233766232
+            },
+            {
+              "iou": 0.55,
+              "ap": 0.4017046821110024,
+              "tp": 5,
+              "fp": 303,
+              "predicciones_ignoradas": 7,
+              "recall": 0.5555555555555556,
+              "precision": 0.016233766233766232
+            },
+            {
+              "iou": 0.6,
+              "ap": 0.3389026403316472,
+              "tp": 4,
+              "fp": 304,
+              "predicciones_ignoradas": 7,
+              "recall": 0.4444444444444444,
+              "precision": 0.012987012987012988
+            },
+            {
+              "iou": 0.65,
+              "ap": 0.33663366336633666,
+              "tp": 3,
+              "fp": 305,
+              "predicciones_ignoradas": 7,
+              "recall": 0.3333333333333333,
+              "precision": 0.00974025974025974
+            },
+            {
+              "iou": 0.7,
+              "ap": 0.33663366336633666,
+              "tp": 3,
+              "fp": 305,
+              "predicciones_ignoradas": 7,
+              "recall": 0.3333333333333333,
+              "precision": 0.00974025974025974
+            },
+            {
+              "iou": 0.75,
+              "ap": 0.1914191440780564,
+              "tp": 2,
+              "fp": 306,
+              "predicciones_ignoradas": 7,
+              "recall": 0.2222222222222222,
+              "precision": 0.006493506493506494
+            },
+            {
+              "iou": 0.8,
+              "ap": 0.1914191440780564,
+              "tp": 2,
+              "fp": 306,
+              "predicciones_ignoradas": 7,
+              "recall": 0.2222222222222222,
+              "precision": 0.006493506493506494
+            },
+            {
+              "iou": 0.85,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 307,
+              "predicciones_ignoradas": 7,
+              "recall": 0.1111111111111111,
+              "precision": 0.003246753246753247
+            },
+            {
+              "iou": 0.9,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 307,
+              "predicciones_ignoradas": 7,
+              "recall": 0.1111111111111111,
+              "precision": 0.003246753246753247
+            },
+            {
+              "iou": 0.95,
+              "ap": 0.1188118811881188,
+              "tp": 1,
+              "fp": 307,
+              "predicciones_ignoradas": 7,
+              "recall": 0.1111111111111111,
+              "precision": 0.003246753246753247
+            }
+          ]
+        }
+      },
+      "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial"
+    },
+    "geometria": {
+      "por_material": {
+        "plastico": {
+          "sin_caja_correcta_solapada": 20,
+          "indicador_fusion_bbox": 3,
+          "indicador_fragmentacion_bbox": 0,
+          "geometria_insuficiente": 27,
+          "material_incorrecto_iou50": 7,
+          "correcto": 1
+        },
+        "papel": {
+          "correcto": 14,
+          "indicador_fusion_bbox": 2,
+          "indicador_fragmentacion_bbox": 0,
+          "geometria_insuficiente": 4,
+          "sin_caja_correcta_solapada": 1
+        },
+        "carton": {
+          "correcto": 9,
+          "indicador_fusion_bbox": 4,
+          "indicador_fragmentacion_bbox": 0,
+          "sin_caja_correcta_solapada": 2,
+          "material_incorrecto_iou50": 2,
+          "geometria_insuficiente": 3
+        },
+        "vidrio": {
+          "sin_caja_correcta_solapada": 4,
+          "indicador_fusion_bbox": 0,
+          "indicador_fragmentacion_bbox": 0,
+          "geometria_insuficiente": 2,
+          "material_incorrecto_iou50": 2
+        },
+        "metal": {
+          "sin_caja_correcta_solapada": 4,
+          "indicador_fusion_bbox": 0,
+          "indicador_fragmentacion_bbox": 0,
+          "material_incorrecto_iou50": 2
+        },
+        "organico": {
+          "geometria_insuficiente": 4,
+          "indicador_fusion_bbox": 5,
+          "indicador_fragmentacion_bbox": 0,
+          "correcto": 5
+        }
+      },
+      "objetos": [
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8612995147705078,
+          "max_iou_material_correcto": 0.8612995147705078,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.589893639087677,
+          "max_iou_material_correcto": 0.589893639087677,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.10684362053871155,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 1,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 2,
+          "material": "metal",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.6251246333122253,
+          "max_iou_material_correcto": 0.032793376594781876,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.29497140645980835,
+          "max_iou_material_correcto": 0.17453916370868683,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+          "indice_gt": 5,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.9322112798690796,
+          "max_iou_material_correcto": 0.9322112798690796,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.40947842597961426,
+          "max_iou_material_correcto": 0.032758232206106186,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.03694949671626091,
+          "max_iou_material_correcto": 0.03694949671626091,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.9313985109329224,
+          "max_iou_material_correcto": 0.21706876158714294,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.4614272713661194,
+          "max_iou_material_correcto": 0.10188404470682144,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.23800338804721832,
+          "max_iou_material_correcto": 0.23800338804721832,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.1889481395483017,
+          "max_iou_material_correcto": 0.1889481395483017,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.053952641785144806,
+          "max_iou_material_correcto": 0.005841032601892948,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.292357474565506,
+          "max_iou_material_correcto": 0.028075972571969032,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 0,
+          "material": "vidrio",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.409442275762558,
+          "max_iou_material_correcto": 0.409442275762558,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.04669814184308052,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11237087100744247,
+          "max_iou_material_correcto": 0.11237087100744247,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.3115241825580597,
+          "max_iou_material_correcto": 0.0443803146481514,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.3521037995815277,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.3566502332687378,
+          "max_iou_material_correcto": 0.22593997418880463,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.457614928483963,
+          "max_iou_material_correcto": 0.457614928483963,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.12244544178247452,
+          "max_iou_material_correcto": 0.12244544178247452,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.08090036362409592,
+          "max_iou_material_correcto": 0.08090036362409592,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.03857841715216637,
+          "max_iou_material_correcto": 0.024449093267321587,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.053154777735471725,
+          "max_iou_material_correcto": 0.053154777735471725,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-39-08",
+          "indice_gt": 7,
+          "material": "vidrio",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5420872569084167,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 1,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.21290381252765656,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.20092961192131042,
+          "max_iou_material_correcto": 0.20092961192131042,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.3383805751800537,
+          "max_iou_material_correcto": 0.3383805751800537,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2516096532344818,
+          "max_iou_material_correcto": 0.2516096532344818,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_12-48-07",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.23298823833465576,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.29750731587409973,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.08003368973731995,
+          "max_iou_material_correcto": 0.08003368973731995,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 2,
+          "material": "metal",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5949996709823608,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 3,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.37359076738357544,
+          "max_iou_material_correcto": 0.37359076738357544,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 4,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.034312546253204346,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.7583451867103577,
+          "max_iou_material_correcto": 0.062087029218673706,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:Robo_25-Mar_15-41-24",
+          "indice_gt": 6,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6845730543136597,
+          "max_iou_material_correcto": 0.6845730543136597,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.2199251502752304,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2642894685268402,
+          "max_iou_material_correcto": 0.2642894685268402,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6616098284721375,
+          "max_iou_material_correcto": 0.6616098284721375,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.39398154616355896,
+          "max_iou_material_correcto": 0.39398154616355896,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:SPB_25-Mar_10-39-22",
+          "indice_gt": 4,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5870493650436401,
+          "max_iou_material_correcto": 0.37671327590942383,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.38850581645965576,
+          "max_iou_material_correcto": 0.33408060669898987,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 2,
+          "material": "vidrio",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.05499982461333275,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.12827306985855103,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 4,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5787674784660339,
+          "max_iou_material_correcto": 0.5787674784660339,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 5,
+          "material": "vidrio",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.7838807702064514,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.30636218190193176,
+          "max_iou_material_correcto": 0.30636218190193176,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+          "indice_gt": 7,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.6565104126930237,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:40",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.18033839762210846,
+          "max_iou_material_correcto": 0.18033839762210846,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:40",
+          "indice_gt": 1,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6019154787063599,
+          "max_iou_material_correcto": 0.6019154787063599,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "hpi:66",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7444968819618225,
+          "max_iou_material_correcto": 0.7444968819618225,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8942428231239319,
+          "max_iou_material_correcto": 0.8942428231239319,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.09340811520814896,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.9161929488182068,
+          "max_iou_material_correcto": 0.9161929488182068,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.574289083480835,
+          "max_iou_material_correcto": 0.574289083480835,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8289090394973755,
+          "max_iou_material_correcto": 0.8289090394973755,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:1672",
+          "indice_gt": 5,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.12290280312299728,
+          "max_iou_material_correcto": 0.11297633498907089,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 0,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.1284632831811905,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.11852191388607025,
+          "max_iou_material_correcto": 0.051921818405389786,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.549299955368042,
+          "max_iou_material_correcto": 0.09820916503667831,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.741692066192627,
+          "max_iou_material_correcto": 0.741692066192627,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8539089560508728,
+          "max_iou_material_correcto": 0.8539089560508728,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 5,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8109472990036011,
+          "max_iou_material_correcto": 0.8109472990036011,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:24",
+          "indice_gt": 6,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7520508766174316,
+          "max_iou_material_correcto": 0.7520508766174316,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6671568155288696,
+          "max_iou_material_correcto": 0.6671568155288696,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2535635530948639,
+          "max_iou_material_correcto": 0.2535635530948639,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 2,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7567613124847412,
+          "max_iou_material_correcto": 0.7567613124847412,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 3,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7351192831993103,
+          "max_iou_material_correcto": 0.7351192831993103,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:2882",
+          "indice_gt": 4,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.845436155796051,
+          "max_iou_material_correcto": 0.845436155796051,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.17446909844875336,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 1,
+          "material": "carton",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.7080971598625183,
+          "max_iou_material_correcto": 0.24697944521903992,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.13732953369617462,
+          "max_iou_material_correcto": 0.13732953369617462,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7302247881889343,
+          "max_iou_material_correcto": 0.7302247881889343,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 4,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6090534329414368,
+          "max_iou_material_correcto": 0.6090534329414368,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:369",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2178879976272583,
+          "max_iou_material_correcto": 0.009583014994859695,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 0,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.20434477925300598,
+          "max_iou_material_correcto": 0.20434477925300598,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 1,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.6506389379501343,
+          "max_iou_material_correcto": 0.6506389379501343,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 2,
+          "material": "carton",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5344406962394714,
+          "max_iou_material_correcto": 0.5344406962394714,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 3,
+          "material": "carton",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.06881576776504517,
+          "max_iou_material_correcto": 0.025667740032076836,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 4,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.28003376722335815,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 5,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2940356433391571,
+          "max_iou_material_correcto": 0.17705613374710083,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 6,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.4547881484031677,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "zerowaste:456",
+          "indice_gt": 7,
+          "material": "metal",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.17173705995082855,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:23",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.39874762296676636,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:23",
+          "indice_gt": 1,
+          "material": "papel",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:7",
+          "indice_gt": 0,
+          "material": "papel",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7867952585220337,
+          "max_iou_material_correcto": 0.7867952585220337,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 0,
+          "material": "papel",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.4368387460708618,
+          "max_iou_material_correcto": 0.4368387460708618,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.7074715495109558,
+          "max_iou_material_correcto": 0.7074715495109558,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:30",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5515511631965637,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:45",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.9774743318557739,
+          "max_iou_material_correcto": 0.9774743318557739,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:56",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.5840240716934204,
+          "max_iou_material_correcto": 0.5840240716934204,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 0,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.23937003314495087,
+          "max_iou_material_correcto": 0.23937003314495087,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.7176473736763,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 2,
+          "material": "plastico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.2497045397758484,
+          "max_iou_material_correcto": 0.016646964475512505,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 3,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.014973978511989117,
+          "max_iou_material_correcto": 0.014973978511989117,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:93",
+          "indice_gt": 4,
+          "material": "organico",
+          "causa": "geometria_insuficiente",
+          "max_iou_cualquier_material": 0.1950000524520874,
+          "max_iou_material_correcto": 0.1950000524520874,
+          "indicador_fusion_bbox": true,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:72",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.12342870235443115,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:72",
+          "indice_gt": 1,
+          "material": "organico",
+          "causa": "correcto",
+          "max_iou_cualquier_material": 0.8293349146842957,
+          "max_iou_material_correcto": 0.8293349146842957,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:11",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:11",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.26709824800491333,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:60",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.3026641309261322,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:95",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:61",
+          "indice_gt": 0,
+          "material": "plastico",
+          "causa": "material_incorrecto_iou50",
+          "max_iou_cualquier_material": 0.5616492033004761,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        },
+        {
+          "imagen": "wsc:61",
+          "indice_gt": 1,
+          "material": "plastico",
+          "causa": "sin_caja_correcta_solapada",
+          "max_iou_cualquier_material": 0.0,
+          "max_iou_material_correcto": 0.0,
+          "indicador_fusion_bbox": false,
+          "indicador_fragmentacion_bbox": false
+        }
+      ],
+      "limitacion": "fusión y fragmentación son indicadores geométricos de cajas, no adjudicación visual"
+    }
+  },
+  "oportunidades_5v": {
+    "por_etapa": {
+      "componentes": {
+        "papel": 15,
+        "carton": 9,
+        "plastico": 3,
+        "organico": 7
+      },
+      "area_minima": {
+        "papel": 15,
+        "carton": 9,
+        "plastico": 3,
+        "organico": 7
+      },
+      "recorte_contenido": {
+        "papel": 15,
+        "carton": 9,
+        "plastico": 3,
+        "organico": 7
+      },
+      "nms_vista": {
+        "papel": 15,
+        "carton": 9,
+        "plastico": 3,
+        "organico": 7
+      },
+      "top100_vista": {
+        "papel": 15,
+        "carton": 9,
+        "plastico": 3,
+        "organico": 7
+      },
+      "bordes": {
+        "papel": 15,
+        "carton": 9,
+        "organico": 5,
+        "plastico": 1
+      },
+      "nms_global": {
+        "papel": 14,
+        "carton": 9,
+        "organico": 5,
+        "plastico": 1
+      },
+      "top100_global": {
+        "papel": 14,
+        "carton": 9,
+        "organico": 5,
+        "plastico": 1
+      },
+      "final": {
+        "papel": 14,
+        "carton": 9,
+        "organico": 5,
+        "plastico": 1
+      },
+      "visual035": {
+        "papel": 14,
+        "carton": 9,
+        "organico": 5,
+        "plastico": 1
+      }
+    },
+    "por_imagen": [
+      {
+        "imagen": "warp:Monitoring_photo3_03-Mar_21-06-59",
+        "por_etapa": {
+          "componentes": [
+            1,
+            2
+          ],
+          "area_minima": [
+            1,
+            2
+          ],
+          "recorte_contenido": [
+            1,
+            2
+          ],
+          "nms_vista": [
+            1,
+            2
+          ],
+          "top100_vista": [
+            1,
+            2
+          ],
+          "bordes": [
+            1,
+            2
+          ],
+          "nms_global": [
+            1,
+            2
+          ],
+          "top100_global": [
+            1,
+            2
+          ],
+          "final": [
+            1,
+            2
+          ],
+          "visual035": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "imagen": "warp:POSAD_1_10-Sep_18-39-35",
+        "por_etapa": {
+          "componentes": [
+            5
+          ],
+          "area_minima": [
+            5
+          ],
+          "recorte_contenido": [
+            5
+          ],
+          "nms_vista": [
+            5
+          ],
+          "top100_vista": [
+            5
+          ],
+          "bordes": [
+            5
+          ],
+          "nms_global": [
+            5
+          ],
+          "top100_global": [
+            5
+          ],
+          "final": [
+            5
+          ],
+          "visual035": [
+            5
+          ]
+        }
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_12-05-46",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "warp:POSAD_1_11-Sep_16-58-56",
+        "por_etapa": {
+          "componentes": [
+            2
+          ],
+          "area_minima": [
+            2
+          ],
+          "recorte_contenido": [
+            2
+          ],
+          "nms_vista": [
+            2
+          ],
+          "top100_vista": [
+            2
+          ],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "warp:POSAD_1_12-Sep_22-32-20",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-39-08",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_12-48-07",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "warp:Robo_25-Mar_15-41-24",
+        "por_etapa": {
+          "componentes": [
+            6
+          ],
+          "area_minima": [
+            6
+          ],
+          "recorte_contenido": [
+            6
+          ],
+          "nms_vista": [
+            6
+          ],
+          "top100_vista": [
+            6
+          ],
+          "bordes": [
+            6
+          ],
+          "nms_global": [
+            6
+          ],
+          "top100_global": [
+            6
+          ],
+          "final": [
+            6
+          ],
+          "visual035": [
+            6
+          ]
+        }
+      },
+      {
+        "imagen": "warp:SPB_25-Mar_10-39-22",
+        "por_etapa": {
+          "componentes": [
+            2
+          ],
+          "area_minima": [
+            2
+          ],
+          "recorte_contenido": [
+            2
+          ],
+          "nms_vista": [
+            2
+          ],
+          "top100_vista": [
+            2
+          ],
+          "bordes": [
+            2
+          ],
+          "nms_global": [
+            2
+          ],
+          "top100_global": [
+            2
+          ],
+          "final": [
+            2
+          ],
+          "visual035": [
+            2
+          ]
+        }
+      },
+      {
+        "imagen": "warp:prepared_data_all_MGS-05-Nov_02-56-00",
+        "por_etapa": {
+          "componentes": [
+            4,
+            6
+          ],
+          "area_minima": [
+            4,
+            6
+          ],
+          "recorte_contenido": [
+            4,
+            6
+          ],
+          "nms_vista": [
+            4,
+            6
+          ],
+          "top100_vista": [
+            4,
+            6
+          ],
+          "bordes": [
+            4
+          ],
+          "nms_global": [
+            4
+          ],
+          "top100_global": [
+            4
+          ],
+          "final": [
+            4
+          ],
+          "visual035": [
+            4
+          ]
+        }
+      },
+      {
+        "imagen": "hpi:40",
+        "por_etapa": {
+          "componentes": [
+            0,
+            1
+          ],
+          "area_minima": [
+            0,
+            1
+          ],
+          "recorte_contenido": [
+            0,
+            1
+          ],
+          "nms_vista": [
+            0,
+            1
+          ],
+          "top100_vista": [
+            0,
+            1
+          ],
+          "bordes": [
+            1
+          ],
+          "nms_global": [
+            1
+          ],
+          "top100_global": [
+            1
+          ],
+          "final": [
+            1
+          ],
+          "visual035": [
+            1
+          ]
+        }
+      },
+      {
+        "imagen": "hpi:66",
+        "por_etapa": {
+          "componentes": [
+            0
+          ],
+          "area_minima": [
+            0
+          ],
+          "recorte_contenido": [
+            0
+          ],
+          "nms_vista": [
+            0
+          ],
+          "top100_vista": [
+            0
+          ],
+          "bordes": [
+            0
+          ],
+          "nms_global": [
+            0
+          ],
+          "top100_global": [
+            0
+          ],
+          "final": [
+            0
+          ],
+          "visual035": [
+            0
+          ]
+        }
+      },
+      {
+        "imagen": "zerowaste:1672",
+        "por_etapa": {
+          "componentes": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "area_minima": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "recorte_contenido": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "nms_vista": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "top100_vista": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bordes": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "nms_global": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "top100_global": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "final": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "visual035": [
+            0,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "imagen": "zerowaste:24",
+        "por_etapa": {
+          "componentes": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "area_minima": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "recorte_contenido": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "nms_vista": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "top100_vista": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "bordes": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "nms_global": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "top100_global": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "final": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "visual035": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "imagen": "zerowaste:2882",
+        "por_etapa": {
+          "componentes": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "area_minima": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "recorte_contenido": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "nms_vista": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "top100_vista": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "bordes": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "nms_global": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "top100_global": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "final": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "visual035": [
+            0,
+            2,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "imagen": "zerowaste:369",
+        "por_etapa": {
+          "componentes": [
+            3,
+            4
+          ],
+          "area_minima": [
+            3,
+            4
+          ],
+          "recorte_contenido": [
+            3,
+            4
+          ],
+          "nms_vista": [
+            3,
+            4
+          ],
+          "top100_vista": [
+            3,
+            4
+          ],
+          "bordes": [
+            3,
+            4
+          ],
+          "nms_global": [
+            3,
+            4
+          ],
+          "top100_global": [
+            3,
+            4
+          ],
+          "final": [
+            3,
+            4
+          ],
+          "visual035": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "imagen": "zerowaste:456",
+        "por_etapa": {
+          "componentes": [
+            1,
+            2
+          ],
+          "area_minima": [
+            1,
+            2
+          ],
+          "recorte_contenido": [
+            1,
+            2
+          ],
+          "nms_vista": [
+            1,
+            2
+          ],
+          "top100_vista": [
+            1,
+            2
+          ],
+          "bordes": [
+            1,
+            2
+          ],
+          "nms_global": [
+            1,
+            2
+          ],
+          "top100_global": [
+            1,
+            2
+          ],
+          "final": [
+            1,
+            2
+          ],
+          "visual035": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:23",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "wsc:7",
+        "por_etapa": {
+          "componentes": [
+            0
+          ],
+          "area_minima": [
+            0
+          ],
+          "recorte_contenido": [
+            0
+          ],
+          "nms_vista": [
+            0
+          ],
+          "top100_vista": [
+            0
+          ],
+          "bordes": [
+            0
+          ],
+          "nms_global": [
+            0
+          ],
+          "top100_global": [
+            0
+          ],
+          "final": [
+            0
+          ],
+          "visual035": [
+            0
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:30",
+        "por_etapa": {
+          "componentes": [
+            0,
+            1
+          ],
+          "area_minima": [
+            0,
+            1
+          ],
+          "recorte_contenido": [
+            0,
+            1
+          ],
+          "nms_vista": [
+            0,
+            1
+          ],
+          "top100_vista": [
+            0,
+            1
+          ],
+          "bordes": [
+            0,
+            1
+          ],
+          "nms_global": [
+            1
+          ],
+          "top100_global": [
+            1
+          ],
+          "final": [
+            1
+          ],
+          "visual035": [
+            1
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:45",
+        "por_etapa": {
+          "componentes": [
+            0
+          ],
+          "area_minima": [
+            0
+          ],
+          "recorte_contenido": [
+            0
+          ],
+          "nms_vista": [
+            0
+          ],
+          "top100_vista": [
+            0
+          ],
+          "bordes": [
+            0
+          ],
+          "nms_global": [
+            0
+          ],
+          "top100_global": [
+            0
+          ],
+          "final": [
+            0
+          ],
+          "visual035": [
+            0
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:56",
+        "por_etapa": {
+          "componentes": [
+            0
+          ],
+          "area_minima": [
+            0
+          ],
+          "recorte_contenido": [
+            0
+          ],
+          "nms_vista": [
+            0
+          ],
+          "top100_vista": [
+            0
+          ],
+          "bordes": [
+            0
+          ],
+          "nms_global": [
+            0
+          ],
+          "top100_global": [
+            0
+          ],
+          "final": [
+            0
+          ],
+          "visual035": [
+            0
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:93",
+        "por_etapa": {
+          "componentes": [
+            4
+          ],
+          "area_minima": [
+            4
+          ],
+          "recorte_contenido": [
+            4
+          ],
+          "nms_vista": [
+            4
+          ],
+          "top100_vista": [
+            4
+          ],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "wsc:72",
+        "por_etapa": {
+          "componentes": [
+            1
+          ],
+          "area_minima": [
+            1
+          ],
+          "recorte_contenido": [
+            1
+          ],
+          "nms_vista": [
+            1
+          ],
+          "top100_vista": [
+            1
+          ],
+          "bordes": [
+            1
+          ],
+          "nms_global": [
+            1
+          ],
+          "top100_global": [
+            1
+          ],
+          "final": [
+            1
+          ],
+          "visual035": [
+            1
+          ]
+        }
+      },
+      {
+        "imagen": "wsc:11",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "wsc:60",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "wsc:95",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      },
+      {
+        "imagen": "wsc:61",
+        "por_etapa": {
+          "componentes": [],
+          "area_minima": [],
+          "recorte_contenido": [],
+          "nms_vista": [],
+          "top100_vista": [],
+          "bordes": [],
+          "nms_global": [],
+          "top100_global": [],
+          "final": [],
+          "visual035": []
+        }
+      }
+    ],
+    "criterio": "GT con al menos una caja de material correcto e IoU>=.5; no asignación uno a uno"
+  }
+}

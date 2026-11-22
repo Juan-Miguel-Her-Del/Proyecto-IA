@@ -1,0 +1,261 @@
+{
+  "aprobada": true,
+  "ramas": {
+    "A": {
+      "actualizaciones": 300,
+      "paso_adamw": 2599,
+      "exposiciones": {
+        "historico": 2400,
+        "nuevo": 0,
+        "global": 4800
+      },
+      "imagenes_distintas": {
+        "historico": 964,
+        "nuevo": 0,
+        "global": 2167
+      },
+      "repeticiones_auxiliares": {},
+      "segundos_actualizaciones": 49.410567999933846,
+      "segundos_intentos_con_checkpoints": 54.055283199995756,
+      "memoria_gpu_max_allocated_bytes": 961076224,
+      "memoria_gpu_max_reserved_bytes": 1111490560,
+      "loss_media_primeros50": 3.1240724468231202,
+      "loss_media_ultimos50": 3.134017701148987,
+      "restauraciones": [
+        {
+          "paso_inicial": 100,
+          "restauracion_exacta": {
+            "pesos": "7323b8f934f22a17772f6116207e9d3033cb2ddcf58533f6420f8b6be2218999",
+            "adamw": "451d6b2a384a62fa38e37c799667521cd461ed8b97d6fb80c30014a5b354d408",
+            "scaler": "d2f4d435482cb0cf67d43426846fd6769296dffb91ad81daab6c31d6cbe7ab7a",
+            "rng": "195f7326b5b466620cfbb005437e8241387084775440175265e3f11dbab674f2"
+          },
+          "backend": {
+            "torch": "2.14.1+cu126",
+            "cuda": "12.6",
+            "cudnn": 91002,
+            "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "threads": 4,
+            "threads_interop": 8,
+            "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+            "deterministic_algorithms": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false,
+            "tf32_matmul": false,
+            "tf32_cudnn": false,
+            "float32_matmul_precision": "highest",
+            "sdpa": {
+              "flash": false,
+              "efficient": false,
+              "math": true,
+              "cudnn": false
+            },
+            "adam": [
+              {
+                "foreach": false,
+                "fused": false
+              }
+            ]
+          },
+          "contrato_sha256": "07f1da25bf4c166bf363234361a5e7c5ae8b263bd2db38b8db0be26f7040fd8f"
+        },
+        {
+          "paso_inicial": 0,
+          "restauracion_exacta": {
+            "pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+            "adamw": "1b1d45e084c57330b8a575fa7280c97832d931012bc94bb063953f7724700919",
+            "scaler": "1c0287e48d77f8f597e9979356fb10ee9466307d42240c9a23d4f4e8ca22f701",
+            "rng": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312"
+          },
+          "backend": {
+            "torch": "2.14.1+cu126",
+            "cuda": "12.6",
+            "cudnn": 91002,
+            "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "threads": 4,
+            "threads_interop": 8,
+            "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+            "deterministic_algorithms": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false,
+            "tf32_matmul": false,
+            "tf32_cudnn": false,
+            "float32_matmul_precision": "highest",
+            "sdpa": {
+              "flash": false,
+              "efficient": false,
+              "math": true,
+              "cudnn": false
+            },
+            "adam": [
+              {
+                "foreach": false,
+                "fused": false
+              }
+            ]
+          },
+          "contrato_sha256": "07f1da25bf4c166bf363234361a5e7c5ae8b263bd2db38b8db0be26f7040fd8f"
+        }
+      ],
+      "estados_finales": {
+        "pesos": "f2bb6da9c3ad3dfd6197688af6f2e73b06fd29b6382e5ce0661df1d3c7d2b9eb",
+        "adamw": "2d81881114e64c986659a483cd1169ec279d4dcd589cd09e6741f474f7c8d84a",
+        "scaler": "1e85fef4261d1466e46263e772a5f18ff876547be779c566bcc50a2c14bfefd2",
+        "rng": "b8bcc28e8d5638d99bdee26ae0af38c24d303749526d40c2929a64e8f757b4cb"
+      }
+    },
+    "B": {
+      "actualizaciones": 300,
+      "paso_adamw": 2599,
+      "exposiciones": {
+        "historico": 1800,
+        "nuevo": 600,
+        "global": 4800
+      },
+      "imagenes_distintas": {
+        "historico": 920,
+        "nuevo": 28,
+        "global": 2167
+      },
+      "repeticiones_auxiliares": {
+        "3": 22,
+        "1": 21,
+        "8": 21,
+        "24": 22,
+        "4": 22,
+        "27": 22,
+        "11": 21,
+        "22": 22,
+        "0": 22,
+        "25": 22,
+        "16": 21,
+        "23": 21,
+        "26": 21,
+        "9": 22,
+        "19": 22,
+        "18": 21,
+        "12": 21,
+        "15": 21,
+        "7": 21,
+        "20": 22,
+        "5": 21,
+        "10": 21,
+        "2": 21,
+        "21": 22,
+        "6": 21,
+        "17": 21,
+        "14": 21,
+        "13": 22
+      },
+      "segundos_actualizaciones": 46.88176220009336,
+      "segundos_intentos_con_checkpoints": 51.53451350002433,
+      "memoria_gpu_max_allocated_bytes": 961076224,
+      "memoria_gpu_max_reserved_bytes": 1111490560,
+      "loss_media_primeros50": 4.1276277875900265,
+      "loss_media_ultimos50": 2.8783050417900085,
+      "restauraciones": [
+        {
+          "paso_inicial": 100,
+          "restauracion_exacta": {
+            "pesos": "adbdb3612454ac0731c3c3bf1e3a444185f037c2c657a94bcf62e52ee090b691",
+            "adamw": "63f3aafd2e26744809fb962d18c6fd49869a6a73226d96f26af30d796fa6df86",
+            "scaler": "d2f4d435482cb0cf67d43426846fd6769296dffb91ad81daab6c31d6cbe7ab7a",
+            "rng": "195f7326b5b466620cfbb005437e8241387084775440175265e3f11dbab674f2"
+          },
+          "backend": {
+            "torch": "2.14.1+cu126",
+            "cuda": "12.6",
+            "cudnn": 91002,
+            "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "threads": 4,
+            "threads_interop": 8,
+            "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+            "deterministic_algorithms": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false,
+            "tf32_matmul": false,
+            "tf32_cudnn": false,
+            "float32_matmul_precision": "highest",
+            "sdpa": {
+              "flash": false,
+              "efficient": false,
+              "math": true,
+              "cudnn": false
+            },
+            "adam": [
+              {
+                "foreach": false,
+                "fused": false
+              }
+            ]
+          },
+          "contrato_sha256": "07f1da25bf4c166bf363234361a5e7c5ae8b263bd2db38b8db0be26f7040fd8f"
+        },
+        {
+          "paso_inicial": 0,
+          "restauracion_exacta": {
+            "pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+            "adamw": "1b1d45e084c57330b8a575fa7280c97832d931012bc94bb063953f7724700919",
+            "scaler": "1c0287e48d77f8f597e9979356fb10ee9466307d42240c9a23d4f4e8ca22f701",
+            "rng": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312"
+          },
+          "backend": {
+            "torch": "2.14.1+cu126",
+            "cuda": "12.6",
+            "cudnn": 91002,
+            "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+            "threads": 4,
+            "threads_interop": 8,
+            "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+            "deterministic_algorithms": true,
+            "cudnn_deterministic": true,
+            "cudnn_benchmark": false,
+            "tf32_matmul": false,
+            "tf32_cudnn": false,
+            "float32_matmul_precision": "highest",
+            "sdpa": {
+              "flash": false,
+              "efficient": false,
+              "math": true,
+              "cudnn": false
+            },
+            "adam": [
+              {
+                "foreach": false,
+                "fused": false
+              }
+            ]
+          },
+          "contrato_sha256": "07f1da25bf4c166bf363234361a5e7c5ae8b263bd2db38b8db0be26f7040fd8f"
+        }
+      ],
+      "estados_finales": {
+        "pesos": "7e0a4341e344e5f39cfd1c66cf6fce0b2c6fe74cdb638fe5a0367d040945cfe7",
+        "adamw": "b0e12f63745fdae267750dbd75b297f446ba21cf4c372f029e0e131cc1a19964",
+        "scaler": "1e85fef4261d1466e46263e772a5f18ff876547be779c566bcc50a2c14bfefd2",
+        "rng": "b8bcc28e8d5638d99bdee26ae0af38c24d303749526d40c2929a64e8f757b4cb"
+      }
+    }
+  },
+  "anclas_y_aumentos_iguales_300": true,
+  "eventos_humanos_conservados": 134,
+  "respaldo_archivos_conservados": 731,
+  "checkpoints_historicos_conservados": 105,
+  "checkpoints_experimentales": {
+    "checkpoints/v28_2_07f1da25bf4c/A/paso_0000_835c95509276.pt": "34bffbe094db0f1f4b0220fabf794f19ead189f8f2252eec47dd4f472254aaf8",
+    "checkpoints/v28_2_07f1da25bf4c/A/paso_0100_96f40ee849f6.pt": "b80076760927d3aa4e10fc6ca3931c881ccef7b21a07dd9445d9703d946d2d29",
+    "checkpoints/v28_2_07f1da25bf4c/A/paso_0200_63af97e9724d.pt": "09f4f32809fa71d620dfeaa979077a7aeedb5fa8021f0d6def30ab214be33233",
+    "checkpoints/v28_2_07f1da25bf4c/A/paso_0300_dbf205fc4410.pt": "722ca1f45dcced179086f37942a4d9d7a5ef28e7a5543637a9892a1ded78e407",
+    "checkpoints/v28_2_07f1da25bf4c/B/paso_0000_8fc2aa6b67a4.pt": "3696b3c23c577afc04d5c55b4bf92940031237a23d4d453f880b627ef4d154c1",
+    "checkpoints/v28_2_07f1da25bf4c/B/paso_0100_be3b635931c8.pt": "b56a64de4d881371658f9b859e836fecc8acab8aeeeccdbc4336f53dac1564b6",
+    "checkpoints/v28_2_07f1da25bf4c/B/paso_0200_f943e66b300f.pt": "9b56e034ec122ac8bebb0a01ec309849cc5edb0ccaa73baa86b0116460b2414f",
+    "checkpoints/v28_2_07f1da25bf4c/B/paso_0300_c1181c7aa0a5.pt": "541276a8ea58a6df7b1b9ec356859651960e6b2e998ec59745d448ca8536c42e"
+  },
+  "checkpoint_original_intacto": true,
+  "datasets_historicos_intactos": true,
+  "V28_NO_ENTRENAR_intacto": true,
+  "val_test_generalizacion_evaluados": false,
+  "modelo_predeterminado_modificado": false,
+  "pesos_pilotos_desechados": true,
+  "controles_actualizados": "4f0e3638652f2978abac74f6617a19ce3f54a1e80601f76f054100fd33b4d469"
+}

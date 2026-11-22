@@ -1,0 +1,35 @@
+............................................................................................................................................."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/exportar HTTP/1.1" 404 -
+"POST /api/exportar HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 400 -
+"GET /../../README.md HTTP/1.1" 404 -
+"GET /api/imagen?id=../../README.md HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=independiente HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET / HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 200 -
+"GET / HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+..............................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 322 tests in 63.571s
+
+OK
