@@ -1,0 +1,15 @@
+{
+  "conclusion": "B final: mAP50 de cinco vistas 1.5013 %, A 1.5113 %, origen con el mismo backend 2.9121 % e histórico 2.9123 %. AP50 de cartón B=0.0000 %; vidrio B=0.0000 %. No se adopta automáticamente ningún checkpoint.",
+  "interpretacion": "La decisión debe considerar conjuntamente AP por material, mAP, recall, precisión, FP, geometría y oportunidades; la recuperación condicional en train no demuestra generalización. No se recomienda adoptar B: cartón y vidrio siguen sin AP50 y ninguno de sus dos estados evaluados supera el mAP50 de la referencia. La intervención no solucionó la detección de esos materiales.",
+  "condicionales_carton_A_B": [
+    48,
+    48
+  ],
+  "oportunidades_carton_pre_A_B": [
+    0,
+    0
+  ],
+  "mejora_condicional_sin_resolver_deteccion": false,
+  "adopcion_automatica": false,
+  "test_evaluado": false
+}

@@ -28,7 +28,7 @@ CODIGOS=['ecowaste/discriminacion_mapas.py','ecowaste/detector_mapas.py','ecowas
     'pruebas/test_discriminacion_mapas.py','ecowaste/reanudacion_v20.py',
     'scripts/entrenar_v20.py','scripts/probar_entrenamiento_v20.py','pruebas/test_entrenamiento_v20.py',
     'scripts/ejecutar_diagnostico_reproducibilidad_v20.py','pruebas/test_reproducibilidad_v20.py',
-    'scripts/validar_backend_v23.py','pruebas/test_backend_numerico.py']
+    'scripts/validar_backend_v23.py','pruebas/test_backend_numerico.py','pruebas/test_evaluacion_v20.py']
 
 
 def leer_cfg():return json.loads(CONFIG.read_text(encoding='utf-8'))

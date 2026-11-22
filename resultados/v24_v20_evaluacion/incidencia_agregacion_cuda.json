@@ -1,0 +1,10 @@
+{
+  "fase": "evaluacion posterior al entrenamiento completo",
+  "error": "_bincount_cuda does not have a deterministic implementation",
+  "lugar": "metricas_instancias, resumen GT de train, no forward ni perdida",
+  "pasos_A": 1452,
+  "pasos_B": 1452,
+  "captura_origen_completa_conservada": true,
+  "correccion_propuesta": "reduccion ponderada GT en CPU; inferencia y determinismo V23 conservados",
+  "pesos_y_checkpoints_sin_cambios": true
+}
