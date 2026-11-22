@@ -1,0 +1,52 @@
+{
+  "cuotas_train": {
+    "plastico": {
+      "objetivo": 150,
+      "aceptadas": 0,
+      "pendientes": 150,
+      "propuestas_piloto_material": 98
+    },
+    "papel": {
+      "objetivo": 300,
+      "aceptadas": 0,
+      "pendientes": 300,
+      "propuestas_piloto_material": 0
+    },
+    "carton": {
+      "objetivo": 300,
+      "aceptadas": 0,
+      "pendientes": 300,
+      "propuestas_piloto_material": 80
+    },
+    "vidrio": {
+      "objetivo": 250,
+      "aceptadas": 0,
+      "pendientes": 250,
+      "propuestas_piloto_material": 12
+    },
+    "metal": {
+      "objetivo": 150,
+      "aceptadas": 0,
+      "pendientes": 150,
+      "propuestas_piloto_material": 8
+    },
+    "organico": {
+      "objetivo": 400,
+      "aceptadas": 0,
+      "pendientes": 400,
+      "propuestas_piloto_material": 0
+    }
+  },
+  "train_total_pendiente": 1550,
+  "generalizacion_pendiente": 600,
+  "organicos_utilizables_pendientes": 300,
+  "suficiente_revisada_congelada": false,
+  "V28_habilitada": false,
+  "limites": "Propuestas no son objetos físicos distintos ni GT aceptado. Fuentes públicas no sustituyen generalización capturada de forma separada.",
+  "captura_manual_prioritaria": [
+    "papel:300, sin fuente espacial suficientemente verificada en el piloto",
+    "organico:400 con >=300 regiones útiles; HPI solo 12 comidas conocidas, no multiplicar vistas",
+    "generalizacion:600 de sitios, objetos y sesiones nuevos bajo protocolo bloqueado",
+    "carton/vidrio/metal: completar escenas y objetos físicos diversos; no confiar solo en repeticiones de cinta industrial"
+  ]
+}

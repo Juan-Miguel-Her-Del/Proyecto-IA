@@ -1,0 +1,16 @@
+{
+  "version": "ecowaste_adquisicion_publica_v27_1",
+  "semilla_seleccion": "v27_piloto_1",
+  "fuentes_descargadas": {
+    "zerowaste": {"registro": "https://zenodo.org/records/6412647", "archivo": "zerowaste-f-final.zip", "bytes_archivo_remoto": 7518242799, "checksum_md5_declarado_no_verificado_completo": "e26e31a58080bca6782dca0e56074c5d", "split": "train", "imagenes_piloto": 24, "permiso_aplicado": "academico_no_comercial_con_atribucion_segun_autores", "conflicto_licencia_documentado": true, "excluir_ZeroWasteAug": true},
+    "warp": {"fuente_autor": "https://www.kaggle.com/datasets/parohod/warp-waste-recycling-plant-dataset", "version_en_metadata": 3, "url_repeticion_versionada": "https://www.kaggle.com/api/v1/datasets/download/parohod/warp-waste-recycling-plant-dataset?datasetVersionNumber=3", "bytes_zip_observados": 844977310, "licencia_metadata_original": "CC0: Public Domain", "subconjunto": "Warp-D/train", "imagenes_piloto": 24, "no_usar_crops_Warp_C_como_datos_independientes": true},
+    "hpi": {"fuente": "https://huggingface.co/datasets/AI-ServicesBB/food-waste-dataset", "revision_ficha": "f008d0c7b41ea4408b66bd1b7bb9ecd58b70349d", "revision_assets": "d125987da2bae5c5825d873946ee35a8cc6a95c5", "lfs_sha256_parquet_train_igual_en_ambas": "1e7d20a1378cecc42090044d8760dd97155cdfd689940b4a8ab080bf75d71460", "licencia": "CC-BY-4.0", "split": "train", "una_foto_por_bonid": true, "imagenes_piloto": 12, "crear_anotaciones_desde_etiquetas_globales": false}
+  },
+  "mapeo": {"ZeroWaste_cardboard": "propuesta_carton_revisar_composicion", "ZeroWaste_soft_y_rigid_plastic": "propuesta_plastico", "ZeroWaste_metal": "propuesta_metal", "WaRP_glass_prefijo": "propuesta_vidrio", "WaRP_bottle_prefijo": "propuesta_plastico_segun_definicion_autores", "WaRP_milk_y_juice_cardboard": "revision_compuesto_no_carton_automatico", "otras_WaRP": "revision_material"},
+  "metadatos_fisicos_desconocidos": "null; no generar IDs físicos, sesiones ni fechas ficticias",
+  "aceptacion_humana_automatica": false,
+  "registro_de_cuotas_aceptadas": false,
+  "generalizacion_desbloqueada": false,
+  "entrenamiento_autorizado": false,
+  "test_evaluado": false
+}
