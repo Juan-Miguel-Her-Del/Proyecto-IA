@@ -1,0 +1,213 @@
+{
+  "version": "v28_auxiliar_usuario_AB_propuesta_1",
+  "estado": "bloqueado_por_QA_y_autorizacion_pendientes",
+  "entrenamiento_autorizado": false,
+  "evaluacion_autorizada": false,
+  "hash_datos": null,
+  "checkpoint_origen": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "sha256_checkpoint_origen": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "arquitectura": {
+    "imagen": 384,
+    "dimension": 96,
+    "escala_posicion": 0.1,
+    "formulacion": "softmax7",
+    "auxiliar_clasificacion": true
+  },
+  "origen_epoca": 19,
+  "estado_inicial_huellas": {
+    "pesos": "24a163c141b4a92015965574253fccf3b543ee7eee4feefc26eff170446a57ef",
+    "adamw": "1b1d45e084c57330b8a575fa7280c97832d931012bc94bb063953f7724700919",
+    "scaler": "1c0287e48d77f8f597e9979356fb10ee9466307d42240c9a23d4f4e8ca22f701",
+    "rng": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312"
+  },
+  "restaurar": [
+    "pesos",
+    "optimizador_AdamW",
+    "scaler",
+    "rng_torch",
+    "rng_cuda",
+    "rng_loader",
+    "rng_auxiliar"
+  ],
+  "paso_adam_origen": [
+    2299.0
+  ],
+  "backend_numerico": {
+    "version": "v20_backend_v23_1",
+    "modo": "completo",
+    "sdpa": "math",
+    "amp": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": true,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "clip_foreach": false,
+    "adam_foreach": false,
+    "adam_fused": false
+  },
+  "RAM_GPU": "medir max_memory_allocated/reserved y tiempo sincronizado, sin afirmar estimaciones",
+  "semilla_stream_auxiliar": 2801,
+  "presupuesto_actualizaciones_por_rama": 300,
+  "justificacion_presupuesto": "600 exposiciones auxiliares con 2 imágenes/paso: 10–15 pasadas medias sobre 40–60 fotos; piloto de capacidad, no entrenamiento final",
+  "lote_detector": 8,
+  "ramas": {
+    "A": {
+      "historicas_comunes": 6,
+      "historicas_control": 2,
+      "nuevas": 0
+    },
+    "B": {
+      "historicas_comunes": 6,
+      "historicas_control": 0,
+      "nuevas": 2
+    }
+  },
+  "estimando": "sustitucion_del_25_por_ciento_del_lote_por_auxiliares_revisadas_a_igual_compute",
+  "limite_causal": "B ve 1800 muestras históricas y 600 nuevas; A ve 2400 históricas. No es adición con exposición histórica idéntica.",
+  "muestreo": "6 anclas históricas idénticas por actualización A/B; dos ranuras control/tratamiento; permutaciones sin reemplazo por ciclo; flujos RNG separados y guardados",
+  "aumentos": "flip horizontal p=.5, brillo/contraste uniformes [.85,1.15]; sorteos por posición iguales A/B; auxiliar global con stream propio idéntico",
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "clipping_norma": 1.0,
+  "justificacion_LR": "continuación breve desde ep19 con AdamW y fase estable restaurados; mantiene LR del origen, no ajuste guiado por val ni nuevo warmup",
+  "warmup_nuevo": false,
+  "scheduler_nuevo": false,
+  "AMP": true,
+  "scaler_origen": {
+    "scale": 2048.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 299
+  },
+  "perdida": "perdida_mapas histórica softmax7, foreground+3*fondo+Dice, sin pérdidas V17/V20",
+  "pesos_materiales_fijos_historicos": [
+    0.13340365886688232,
+    0.46945813298225403,
+    0.31428980827331543,
+    0.5662046670913696,
+    0.30802488327026367,
+    3.0
+  ],
+  "fuente_pesos": {
+    "archivo": "resultados/detector_mapas_v6_auxiliar_ext48.json",
+    "sha256": "416f0c7d8452fad58c7888b1aa9a29c29afaca81bbd69804850573e51e101c09"
+  },
+  "recalcular_pesos_con_datos_nuevos": false,
+  "auxiliar_global": {
+    "batch_size": 16,
+    "coeficiente": 0.5,
+    "datos_y_orden_iguales_A_B": true
+  },
+  "datos_necesarios": {
+    "imagenes_minimo": 40,
+    "imagenes_maximo": 60,
+    "poligonos_por_material_minimo": 8,
+    "orgánicos_alimentarios_prioritarios_minimo": 8,
+    "no_sustituir_comida_por_vegetacion_ambigua": true,
+    "candidatas_actuales": 28,
+    "poligonos_HPI_actuales_candidatos": 3,
+    "faltan_HPI_hasta_8": 5,
+    "aceptacion_auxiliar": "usuario_unico+QA_resuelta; NO aceptación V26"
+  },
+  "seleccion_futura": "tras resolver QA: menor prefijo de permutación determinista semilla2801 que cubra >=40 imágenes y >=8 instancias/clase, hasta60; guardar manifiesto antes de inferencia",
+  "targets": "384×384 letterbox, máscara48×48, cobertura1/64; huecos preservados, padding/compuestos/mezcla material ignorados; equivalencia con histórico a verificar",
+  "agrupacion": "fuentes enteras, nombres fuente/bonid y duplicados unidos; todo auxiliar candidato train; no fabricar sesiones ni identidades",
+  "evaluacion": {
+    "dominios": [
+      "train histórico completo",
+      "auxiliar train seleccionado"
+    ],
+    "modelos": [
+      "original ep19 bajo mismo backend",
+      "A paso300",
+      "B paso300"
+    ],
+    "vistas": [
+      1,
+      5
+    ],
+    "metricas": [
+      "mAP50",
+      "mAP50_95",
+      "AP50_seis_materiales",
+      "recall",
+      "precision",
+      "TP",
+      "FP",
+      "FN",
+      "FP_por_100_imagenes",
+      "confusion_material_fondo",
+      "IoU_semantico",
+      "recuperacion_por_instancia",
+      "geometria_y_fusion",
+      "tiempo",
+      "memoria_GPU"
+    ],
+    "predicciones_y_trazas_por_imagen_guardadas": true,
+    "GT_solo_analisis_no_inferencia": true,
+    "val_historica": false,
+    "test": false,
+    "generalizacion_bloqueada": true,
+    "seleccion_mejor_checkpoint": false,
+    "checkpoint_comparado": "final mismo presupuesto300",
+    "conclusion_permitida": "capacidad de ajuste train; NO generalización"
+  },
+  "postprocesamiento": {
+    "argmax7": true,
+    "fondo": 3,
+    "umbral": 0.05,
+    "umbral_visual": 0.35,
+    "area_minima": 2,
+    "conectividad": 8,
+    "NMS": 0.5,
+    "top": 100,
+    "vistas_predeterminadas": 5
+  },
+  "checkpoints": {
+    "pasos": [
+      0,
+      100,
+      200,
+      300
+    ],
+    "ruta_futura_exclusiva": "checkpoints/v28_auxiliar_<hash_datos>_<id_ejecucion>/A_o_B/paso_N.pt",
+    "sobrescribir": false,
+    "reanudar": "mismo protocolo/dataset/backend, estados AdamW/scaler/RNG/cursores/historial restaurados"
+  },
+  "parada_temprana_por_metricas": false,
+  "parada_por_error": [
+    "integridad",
+    "no_finitos",
+    "paso_AdamW_omitido",
+    "presupuesto_excedido",
+    "backend_distinto",
+    "reanudacion_incompatible"
+  ],
+  "criterio_descriptivo_exito": [
+    "mAP50 auxiliar B>A",
+    "AP50 cartón y vidrio auxiliar B>A",
+    "mAP50 histórico B>=A",
+    "recall y precisión auxiliares B>=A",
+    "FP/100 auxiliares B<=A"
+  ],
+  "interpretacion": "si mejora material condicional sin AP/oportunidades, declarar que no solucionó detección; informar todos los tradeoffs",
+  "adopcion_automatica": false,
+  "cambiar_checkpoint_predeterminado": false,
+  "controles_antes_de_ejecutar": [
+    "revisión del informe y autorización expresa",
+    "QA y dataset final congelados con hash",
+    "adaptador de máscaras/huecos y lote mixto verificado",
+    "trazas A/B pareadas de entradas/aumentos",
+    "prueba de gradientes y reanudación diagnóstica después de autorización; no realizada en V28 preparación"
+  ],
+  "identidad_bit_a_bit_afirmada": false
+}
