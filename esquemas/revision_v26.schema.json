@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ecowaste:revision:v26:1",
+  "title": "Revisión humana vinculada a una versión y a una imagen",
+  "type": "object",
+  "required": ["version", "sha256_coleccion", "imagen_id", "sha256_imagen", "fase", "revisor_id", "declaracion", "cobertura_completa", "instancias", "motivo"],
+  "properties": {
+    "version": {"const": "ecowaste_datos_reales_v26_1"},
+    "sha256_coleccion": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "sha256_imagen": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "imagen_id": {"type": "string", "minLength": 1}, "revisor_id": {"type": "string", "minLength": 1},
+    "fase": {"enum": ["primera", "segunda", "adjudicacion"]},
+    "declaracion": {"enum": ["humana_independiente", "humana_adjudicada"]},
+    "cobertura_completa": {"const": true}, "motivo": {"type": "string", "minLength": 1},
+    "solapes_revisados": {"type": "boolean"},
+    "no_visibles": {"type": "object", "additionalProperties": {"type": "object", "required": ["motivo", "detalle"], "properties": {
+      "motivo": {"enum": ["totalmente_ocluido", "fuera_cuadro", "no_es_residuo"]}, "detalle": {"type": "string", "minLength": 1}
+    }}},
+    "duplicados_resueltos": {"type": "array", "items": {"type": "object", "required": ["candidato", "decision", "motivo"], "properties": {
+      "candidato": {"type": "string"}, "decision": {"const": "distinto"}, "motivo": {"type": "string", "minLength": 1}
+    }}},
+    "instancias": {"type": "array", "items": {"type": "object", "required": ["id", "objeto_fisico_id", "material", "poligonos", "visible_only", "oclusion", "truncado", "transparente", "solapa_con"], "properties": {
+      "id": {"type": "string"}, "objeto_fisico_id": {"type": "string"},
+      "material": {"enum": ["plastico", "papel", "carton", "vidrio", "metal", "organico", "ambiguo", "compuesto", "fuera_alcance"]},
+      "poligonos": {"type": "array", "minItems": 1, "items": {"type": "array", "minItems": 6, "items": {"type": "number"}}},
+      "visible_only": {"const": true}, "oclusion": {"enum": ["ninguna", "parcial", "alta"]},
+      "truncado": {"type": "boolean"}, "transparente": {"type": "boolean"}, "solapa_con": {"type": "array", "items": {"type": "string"}},
+      "motivo_ambiguo": {"type": ["string", "null"]}
+    }}}
+  }
+}

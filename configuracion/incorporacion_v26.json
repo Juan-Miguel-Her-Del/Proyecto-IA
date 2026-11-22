@@ -1,0 +1,22 @@
+{
+  "version": "ecowaste_datos_reales_v26_1",
+  "referencia_v25": "resultados/v25_datos_representacion/propuesta_coleccion.json",
+  "clases": ["plastico", "papel", "carton", "vidrio", "metal", "organico"],
+  "doble_anotacion_obligatoria": ["carton", "vidrio", "papel", "organico"],
+  "muestreo_doble_resto": 0.2,
+  "cuotas_train": {"plastico": 150, "papel": 300, "carton": 300, "vidrio": 250, "metal": 150, "organico": 400},
+  "escenas_train_minimas": 500,
+  "escenas_train_objetivo_maximo": 650,
+  "escenas_prioritarias_minimas": 100,
+  "objetos_fisicos_prioritarios_minimos": 100,
+  "maximo_por_material_y_escena_para_cuota": 5,
+  "organicos_utilizables_minimos": 300,
+  "organicos_utilizables_maximo_por_objeto": 3,
+  "organicos_utilizables_componente_minimo_48": 2,
+  "generalizacion": {"escenas_minimas": 120, "escenas_objetivo_maximo": 180, "instancias_por_clase": 100, "escenas_por_clase": 50},
+  "particion": {"semilla": 2601, "fraccion_generalizacion": 0.2, "unir_por": ["sitio_id", "sesion_id", "escena_id", "grupo_captura_id", "secuencia_id", "objeto_fisico_id", "duplicados_candidatos"]},
+  "qa": {"distancia_phash_candidata": 4, "iou_anotadores_revision": 0.85, "tolerancia_bbox": 0.000001, "no_autocorregir_poligonos": true},
+  "entrenamiento_autorizado": false,
+  "evaluacion_autorizada": false,
+  "test_original_reservado": true
+}

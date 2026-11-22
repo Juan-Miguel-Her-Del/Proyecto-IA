@@ -1,0 +1,18 @@
+{
+  "version": "generalizacion_v26_1",
+  "estado": "preregistrado_bloqueado_sin_imagenes",
+  "seleccion_datos": "grupos_por_objeto_sesion_sitio_secuencia_antes_de_resultados_de_modelos",
+  "semilla_particion": 2601,
+  "referencia": {"checkpoint": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt", "epoca": 19, "sha256": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9"},
+  "inferencia_futura": {"vistas": [1, 5], "principal": 5, "argmax": "siete_clases", "umbral": 0.05, "umbral_visual": 0.35, "area_minima": 2, "conectividad": 8, "nms": 0.5, "top": 100, "backend": "historico_de_la_referencia_registrado_en_V25"},
+  "metricas": ["mAP50", "mAP50_95", "AP50_seis_materiales", "recall", "precision", "TP", "FP", "FN", "FP_por_escena", "confusion_material_fondo", "geometria", "fusion", "coste_y_memoria"],
+  "evaluador": "propio_101_puntos_con_ignore_regions_no_COCOeval_oficial",
+  "intervalos": {"metodo": "bootstrap_pareado_por_grupo_de_captura_conectado", "replicas": 2000, "semilla": 2601, "nivel": 0.95},
+  "criterio_previo_evidencia_favorable": {"delta_map50_cinco_vistas_mayor_que": 0, "AP50_carton_vidrio_organico_mayor_que_referencia": true, "AP50_papel_no_disminuye": true, "recall_global_no_disminuye": true, "FP_por_escena_incremento_relativo_maximo": 0.1, "interpretar_intervalos_y_soporte": true},
+  "candidatos": "declarar_ids_y_SHA_antes_de_abrir_la_coleccion_en_una_autorizacion_futura",
+  "prohibiciones": ["ajustar_umbrales_en_generalizacion", "seleccionar_epocas_en_generalizacion", "evaluaciones_iterativas_para_buscar_variantes", "adopcion_automatica"],
+  "desbloqueo": "requiere_coleccion_suficiente_congelada_y_nueva_autorizacion_explicita; V26_no_incluye_comando_de_evaluacion",
+  "evaluacion_autorizada": false,
+  "entrenamiento_autorizado": false,
+  "test_original_evaluado": false
+}

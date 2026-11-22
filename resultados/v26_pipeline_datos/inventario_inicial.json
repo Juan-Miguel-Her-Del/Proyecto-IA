@@ -1,0 +1,166 @@
+{
+  "version": "ecowaste_datos_reales_v26_1",
+  "tipo_datos": "real",
+  "splits": {
+    "train_nuevo": {
+      "imagenes_recibidas": 0,
+      "escenas_recibidas": 0,
+      "imagenes_adjudicadas": 0,
+      "escenas_adjudicadas": 0,
+      "por_material": {
+        "plastico": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 150,
+          "pendientes": 150,
+          "organicos_utilizables_48": null
+        },
+        "papel": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 300,
+          "pendientes": 300,
+          "organicos_utilizables_48": null
+        },
+        "carton": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 300,
+          "pendientes": 300,
+          "organicos_utilizables_48": null
+        },
+        "vidrio": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 250,
+          "pendientes": 250,
+          "organicos_utilizables_48": null
+        },
+        "metal": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 150,
+          "pendientes": 150,
+          "organicos_utilizables_48": null
+        },
+        "organico": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 400,
+          "pendientes": 400,
+          "organicos_utilizables_48": 0
+        }
+      },
+      "estados": {},
+      "datos_reales_computables": true
+    },
+    "generalizacion_bloqueada": {
+      "imagenes_recibidas": 0,
+      "escenas_recibidas": 0,
+      "imagenes_adjudicadas": 0,
+      "escenas_adjudicadas": 0,
+      "por_material": {
+        "plastico": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": null
+        },
+        "papel": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": null
+        },
+        "carton": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": null
+        },
+        "vidrio": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": null
+        },
+        "metal": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": null
+        },
+        "organico": {
+          "instancias_adjudicadas": 0,
+          "instancias_computables_cuota": 0,
+          "escenas": 0,
+          "objetos_fisicos_distintos": 0,
+          "objetivo": 100,
+          "pendientes": 100,
+          "organicos_utilizables_48": 0
+        }
+      },
+      "estados": {},
+      "datos_reales_computables": true
+    }
+  },
+  "bloqueos": [
+    "coleccion_sin_imagenes_reales",
+    "cuota_train_plastico",
+    "cuota_train_papel",
+    "diversidad_escenas_papel",
+    "diversidad_fisica_papel",
+    "cuota_train_carton",
+    "diversidad_escenas_carton",
+    "diversidad_fisica_carton",
+    "cuota_train_vidrio",
+    "diversidad_escenas_vidrio",
+    "diversidad_fisica_vidrio",
+    "cuota_train_metal",
+    "cuota_train_organico",
+    "diversidad_escenas_organico",
+    "diversidad_fisica_organico",
+    "escenas_train_insuficientes",
+    "menos_300_organicos_utilizables_48",
+    "escenas_generalizacion_insuficientes",
+    "generalizacion_soporte_plastico",
+    "generalizacion_soporte_papel",
+    "generalizacion_soporte_carton",
+    "generalizacion_soporte_vidrio",
+    "generalizacion_soporte_metal",
+    "generalizacion_soporte_organico"
+  ],
+  "coleccion_suficiente_y_revisada": false,
+  "entrenamiento_autorizado": false,
+  "evaluacion_autorizada": false,
+  "sha256_cohorte": "062ec2bc2662cb24a63d2c6c4c86ffe03f5f7c2ee7169924276289954e38a58c",
+  "sha256_plan": "6e39b1da0d3c77e0c7c1f8dac3d3073b73cdbe12c3ac7924cf8ea37584b62332",
+  "test_original_evaluado": false
+}

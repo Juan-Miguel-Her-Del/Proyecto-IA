@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ecowaste:anotaciones:v26:1",
+  "title": "TACO extendido para adquisición real EcoWasteFormer V26",
+  "description": "El validador Python añade referencias, geometría, hashes y revisión; cumplir JSON Schema no convierte una propuesta en GT.",
+  "type": "object",
+  "required": ["eco", "images", "annotations", "categories", "physical_objects"],
+  "properties": {
+    "eco": {"type": "object", "required": ["version", "coleccion_id", "tipo_datos"], "properties": {
+      "version": {"const": "ecowaste_datos_reales_v26_1"},
+      "coleccion_id": {"$ref": "#/$defs/id"}, "tipo_datos": {"enum": ["real", "fixture"]}
+    }},
+    "images": {"type": "array", "items": {"$ref": "#/$defs/imagen"}},
+    "annotations": {"type": "array", "items": {"$ref": "#/$defs/instancia"}},
+    "categories": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "name"], "properties": {"id": {"$ref": "#/$defs/id"}, "name": {"type": "string", "minLength": 1}}}},
+    "physical_objects": {"type": "array", "items": {"type": "object", "required": ["id", "material_declarado", "evidencia_identidad"], "properties": {
+      "id": {"$ref": "#/$defs/id"}, "material_declarado": {"enum": ["plastico", "papel", "carton", "vidrio", "metal", "organico", "ambiguo", "compuesto", "fuera_alcance", "por_verificar"]},
+      "evidencia_identidad": {"type": "string", "minLength": 1}
+    }}}
+  },
+  "$defs": {
+    "id": {"oneOf": [{"type": "integer", "minimum": 0}, {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9:_-]{0,127}$"}]},
+    "poligonos": {"type": "array", "minItems": 1, "items": {"type": "array", "minItems": 6, "items": {"type": "number", "minimum": 0}}},
+    "imagen": {"type": "object", "required": ["id", "file_name", "width", "height", "eco"], "properties": {
+      "id": {"$ref": "#/$defs/id"}, "file_name": {"type": "string", "minLength": 1},
+      "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+      "eco": {"type": "object", "required": ["sha256_archivo", "escena_id", "sitio_id", "sesion_id", "grupo_captura_id", "secuencia_id", "dispositivo_id", "capturado_en", "procedencia", "objetos_fisicos_ids"], "properties": {
+        "sha256_archivo": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "escena_id": {"$ref": "#/$defs/id"}, "sitio_id": {"$ref": "#/$defs/id"}, "sesion_id": {"$ref": "#/$defs/id"}, "grupo_captura_id": {"$ref": "#/$defs/id"},
+        "secuencia_id": {"oneOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+        "fotograma": {"type": ["integer", "null"], "minimum": 0}, "dispositivo_id": {"$ref": "#/$defs/id"},
+        "capturado_en": {"type": "string", "format": "date-time"},
+        "objetos_fisicos_ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "destino_previsto": {"enum": ["sin_asignar", "train_nuevo", "generalizacion_bloqueada"]},
+        "procedencia": {"type": "object", "required": ["tipo", "autor", "referencia", "licencia", "permiso_ref", "permiso_confirmado"], "properties": {
+          "tipo": {"enum": ["captura_real", "fixture", "reuso_historico"]},
+          "autor": {"type": "string", "minLength": 1}, "referencia": {"type": "string", "minLength": 1},
+          "licencia": {"type": "string", "minLength": 1}, "permiso_ref": {"type": "string", "minLength": 1}, "permiso_confirmado": {"const": true}
+        }}
+      }}
+    }},
+    "instancia": {"type": "object", "required": ["id", "image_id", "category_id", "segmentation", "eco"], "properties": {
+      "id": {"$ref": "#/$defs/id"}, "image_id": {"$ref": "#/$defs/id"}, "category_id": {"$ref": "#/$defs/id"},
+      "segmentation": {"$ref": "#/$defs/poligonos"}, "bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+      "iscrowd": {"const": 0}, "area": {"type": "number", "exclusiveMinimum": 0},
+      "eco": {"type": "object", "required": ["objeto_fisico_id", "origen", "visible_only", "oclusion", "truncado", "transparente", "solapa_con"], "properties": {
+        "objeto_fisico_id": {"$ref": "#/$defs/id"}, "origen": {"enum": ["humana", "propuesta_automatica"]},
+        "visible_only": {"const": true}, "holes": {"type": "array", "maxItems": 0},
+        "oclusion": {"enum": ["ninguna", "parcial", "alta"]}, "truncado": {"type": "boolean"}, "transparente": {"type": "boolean"},
+        "solapa_con": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}, "motivo_ambiguo": {"type": ["string", "null"]}
+      }}
+    }}
+  }
+}
