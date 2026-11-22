@@ -1,0 +1,72 @@
+{
+  "estado": "propuesta_no_recolectada_no_entrenada",
+  "intervencion_prioritaria": "coleccion_real_por_instancia_con_cobertura_y_ambiguedad_controladas",
+  "instancias_nuevas_train": {
+    "plastico": 150,
+    "papel": 300,
+    "carton": 300,
+    "vidrio": 250,
+    "metal": 150,
+    "organico": 400
+  },
+  "total_instancias_nuevas_train": 1550,
+  "escenas_nuevas_train_intervalo": [
+    500,
+    650
+  ],
+  "minimo_escenas_independientes_clases_prioritarias": 100,
+  "minimo_ejemplares_fisicos_distintos_por_clase_prioritaria": 100,
+  "tope_instancias_material_por_escena_para_cumplir_cuota": 5,
+  "minimo_regiones_organicas_sin_ambiguedad_y_validas_48": 300,
+  "justificacion": "Llevar minoritarias a aproximadamente >=400 instancias totales y ampliar escenas; organico 5->405, papel109->409, carton149->449, vidrio203->453. No es tamano optimo ni garantiza AP.",
+  "coleccion_independiente": {
+    "escenas_intervalo": [
+      120,
+      180
+    ],
+    "minimo_instancias_por_material": 100,
+    "minimo_escenas_con_cada_material": 50,
+    "separacion_por": [
+      "objeto_fisico",
+      "secuencia",
+      "sesion",
+      "dia_sitio"
+    ],
+    "dominios": [
+      "camaras_web_y_MP4_reales",
+      "exterior",
+      "interior",
+      "fondos_y_dispositivos_no_usados_en_train"
+    ],
+    "bloquear_antes_de_comparar_modelos": true,
+    "no_se_usa_para_seleccionar_umbrales": true,
+    "incertidumbre": "100 instancias independientes darian error aprox maximo de recall +/-9.8 puntos al95%; aqui agrupadas, usar bootstrap por escena y no prometer esa precision.",
+    "evaluacion_ahora": false
+  },
+  "prioridad_materiales": [
+    "organico",
+    "vidrio",
+    "carton",
+    "papel"
+  ],
+  "politica_anotacion": [
+    "solo_imagenes_reales_con_procedencia_y_permiso",
+    "una_identidad_por_objeto",
+    "poligono_visible_y_bbox_derivada",
+    "no_rellenar_a_traves_de_oclusores_ni_envoltorios_opacos",
+    "separar_material_compuesto_o_desconocido_sin_forzar_seis_clases",
+    "banderas_occlusion_truncamiento_transparencia",
+    "conservar_huecos_si_formato_lo_permite_documentar_limitacion_TACO_poligonos_sin_huecos",
+    "doble_anotacion_prioritarias_y_20porciento_resto_con_adjudicacion",
+    "no_cajas_desde_etiquetas_globales_RealWaste"
+  ],
+  "puertas_antes_de_entrenar": [
+    "censo_y_validacion_de_geometria",
+    "adjudicar_composites_y_solapes",
+    "congelar_particiones_por_adquisicion",
+    "verificar_cobertura_por_instancia_y_no_solo_conteos",
+    "aprobar_protocolo_y_una_sola_modificacion_futura"
+  ],
+  "cambios_arquitectonicos_en_esta_fase": false,
+  "test_original_reservado": true
+}

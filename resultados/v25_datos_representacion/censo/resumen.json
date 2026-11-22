@@ -1,0 +1,662 @@
+{
+  "version": "v25_censo_gt_48_96_384_sin_entrenamiento_v1",
+  "splits": {
+    "train": {
+      "escenas": 964,
+      "censo": {
+        "total": {
+          "instancias": 3267,
+          "escenas": 964,
+          "categorias": {
+            "Glass bottle": 65,
+            "Meal carton": 20,
+            "Other carton": 62,
+            "Clear plastic bottle": 224,
+            "Plastic bottle cap": 166,
+            "Drink can": 176,
+            "Food Can": 33,
+            "Other plastic bottle": 41,
+            "Pop tab": 82,
+            "Glass cup": 3,
+            "Other plastic wrapper": 202,
+            "Styrofoam piece": 94,
+            "Plastic film": 271,
+            "Other plastic": 196,
+            "Drink carton": 33,
+            "Metal bottle cap": 55,
+            "Disposable food container": 24,
+            "Aerosol": 7,
+            "Normal paper": 54,
+            "Cigarette": 330,
+            "Single-use carrier bag": 47,
+            "Tissues": 18,
+            "Toilet tube": 5,
+            "Crisp packet": 19,
+            "Plastic lid": 57,
+            "Metal lid": 2,
+            "Egg carton": 8,
+            "Plastic straw": 130,
+            "Paper bag": 24,
+            "Paper cup": 42,
+            "Disposable plastic cup": 77,
+            "Broken glass": 134,
+            "Plastic utensils": 30,
+            "Glass jar": 1,
+            "Food waste": 5,
+            "Squeezable tube": 4,
+            "Spread tub": 7,
+            "Shoe": 2,
+            "Garbage bag": 25,
+            "Aluminium foil": 48,
+            "Six pack rings": 3,
+            "Foam cup": 13,
+            "Paper straw": 2,
+            "Corrugated carton": 51,
+            "Unlabeled litter": 313,
+            "Aluminium blister pack": 2,
+            "Battery": 1,
+            "Pizza box": 3,
+            "Scrap metal": 13,
+            "Plastic glooves": 4,
+            "Magazine paper": 2,
+            "Rope & strings": 8,
+            "Polypropylene bag": 2,
+            "Wrapping paper": 9,
+            "Other plastic container": 3,
+            "Carded blister pack": 1,
+            "Foam food container": 10,
+            "Tupperware": 3,
+            "Other plastic cup": 1
+          },
+          "tamanos": {
+            "32_px_o_mas": 947,
+            "8_a_16_px": 444,
+            "menos_8_px": 502,
+            "16_a_32_px": 612,
+            "null": 762
+          },
+          "tocan_borde": 118,
+          "cruces_estrictos": 44,
+          "bbox_poligono_iou_menor_090": 0,
+          "fuera_imagen": 4,
+          "degenerados": 0,
+          "elegibles": 2439,
+          "omitidas_por_razon": {
+            "sin_tokens_no_ambiguos_validos": 66
+          },
+          "lotes": {
+            "taco:batch_1": 300,
+            "taco:batch_11": 224,
+            "taco:batch_12": 493,
+            "taco:batch_13": 265,
+            "taco:batch_14": 169,
+            "taco:batch_15": 315,
+            "taco:batch_5": 271,
+            "taco:batch_6": 405,
+            "taco:batch_7": 400,
+            "taco:batch_8": 425
+          }
+        },
+        "por_material": {
+          "plastico": {
+            "instancias": 1630,
+            "escenas": 757,
+            "categorias": {
+              "Clear plastic bottle": 224,
+              "Plastic bottle cap": 166,
+              "Other plastic bottle": 41,
+              "Other plastic wrapper": 202,
+              "Styrofoam piece": 94,
+              "Plastic film": 271,
+              "Other plastic": 196,
+              "Disposable food container": 24,
+              "Single-use carrier bag": 47,
+              "Plastic lid": 57,
+              "Plastic straw": 130,
+              "Disposable plastic cup": 77,
+              "Plastic utensils": 30,
+              "Spread tub": 7,
+              "Garbage bag": 25,
+              "Six pack rings": 3,
+              "Foam cup": 13,
+              "Plastic glooves": 4,
+              "Polypropylene bag": 2,
+              "Other plastic container": 3,
+              "Foam food container": 10,
+              "Tupperware": 3,
+              "Other plastic cup": 1
+            },
+            "tamanos": {
+              "32_px_o_mas": 607,
+              "8_a_16_px": 323,
+              "menos_8_px": 294,
+              "16_a_32_px": 406
+            },
+            "tocan_borde": 53,
+            "cruces_estrictos": 24,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 2,
+            "degenerados": 0,
+            "elegibles": 1589,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 41
+            },
+            "lotes": {
+              "taco:batch_1": 99,
+              "taco:batch_11": 140,
+              "taco:batch_12": 318,
+              "taco:batch_13": 169,
+              "taco:batch_14": 86,
+              "taco:batch_15": 151,
+              "taco:batch_5": 138,
+              "taco:batch_6": 171,
+              "taco:batch_7": 245,
+              "taco:batch_8": 113
+            }
+          },
+          "papel": {
+            "instancias": 109,
+            "escenas": 89,
+            "categorias": {
+              "Normal paper": 54,
+              "Tissues": 18,
+              "Paper bag": 24,
+              "Paper straw": 2,
+              "Magazine paper": 2,
+              "Wrapping paper": 9
+            },
+            "tamanos": {
+              "32_px_o_mas": 56,
+              "16_a_32_px": 30,
+              "8_a_16_px": 14,
+              "menos_8_px": 9
+            },
+            "tocan_borde": 11,
+            "cruces_estrictos": 0,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 1,
+            "degenerados": 0,
+            "elegibles": 108,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 1
+            },
+            "lotes": {
+              "taco:batch_1": 14,
+              "taco:batch_11": 4,
+              "taco:batch_12": 15,
+              "taco:batch_13": 6,
+              "taco:batch_14": 7,
+              "taco:batch_15": 19,
+              "taco:batch_5": 12,
+              "taco:batch_6": 6,
+              "taco:batch_7": 14,
+              "taco:batch_8": 12
+            }
+          },
+          "carton": {
+            "instancias": 149,
+            "escenas": 106,
+            "categorias": {
+              "Meal carton": 20,
+              "Other carton": 62,
+              "Toilet tube": 5,
+              "Egg carton": 8,
+              "Corrugated carton": 51,
+              "Pizza box": 3
+            },
+            "tamanos": {
+              "32_px_o_mas": 100,
+              "menos_8_px": 8,
+              "16_a_32_px": 29,
+              "8_a_16_px": 12
+            },
+            "tocan_borde": 17,
+            "cruces_estrictos": 4,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 146,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 3
+            },
+            "lotes": {
+              "taco:batch_1": 27,
+              "taco:batch_11": 37,
+              "taco:batch_12": 9,
+              "taco:batch_13": 11,
+              "taco:batch_14": 8,
+              "taco:batch_15": 3,
+              "taco:batch_5": 15,
+              "taco:batch_6": 13,
+              "taco:batch_7": 13,
+              "taco:batch_8": 13
+            }
+          },
+          "vidrio": {
+            "instancias": 203,
+            "escenas": 62,
+            "categorias": {
+              "Glass bottle": 65,
+              "Glass cup": 3,
+              "Broken glass": 134,
+              "Glass jar": 1
+            },
+            "tamanos": {
+              "32_px_o_mas": 38,
+              "16_a_32_px": 32,
+              "8_a_16_px": 26,
+              "menos_8_px": 107
+            },
+            "tocan_borde": 4,
+            "cruces_estrictos": 2,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 201,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 2
+            },
+            "lotes": {
+              "taco:batch_1": 14,
+              "taco:batch_11": 1,
+              "taco:batch_12": 2,
+              "taco:batch_13": 2,
+              "taco:batch_14": 33,
+              "taco:batch_15": 29,
+              "taco:batch_5": 7,
+              "taco:batch_6": 6,
+              "taco:batch_7": 6,
+              "taco:batch_8": 103
+            }
+          },
+          "metal": {
+            "instancias": 409,
+            "escenas": 195,
+            "categorias": {
+              "Drink can": 176,
+              "Food Can": 33,
+              "Pop tab": 82,
+              "Metal bottle cap": 55,
+              "Metal lid": 2,
+              "Aluminium foil": 48,
+              "Scrap metal": 13
+            },
+            "tamanos": {
+              "32_px_o_mas": 143,
+              "16_a_32_px": 115,
+              "8_a_16_px": 69,
+              "menos_8_px": 82
+            },
+            "tocan_borde": 9,
+            "cruces_estrictos": 13,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 394,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 15
+            },
+            "lotes": {
+              "taco:batch_1": 93,
+              "taco:batch_11": 10,
+              "taco:batch_12": 16,
+              "taco:batch_13": 50,
+              "taco:batch_14": 23,
+              "taco:batch_15": 29,
+              "taco:batch_5": 38,
+              "taco:batch_6": 63,
+              "taco:batch_7": 23,
+              "taco:batch_8": 64
+            }
+          },
+          "organico": {
+            "instancias": 5,
+            "escenas": 4,
+            "categorias": {
+              "Food waste": 5
+            },
+            "tamanos": {
+              "32_px_o_mas": 3,
+              "menos_8_px": 2
+            },
+            "tocan_borde": 0,
+            "cruces_estrictos": 0,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 1,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 4
+            },
+            "lotes": {
+              "taco:batch_1": 5
+            }
+          }
+        },
+        "ignoradas": {
+          "instancias": 762,
+          "escenas": 295,
+          "categorias": {
+            "Drink carton": 33,
+            "Aerosol": 7,
+            "Cigarette": 330,
+            "Crisp packet": 19,
+            "Paper cup": 42,
+            "Squeezable tube": 4,
+            "Shoe": 2,
+            "Unlabeled litter": 313,
+            "Aluminium blister pack": 2,
+            "Battery": 1,
+            "Rope & strings": 8,
+            "Carded blister pack": 1
+          },
+          "tamanos": {
+            "null": 762
+          },
+          "tocan_borde": 24,
+          "cruces_estrictos": 1,
+          "bbox_poligono_iou_menor_090": 0,
+          "fuera_imagen": 1,
+          "degenerados": 0,
+          "elegibles": 0,
+          "omitidas_por_razon": {},
+          "lotes": {
+            "taco:batch_1": 48,
+            "taco:batch_11": 32,
+            "taco:batch_12": 133,
+            "taco:batch_13": 27,
+            "taco:batch_14": 12,
+            "taco:batch_15": 84,
+            "taco:batch_5": 61,
+            "taco:batch_6": 146,
+            "taco:batch_7": 99,
+            "taco:batch_8": 120
+          }
+        }
+      },
+      "tokens_positivos_sobre_ignore_o_padding": 1220,
+      "solapes_bbox_iou50": 16,
+      "mismo_material": 10,
+      "integridad_imagenes_verificada": 964,
+      "fuente": "TACO poligonos originales; ninguna caja RealWaste"
+    },
+    "val": {
+      "escenas": 181,
+      "censo": {
+        "total": {
+          "instancias": 586,
+          "escenas": 181,
+          "categorias": {
+            "Other plastic bottle": 5,
+            "Plastic bottle cap": 19,
+            "Glass bottle": 22,
+            "Other plastic wrapper": 34,
+            "Disposable food container": 4,
+            "Crisp packet": 4,
+            "Garbage bag": 3,
+            "Normal paper": 11,
+            "Other carton": 14,
+            "Meal carton": 6,
+            "Plastic film": 65,
+            "Drink can": 31,
+            "Cigarette": 152,
+            "Paper cup": 4,
+            "Plastic lid": 12,
+            "Paper straw": 1,
+            "Unlabeled litter": 56,
+            "Wrapping paper": 2,
+            "Clear plastic bottle": 28,
+            "Disposable plastic cup": 11,
+            "Plastic straw": 14,
+            "Food waste": 1,
+            "Metal bottle cap": 14,
+            "Foam food container": 3,
+            "Tissues": 10,
+            "Other plastic": 15,
+            "Pop tab": 6,
+            "Six pack rings": 2,
+            "Aluminium foil": 6,
+            "Corrugated carton": 5,
+            "Paper bag": 1,
+            "Shoe": 2,
+            "Single-use carrier bag": 5,
+            "Spread tub": 1,
+            "Drink carton": 5,
+            "Scrap metal": 3,
+            "Styrofoam piece": 7,
+            "Rope & strings": 2
+          },
+          "tamanos": {
+            "32_px_o_mas": 85,
+            "menos_8_px": 73,
+            "16_a_32_px": 119,
+            "8_a_16_px": 84,
+            "null": 225
+          },
+          "tocan_borde": 14,
+          "cruces_estrictos": 6,
+          "bbox_poligono_iou_menor_090": 0,
+          "fuera_imagen": 0,
+          "degenerados": 0,
+          "elegibles": 352,
+          "omitidas_por_razon": {
+            "sin_tokens_no_ambiguos_validos": 9
+          },
+          "lotes": {
+            "taco:batch_2": 279,
+            "taco:batch_9": 307
+          }
+        },
+        "por_material": {
+          "plastico": {
+            "instancias": 228,
+            "escenas": 139,
+            "categorias": {
+              "Other plastic bottle": 5,
+              "Plastic bottle cap": 19,
+              "Other plastic wrapper": 34,
+              "Disposable food container": 4,
+              "Garbage bag": 3,
+              "Plastic film": 65,
+              "Plastic lid": 12,
+              "Clear plastic bottle": 28,
+              "Disposable plastic cup": 11,
+              "Plastic straw": 14,
+              "Foam food container": 3,
+              "Other plastic": 15,
+              "Six pack rings": 2,
+              "Single-use carrier bag": 5,
+              "Spread tub": 1,
+              "Styrofoam piece": 7
+            },
+            "tamanos": {
+              "32_px_o_mas": 56,
+              "menos_8_px": 47,
+              "8_a_16_px": 50,
+              "16_a_32_px": 75
+            },
+            "tocan_borde": 6,
+            "cruces_estrictos": 4,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 221,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 7
+            },
+            "lotes": {
+              "taco:batch_2": 82,
+              "taco:batch_9": 146
+            }
+          },
+          "papel": {
+            "instancias": 25,
+            "escenas": 22,
+            "categorias": {
+              "Normal paper": 11,
+              "Paper straw": 1,
+              "Wrapping paper": 2,
+              "Tissues": 10,
+              "Paper bag": 1
+            },
+            "tamanos": {
+              "32_px_o_mas": 7,
+              "16_a_32_px": 5,
+              "menos_8_px": 3,
+              "8_a_16_px": 10
+            },
+            "tocan_borde": 2,
+            "cruces_estrictos": 0,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 25,
+            "omitidas_por_razon": {},
+            "lotes": {
+              "taco:batch_2": 10,
+              "taco:batch_9": 15
+            }
+          },
+          "carton": {
+            "instancias": 25,
+            "escenas": 21,
+            "categorias": {
+              "Other carton": 14,
+              "Meal carton": 6,
+              "Corrugated carton": 5
+            },
+            "tamanos": {
+              "32_px_o_mas": 12,
+              "16_a_32_px": 9,
+              "8_a_16_px": 4
+            },
+            "tocan_borde": 2,
+            "cruces_estrictos": 1,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 24,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 1
+            },
+            "lotes": {
+              "taco:batch_2": 15,
+              "taco:batch_9": 10
+            }
+          },
+          "vidrio": {
+            "instancias": 22,
+            "escenas": 15,
+            "categorias": {
+              "Glass bottle": 22
+            },
+            "tamanos": {
+              "16_a_32_px": 11,
+              "32_px_o_mas": 2,
+              "8_a_16_px": 8,
+              "menos_8_px": 1
+            },
+            "tocan_borde": 1,
+            "cruces_estrictos": 1,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 22,
+            "omitidas_por_razon": {},
+            "lotes": {
+              "taco:batch_2": 11,
+              "taco:batch_9": 11
+            }
+          },
+          "metal": {
+            "instancias": 60,
+            "escenas": 38,
+            "categorias": {
+              "Drink can": 31,
+              "Metal bottle cap": 14,
+              "Pop tab": 6,
+              "Aluminium foil": 6,
+              "Scrap metal": 3
+            },
+            "tamanos": {
+              "16_a_32_px": 19,
+              "8_a_16_px": 12,
+              "32_px_o_mas": 8,
+              "menos_8_px": 21
+            },
+            "tocan_borde": 1,
+            "cruces_estrictos": 0,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 59,
+            "omitidas_por_razon": {
+              "sin_tokens_no_ambiguos_validos": 1
+            },
+            "lotes": {
+              "taco:batch_2": 39,
+              "taco:batch_9": 21
+            }
+          },
+          "organico": {
+            "instancias": 1,
+            "escenas": 1,
+            "categorias": {
+              "Food waste": 1
+            },
+            "tamanos": {
+              "menos_8_px": 1
+            },
+            "tocan_borde": 0,
+            "cruces_estrictos": 0,
+            "bbox_poligono_iou_menor_090": 0,
+            "fuera_imagen": 0,
+            "degenerados": 0,
+            "elegibles": 1,
+            "omitidas_por_razon": {},
+            "lotes": {
+              "taco:batch_2": 1
+            }
+          }
+        },
+        "ignoradas": {
+          "instancias": 225,
+          "escenas": 79,
+          "categorias": {
+            "Crisp packet": 4,
+            "Cigarette": 152,
+            "Paper cup": 4,
+            "Unlabeled litter": 56,
+            "Shoe": 2,
+            "Drink carton": 5,
+            "Rope & strings": 2
+          },
+          "tamanos": {
+            "null": 225
+          },
+          "tocan_borde": 2,
+          "cruces_estrictos": 0,
+          "bbox_poligono_iou_menor_090": 0,
+          "fuera_imagen": 0,
+          "degenerados": 0,
+          "elegibles": 0,
+          "omitidas_por_razon": {},
+          "lotes": {
+            "taco:batch_2": 121,
+            "taco:batch_9": 104
+          }
+        }
+      },
+      "tokens_positivos_sobre_ignore_o_padding": 267,
+      "solapes_bbox_iou50": 1,
+      "mismo_material": 1,
+      "integridad_imagenes_verificada": 181,
+      "fuente": "TACO poligonos originales; ninguna caja RealWaste"
+    }
+  },
+  "segundos": 279.9930208000005,
+  "sha256_anotaciones": "812c2e3f0d336b437f276597715de2abb08bb8a641599c45f593d233ec66457b",
+  "sha256_inventario": "c549b16f5d1dd64d8d41c0d5192d0cee40aa740ca9bbfe86ffb8c335e7498eef",
+  "test_abierto": false,
+  "limite_revision": "Geometria/procedencia exhaustivas; etiquetas de material requieren adjudicacion humana. Contactos no certifican correccion semantica."
+}

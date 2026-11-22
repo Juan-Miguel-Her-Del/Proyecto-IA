@@ -4,9 +4,9 @@ Proyecto académico de detección y clasificación de residuos con modelos propi
 
 ## Estado
 
-**V20 detenida antes del A/B completo:** entrenador, diarios por época y evaluación preparados; diagnóstico regenerado y 171 pruebas aprobadas. El piloto AdamW falló la comparación numérica de reanudación: se detuvo sin ejecutar las 1.452 actualizaciones de ninguna rama, sin relajar tolerancias y sin modificar la referencia. Ver [incidencia, controles y métricas pendientes](documentacion/21_resultados_aprendizaje_discriminativo.md).
+**V25 completada, sin entrenamiento:** censo de las 2.505 instancias train de seis materiales y sus 762 anotaciones ignoradas, inferencia congelada sobre las 964 escenas completas, comparación con val histórica y diagnóstico geométrico 48/96/384. Se prioriza una colección real por instancia, diversa y auditada; también se demuestra pérdida de identidad por componentes semánticos. Ver [diagnóstico, evidencia y propuesta](documentacion/25_diagnostico_datos_y_representacion.md).
 
-**V20 preparada, A/B sin iniciar:** pérdida discriminativa sobre logits de la cabeza principal, con margen Huber, tokens difíciles y normalización por instancia. Diagnóstico train-only aprobado y 165 pruebas; gradientes distintos de CE aun usando los mismos tokens/pesos. No se volvió a evaluar val ni se modificó el detector elegido. Ver [auditoría de la pérdida, pruebas y límites](documentacion/20_aprendizaje_discriminativo_mapas.md).
+**V20 cerrada y no adoptada:** A y B completaron 1.452 actualizaciones por rama bajo el backend V23; cartón y vidrio siguen con AP50=0 y B no supera la referencia. Se conserva el checkpoint original de época 19, argmax y cinco vistas (mAP50 val 2,912 %). Los informes [20](documentacion/20_aprendizaje_discriminativo_mapas.md)–[24](documentacion/24_resultados_v20_backend_determinista.md) conservan la preparación, incidencias y resultados. No se inicia otro entrenamiento.
 
 **Auditoría de propuestas internas:** completadas las 181 escenas val y 905 vistas, con predicciones finales idénticas y 149 pruebas aprobadas. Cartón y vidrio no generan ninguna caja correcta IoU≥0,5 ni antes de los filtros. La prioridad es investigar la cabeza de mapas; no se entrenó otra variante ni se adoptó B. Ver [evidencia, tamaños y ejemplos](documentacion/19_auditoria_propuestas_internas.md).
 

@@ -1,0 +1,73 @@
+{
+  "tipo": "triage_exploratorio_no_adjudicacion",
+  "train": {
+    "carton": 149,
+    "vidrio": 203,
+    "organico": 5
+  },
+  "val": {
+    "carton": 25,
+    "vidrio": 22
+  },
+  "otros_materiales": "censo_estructural_exhaustivo_y_contactos_generados; sin_adjudicacion_visual_exhaustiva",
+  "hojas_revisadas": [
+    "train_carton_00",
+    "train_carton_01",
+    "train_carton_02",
+    "train_vidrio_00",
+    "train_vidrio_01",
+    "train_vidrio_02",
+    "train_vidrio_03",
+    "val_carton_00",
+    "val_vidrio_00",
+    "organicos_contexto"
+  ],
+  "hallazgos": [
+    {
+      "imagen": "taco:68",
+      "id": 163,
+      "observacion": "comida dentro de lata; solape con metal, no etiqueta falsa demostrada"
+    },
+    {
+      "imagen": "taco:72",
+      "id": 171,
+      "observacion": "pan bajo envoltura transparente; limites de material superpuestos"
+    },
+    {
+      "imagen": "taco:81",
+      "ids": [
+        203,
+        204
+      ],
+      "observacion": "restos pequenos dentro de caja; poligono carton cubre contenido"
+    },
+    {
+      "imagen": "taco:92",
+      "id": 244,
+      "observacion": "resto de manzana visible, fondo exterior; unico organico elegible"
+    },
+    {
+      "imagen": "taco:1179",
+      "id": 3649,
+      "observacion": "carton muy fino/oscuro, material incierto a la vista; revisar original"
+    },
+    {
+      "imagen": "taco:1335",
+      "ids": [
+        4255,
+        4256,
+        4257,
+        4258,
+        4259,
+        4260
+      ],
+      "observacion": "oclusiones y partes de botella: revisar criterio parte/instancia sin fusionar automaticamente"
+    },
+    {
+      "imagen": "taco:1321",
+      "observacion": "muchos fragmentos vidrio del mismo escenario; instancias no son ejemplos visuales independientes"
+    }
+  ],
+  "etiquetas_modificadas": 0,
+  "certeza": "no se diagnostica etiqueta erronea solo por apariencia, cruce o borde"
+}
