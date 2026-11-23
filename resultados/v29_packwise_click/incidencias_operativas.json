@@ -1,0 +1,27 @@
+{
+  "entrenamiento_hipotesis_alterada": false,
+  "incidencias_resueltas": [
+    {
+      "fase": "descarga",
+      "detalle": "GET ZIP PackWISE truncado en dos intentos; HTTP Range no soportado por bitstream/retrieve. Descarga curl posterior completa, cotejada con MD5 oficial."
+    },
+    {
+      "fase": "curl",
+      "detalle": "Schannel no alcanzaba revocacion OCSP. Se utilizo ssl-revoke-best-effort conservando validacion de cadena/nombre; sin configuracion global ni -k."
+    },
+    {
+      "fase": "tests",
+      "detalle": "Primer lanzador heredaba CUBLAS_WORKSPACE_CONFIG completo y cuatro pruebas antiguas de backend minimo fallaron. Se aislo el entorno de los procesos de test; no se modificaron esas pruebas ni el backend del entrenamiento."
+    },
+    {
+      "fase": "exportacion",
+      "detalle": "Ruta relativa en qa.relative_to fallo al cerrar el manifiesto. Se preservo toda la exportacion parcial en coleccion_incompleta_20261123T174500Z y se repitio con Path.resolve; hashes y diagnosticos regenerados."
+    },
+    {
+      "fase": "logging_torch",
+      "detalle": "PyTorch avisa al convertir losses con requires_grad a float tras backward. Son registros escalares; no se reutilizan en autograd. Controles exhaustivos aprobados sin modificar/suprimir el aviso ni la tolerancia."
+    }
+  ],
+  "test_evaluado": false,
+  "pesos_predeterminados_alterados": false
+}

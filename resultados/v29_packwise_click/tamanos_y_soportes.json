@@ -1,0 +1,85 @@
+{
+  "resumen": {
+    "train": {
+      "por_material": {
+        "plastico": {
+          "instancias": 3745,
+          "bbox_lado_menor_inferior_a_un_token": 212,
+          "mediana_lado_menor_en_384": 39.125
+        },
+        "papel": {
+          "instancias": 623,
+          "bbox_lado_menor_inferior_a_un_token": 21,
+          "mediana_lado_menor_en_384": 31.21875
+        },
+        "carton": {
+          "instancias": 6,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": 29.206349206349202
+        },
+        "vidrio": {
+          "instancias": 0,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": null
+        },
+        "metal": {
+          "instancias": 250,
+          "bbox_lado_menor_inferior_a_un_token": 6,
+          "mediana_lado_menor_en_384": 30.328125
+        },
+        "organico": {
+          "instancias": 0,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": null
+        }
+      },
+      "imagenes_por_fuente": {
+        "packwise": 376,
+        "click": 674
+      },
+      "grupos_captura_conservadores": 46,
+      "sha256_COCO": "8631a17ade58379d1258827f43c6f23828109dad3ac6c891559ae8b8b2c14453"
+    },
+    "val": {
+      "por_material": {
+        "plastico": {
+          "instancias": 887,
+          "bbox_lado_menor_inferior_a_un_token": 47,
+          "mediana_lado_menor_en_384": 38.53125
+        },
+        "papel": {
+          "instancias": 108,
+          "bbox_lado_menor_inferior_a_un_token": 5,
+          "mediana_lado_menor_en_384": 25.190689878892734
+        },
+        "carton": {
+          "instancias": 0,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": null
+        },
+        "vidrio": {
+          "instancias": 0,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": null
+        },
+        "metal": {
+          "instancias": 95,
+          "bbox_lado_menor_inferior_a_un_token": 4,
+          "mediana_lado_menor_en_384": 27.65625
+        },
+        "organico": {
+          "instancias": 0,
+          "bbox_lado_menor_inferior_a_un_token": 0,
+          "mediana_lado_menor_en_384": null
+        }
+      },
+      "imagenes_por_fuente": {
+        "packwise": 87,
+        "click": 153
+      },
+      "grupos_captura_conservadores": 11,
+      "sha256_COCO": "681ffac354ea89c4dc351632b8089ac46a5a61edcaa3bfee9cbd4d812afb9b86"
+    }
+  },
+  "nota": "GT solo para análisis descriptivo. Un token es 8x8 a entrada 384; bbox pequeño no certifica imposibilidad de detección ni equivale a máscara/token elegible. Grupos heurísticos no son objetos físicos."
+}

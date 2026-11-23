@@ -1,0 +1,1100 @@
+{
+  "resultados": {
+    "Original": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.03033559233343641,
+            "map50_95": 0.012306379648916755,
+            "recall50": 0.1688622754491018,
+            "precision50": 0.09684065934065934,
+            "tp50": 423,
+            "fp50": 3945,
+            "fn50": 2082,
+            "ap50_por_material": {
+              "plastico": 0.07889925386055861,
+              "papel": 0.014492753708716666,
+              "carton": 0.052826692783596495,
+              "vidrio": 0.0,
+              "metal": 0.03579485364774666,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.04216367118337219,
+            "map50_95": 0.014176403906441482,
+            "recall50": 0.23632734530938124,
+            "precision50": 0.03517319232368843,
+            "tp50": 592,
+            "fp50": 16239,
+            "fn50": 1913,
+            "ap50_por_material": {
+              "plastico": 0.057885142651819946,
+              "papel": 0.012206713862643383,
+              "carton": 0.05637695153455923,
+              "vidrio": 0.00012858428688037514,
+              "metal": 0.02242423872472626,
+              "organico": 0.10396039603960396
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 8.848228899994865,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 407.3706819000072,
+            "memoria_gpu_max_allocated_bytes": 128303616,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "analisis": "resultados/v28_2_exploratorio/evaluacion/Original/historico/analisis.json",
+        "sha256_analisis": "8e15930d45943d38e6dba26408e6639437dbffc5a20fd9a0f104cc0c2309860c",
+        "captura_reutilizada_y_verificada": true
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.015744043214449492,
+            "map50_95": 0.0057033917642317225,
+            "recall50": 0.1375432525951557,
+            "precision50": 0.12077478161792632,
+            "tp50": 636,
+            "fp50": 4630,
+            "fn50": 3988,
+            "ap50_por_material": {
+              "plastico": 0.0570449573863851,
+              "papel": 0.0030729193055983816,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0028582961658144943,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.014892811483546797,
+            "map50_95": 0.005137738267347069,
+            "recall50": 0.22837370242214533,
+            "precision50": 0.05468669083376489,
+            "tp50": 1056,
+            "fp50": 18254,
+            "fn50": 3568,
+            "ap50_por_material": {
+              "plastico": 0.05107078472576519,
+              "papel": 0.006564955678906771,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.001935505529515224,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 6.845821499999147,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 394.85451939998893,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/Original/nuevo_train/analisis.json",
+        "sha256_analisis": "12b2f5bfcb26767c3e91a796fc736fad5d0b48b38ef5ff6248a3a6a5363b7461",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.014047422769046067,
+              "map50_95": 0.004548367489015578,
+              "recall50": 0.0931899641577061,
+              "precision50": 0.1260096930533118,
+              "tp50": 312,
+              "fp50": 2164,
+              "fn50": 3036,
+              "ap50_por_material": {
+                "plastico": 0.036984251277281506,
+                "papel": 0.0043885852440749065,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0007694317857817848,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.017819713149527117,
+              "map50_95": 0.006268349051146642,
+              "recall50": 0.14874551971326164,
+              "precision50": 0.06403497492606404,
+              "tp50": 498,
+              "fp50": 7279,
+              "fn50": 2850,
+              "ap50_por_material": {
+                "plastico": 0.042579877494585396,
+                "papel": 0.009853522855751586,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0010257390982443743,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.029864072739746016,
+              "map50_95": 0.01077518672036874,
+              "recall50": 0.25391849529780564,
+              "precision50": 0.11612903225806452,
+              "tp50": 324,
+              "fp50": 2466,
+              "fn50": 952,
+              "ap50_por_material": {
+                "plastico": 0.11155907263850222,
+                "papel": 0.0,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.007897218320481849,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.026788833446219785,
+              "map50_95": 0.009408839558952,
+              "recall50": 0.4373040752351097,
+              "precision50": 0.04838290123992023,
+              "tp50": 558,
+              "fp50": 10975,
+              "fn50": 718,
+              "ap50_por_material": {
+                "plastico": 0.10088545622506945,
+                "papel": 0.00010761945960250231,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.006162258100207194,
+                "organico": null
+              }
+            }
+          }
+        }
+      },
+      "nuevo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.01866956368678867,
+            "map50_95": 0.006979831122476669,
+            "recall50": 0.13486238532110092,
+            "precision50": 0.11826226870474658,
+            "tp50": 147,
+            "fp50": 1096,
+            "fn50": 943,
+            "ap50_por_material": {
+              "plastico": 0.05555642359327562,
+              "papel": 0.0,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.000452267467090399,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.016374471333037707,
+            "map50_95": 0.005891263697652927,
+            "recall50": 0.22752293577981653,
+            "precision50": 0.05451747636843262,
+            "tp50": 248,
+            "fp50": 4301,
+            "fn50": 842,
+            "ap50_por_material": {
+              "plastico": 0.04544241305920157,
+              "papel": 0.00139581629692918,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.002285184642982365,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 1.7093262000125833,
+            "memoria_gpu_max_allocated_bytes": 182000640,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 91.16636850000941,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/Original/nuevo_retenido/analisis.json",
+        "sha256_analisis": "4f846f5ea834cae72b4d440df79267811ad9addbf3eee1e41dbbe9519cd32829",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.015672009235413946,
+              "map50_95": 0.006873748182832408,
+              "recall50": 0.1041388518024032,
+              "precision50": 0.1276595744680851,
+              "tp50": 78,
+              "fp50": 533,
+              "fn50": 671,
+              "ap50_por_material": {
+                "plastico": 0.045473758094381575,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0015422696118602658,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.01732873598808306,
+              "map50_95": 0.005957634753790428,
+              "recall50": 0.1628838451268358,
+              "precision50": 0.0646186440677966,
+              "tp50": 122,
+              "fp50": 1766,
+              "fn50": 627,
+              "ap50_por_material": {
+                "plastico": 0.0411293168026622,
+                "papel": 0.002933626717860156,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.007923264443726824,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.031193604662080016,
+              "map50_95": 0.011722198068763656,
+              "recall50": 0.20234604105571846,
+              "precision50": 0.10917721518987342,
+              "tp50": 69,
+              "fp50": 563,
+              "fn50": 272,
+              "ap50_por_material": {
+                "plastico": 0.09358081398624005,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.02734485637433458,
+              "map50_95": 0.010773011721461619,
+              "recall50": 0.36950146627565983,
+              "precision50": 0.04735062006764374,
+              "tp50": 126,
+              "fp50": 2535,
+              "fn50": 215,
+              "ap50_por_material": {
+                "plastico": 0.07899545243766048,
+                "papel": 0.000733406679465039,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.002305710005878222,
+                "organico": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "A": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.040578709472671594,
+            "map50_95": 0.01757432859400195,
+            "recall50": 0.18323353293413175,
+            "precision50": 0.11073582629674307,
+            "tp50": 459,
+            "fp50": 3686,
+            "fn50": 2046,
+            "ap50_por_material": {
+              "plastico": 0.12374052847966109,
+              "papel": 0.01756003189204943,
+              "carton": 0.06839933563577066,
+              "vidrio": 0.006627444104097858,
+              "metal": 0.02714491672445052,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.03397434515718727,
+            "map50_95": 0.015004014004507522,
+            "recall50": 0.2499001996007984,
+            "precision50": 0.03905177791640674,
+            "tp50": 626,
+            "fp50": 15404,
+            "fn50": 1879,
+            "ap50_por_material": {
+              "plastico": 0.11503624860750566,
+              "papel": 0.007817212676647867,
+              "carton": 0.058755559459476185,
+              "vidrio": 0.0018404730236028682,
+              "metal": 0.020396577175891044,
+              "organico": 0.0
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 5.805876900005387,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 378.8819527000014,
+            "memoria_gpu_max_allocated_bytes": 128303616,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/A/historico_train/analisis.json",
+        "sha256_analisis": "5e4db13f7242b15df4cab789ce613fd6ce1beb86fe106b0a1fb9380bd26b6c6c",
+        "captura_reutilizada_y_verificada": false
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.015146807636051338,
+            "map50_95": 0.005751283465548058,
+            "recall50": 0.12846020761245674,
+            "precision50": 0.11184334400301262,
+            "tp50": 594,
+            "fp50": 4717,
+            "fn50": 4030,
+            "ap50_por_material": {
+              "plastico": 0.057031495588840825,
+              "papel": 0.0030050021734568154,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0005507327819077095,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.016669535682084832,
+            "map50_95": 0.005922873848461371,
+            "recall50": 0.21215397923875431,
+            "precision50": 0.04960809102402023,
+            "tp50": 981,
+            "fp50": 18794,
+            "fn50": 3643,
+            "ap50_por_material": {
+              "plastico": 0.062238330298131056,
+              "papel": 0.004213929176330566,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.00022588325387770588,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 6.7368399999977555,
+            "memoria_gpu_max_allocated_bytes": 182000640,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 545.0720654000179,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/A/nuevo_train/analisis.json",
+        "sha256_analisis": "13c8ff2e5fa79486d7dc0a4507d2dc192e1e6ba9fafdc128c4e5a09178bfac75",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.016549556463858476,
+              "map50_95": 0.006467426233239496,
+              "recall50": 0.08661887694145759,
+              "precision50": 0.13564078578110383,
+              "tp50": 290,
+              "fp50": 1848,
+              "fn50": 3058,
+              "ap50_por_material": {
+                "plastico": 0.04499059325397605,
+                "papel": 0.004291372797866859,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0003667033397325195,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.023726688144673217,
+              "map50_95": 0.008699185202334678,
+              "recall50": 0.14187574671445638,
+              "precision50": 0.07578174856413529,
+              "tp50": 475,
+              "fp50": 5793,
+              "fn50": 2873,
+              "ap50_por_material": {
+                "plastico": 0.06388671932244065,
+                "papel": 0.0071207135915756226,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.00017263152000337545,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.027893078633316675,
+              "map50_95": 0.009840198691086014,
+              "recall50": 0.23824451410658307,
+              "precision50": 0.09580838323353294,
+              "tp50": 304,
+              "fp50": 2869,
+              "fn50": 972,
+              "ap50_por_material": {
+                "plastico": 0.11000900029545964,
+                "papel": 0.0,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.0015633142378070567,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.03010091184186611,
+              "map50_95": 0.010080804702558436,
+              "recall50": 0.39655172413793105,
+              "precision50": 0.03746205671133487,
+              "tp50": 506,
+              "fp50": 13001,
+              "fn50": 770,
+              "ap50_por_material": {
+                "plastico": 0.11974358134488068,
+                "papel": 0.0,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.0006600660225837537,
+                "organico": null
+              }
+            }
+          }
+        }
+      },
+      "nuevo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.02225930977108652,
+            "map50_95": 0.0067541928995683434,
+            "recall50": 0.14770642201834863,
+            "precision50": 0.13100081366965013,
+            "tp50": 161,
+            "fp50": 1068,
+            "fn50": 929,
+            "ap50_por_material": {
+              "plastico": 0.06306199095036724,
+              "papel": 0.0002912055922321754,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.003424732770660136,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.02090551776092241,
+            "map50_95": 0.006840894707223468,
+            "recall50": 0.23211009174311928,
+            "precision50": 0.05478562148116067,
+            "tp50": 253,
+            "fp50": 4365,
+            "fn50": 837,
+            "ap50_por_material": {
+              "plastico": 0.06131017798244363,
+              "papel": 7.796055167028219e-05,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0013284147486533268,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 2.1860902000044007,
+            "memoria_gpu_max_allocated_bytes": 182000640,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 137.70841870000004,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/A/nuevo_retenido/analisis.json",
+        "sha256_analisis": "2abc597e8acc2e6e06210700c780b10f1f2e66484ef0e9b495d0816d9a1ff50d",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.023195731438229186,
+              "map50_95": 0.009091348679299796,
+              "recall50": 0.11214953271028037,
+              "precision50": 0.17073170731707318,
+              "tp50": 84,
+              "fp50": 408,
+              "fn50": 665,
+              "ap50_por_material": {
+                "plastico": 0.062460657393578256,
+                "papel": 0.0007616146513731173,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.006364922269736186,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.02565222303613578,
+              "map50_95": 0.010021208671133706,
+              "recall50": 0.16955941255006676,
+              "precision50": 0.08214747736093143,
+              "tp50": 127,
+              "fp50": 1419,
+              "fn50": 622,
+              "ap50_por_material": {
+                "plastico": 0.07520105874184335,
+                "papel": 0.00022502250895641818,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0015305878576075676,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.03939737200048497,
+              "map50_95": 0.010554192754018915,
+              "recall50": 0.22580645161290322,
+              "precision50": 0.1044776119402985,
+              "tp50": 77,
+              "fp50": 660,
+              "fn50": 264,
+              "ap50_por_material": {
+                "plastico": 0.10524466692811192,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.012947449073342993,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.03591704731284588,
+              "map50_95": 0.011160676457946841,
+              "recall50": 0.36950146627565983,
+              "precision50": 0.041015625,
+              "tp50": 126,
+              "fp50": 2946,
+              "fn50": 215,
+              "ap50_por_material": {
+                "plastico": 0.1017398262525549,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.006011315685982751,
+                "organico": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.03776699050695393,
+            "map50_95": 0.016293613193018777,
+            "recall50": 0.18203592814371258,
+            "precision50": 0.11041162227602906,
+            "tp50": 456,
+            "fp50": 3674,
+            "fn50": 2049,
+            "ap50_por_material": {
+              "plastico": 0.1167066886578456,
+              "papel": 0.022024588714731803,
+              "carton": 0.06400148703320192,
+              "vidrio": 0.006292593582431868,
+              "metal": 0.017576585053512367,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.03323414488987561,
+            "map50_95": 0.015481546870817002,
+            "recall50": 0.2530938123752495,
+            "precision50": 0.03902258878562196,
+            "tp50": 634,
+            "fp50": 15613,
+            "fn50": 1871,
+            "ap50_por_material": {
+              "plastico": 0.09635545885061274,
+              "papel": 0.01780537073269929,
+              "carton": 0.06407951436346711,
+              "vidrio": 0.0023794477381328546,
+              "metal": 0.01878507765434166,
+              "organico": 0.0
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 7.389441799983615,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 488.26991430000635,
+            "memoria_gpu_max_allocated_bytes": 128303616,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/B/historico_train/analisis.json",
+        "sha256_analisis": "6eb7d36a959e55d195ce8480018b9cb24293a4efa9f25a66a85e512ba09bc3b3",
+        "captura_reutilizada_y_verificada": false
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.05667383179511174,
+            "map50_95": 0.024009827848311772,
+            "recall50": 0.2402681660899654,
+            "precision50": 0.25807200929152146,
+            "tp50": 1111,
+            "fp50": 3194,
+            "fn50": 3513,
+            "ap50_por_material": {
+              "plastico": 0.15568987420289823,
+              "papel": 0.07100545297754873,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.06301243173530197,
+            "map50_95": 0.02874661184314841,
+            "recall50": 0.33261245674740486,
+            "precision50": 0.1137910624445102,
+            "tp50": 1538,
+            "fp50": 11978,
+            "fn50": 3086,
+            "ap50_por_material": {
+              "plastico": 0.16907160544749533,
+              "papel": 0.0829781214937125,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 4.566338800010271,
+            "memoria_gpu_max_allocated_bytes": 4678144,
+            "memoria_gpu_max_reserved_bytes": 6291456
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 445.9852155999979,
+            "memoria_gpu_max_allocated_bytes": 128983552,
+            "memoria_gpu_max_reserved_bytes": 190840832
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/B/nuevo_train/analisis.json",
+        "sha256_analisis": "71d8410fe59ca62e1e267f618cb44a3cb6feb90b835e4d1a45a72a52981bec91",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.08154004502414476,
+              "map50_95": 0.035831210841870444,
+              "recall50": 0.21356033452807646,
+              "precision50": 0.34725594949004374,
+              "tp50": 715,
+              "fp50": 1344,
+              "fn50": 2633,
+              "ap50_por_material": {
+                "plastico": 0.14957093071229388,
+                "papel": 0.09504920436014043,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.09214893603088832,
+              "map50_95": 0.04400368817895958,
+              "recall50": 0.2801672640382318,
+              "precision50": 0.20025619128949615,
+              "tp50": 938,
+              "fp50": 3746,
+              "fn50": 2410,
+              "ap50_por_material": {
+                "plastico": 0.1644456914745935,
+                "papel": 0.11200111661807145,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.03874955861137645,
+              "map50_95": 0.013172533640656436,
+              "recall50": 0.3103448275862069,
+              "precision50": 0.176313446126447,
+              "tp50": 396,
+              "fp50": 1850,
+              "fn50": 880,
+              "ap50_por_material": {
+                "plastico": 0.1549982344455058,
+                "papel": 0.0,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.03750995675673579,
+              "map50_95": 0.013317878637959923,
+              "recall50": 0.4702194357366771,
+              "precision50": 0.06793478260869565,
+              "tp50": 600,
+              "fp50": 8232,
+              "fn50": 676,
+              "ap50_por_material": {
+                "plastico": 0.15003982702694316,
+                "papel": 0.0,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          }
+        }
+      },
+      "nuevo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.05996403865294881,
+            "map50_95": 0.02436916742400073,
+            "recall50": 0.23486238532110093,
+            "precision50": 0.25048923679060664,
+            "tp50": 256,
+            "fp50": 766,
+            "fn50": 834,
+            "ap50_por_material": {
+              "plastico": 0.17350196366262907,
+              "papel": 0.006390152296217361,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.06931544028886473,
+            "map50_95": 0.029767606897961974,
+            "recall50": 0.3247706422018349,
+            "precision50": 0.11434108527131782,
+            "tp50": 354,
+            "fp50": 2742,
+            "fn50": 736,
+            "ap50_por_material": {
+              "plastico": 0.20090864982345316,
+              "papel": 0.007037671043141054,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 2.2610252000158653,
+            "memoria_gpu_max_allocated_bytes": 181476352,
+            "memoria_gpu_max_reserved_bytes": 297795584
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 166.10546310001519,
+            "memoria_gpu_max_allocated_bytes": 129057280,
+            "memoria_gpu_max_reserved_bytes": 297795584
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/B/nuevo_retenido/analisis.json",
+        "sha256_analisis": "d500b931dd9e7391e4d5c684f12e4fc8d9b3c28cd9f4678620a89c36af5ae63b",
+        "captura_reutilizada_y_verificada": false,
+        "por_fuente": {
+          "packwise": {
+            "1": {
+              "map50": 0.06731170875699606,
+              "map50_95": 0.028582656113646018,
+              "recall50": 0.22830440587449932,
+              "precision50": 0.3834080717488789,
+              "tp50": 171,
+              "fp50": 275,
+              "fn50": 578,
+              "ap50_por_material": {
+                "plastico": 0.1889470874673069,
+                "papel": 0.012988038803681289,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.07782097313270317,
+              "map50_95": 0.0352580423900249,
+              "recall50": 0.29506008010680906,
+              "precision50": 0.24285714285714285,
+              "tp50": 221,
+              "fp50": 689,
+              "fn50": 528,
+              "ap50_por_material": {
+                "plastico": 0.21925623611648484,
+                "papel": 0.014206683281624671,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          },
+          "click": {
+            "1": {
+              "map50": 0.04084862955529304,
+              "map50_95": 0.014574954757104219,
+              "recall50": 0.24926686217008798,
+              "precision50": 0.14756944444444445,
+              "tp50": 85,
+              "fp50": 491,
+              "fn50": 256,
+              "ap50_por_material": {
+                "plastico": 0.12254588866587912,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.04134284852459879,
+              "map50_95": 0.015069807538141806,
+              "recall50": 0.39002932551319647,
+              "precision50": 0.060841720036596526,
+              "tp50": 133,
+              "fp50": 2053,
+              "fn50": 208,
+              "ap50_por_material": {
+                "plastico": 0.12402854557379638,
+                "papel": 0.0,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  },
+  "protocolo": {
+    "config": {
+      "version": "v29_datos_preserva_historico_1",
+      "checkpoint_origen": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+      "sha256_origen": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+      "coleccion": "datos/nuevos/v29/coleccion",
+      "sha256_coleccion": "0763d2e4faa312f95131695307b73028d4ac28b4d0fd51e60dc9a8b94221e6e9",
+      "actualizaciones": 600,
+      "historico_batch": 8,
+      "nuevo_batch": 4,
+      "coeficiente_nuevos": 0.5,
+      "auxiliar_batch": 16,
+      "coeficiente_auxiliar_global": 0.5,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.01,
+      "clipping": 1.0,
+      "coeficiente_fondo": 3.0,
+      "backend_numerico": {
+        "version": "v20_backend_v23_1",
+        "modo": "completo",
+        "sdpa": "math",
+        "amp": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "deterministic_algorithms": true,
+        "tf32_matmul": false,
+        "tf32_cudnn": false,
+        "float32_matmul_precision": "highest",
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "clip_foreach": false,
+        "adam_foreach": false,
+        "adam_fused": false
+      },
+      "warmup_nuevo": false,
+      "parada_temprana": false,
+      "semilla_nuevos": 2901,
+      "checkpoints": [
+        0,
+        100,
+        300,
+        600
+      ],
+      "seleccion_por_validacion": false,
+      "test": false,
+      "generalizacion": false,
+      "adopcion_automatica": false,
+      "vistas": [
+        1,
+        5
+      ],
+      "umbral": 0.05,
+      "politica": "argmax7",
+      "nms": 0.5,
+      "top": 100,
+      "area_minima": 2,
+      "justificacion_presupuesto": "600 pasos: 4800 exposiciones históricas por rama; 2400 nuevas B, 1200 por fuente, aproximadamente 2-4 recorridos de la colección. Piloto fijo sin ampliación tras métricas.",
+      "hipotesis": "Añadir datos de autores con exposición histórica intacta mejora ajuste y detección en la cohorte nueva sin el reemplazo 25% de V28.2. Vidrio/orgánico no reciben supervisión nueva de estas fuentes."
+    },
+    "codigo": {
+      "ecowaste/__init__.py": "af9b6c7049f976b57f614fae007c978d43152fc4da36b3142a5828431517ad31",
+      "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+      "ecowaste/ajustes_ia_v28_3.py": "7207a344e1706f529c5b58d700240d97dab00b7131fddaeaadaaee8d62d7f118",
+      "ecowaste/asignacion_optima.py": "9c301a76fff293d52e8fbe65244a80f00296e6629424e7d10a372e1d85f9d066",
+      "ecowaste/asistente.py": "5454a4f31d40025808949b5506b81da6edf06a330708e87e72ca6198d258ba22",
+      "ecowaste/asistente_sam2.py": "946992addce93f33066f75c40754ca46b34dddbfdaa7038f9896e2d79332d4ef",
+      "ecowaste/auditoria_datos_representacion.py": "5740ddfd768445f5d9b702b57167bff001465f9f1d43c9f7b7fa05f2bef06f9e",
+      "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+      "ecowaste/auditoria_instancias.py": "b4ba98ab5dd97362374af19a099e69679c087eea41c2f1425552826e88e5f99e",
+      "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+      "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+      "ecowaste/auxiliares_publicos.py": "5374d724fc3dbf9fe8e66024cb30a5f7fcc0541c15239867556b2053d19c5aff",
+      "ecowaste/backend_numerico.py": "3df9ce74b9e58a64c1ccaeb49357c5af232fc173e11d495c5ffb30d03b720b1a",
+      "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+      "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+      "ecowaste/coleccion_nueva.py": "2f2ff588bb54a9ad957697be1d1d6aa83ebf543f2978b5d964bf6221e91ef2a8",
+      "ecowaste/continuacion.py": "016e6bffe9c64d309cb6b20c3eb2ebe97152fd0c9409550e8a21251731c691a0",
+      "ecowaste/correcciones_v28_3.py": "4f13f45a053ba65eabb4647b7d1dd57e91686f43e6c157345b1e8d72177e7476",
+      "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+      "ecowaste/datos.py": "35464c2283176ce3c697bf8af990c8391a1c3f912d399f9179cb5333cd002bde",
+      "ecowaste/datos_v28_2.py": "10745159c43e13c181429a5b9c0c2ba01e8cde7cc458bfc02e89252f84b94b20",
+      "ecowaste/datos_v29.py": "b0a854fc7ac38971a5a90b2074b9e03c5b68ea3689bfc1ae24fb412053b31955",
+      "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+      "ecowaste/detector_centros.py": "508fa240f46f6b0931942644c7669684f202bd5e06a798c058214da1c230926c",
+      "ecowaste/detector_consultas.py": "1eab3281acb6120963803104a4ecde7b56e73d4fe45f0fcea20a7a876654f9fd",
+      "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+      "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+      "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+      "ecowaste/evaluacion.py": "4943ac34c4b8472ea8bacd5f9626a7f02735ccf24fb99332f954167f474edfc4",
+      "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+      "ecowaste/evaluacion_v28_2.py": "23299a64dac0dccc81a0e0b5efeca79c37a4bc473179965aa23584f137c1b0f2",
+      "ecowaste/experimento_v28_2.py": "93f5c6632629e23e0045c13a9bf7fc7e483d5c764eba905ca01670a550eb1e69",
+      "ecowaste/experimento_v29.py": "3d2d15d7c5b7fd9ee00879ba06023568edea1268183d45e9ae24682ac506f869",
+      "ecowaste/incorporacion.py": "0650a7137e7c657affca5d617aeae50fbf9c9611ce5975e7f890368886796762",
+      "ecowaste/inferencia_detector.py": "1c6a8c43183aa6c5e8959a9d089992117265ac606ef4de6bc180c1e398caae1a",
+      "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+      "ecowaste/observacion_backend.py": "04848e7835d46c4f8171d8cf1c7d693f9d35455ade6f5109b067f94162a2891e",
+      "ecowaste/perdida_detector.py": "a6ea83a6b3645c65aafc89341415b8ec33f7961c983af7813587264175ff28bf",
+      "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+      "ecowaste/preparacion_v28.py": "a90764e37469fadc338824b2bf36dc802c9fcce29310804fe1aaead2f91f516f",
+      "ecowaste/propuestas_publicas.py": "1ba98e39243f63ea3be6e98ba71023cbd924670afad0e53b2b89d4119aaea420",
+      "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+      "ecowaste/reanudacion_v20.py": "bcd9cabc1e5100d29f1ebe9823083dc36ed46217c2077287ea6d2f44f7b4fea5",
+      "ecowaste/recortes.py": "98557c5c8d74f64ae79d263fa5cfda29808fb07a042194c8f01a7d06eb459976",
+      "ecowaste/refinamiento.py": "c006ea4d087be7ee804118f44ff94d9b526099c9f653495d65b85c9179134c4f",
+      "ecowaste/reproducibilidad_v20.py": "0005cc41e1adc1ed2c176ebc5650a28118737ea2377520444dcb5933352007b5",
+      "ecowaste/revision_datos.py": "af3d7063d4cb8953bd03e11774fe888d60fb53c2097e8d6ac62a80d444c216a8",
+      "ecowaste/revision_ia_v28_4.py": "662f7e0845c3c5f206b68739d034de7d3340d7b16755e5fef8563e163f78c46f",
+      "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+      "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+      "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+      "ecowaste/validacion_anotaciones.py": "8b8a56205251ef9c33df69770d0d5e0a7212a5e351b088e3791f5afcc17e5308",
+      "ecowaste/video.py": "5f0242d8b21e32b653fb9e45d0a2ef72420d2855f1b335d8d0fea4d764af414c",
+      "pruebas/test_datos_y_entrenamiento_v29.py": "1ee576e78dd0b195f171ffdae0bfde57a83af9503d02eaef4c7ebed3a06f9744",
+      "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+      "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+      "scripts/descargar_cohortes_v29.py": "29e5d35947b75cffafdccfdf2f53f9ee5887e6772150751938378d848255c27a",
+      "scripts/entrenar_clasificador.py": "6934850b885a99670fe7c3d8b20fe50419baab78917e74c65f312d40a309b964",
+      "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+      "scripts/entrenar_v29.py": "0ab6c8ce9efd12ee4a636bc2ab495a31c4ff83ef1ca4abaefc702e8ae7e03e06",
+      "scripts/evaluar_v29.py": "8450ffda85177ec64c393bb89bf2499e5db2859825c191cddd9f041ce86ef2c3",
+      "scripts/fuentes_v29.py": "df7896aeab22994ac3ad93650263fd16ca49474ec311791d28d088cb0fa33333",
+      "scripts/informar_v29.py": "9ebe2e2599eecb90f665837884039a0eb37d23ab222da5cc5414865034ca4273",
+      "scripts/preparar_v29.py": "db0c99f45af816c72480b2cdaff39911bfb8274d4584f081b626d3bab5f3686d",
+      "scripts/probar_v29.py": "ce220632d8fc5145f54b4faa7085bac05855a6c0b905a2731d1f49b7c6b9c02d",
+      "scripts/verificar_v29.py": "bdb02e95abc1cd4bef5929058b59289775423281a47fa17ae1a3bf4b13c6be16"
+    },
+    "plan_sha256": "052dca0e8521f87aae23f6b15d950b35f530100f88dc90279d969e6322fbf41a",
+    "train_historico_sha256": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+    "global_train_sha256": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+    "cache_historico_sha256": "fc9ad421bfc388f696168b7f9851b6c755b80dfc9af598832ffa8afebbb13a29",
+    "metadata_global_train_sha256": "46bd48fc0988ace42fcb282a3da27b0d216e72632d603341cec93ab25315f8d4",
+    "versiones_ejecucion": {
+      "python": "3.12.6",
+      "paquetes": {
+        "torch": "2.14.1+cu126",
+        "numpy": "2.5.5",
+        "pillow": "13.0.0",
+        "opencv-python": "4.14.0.94"
+      }
+    }
+  },
+  "exposicion_historica_igual_A_B": true,
+  "validacion_historica_usada": false,
+  "test_usado": false,
+  "generalizacion_desbloqueada": false,
+  "adopcion": false,
+  "limites": "Cohorte nueva retenida por secuencia PackWISE y bloques heurísticos CLICK; no independencia física demostrada ni evaluación final. mAP promedia solo clases con soporte, no comparable directamente a 2.912% de validación histórica."
+}

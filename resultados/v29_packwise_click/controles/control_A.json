@@ -1,0 +1,831 @@
+{
+  "rama": "A",
+  "restauraciones_exactas": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "comparaciones": [
+    {
+      "trayectoria": "C2",
+      "paso": 1,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/C2_vs_C1_paso1.json",
+      "sha256": "ede3e8127ee00dbac319a8ccea703c16f22cb35cc1dd93f32e9c66cb381b6af6"
+    },
+    {
+      "trayectoria": "C2",
+      "paso": 2,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/C2_vs_C1_paso2.json",
+      "sha256": "d9d46d7f5d05c22888d2c2b490f598a8e352fe278533380a00a4452b8b9f4014"
+    },
+    {
+      "trayectoria": "C2",
+      "paso": 3,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/C2_vs_C1_paso3.json",
+      "sha256": "898838703bcb6974c7663a3dd9fde306e621be96fe0973a192238976e10fc9e5"
+    },
+    {
+      "trayectoria": "C2",
+      "paso": 4,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/C2_vs_C1_paso4.json",
+      "sha256": "1a0d7a3d0714998ebf3d1a32ba159fd0156c59d1efa4d5ceab5dbf5f3d7e5e22"
+    },
+    {
+      "trayectoria": "R",
+      "paso": 1,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/R_vs_C1_paso1.json",
+      "sha256": "ede3e8127ee00dbac319a8ccea703c16f22cb35cc1dd93f32e9c66cb381b6af6"
+    },
+    {
+      "trayectoria": "R",
+      "paso": 2,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/R_vs_C1_paso2.json",
+      "sha256": "d9d46d7f5d05c22888d2c2b490f598a8e352fe278533380a00a4452b8b9f4014"
+    },
+    {
+      "trayectoria": "R",
+      "paso": 3,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/R_vs_C1_paso3.json",
+      "sha256": "898838703bcb6974c7663a3dd9fde306e621be96fe0973a192238976e10fc9e5"
+    },
+    {
+      "trayectoria": "R",
+      "paso": 4,
+      "exacto": true,
+      "dentro_tolerancia": true,
+      "archivo": "resultados/v29_packwise_click/controles/A/R_vs_C1_paso4.json",
+      "sha256": "1a0d7a3d0714998ebf3d1a32ba159fd0156c59d1efa4d5ceab5dbf5f3d7e5e22"
+    }
+  ],
+  "trazas": {
+    "C1": [
+      {
+        "rama": "A",
+        "paso": 1,
+        "loss_historico": 4.036165237426758,
+        "loss_global": 0.8099731206893921,
+        "loss_nuevos": 0.0,
+        "loss_total": 4.4411516189575195,
+        "norma_gradiente_pre_clip": 26.94440460205078,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 299
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "paso_adamw": 2300,
+        "indices": {
+          "historico": [
+            707,
+            724,
+            668,
+            479,
+            399,
+            90,
+            521,
+            751
+          ],
+          "global": [
+            764,
+            704,
+            2051,
+            20,
+            1629,
+            2617,
+            1323,
+            1868,
+            510,
+            3,
+            2544,
+            1414,
+            314,
+            2314,
+            594,
+            670
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "dddc57ad8ca06fa6b4229e13003f2f1844622df90e03db4763e28d4a32ed9ae9",
+        "huella_entradas_todas": "20b1b221308b15140993b5ebb6598722c3f68eff9dc93ff7cae1c0ac6e3715c1",
+        "rng_comun_antes": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312",
+        "rng_comun_despues": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 2.29857169999741
+      },
+      {
+        "rama": "A",
+        "paso": 2,
+        "loss_historico": 1.9606449604034424,
+        "loss_global": 1.101107120513916,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.5111985206604004,
+        "norma_gradiente_pre_clip": 6.323564529418945,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "paso_adamw": 2301,
+        "indices": {
+          "historico": [
+            833,
+            829,
+            574,
+            741,
+            783,
+            658,
+            828,
+            625
+          ],
+          "global": [
+            1567,
+            19,
+            1330,
+            1208,
+            441,
+            508,
+            1233,
+            133,
+            1881,
+            2103,
+            622,
+            799,
+            543,
+            2042,
+            1256,
+            170
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "4222c70a6cde9a1e9bb93278484230d61158512b95328006b7fd7cefddc19809",
+        "huella_entradas_todas": "d80591364dbd020b6b1e614aa98e765b7f8949cd21730a2f80a7c451ee627339",
+        "rng_comun_antes": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_comun_despues": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2667695999844
+      },
+      {
+        "rama": "A",
+        "paso": 3,
+        "loss_historico": 2.3605194091796875,
+        "loss_global": 0.939993143081665,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.8305158615112305,
+        "norma_gradiente_pre_clip": 6.87385892868042,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "paso_adamw": 2302,
+        "indices": {
+          "historico": [
+            804,
+            540,
+            282,
+            390,
+            153,
+            542,
+            937,
+            734
+          ],
+          "global": [
+            2455,
+            1058,
+            2127,
+            72,
+            456,
+            1772,
+            1521,
+            583,
+            1850,
+            1684,
+            66,
+            933,
+            327,
+            414,
+            638,
+            377
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "5a6f3619d789000fc5ae5c788ccb911ba2bd68ba9d13d7ab1b64187146947b78",
+        "huella_entradas_todas": "457168e47e5c0fd140d24ca5dc08b6f2e4af0c2954feb4354ef2c947ad4d93fe",
+        "rng_comun_antes": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_comun_despues": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2365231000003405
+      },
+      {
+        "rama": "A",
+        "paso": 4,
+        "loss_historico": 3.1302762031555176,
+        "loss_global": 0.8995206356048584,
+        "loss_nuevos": 0.0,
+        "loss_total": 3.5800366401672363,
+        "norma_gradiente_pre_clip": 6.588794231414795,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 303
+        },
+        "paso_adamw": 2303,
+        "indices": {
+          "historico": [
+            87,
+            867,
+            192,
+            729,
+            208,
+            698,
+            9,
+            389
+          ],
+          "global": [
+            1575,
+            64,
+            817,
+            291,
+            48,
+            1483,
+            282,
+            1025,
+            867,
+            1112,
+            2439,
+            1391,
+            149,
+            1672,
+            1244,
+            722
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "7399504ae41733ed464f1fdee8fcbd97128210c3bb7fb31e35d6da0fd143c233",
+        "huella_entradas_todas": "98a14ff5445e4d2472710432eac0004ba0c394e6ef9537d1baa30600d1983594",
+        "rng_comun_antes": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_comun_despues": "0bd6d5e02355caab596d1874d442e5abd5db855d32e80529bb41fee2bfee0e21",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2283002000185661
+      }
+    ],
+    "C2": [
+      {
+        "rama": "A",
+        "paso": 1,
+        "loss_historico": 4.036165237426758,
+        "loss_global": 0.8099731206893921,
+        "loss_nuevos": 0.0,
+        "loss_total": 4.4411516189575195,
+        "norma_gradiente_pre_clip": 26.94440460205078,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 299
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "paso_adamw": 2300,
+        "indices": {
+          "historico": [
+            707,
+            724,
+            668,
+            479,
+            399,
+            90,
+            521,
+            751
+          ],
+          "global": [
+            764,
+            704,
+            2051,
+            20,
+            1629,
+            2617,
+            1323,
+            1868,
+            510,
+            3,
+            2544,
+            1414,
+            314,
+            2314,
+            594,
+            670
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "dddc57ad8ca06fa6b4229e13003f2f1844622df90e03db4763e28d4a32ed9ae9",
+        "huella_entradas_todas": "20b1b221308b15140993b5ebb6598722c3f68eff9dc93ff7cae1c0ac6e3715c1",
+        "rng_comun_antes": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312",
+        "rng_comun_despues": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.21687599999131635
+      },
+      {
+        "rama": "A",
+        "paso": 2,
+        "loss_historico": 1.9606449604034424,
+        "loss_global": 1.101107120513916,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.5111985206604004,
+        "norma_gradiente_pre_clip": 6.323564529418945,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "paso_adamw": 2301,
+        "indices": {
+          "historico": [
+            833,
+            829,
+            574,
+            741,
+            783,
+            658,
+            828,
+            625
+          ],
+          "global": [
+            1567,
+            19,
+            1330,
+            1208,
+            441,
+            508,
+            1233,
+            133,
+            1881,
+            2103,
+            622,
+            799,
+            543,
+            2042,
+            1256,
+            170
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "4222c70a6cde9a1e9bb93278484230d61158512b95328006b7fd7cefddc19809",
+        "huella_entradas_todas": "d80591364dbd020b6b1e614aa98e765b7f8949cd21730a2f80a7c451ee627339",
+        "rng_comun_antes": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_comun_despues": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.24489370000083
+      },
+      {
+        "rama": "A",
+        "paso": 3,
+        "loss_historico": 2.3605194091796875,
+        "loss_global": 0.939993143081665,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.8305158615112305,
+        "norma_gradiente_pre_clip": 6.87385892868042,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "paso_adamw": 2302,
+        "indices": {
+          "historico": [
+            804,
+            540,
+            282,
+            390,
+            153,
+            542,
+            937,
+            734
+          ],
+          "global": [
+            2455,
+            1058,
+            2127,
+            72,
+            456,
+            1772,
+            1521,
+            583,
+            1850,
+            1684,
+            66,
+            933,
+            327,
+            414,
+            638,
+            377
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "5a6f3619d789000fc5ae5c788ccb911ba2bd68ba9d13d7ab1b64187146947b78",
+        "huella_entradas_todas": "457168e47e5c0fd140d24ca5dc08b6f2e4af0c2954feb4354ef2c947ad4d93fe",
+        "rng_comun_antes": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_comun_despues": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2307225999829825
+      },
+      {
+        "rama": "A",
+        "paso": 4,
+        "loss_historico": 3.1302762031555176,
+        "loss_global": 0.8995206356048584,
+        "loss_nuevos": 0.0,
+        "loss_total": 3.5800366401672363,
+        "norma_gradiente_pre_clip": 6.588794231414795,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 303
+        },
+        "paso_adamw": 2303,
+        "indices": {
+          "historico": [
+            87,
+            867,
+            192,
+            729,
+            208,
+            698,
+            9,
+            389
+          ],
+          "global": [
+            1575,
+            64,
+            817,
+            291,
+            48,
+            1483,
+            282,
+            1025,
+            867,
+            1112,
+            2439,
+            1391,
+            149,
+            1672,
+            1244,
+            722
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "7399504ae41733ed464f1fdee8fcbd97128210c3bb7fb31e35d6da0fd143c233",
+        "huella_entradas_todas": "98a14ff5445e4d2472710432eac0004ba0c394e6ef9537d1baa30600d1983594",
+        "rng_comun_antes": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_comun_despues": "0bd6d5e02355caab596d1874d442e5abd5db855d32e80529bb41fee2bfee0e21",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2054573000059463
+      }
+    ],
+    "R": [
+      {
+        "rama": "A",
+        "paso": 1,
+        "loss_historico": 4.036165237426758,
+        "loss_global": 0.8099731206893921,
+        "loss_nuevos": 0.0,
+        "loss_total": 4.4411516189575195,
+        "norma_gradiente_pre_clip": 26.94440460205078,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 299
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "paso_adamw": 2300,
+        "indices": {
+          "historico": [
+            707,
+            724,
+            668,
+            479,
+            399,
+            90,
+            521,
+            751
+          ],
+          "global": [
+            764,
+            704,
+            2051,
+            20,
+            1629,
+            2617,
+            1323,
+            1868,
+            510,
+            3,
+            2544,
+            1414,
+            314,
+            2314,
+            594,
+            670
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "dddc57ad8ca06fa6b4229e13003f2f1844622df90e03db4763e28d4a32ed9ae9",
+        "huella_entradas_todas": "20b1b221308b15140993b5ebb6598722c3f68eff9dc93ff7cae1c0ac6e3715c1",
+        "rng_comun_antes": "3463f400e7fd78bf97ed358e166b82e20fe4b7668003e6258cddb97d17eff312",
+        "rng_comun_despues": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.2086991999822203
+      },
+      {
+        "rama": "A",
+        "paso": 2,
+        "loss_historico": 1.9606449604034424,
+        "loss_global": 1.101107120513916,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.5111985206604004,
+        "norma_gradiente_pre_clip": 6.323564529418945,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 300
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "paso_adamw": 2301,
+        "indices": {
+          "historico": [
+            833,
+            829,
+            574,
+            741,
+            783,
+            658,
+            828,
+            625
+          ],
+          "global": [
+            1567,
+            19,
+            1330,
+            1208,
+            441,
+            508,
+            1233,
+            133,
+            1881,
+            2103,
+            622,
+            799,
+            543,
+            2042,
+            1256,
+            170
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "4222c70a6cde9a1e9bb93278484230d61158512b95328006b7fd7cefddc19809",
+        "huella_entradas_todas": "d80591364dbd020b6b1e614aa98e765b7f8949cd21730a2f80a7c451ee627339",
+        "rng_comun_antes": "4621fa346fa00eb111e61a2a61d3c8e15beadca06d37f376be120af600caf99f",
+        "rng_comun_despues": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.19730379999964498
+      },
+      {
+        "rama": "A",
+        "paso": 3,
+        "loss_historico": 2.3605194091796875,
+        "loss_global": 0.939993143081665,
+        "loss_nuevos": 0.0,
+        "loss_total": 2.8305158615112305,
+        "norma_gradiente_pre_clip": 6.87385892868042,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 301
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "paso_adamw": 2302,
+        "indices": {
+          "historico": [
+            804,
+            540,
+            282,
+            390,
+            153,
+            542,
+            937,
+            734
+          ],
+          "global": [
+            2455,
+            1058,
+            2127,
+            72,
+            456,
+            1772,
+            1521,
+            583,
+            1850,
+            1684,
+            66,
+            933,
+            327,
+            414,
+            638,
+            377
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "5a6f3619d789000fc5ae5c788ccb911ba2bd68ba9d13d7ab1b64187146947b78",
+        "huella_entradas_todas": "457168e47e5c0fd140d24ca5dc08b6f2e4af0c2954feb4354ef2c947ad4d93fe",
+        "rng_comun_antes": "bb66962f445d3b9fb4069249c67840d3e7dcce86be1bbb569082b6f96116ad74",
+        "rng_comun_despues": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.20571609999751672
+      },
+      {
+        "rama": "A",
+        "paso": 4,
+        "loss_historico": 3.1302762031555176,
+        "loss_global": 0.8995206356048584,
+        "loss_nuevos": 0.0,
+        "loss_total": 3.5800366401672363,
+        "norma_gradiente_pre_clip": 6.588794231414795,
+        "scaler_antes": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 302
+        },
+        "scaler_despues": {
+          "scale": 2048.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 303
+        },
+        "paso_adamw": 2303,
+        "indices": {
+          "historico": [
+            87,
+            867,
+            192,
+            729,
+            208,
+            698,
+            9,
+            389
+          ],
+          "global": [
+            1575,
+            64,
+            817,
+            291,
+            48,
+            1483,
+            282,
+            1025,
+            867,
+            1112,
+            2439,
+            1391,
+            149,
+            1672,
+            1244,
+            722
+          ],
+          "nuevo": []
+        },
+        "huella_entradas_comunes": "7399504ae41733ed464f1fdee8fcbd97128210c3bb7fb31e35d6da0fd143c233",
+        "huella_entradas_todas": "98a14ff5445e4d2472710432eac0004ba0c394e6ef9537d1baa30600d1983594",
+        "rng_comun_antes": "1b5dd285f7affece28f82609f0124f5638d093c6bfda44117e0f15cae22d8b4f",
+        "rng_comun_despues": "0bd6d5e02355caab596d1874d442e5abd5db855d32e80529bb41fee2bfee0e21",
+        "rng_nuevo_despues": "065745c711f7de0b37c329b183ff8302872836380afcb0b76023c6ae98aa983a",
+        "gradientes_finitos": true,
+        "segundos": 0.19163859999389388
+      }
+    ]
+  },
+  "rtol": 0.0001,
+  "atol": 1e-05,
+  "pesos_diagnosticos_descartados": true,
+  "aprobada": true
+}

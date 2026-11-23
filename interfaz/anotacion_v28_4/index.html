@@ -1,0 +1,35 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoWasteFormer · Revisar ajustes IA V28.4</title><link rel="stylesheet" href="/estilo.css"><script src="/app.js" defer></script></head>
+<body><header><b>EcoWasteFormer · Revisión visual V28.4</b><span>Sin entrenamiento · SAM en CPU, sólo cuando lo solicites</span></header>
+<main><aside><section><h1>Aprovechar los ajustes IA</h1><p>Compara y decide sobre las propuestas ya preparadas. Tus 197 eventos anteriores permanecen intactos. Ninguna decisión se guarda por visitar una imagen.</p>
+<label for="persona">Tu identificador</label><input id="persona" autocomplete="off" placeholder="juan_miguel">
+<label for="imagenes">Imagen</label><select id="imagenes"></select><div class="fila"><button id="anterior_im">← Imagen</button><button id="siguiente_im">Imagen →</button></div>
+<label class="check"><input type="checkbox" id="mostrar_base"> Mostrar también las 28 imágenes sin propuestas nuevas</label><div id="estado_imagen" class="nota"></div></section>
+<section><h2>Propuestas de esta imagen</h2><label class="check"><input id="solo_pendientes" type="checkbox" checked> Sólo pendientes / revisión posterior</label>
+<div id="lista_propuestas"></div><div class="fila"><button id="anterior_prop">← Propuesta</button><button id="siguiente_prop">Propuesta →</button></div>
+<div id="detalle_propuesta" class="nota"></div><div id="resumen_cambios" class="nota"></div><details><summary>Procedencia y registro</summary><pre id="procedencia" class="nota"></pre></details><label class="check"><input id="inspeccionada" type="checkbox"> He inspeccionado esta propuesta o grupo</label>
+<p id="seleccionadas">0 propuestas inspeccionadas seleccionadas</p>
+<button id="aceptar" class="primario ancho">Aceptar IA seleccionada</button><button id="rechazar" class="ancho">Rechazar seleccionada y conservar base</button><button id="posponer" class="ancho">Marcar seleccionada para revisión posterior</button>
+<label for="nota">Nota de la decisión</label><textarea id="nota" rows="3" placeholder="Obligatoria para rechazo, edición o revisión posterior"></textarea>
+<small>Un grupo vinculado se decide completo: sus máscaras dependen entre sí. Selecciona únicamente propuestas que hayas inspeccionado.</small></section>
+<section><h2>Editar el borrador</h2><label for="objetos">Objeto del grupo</label><select id="objetos"></select><label for="material">Material</label><select id="material"></select>
+<label for="motivo">Justificación del objeto / ignore / descarte</label><textarea id="motivo" rows="2"></textarea>
+<div class="fila"><button id="nuevo">+ Objeto omitido</button><button id="descartar">Descartar objeto</button></div>
+<label for="herramienta">Herramienta en la imagen derecha</label><select id="herramienta"><option value="ver">Inspeccionar</option><option value="caja">Caja para SAM</option><option value="positivo">Clic positivo SAM</option><option value="negativo">Clic negativo SAM</option><option value="pintar">Pincel · añadir máscara</option><option value="borrar">Pincel · quitar máscara / abrir hueco</option></select>
+<label>Radio del pincel en píxeles <input id="radio" type="range" min="1" max="60" value="12"></label>
+<button id="sam" class="ancho">Refinar objeto con SAM · CPU</button><button id="limpiar" class="ancho">Limpiar caja y clics SAM</button>
+<div class="fila"><button id="deshacer">Deshacer edición</button><button id="restablecer">Restablecer borrador</button></div>
+<button id="editar" class="primario ancho">Guardar mi edición del grupo</button><small>SAM y el pincel cambian sólo el borrador. Guardar edición registra tu decisión humana. Las zonas rojas siguen siendo ignore, no positivos.</small></section>
+<section><h2>Confirmar esta imagen</h2><div id="errores_qa" class="error"></div><details open><summary>Advertencias y observaciones</summary><ul id="advertencias"></ul></details>
+<label class="check"><input id="cobertura" type="checkbox"> Inspeccioné toda la imagen, sus advertencias, objetos omitidos y regiones ignore</label>
+<label for="nota_cobertura">Qué comprobaste de la cobertura</label><textarea id="nota_cobertura" rows="2" placeholder="Describe cobertura, ambigüedades justificadas y posibles descartes"></textarea>
+<button id="confirmar" class="primario ancho">Confirmar cobertura de esta imagen</button><small>No se marca completa al aceptar propuestas. Las pendientes y los errores técnicos bloquean esta confirmación. Nunca equivale a aceptación V26.</small></section>
+<section><h2>Guardado y recuperación</h2><div id="persistencia" class="nota"></div><button id="emergencia" class="ancho">Descargar copia de emergencia</button><button id="recuperar" class="ancho">Recuperar borrador local</button>
+<label for="importar">Recuperar copia descargada</label><input id="importar" type="file" accept="application/json,.json"><button id="reintentar" class="ancho">Reintentar solicitud sin confirmar</button><button id="contexto" class="ancho">Actualizar sesión conservando borrador</button><button id="abrir_guardado" class="ancho">Abrir último guardado conservando copia</button></section>
+<section><h2>Candidatura exploratoria</h2><div id="resumen" class="nota"></div><button id="auditar" class="ancho">Actualizar auditoría incremental</button><button id="exportar" class="ancho">Exportar COCO de imágenes utilizables</button><button id="exportar_pendiente" class="ancho">Exportar estado con pendientes · NO GT aprobado</button>
+<p class="nota">Una persona · 0 aceptaciones V26 · Entrenamiento deshabilitado. Los mínimos exploratorios y las cuotas oficiales no se cambian.</p></section></aside>
+<article><div id="mensaje" role="status">Cargando proyecto…</div><pre id="error_detalle" hidden role="alert"></pre>
+<div class="barra"><span id="titulo"></span><label>Zoom <input id="zoom" type="range" min="50" max="300" value="100"></label><label>Máscara <input id="opacidad" type="range" min="10" max="75" value="35"></label><label><input type="checkbox" id="contexto_objetos" checked> Contexto</label><button id="acercar">Acercar al objeto</button></div>
+<div class="comparacion"><figure><figcaption>Antes del grupo · base original; otros objetos en contexto atenuado</figcaption><div class="ventana" id="vantes"><canvas id="antes"></canvas></div></figure><figure><figcaption id="etiqueta_despues">Propuesta IA / borrador · aún sin guardar</figcaption><div class="ventana" id="vdespues"><canvas id="despues"></canvas></div></figure></div>
+<p class="leyenda">Plástico: cian · Papel: amarillo · Cartón: naranja · Vidrio: verde agua · Metal: violeta · Orgánico: verde · Ignore: rojo/rosa. Las máscaras conservan sus huecos por RLE.</p><div id="detalle_objeto" class="nota"></div>
+</article></main></body></html>

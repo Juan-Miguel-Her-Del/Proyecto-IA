@@ -1,0 +1,60 @@
+{
+  "click": {
+    "status": 206,
+    "host_final": "prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com",
+    "cabeceras": {
+      "x-amz-request-id": "E2FZ18ECFW29NP0H",
+      "x-amz-id-2": "tuy1hIcbnJxRucfudP3mMfE1/h47LdyF5AL0SHDPeikJ8LPPoIW7Lw0mhlR/9j1+tqixy3vdAl9kXcLlcYqWCIXTIZsWCNDD",
+      "Content-Length": "65536",
+      "Accept-Ranges": "bytes",
+      "Content-Range": "bytes 0-65535/5571902652",
+      "Date": "Mon, 23 Nov 2026 16:31:55 GMT",
+      "Server": "AmazonS3",
+      "Last-Modified": "Tue, 03 Nov 2026 16:23:27 GMT",
+      "ETag": "\"7c83190679b7e3d4ede7ca8822fffdbb-266\"",
+      "x-amz-version-id": "WcyiOFeOYEegBMiIA4UH4QMxsb_IzphO",
+      "Content-Type": "application/x-zip-compressed",
+      "Content-Disposition": "attachment; filename=\"data.zip\"",
+      "x-amz-server-side-encryption": "AES256",
+      "Connection": "close"
+    },
+    "bytes_leidos": 65536,
+    "segundos": 3.6388679000083357
+  },
+  "packwise": {
+    "status": 200,
+    "host_final": "fordatis.fraunhofer.de",
+    "cabeceras": {
+      "Date": "Mon, 23 Nov 2026 16:31:56 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload",
+      "Set-Cookie": "JSESSIONID=F6CAD533DAB1C67FD8925970E4F34EA0; Path=/; Secure; HttpOnly",
+      "Last-Modified": "Fri, 27 Feb 2026 02:30:53 GMT",
+      "Content-Disposition": "attachment;filename=PackWISE_dataset_v2.zip",
+      "Content-Length": "363767710",
+      "Content-Security-Policy": "frame-ancestors 'self';",
+      "Connection": "close",
+      "Content-Type": "application/zip"
+    },
+    "bytes_leidos": 65536,
+    "segundos": 1.6532126999809407
+  },
+  "packwise_rest": {
+    "status": 206,
+    "host_final": "fordatis.fraunhofer.de",
+    "cabeceras": {
+      "Date": "Mon, 23 Nov 2026 16:31:58 GMT",
+      "Server": "Apache",
+      "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload",
+      "Set-Cookie": "JSESSIONID=576C529C1E2AD8BCEBB008135E75143E; Path=/rest; Secure; HttpOnly",
+      "Content-Length": "2925",
+      "Content-Security-Policy": "frame-ancestors 'self';",
+      "Content-Range": "bytes 0-2924/2925",
+      "Connection": "close",
+      "Content-Type": "application/json"
+    },
+    "bytes_leidos": 2925,
+    "segundos": 1.0061128999805078,
+    "respuesta": "{\"uuid\":\"43f8c89c-2409-4b00-8fcb-d51b4e7853ed\",\"name\":\"PackWISE: Packaging Waste Instance Segmentation Dataset for Model Training and Evaluation\",\"handle\":\"fordatis/463.2\",\"type\":\"item\",\"expand\":[\"metadata\",\"parentCollection\",\"parentCollectionList\",\"parentCommunityList\",\"all\"],\"lastModified\":\"2026-02-27 03:30:53.74\",\"parentCollection\":null,\"parentCollectionList\":null,\"parentCommunityList\":null,\"bitstreams\":[{\"uuid\":\"826efce2-6c90-44eb-8aa8-20e6620a9551\",\"name\":\"license_handle_fordatis_463_handleEnd_doi_10_24406_fordatis_420_doiEnd_2025-12-19t153853_unterschrieben.pdf\",\"handle\":null,\"type\":\"bitstream\",\"expand\":[\"parent\",\"policies\",\"all\"],\"bundleName\":\"LICENSE\",\"description\":null,\"format\":\"Adobe PDF\",\"mimeType\":\"application/pdf\",\"sizeBytes\":71310,\"parentObject\":null,\"retrieveLink\":\"/rest/bitstreams/826efce2-6c90-44eb-8aa8-20e6620a9551/retrieve\",\"checkSum\":{\"value\":\"\\\"b086439e7f689ce7edd78e2021ebc360\\\"\",\"checkSumAlgorithm\":\"MD5\"},\"sequenceId\":2,\"policies\":null,\"link\":\"/rest/bitstreams/826efce2-6c90-44eb-8aa8-20e6620a9551\"},{\"uuid\":\"7acba4fb-3b37-4b3c-9773-0e1d40378532\",\"name\":\"license_handle_fordatis_463_2_handleEnd_doi_10_24406_fordatis_420_2_doiEnd_2026-02-25t110704.pdf\",\"handle\":null,\"type\":\"bitstream\",\"expand\":[\"parent\",\"policies\",\"all\"],\"bundleName\":\"LICENSE\",\"description\":null,\"format\":\"Adobe PDF\",\"mimeType\":\"application/pdf\",\"sizeBytes\":72163,\"parentObject\":null,\"retrieveLink\":\"/rest/bitstreams/7acba4fb-3b37-4b3c-9773-0e1d40378532/retrieve\",\"checkSum\":{\"value\":\"\\\"6f5fd501a69123e142fc0f265bcf5f7f\\\"\",\"checkSumAlgorithm\":\"MD5\"},\"sequenceId\":5,\"policies\":null,\"link\":\"/rest/bitstreams/7acba4fb-3b37-4b3c-9773-0e1d40378532\"},{\"uuid\":\"aeb76e32-c3e8-4746-8160-f8b62131b154\",\"name\":\"PackWISE_dataset_v2.zip\",\"handle\":null,\"type\":\"bitstream\",\"expand\":[\"parent\",\"policies\",\"all\"],\"bundleName\":\"ORIGINAL\",\"description\":\"Dataset of packaging waste images and annotations in COCO-format\",\"format\":\"ZIP\",\"mimeType\":\"application/zip\",\"sizeBytes\":363767710,\"parentObject\":null,\"retrieveLink\":\"/rest/bitstreams/aeb76e32-c3e8-4746-8160-f8b62131b154/retrieve\",\"checkSum\":{\"value\":\"\\\"e576ca113de378c153641965ad22ffa1\\\"\",\"checkSumAlgorithm\":\"MD5\"},\"sequenceId\":3,\"policies\":null,\"link\":\"/rest/bitstreams/aeb76e32-c3e8-4746-8160-f8b62131b154\"},{\"uuid\":\"a293b4f3-1e5c-468c-b54f-9f0e65fffeb1\",\"name\":\"PackWISE_title_page.jpg\",\"handle\":null,\"type\":\"bitstream\",\"expand\":[\"parent\",\"policies\",\"all\"],\"bundleName\":\"ORIGINAL\",\"description\":\"Title page with image preview\",\"format\":\"JPEG\",\"mimeType\":\"image/jpeg\",\"sizeBytes\":777905,\"parentObject\":null,\"retrieveLink\":\"/rest/bitstreams/a293b4f3-1e5c-468c-b54f-9f0e65fffeb1/retrieve\",\"checkSum\":{\"value\":\"\\\"0892f0747cbed25f16c8a3f4fc826392\\\"\",\"checkSumAlgorithm\":\"MD5\"},\"sequenceId\":4,\"policies\":null,\"link\":\"/rest/bitstreams/a293b4f3-1e5c-468c-b54f-9f0e65fffeb1\"}],\"withdrawn\":\"false\",\"archived\":\"true\",\"link\":\"/rest/items/43f8c89c-2409-4b00-8fcb-d51b4e7853ed\",\"metadata\":null}"
+  }
+}

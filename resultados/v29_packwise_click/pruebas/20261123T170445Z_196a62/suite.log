@@ -1,0 +1,143 @@
+...................................................................................E...E............................................................."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/auditoria HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 200 -
+"GET / HTTP/1.1" 200 -
+"GET /api/prioridades HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/borradores?id=fixture%3A1&archivo=../../PROYECTO.json HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+....s............................................"GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/exportar HTTP/1.1" 404 -
+"POST /api/exportar HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 400 -
+"GET /../../README.md HTTP/1.1" 404 -
+"GET /api/imagen?id=../../README.md HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=independiente HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET / HTTP/1.1" 200 -
+"GET /api/config HTTP/1.1" 200 -
+"GET / HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1&modo=asistida HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+........EE..................................................................................................................."GET /api/config HTTP/1.1" 200 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"GET /api/inspeccion?id=fixture%3A1&unidad=prop_a225f9b4e0cd47f585904e77 HTTP/1.1" 200 -
+"GET /api/inspeccion?id=fixture%3A1&unidad=prop_fd6f5fc3ff55bcaecab263dd HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 200 -
+"GET /api/recibo?id=sol_7a39cfbbf70c47df9fe7d70c9630fd78 HTTP/1.1" 200 -
+."GET /api/config HTTP/1.1" 200 -
+"POST /api/aprobar_todas HTTP/1.1" 404 -
+."GET /api/config HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+"GET /api/tarea?id=fixture%3A1 HTTP/1.1" 200 -
+"GET /api/inspeccion?id=fixture%3A1&unidad=prop_a225f9b4e0cd47f585904e77 HTTP/1.1" 200 -
+"GET /api/inspeccion?id=fixture%3A1&unidad=prop_fd6f5fc3ff55bcaecab263dd HTTP/1.1" 200 -
+"POST /api/guardar HTTP/1.1" 400 -
+.....................................................................................
+======================================================================
+ERROR: test_contexto_minimo_aplica_solo_flags_declarados_y_restaura (test_backend_numerico.BackendNumerico.test_contexto_minimo_aplica_solo_flags_declarados_y_restaura)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\pruebas\test_backend_numerico.py", line 25, in test_contexto_minimo_aplica_solo_flags_declarados_y_restaura
+    with aplicar_backend(politica('minimo')):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\ecowaste\backend_numerico.py", line 59, in aplicar_backend
+    raise ValueError('CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python')
+ValueError: CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python
+
+======================================================================
+ERROR: test_rechaza_opciones_y_entorno_de_reanudacion_distintos (test_backend_numerico.BackendNumerico.test_rechaza_opciones_y_entorno_de_reanudacion_distintos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\pruebas\test_backend_numerico.py", line 32, in test_rechaza_opciones_y_entorno_de_reanudacion_distintos
+    with aplicar_backend(politica('minimo')):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\ecowaste\backend_numerico.py", line 59, in aplicar_backend
+    raise ValueError('CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python')
+ValueError: CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python
+
+======================================================================
+ERROR: test_compatibilidad_checkpoint_inferencia_sin_optimizador_activo (test_evaluacion_v20.EvaluacionV20.test_compatibilidad_checkpoint_inferencia_sin_optimizador_activo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\pruebas\test_evaluacion_v20.py", line 31, in test_compatibilidad_checkpoint_inferencia_sin_optimizador_activo
+    with contexto_evaluacion(cfg):
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\ecowaste\backend_numerico.py", line 59, in aplicar_backend
+    raise ValueError('CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python')
+ValueError: CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python
+
+======================================================================
+ERROR: test_contexto_numero_inferencia_aplica_y_restaura (test_evaluacion_v20.EvaluacionV20.test_contexto_numero_inferencia_aplica_y_restaura)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\pruebas\test_evaluacion_v20.py", line 25, in test_contexto_numero_inferencia_aplica_y_restaura
+    with contexto_evaluacion(self.cfg()):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\JUAN M\OneDrive\Desktop\proyecto final IA\EcoWasteFormer\ecowaste\backend_numerico.py", line 59, in aplicar_backend
+    raise ValueError('CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python')
+ValueError: CUBLAS_WORKSPACE_CONFIG debe fijarse antes de iniciar Python
+
+----------------------------------------------------------------------
+Ran 426 tests in 55.535s
+
+FAILED (errors=4, skipped=1)

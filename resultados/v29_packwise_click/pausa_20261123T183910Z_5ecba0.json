@@ -1,0 +1,79 @@
+{
+  "fecha_UTC": "2026-11-23T18:39:10.709212+00:00",
+  "motivo": "Pausa solicitada por el usuario; continuar posteriormente",
+  "entrenamiento_completo": {
+    "A": true,
+    "B": true
+  },
+  "evaluacion": [
+    {
+      "modelo": "A",
+      "cohorte": "historico_train",
+      "logits_1v": 121,
+      "logits_5v": 964,
+      "trazas_5v": 964,
+      "captura_completa": true,
+      "analisis_completo": true
+    },
+    {
+      "modelo": "A",
+      "cohorte": "nuevo_retenido",
+      "logits_1v": 30,
+      "logits_5v": 240,
+      "trazas_5v": 240,
+      "captura_completa": true,
+      "analisis_completo": true
+    },
+    {
+      "modelo": "A",
+      "cohorte": "nuevo_train",
+      "logits_1v": 132,
+      "logits_5v": 1050,
+      "trazas_5v": 1050,
+      "captura_completa": true,
+      "analisis_completo": true
+    },
+    {
+      "modelo": "B",
+      "cohorte": "historico_train",
+      "logits_1v": 121,
+      "logits_5v": 964,
+      "trazas_5v": 964,
+      "captura_completa": true,
+      "analisis_completo": true
+    },
+    {
+      "modelo": "B",
+      "cohorte": "nuevo_train",
+      "logits_1v": 132,
+      "logits_5v": 464,
+      "trazas_5v": 464,
+      "captura_completa": false,
+      "analisis_completo": false
+    },
+    {
+      "modelo": "Original",
+      "cohorte": "nuevo_retenido",
+      "logits_1v": 30,
+      "logits_5v": 240,
+      "trazas_5v": 240,
+      "captura_completa": true,
+      "analisis_completo": true
+    },
+    {
+      "modelo": "Original",
+      "cohorte": "nuevo_train",
+      "logits_1v": 132,
+      "logits_5v": 1050,
+      "trazas_5v": 1050,
+      "captura_completa": true,
+      "analisis_completo": true
+    }
+  ],
+  "metricas_finales_completas": false,
+  "reanudar_evaluacion": "C:/Users/JUAN M/.venvs/EcoWasteFormer/Scripts/python.exe scripts/evaluar_v29.py",
+  "no_reentrenar": true,
+  "test_evaluado": false,
+  "adopcion_automatica": false,
+  "pendiente": "Completar evaluacion B, generar informe/tablas/graficas y cierre de integridad; conservar todos los archivos existentes."
+}
