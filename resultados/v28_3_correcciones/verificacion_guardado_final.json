@@ -1,0 +1,42 @@
+{
+  "aprobada": true,
+  "fecha_UTC": "2026-11-23T00:40:23.579580+00:00",
+  "eventos_humanos": 134,
+  "archivos_respaldados": 731,
+  "checkpoints_conservados": 113,
+  "archivos_historicos_verificados": 15140,
+  "resoluciones_humanas_creadas_por_agente": 0,
+  "pruebas": 351,
+  "casos_navegador": 12,
+  "sha256_pruebas": "fea036c78e4d48fad46ea16dfbead4d900ececc76b0def1bcb313f50c47e055b",
+  "sha256_navegador": "288272e37303f00d5b7c47bbddadfb0aab035ed51e5315e81d088fb715dc4a2b",
+  "ultima_auditoria": "resultados/v28_3_correcciones/auditorias/20261123T003416305608Z_a967066f/auditoria.json",
+  "sha256_ultima_auditoria": "c85ad388bfb5424641dab8e250e333cd36de118a51387da2fa6c162d98039b87",
+  "candidatas": 28,
+  "objetos_validos_candidatas": 113,
+  "alimentarias_HPI": 3,
+  "cache_reusadas": 72,
+  "servicio_url": "http://127.0.0.1:8768",
+  "servicio_CPU_verificado": true,
+  "entrenamiento": false,
+  "test_evaluado": false,
+  "generalizacion_desbloqueada": false,
+  "checkpoint_predeterminado_modificado": false,
+  "cierre_anterior_sha256": "0c6637b26f8a8ff35bec92b2dd560d346ea624889f2916278442c3a25d5a2566",
+  "manifiesto_anterior_sha256": "12c0f88e16313101b4186598d51303e85c41624e30f7d3c3c3777af1c9332970",
+  "diferencias_permitidas": {
+    "documentacion/28_3_correcciones_post_entrenamiento.md": {
+      "antes": "4c46a24517e5c2e04a9d08f4d00bb107068f7c301ec3910516fda48474776ed6",
+      "ahora": "4f076eacc9fa10dd099d5d96a0343cb981123ab017e027aec3279b93756fa297"
+    },
+    "interfaz/anotacion_v28_3/recuperacion.js": {
+      "antes": "1a4d4dbcbec3df4ca85201e347a063a554ddfa26f318842fab96c8988cdfedd5",
+      "ahora": "7952ee662be49cf77643af69f89bccc23ae8bceb0648214b713ac06b1e1f15d6"
+    },
+    "scripts/probar_editor_v28_3.py": {
+      "antes": "d672b656acb74079cd492a1c30578e9adca59e2a6723461850161af8fa1950db",
+      "ahora": "d985090e6a281215de9fe5aec47cc09eaf831651a402c31431bd67a590835a33"
+    }
+  },
+  "motivo_suplemento": "Bloquear inmediatamente antes de esperar IndexedDB; prueba de dos llamadas simultáneas, sin cambiar backend/QA/datos"
+}

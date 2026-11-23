@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoWasteFormer · Correcciones prioritarias V28.3</title><link rel="stylesheet" href="/estilo.css">
+<script src="/app.js" defer></script><script src="/recuperacion.js" defer></script></head>
+<body><header><div><b>EcoWasteFormer</b><span class="subtitle">Correcciones prioritarias · V28.3</span></div><span class="badge">SAM 2 Tiny · CPU · Sin entrenamiento</span></header>
+<main><aside>
+<section><h1>Aprovechar tus correcciones</h1><p>Trabajas sobre tus guardados actuales. Las observaciones orientan la revisión; no cambian tus contornos.</p>
+<label for="persona">Tu identificador personal</label><input id="persona" placeholder="juan_miguel" autocomplete="off"><small>El identificador sugerido se recupera de los eventos guardados.</small><p><a href="http://127.0.0.1:8770/" target="_blank" rel="noopener">Ver los ajustes hechos por IA: antes y después</a></p></section>
+<section id="prioridades"><h2>Correcciones prioritarias</h2>
+<label for="filtro_prioridad">Prioridad</label><select id="filtro_prioridad"><option value="">Todas</option><option value="1">1 · Comida HPI prioritaria</option><option value="2">2 · Escenas WaRP con vidrio</option><option value="3">3 · Envases multicapa</option><option value="4">4 · Papel omitido ZeroWaste</option><option value="5">5 · Sin guardar / borrador</option><option value="6">6 · Otras decisiones técnicas</option><option value="7">7 · Pistas V28.2 opcionales</option></select>
+<label for="filtro_estado">Estado de la incidencia</label><select id="filtro_estado"><option value="abiertas">Pendientes y requieren decisión</option><option value="pendiente">Pendiente</option><option value="requiere_decision">Requiere decisión</option><option value="corregida">Corregida</option><option value="">Todos</option></select>
+<select id="incidencias" size="6" aria-label="Lista de correcciones prioritarias"></select>
+<button id="abrir_inc" class="ancho">Abrir imagen y objeto seleccionados</button>
+<div class="fila"><button id="prev_inc">← Pendiente</button><button id="next_inc">Pendiente →</button></div>
+<div id="observacion" class="observacion" aria-live="polite">Cargando incidencias…</div>
+<label for="estado_inc">Registrar mi decisión</label><select id="estado_inc"><option value="corregida">Corregida en el guardado actual</option><option value="requiere_decision">Requiere decisión</option><option value="pendiente">Pendiente</option></select>
+<label for="nota_inc">Qué corregiste o qué falta decidir</label><textarea id="nota_inc" rows="3" placeholder="Ej.: añadí los restos omitidos; confirmé compuesto y su región ignore"></textarea>
+<button id="resolver_inc" class="ancho">Registrar estado de esta incidencia</button><small>Para cerrar, guarda primero una revisión completa. No equivale a revisión independiente o aceptación V26.</small></section>
+<section><h2>Progreso exploratorio</h2><div id="resumen_qa" class="nota">Todavía no hay auditoría.</div><button id="auditar" class="ancho">Actualizar auditoría incremental</button><div id="estado_qa" class="nota"></div></section>
+<section><div class="fila"><button id="anterior">← Imagen</button><button id="siguiente">Imagen →</button></div>
+<label for="fuente">Fuente</label><select id="fuente"><option value="">Todas las fuentes</option><option value="warp">WaRP · vidrio y envases</option><option value="zerowaste">ZeroWaste · papel y cartón</option><option value="wsc">WasteSegCluster</option><option value="hpi">HPI · restos alimentarios</option></select>
+<label for="imagen">Imagen</label><select id="imagen"></select><div id="contador" class="nota"></div><div id="estado" class="estado"></div></section>
+<section><label for="objetos">Objetos actuales</label><select id="objetos" size="5"></select>
+<label for="material">Material del objeto seleccionado o nuevo</label><select id="material"></select>
+<label for="motivo">Motivo de ambigüedad o descarte</label><input id="motivo" placeholder="Describe composición, oclusión o motivo de descarte">
+<div class="fila"><button id="nuevo">+ Otro objeto</button><button id="descartar">Descartar propuesta</button></div></section>
+<section><label for="modo">Herramienta</label><select id="modo"><option value="caja">Caja para SAM</option><option value="positivo">Clic positivo · incluir</option><option value="negativo">Clic negativo · excluir</option><option value="editar">Mover vértices</option><option value="poligono">Polígono manual opcional</option></select>
+<div class="fila"><button id="sam" class="primario">Proponer / refinar con SAM</button><button id="limpiar">Limpiar clics</button></div><button id="deshacer" class="ancho">Deshacer último cambio</button>
+<details><summary>Ayuda para contornos</summary><p>Selecciona el objeto. Puedes refinar con SAM mediante caja y clics; SAM no elige el material. Para editar vértices, arrastra puntos; Shift+clic añade y Alt+clic elimina. El polígono manual termina con Enter o doble clic. Los fragmentos y huecos requieren tu criterio.</p></details></section>
+<section><label class="check"><input type="checkbox" id="completa"> Revisé toda esta imagen, incluidos objetos omitidos y regiones ignoradas.</label>
+<button id="guardar" class="primario ancho">Guardar corrección / borrador</button><button id="contexto" class="ancho">Recargar contexto sin perder borrador</button>
+<button id="emergencia" class="ancho">Descargar copia de emergencia</button><label for="importar">Recuperar una copia de emergencia</label><input id="importar" type="file" accept="application/json,.json">
+<button id="recuperar" class="ancho" disabled>Recuperar borrador local</button><button id="recuperar_servidor" class="ancho">Recuperar copia del servidor</button>
+<button id="abrir_guardado" class="ancho">Abrir versión guardada conservando copia</button><div id="persistencia" class="nota" aria-live="polite"></div>
+<button id="independiente" class="ancho">Revisión independiente · otra persona</button><button id="exportar" class="ancho">Exportar COCO pendiente</button><button id="liberar" class="ancho discreto">Liberar SAM de memoria CPU</button>
+<p class="nota">Sin la casilla, guardas un borrador. Las copias de emergencia pueden contener geometría incompleta y nunca son GT aprobada.</p></section>
+</aside><article><div id="mensaje" role="status">Cargando proyecto local…</div><pre id="error_detalle" hidden role="alert"></pre>
+<div class="barra"><span id="titulo"></span><label>Zoom <input id="zoom" type="range" min="40" max="200" value="100"></label><label><input id="mostrar" type="checkbox" checked> Mostrar contornos</label></div>
+<div id="visor"><canvas id="lienzo"></canvas></div><div id="detalle" class="nota"></div>
+<p class="pie">Fotografías y borradores permanecen en este equipo. Sin aceptación V26, entrenamiento, test o apertura de generalización.</p></article></main></body></html>
