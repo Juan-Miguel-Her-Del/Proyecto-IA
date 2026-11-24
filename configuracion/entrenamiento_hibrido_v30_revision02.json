@@ -1,0 +1,76 @@
+{
+  "version": "v30_cnn_mapas_desde_cero_2_amp1024",
+  "semilla": 3001,
+  "imagen": 384,
+  "dimension": 96,
+  "historico_batch": 8,
+  "nuevo_batch": 4,
+  "auxiliar_batch": 16,
+  "coeficiente_nuevos": 0.5,
+  "coeficiente_auxiliar_global": 0.5,
+  "coeficiente_fondo": 3.0,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "clipping": 1.0,
+  "actualizaciones": 2400,
+  "checkpoints": [
+    0,
+    200,
+    800,
+    1600,
+    2400
+  ],
+  "puerta_200": {
+    "reduccion_loss_minima": 0.1,
+    "comparar_media_primeros": 25,
+    "comparar_media_ultimos": 25
+  },
+  "puerta_800": {
+    "dominio": "desarrollo",
+    "vistas": 1,
+    "map50_minimo_B": 0.01,
+    "recall_minimo_B": 0.05,
+    "ampliar_si_falla": false
+  },
+  "memorizacion": {
+    "pasos": 240,
+    "reduccion_loss_minima": 0.35,
+    "accuracy_fg_minima": 0.5,
+    "accuracy_por_material_minima": 0.3
+  },
+  "coleccion": "datos/nuevos/v29/coleccion",
+  "sha256_coleccion": "0763d2e4faa312f95131695307b73028d4ac28b4d0fd51e60dc9a8b94221e6e9",
+  "checkpoint_referencia": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+  "sha256_referencia": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+  "inicializacion": "aleatoria_propia_sin_pesos_ep19_ni_externos",
+  "backend": "V23_completo",
+  "warmup": false,
+  "parada_por_metricas_val": false,
+  "test": false,
+  "generalizacion_bloqueada": true,
+  "adopcion_automatica": false,
+  "vistas": [
+    1,
+    5
+  ],
+  "umbral": 0.05,
+  "area_minima": 2,
+  "politica": "argmax7",
+  "nms": 0.5,
+  "top100": true,
+  "variante_C": "alternativa propia implementada y probada; entrenamiento separado diferido para aislar CNN en A/B",
+  "restricciones_academicas": {
+    "cnn_propia": true,
+    "transformer_propio": true,
+    "pesos_aleatorios": true,
+    "pesos_externos": false,
+    "inicializacion_epoca19": false,
+    "servicios_detectores": false,
+    "sam_inferencia": false,
+    "coco_autores_solo_datos_y_licencias": true
+  },
+  "justificacion_presupuesto": "Desde cero: 2400 pasos fijos, unas 20 exposiciones del train historico y 9 del nuevo, en vez de 600 pasos de continuacion V29. Puerta train-only a 200 pasos; no ampliar por resultados bajos. Mismos 8 historicos + 2 PackWISE + 2 CLICK + 16 globales en A/B. CNN incrementa computo, no exposicion.",
+  "criterio_integracion": "B supera A y original al menos 0.005 mAP50 en val desarrollo 5v, recall no inferior y FP <=1.10*original; retenido externo B>=A. No implica fiabilidad ni generalizacion de seis clases.",
+  "grad_scaler_init_scale": 1024.0,
+  "revision_numerica": "Escala inicial conservadora tras overflow escalado reproducido en paso 49 de memorizacion; mismos logits y pesos producen gradientes finitos con escala1024 y FP32. No cambia arquitectura, loss, LR ni presupuesto."
+}

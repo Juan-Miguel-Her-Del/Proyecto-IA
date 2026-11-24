@@ -1,0 +1,22 @@
+{
+  "fase": "auditoria_piloto_detenido",
+  "pasos_A": 800,
+  "pasos_B": 800,
+  "presupuesto_maximo_no_completado": 2400,
+  "gate800_aprobado": false,
+  "prohibido_ampliar_sin_nuevo_protocolo": true,
+  "evaluacion_script": "evaluar_piloto_detenido.py",
+  "siguiente": [
+    "metricas_piloto.json",
+    "informar_piloto_detenido.py",
+    "visualizar_piloto_detenido.py",
+    "verificar_v30.py"
+  ],
+  "restricciones": [
+    "sin pesos externos",
+    "sin inicializacion ep19",
+    "test reservado",
+    "generalizacion bloqueada",
+    "no adopcion"
+  ]
+}

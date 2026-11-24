@@ -1,0 +1,957 @@
+{
+  "resultados": {
+    "Original": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.03033559233343641,
+            "map50_95": 0.012306379648916755,
+            "recall50": 0.1688622754491018,
+            "precision50": 0.09684065934065934,
+            "tp50": 423,
+            "fp50": 3945,
+            "fn50": 2082,
+            "ap50_por_material": {
+              "plastico": 0.07889925386055861,
+              "papel": 0.014492753708716666,
+              "carton": 0.052826692783596495,
+              "vidrio": 0.0,
+              "metal": 0.03579485364774666,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.04216367118337219,
+            "map50_95": 0.014176403906441482,
+            "recall50": 0.23632734530938124,
+            "precision50": 0.03517319232368843,
+            "tp50": 592,
+            "fp50": 16239,
+            "fn50": 1913,
+            "ap50_por_material": {
+              "plastico": 0.057885142651819946,
+              "papel": 0.012206713862643383,
+              "carton": 0.05637695153455923,
+              "vidrio": 0.00012858428688037514,
+              "metal": 0.02242423872472626,
+              "organico": 0.10396039603960396
+            }
+          }
+        },
+        "analisis": "resultados/v28_2_exploratorio/evaluacion/Original/historico/analisis.json",
+        "sha256_analisis": "8e15930d45943d38e6dba26408e6639437dbffc5a20fd9a0f104cc0c2309860c",
+        "captura": "resultados/v28_2_exploratorio/evaluacion/Original/historico",
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 8.848228899994865,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 407.3706819000072,
+            "memoria_gpu_max_allocated_bytes": 128303616,
+            "memoria_gpu_max_reserved_bytes": 308281344
+          }
+        },
+        "referencia_reutilizada": true
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.015744043214449492,
+            "map50_95": 0.0057033917642317225,
+            "recall50": 0.1375432525951557,
+            "precision50": 0.12077478161792632,
+            "tp50": 636,
+            "fp50": 4630,
+            "fn50": 3988,
+            "ap50_por_material": {
+              "plastico": 0.0570449573863851,
+              "papel": 0.0030729193055983816,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0028582961658144943,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.014892811483546797,
+            "map50_95": 0.005137738267347069,
+            "recall50": 0.22837370242214533,
+            "precision50": 0.05468669083376489,
+            "tp50": 1056,
+            "fp50": 18254,
+            "fn50": 3568,
+            "ap50_por_material": {
+              "plastico": 0.05107078472576519,
+              "papel": 0.006564955678906771,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.001935505529515224,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/Original/nuevo_train/analisis.json",
+        "sha256_analisis": "12b2f5bfcb26767c3e91a796fc736fad5d0b48b38ef5ff6248a3a6a5363b7461",
+        "captura": "resultados/v29_packwise_click/evaluacion/Original/nuevo_train",
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 6.845821499999147,
+            "memoria_gpu_max_allocated_bytes": 182590464,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 394.85451939998893,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          }
+        },
+        "referencia_reutilizada": true
+      },
+      "desarrollo": {
+        "metricas": {
+          "1": {
+            "map50": 0.024465686650854527,
+            "map50_95": 0.004494489861111289,
+            "recall50": 0.11080332409972299,
+            "precision50": 0.06125574272588055,
+            "tp50": 40,
+            "fp50": 613,
+            "fn50": 321,
+            "ap50_por_material": {
+              "plastico": 0.02511930192756181,
+              "papel": 0.04950495049504951,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.07216986748251585,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.02912055790153864,
+            "map50_95": 0.00754877200101198,
+            "recall50": 0.20498614958448755,
+            "precision50": 0.03022875816993464,
+            "tp50": 74,
+            "fp50": 2374,
+            "fn50": 287,
+            "ap50_por_material": {
+              "plastico": 0.03854279725415872,
+              "papel": 0.04950495049504951,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.08667559966002361,
+              "organico": 0.0
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/Original/desarrollo/analisis.json",
+        "sha256_analisis": "80910c78386b3e028ee8638db3a3dab4fa2eade3d9870df9265785d2c402bd70",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/Original/desarrollo",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 2.8717581999953836,
+            "pico_gpu_bytes": 189025792,
+            "imagenes": 181
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 68.28774960001465,
+            "pico_gpu_bytes": 133544448,
+            "imagenes": 181
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "externo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.01866956368678867,
+            "map50_95": 0.006979831122476669,
+            "recall50": 0.13486238532110092,
+            "precision50": 0.11826226870474658,
+            "tp50": 147,
+            "fp50": 1096,
+            "fn50": 943,
+            "ap50_por_material": {
+              "plastico": 0.05555642359327562,
+              "papel": 0.0,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.000452267467090399,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.016374471333037707,
+            "map50_95": 0.005891263697652927,
+            "recall50": 0.22752293577981653,
+            "precision50": 0.05451747636843262,
+            "tp50": 248,
+            "fp50": 4301,
+            "fn50": 842,
+            "ap50_por_material": {
+              "plastico": 0.04544241305920157,
+              "papel": 0.00139581629692918,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.002285184642982365,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v29_packwise_click/evaluacion/Original/nuevo_retenido/analisis.json",
+        "sha256_analisis": "4f846f5ea834cae72b4d440df79267811ad9addbf3eee1e41dbbe9519cd32829",
+        "captura": "resultados/v29_packwise_click/evaluacion/Original/nuevo_retenido",
+        "costes": {
+          "1": {
+            "segundos_captura_incluye_disco_y_observador": 1.7093262000125833,
+            "memoria_gpu_max_allocated_bytes": 182000640,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          },
+          "5": {
+            "segundos_captura_incluye_disco_y_observador": 91.16636850000941,
+            "memoria_gpu_max_allocated_bytes": 126874112,
+            "memoria_gpu_max_reserved_bytes": 306184192
+          }
+        },
+        "referencia_reutilizada": true
+      },
+      "benchmark": {
+        "1": {
+          "ms_media_modelo_y_postproceso": 22.99548333394341,
+          "mediciones": 12,
+          "pico_gpu_bytes": 61365760
+        },
+        "5": {
+          "ms_media_modelo_y_postproceso": 92.51567500662834,
+          "mediciones": 12,
+          "pico_gpu_bytes": 133968384
+        }
+      }
+    },
+    "A": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.010573439524438318,
+            "map50_95": 0.004261942593251715,
+            "recall50": 0.13932135728542913,
+            "precision50": 0.12288732394366197,
+            "tp50": 349,
+            "fp50": 2491,
+            "fn50": 2156,
+            "ap50_por_material": {
+              "plastico": 0.05424230538382389,
+              "papel": 0.0021211778062700045,
+              "carton": 0.007077153956536019,
+              "vidrio": 0.0,
+              "metal": 0.0,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.007543249255531889,
+            "map50_95": 0.002823368110117678,
+            "recall50": 0.20119760479041915,
+            "precision50": 0.046464460219415506,
+            "tp50": 504,
+            "fp50": 10343,
+            "fn50": 2001,
+            "ap50_por_material": {
+              "plastico": 0.03456904244895029,
+              "papel": 0.001177098768034784,
+              "carton": 0.009513354316206262,
+              "vidrio": 0.0,
+              "metal": 0.0,
+              "organico": 0.0
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/historico_train/analisis.json",
+        "sha256_analisis": "08be801ff955e8d39a5609636ff9236d21c7e160eb96c097a82dacaf855587c1",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/historico_train",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 8.59567270000116,
+            "pico_gpu_bytes": 191649792,
+            "imagenes": 964
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 473.92192329998943,
+            "pico_gpu_bytes": 135213568,
+            "imagenes": 964
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.05941799430563898,
+            "map50_95": 0.025306475177720777,
+            "recall50": 0.24113321799307957,
+            "precision50": 0.29173207744636315,
+            "tp50": 1115,
+            "fp50": 2707,
+            "fn50": 3509,
+            "ap50_por_material": {
+              "plastico": 0.15901539113261912,
+              "papel": 0.07865658608993681,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.06261054800804888,
+            "map50_95": 0.028702903600492616,
+            "recall50": 0.3274221453287197,
+            "precision50": 0.13059604934011904,
+            "tp50": 1514,
+            "fp50": 10079,
+            "fn50": 3110,
+            "ap50_por_material": {
+              "plastico": 0.1854274964863711,
+              "papel": 0.06501469554582445,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/nuevo_train/analisis.json",
+        "sha256_analisis": "cdc0830fc2226a81f7789583e88f1ba10aff57fade943301e431459754877ee2",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/nuevo_train",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 10.025314400001662,
+            "pico_gpu_bytes": 191121408,
+            "imagenes": 1050
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 527.7650765999861,
+            "pico_gpu_bytes": 135213568,
+            "imagenes": 1050
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "desarrollo": {
+        "metricas": {
+          "1": {
+            "map50": 0.005116226329858547,
+            "map50_95": 0.0017284885917946992,
+            "recall50": 0.10249307479224377,
+            "precision50": 0.09068627450980392,
+            "tp50": 37,
+            "fp50": 371,
+            "fn50": 324,
+            "ap50_por_material": {
+              "plastico": 0.027397027774022358,
+              "papel": 0.003300330205128925,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.0,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.004011666712661584,
+            "map50_95": 0.001257880170070397,
+            "recall50": 0.16066481994459833,
+            "precision50": 0.042899408284023666,
+            "tp50": 58,
+            "fp50": 1294,
+            "fn50": 303,
+            "ap50_por_material": {
+              "plastico": 0.021784426884190872,
+              "papel": 0.0022855733917786342,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.0,
+              "organico": 0.0
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/desarrollo/analisis.json",
+        "sha256_analisis": "bc29a196b004bdc28873f8aa7958a7e4ad96d51b1b0b5e9eb6e43a4cd52bcf12",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/desarrollo",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 1.6469652999949176,
+            "pico_gpu_bytes": 191121408,
+            "imagenes": 181
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 68.83715539998957,
+            "pico_gpu_bytes": 135213568,
+            "imagenes": 181
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "externo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.061044050005599614,
+            "map50_95": 0.02702328889221937,
+            "recall50": 0.23853211009174313,
+            "precision50": 0.3198031980319803,
+            "tp50": 260,
+            "fp50": 553,
+            "fn50": 830,
+            "ap50_por_material": {
+              "plastico": 0.17861551843067208,
+              "papel": 0.004516631586126762,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.07192066806697413,
+            "map50_95": 0.03391995629950399,
+            "recall50": 0.3165137614678899,
+            "precision50": 0.149286023366508,
+            "tp50": 345,
+            "fp50": 1966,
+            "fn50": 745,
+            "ap50_por_material": {
+              "plastico": 0.21287001639899641,
+              "papel": 0.002891987801925971,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/externo_retenido/analisis.json",
+        "sha256_analisis": "2fd331ac582c5c9a68f32c5e7b14074dfde3b218d0a8a9e6694c5f0b989f1356",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/A/externo_retenido",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 2.365745099988999,
+            "pico_gpu_bytes": 191121408,
+            "imagenes": 240
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 121.56965769999078,
+            "pico_gpu_bytes": 135310336,
+            "imagenes": 240
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "benchmark": {
+        "1": {
+          "ms_media_modelo_y_postproceso": 25.24985833588289,
+          "mediciones": 12,
+          "pico_gpu_bytes": 62427648
+        },
+        "5": {
+          "ms_media_modelo_y_postproceso": 79.74069166327051,
+          "mediciones": 12,
+          "pico_gpu_bytes": 135213568
+        }
+      }
+    },
+    "B": {
+      "historico_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.03361351984758975,
+            "map50_95": 0.013174212530636454,
+            "recall50": 0.17644710578842315,
+            "precision50": 0.15933669790915644,
+            "tp50": 442,
+            "fp50": 2332,
+            "fn50": 2063,
+            "ap50_por_material": {
+              "plastico": 0.12224349940177237,
+              "papel": 0.0,
+              "carton": 0.06715590012545633,
+              "vidrio": 0.0,
+              "metal": 0.012281719558309801,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.02815614308756177,
+            "map50_95": 0.011020007470650323,
+            "recall50": 0.24550898203592814,
+            "precision50": 0.06546731956568022,
+            "tp50": 615,
+            "fp50": 8779,
+            "fn50": 1890,
+            "ap50_por_material": {
+              "plastico": 0.10531914344813564,
+              "papel": 0.0,
+              "carton": 0.05568358918080236,
+              "vidrio": 0.0,
+              "metal": 0.007934125896432612,
+              "organico": 0.0
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/historico_train/analisis.json",
+        "sha256_analisis": "3f7b59c2fd506b11c508e74acc4aadfe6084b59fa5618397af607dd4fa5d230c",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/historico_train",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 9.609828499989817,
+            "pico_gpu_bytes": 193262080,
+            "imagenes": 964
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 464.83825709999655,
+            "pico_gpu_bytes": 136061440,
+            "imagenes": 964
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "nuevo_train": {
+        "metricas": {
+          "1": {
+            "map50": 0.06650514694133608,
+            "map50_95": 0.02870662649171335,
+            "recall50": 0.254757785467128,
+            "precision50": 0.3731390560658853,
+            "tp50": 1178,
+            "fp50": 1979,
+            "fn50": 3446,
+            "ap50_por_material": {
+              "plastico": 0.1908736293858821,
+              "papel": 0.07514695837946221,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.06909262779915687,
+            "map50_95": 0.03181409084394869,
+            "recall50": 0.32461072664359863,
+            "precision50": 0.19755198736509608,
+            "tp50": 1501,
+            "fp50": 6097,
+            "fn50": 3123,
+            "ap50_por_material": {
+              "plastico": 0.2156042489084867,
+              "papel": 0.06076626228814078,
+              "carton": 0.0,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/nuevo_train/analisis.json",
+        "sha256_analisis": "1b2378337d5ff2b5d2f3d839658c50cda20bb90534b6582d65e8f8ffd0917fae",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/nuevo_train",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 10.289265800005523,
+            "pico_gpu_bytes": 191422976,
+            "imagenes": 1050
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 410.3173851999745,
+            "pico_gpu_bytes": 136061440,
+            "imagenes": 1050
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "desarrollo": {
+        "metricas": {
+          "1": {
+            "map50": 0.0060529379610574675,
+            "map50_95": 0.0017138584148101877,
+            "recall50": 0.11911357340720222,
+            "precision50": 0.09619686800894854,
+            "tp50": 43,
+            "fp50": 404,
+            "fn50": 318,
+            "ap50_por_material": {
+              "plastico": 0.036317627766344805,
+              "papel": 0.0,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.0,
+              "organico": 0.0
+            }
+          },
+          "5": {
+            "map50": 0.01192419462078082,
+            "map50_95": 0.004034472452999145,
+            "recall50": 0.23268698060941828,
+            "precision50": 0.057494866529774126,
+            "tp50": 84,
+            "fp50": 1377,
+            "fn50": 277,
+            "ap50_por_material": {
+              "plastico": 0.07044505770548735,
+              "papel": 0.0,
+              "carton": 0.0,
+              "vidrio": 0.0,
+              "metal": 0.0011001100191975583,
+              "organico": 0.0
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/desarrollo/analisis.json",
+        "sha256_analisis": "112a16a3aeb77ee35491a64be00bb59aacff694152e442b9e083ed90cc960f7d",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/desarrollo",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 1.3500713999965228,
+            "pico_gpu_bytes": 191422976,
+            "imagenes": 181
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 42.76963520000572,
+            "pico_gpu_bytes": 136061440,
+            "imagenes": 181
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "externo_retenido": {
+        "metricas": {
+          "1": {
+            "map50": 0.07213449618308851,
+            "map50_95": 0.03219613297796338,
+            "recall50": 0.25963302752293577,
+            "precision50": 0.39196675900277006,
+            "tp50": 283,
+            "fp50": 439,
+            "fn50": 807,
+            "ap50_por_material": {
+              "plastico": 0.2096163810479759,
+              "papel": 0.006787107501289632,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          },
+          "5": {
+            "map50": 0.08462268769396808,
+            "map50_95": 0.04181010138102048,
+            "recall50": 0.3348623853211009,
+            "precision50": 0.22365196078431374,
+            "tp50": 365,
+            "fp50": 1267,
+            "fn50": 725,
+            "ap50_por_material": {
+              "plastico": 0.24724147166356003,
+              "papel": 0.0066265914183441955,
+              "carton": null,
+              "vidrio": null,
+              "metal": 0.0,
+              "organico": null
+            }
+          }
+        },
+        "analisis": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/externo_retenido/analisis.json",
+        "sha256_analisis": "511ed5ba1b75e7bb094f8de3864c64cccc2007409324ae9da297cc21831a2035",
+        "captura": "resultados/v30_hibrido_revision02/evaluacion_piloto/B/externo_retenido",
+        "costes": {
+          "1": {
+            "segundos_incluye_disco_y_postprocesamiento": 1.7524105999909807,
+            "pico_gpu_bytes": 191422976,
+            "imagenes": 240
+          },
+          "5": {
+            "segundos_incluye_disco_y_postprocesamiento": 71.64057730001514,
+            "pico_gpu_bytes": 136158208,
+            "imagenes": 240
+          }
+        },
+        "referencia_reutilizada": false
+      },
+      "benchmark": {
+        "1": {
+          "ms_media_modelo_y_postproceso": 29.539983333961572,
+          "mediciones": 12,
+          "pico_gpu_bytes": 63182848
+        },
+        "5": {
+          "ms_media_modelo_y_postproceso": 40.64244166996408,
+          "mediciones": 12,
+          "pico_gpu_bytes": 136235520
+        }
+      }
+    }
+  },
+  "codigo": {
+    "ecowaste/__init__.py": "af9b6c7049f976b57f614fae007c978d43152fc4da36b3142a5828431517ad31",
+    "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+    "ecowaste/ajustes_ia_v28_3.py": "7207a344e1706f529c5b58d700240d97dab00b7131fddaeaadaaee8d62d7f118",
+    "ecowaste/asignacion_optima.py": "9c301a76fff293d52e8fbe65244a80f00296e6629424e7d10a372e1d85f9d066",
+    "ecowaste/asistente.py": "5454a4f31d40025808949b5506b81da6edf06a330708e87e72ca6198d258ba22",
+    "ecowaste/asistente_sam2.py": "946992addce93f33066f75c40754ca46b34dddbfdaa7038f9896e2d79332d4ef",
+    "ecowaste/auditoria_datos_representacion.py": "5740ddfd768445f5d9b702b57167bff001465f9f1d43c9f7b7fa05f2bef06f9e",
+    "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+    "ecowaste/auditoria_instancias.py": "b4ba98ab5dd97362374af19a099e69679c087eea41c2f1425552826e88e5f99e",
+    "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+    "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+    "ecowaste/auxiliares_publicos.py": "5374d724fc3dbf9fe8e66024cb30a5f7fcc0541c15239867556b2053d19c5aff",
+    "ecowaste/backbone_cnn.py": "5870a2981ee2282c37e69cdbd4ff571dd8a3307565dab2912a183519842b199f",
+    "ecowaste/backend_numerico.py": "3df9ce74b9e58a64c1ccaeb49357c5af232fc173e11d495c5ffb30d03b720b1a",
+    "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+    "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+    "ecowaste/coleccion_nueva.py": "2f2ff588bb54a9ad957697be1d1d6aa83ebf543f2978b5d964bf6221e91ef2a8",
+    "ecowaste/continuacion.py": "016e6bffe9c64d309cb6b20c3eb2ebe97152fd0c9409550e8a21251731c691a0",
+    "ecowaste/correcciones_v28_3.py": "4f13f45a053ba65eabb4647b7d1dd57e91686f43e6c157345b1e8d72177e7476",
+    "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+    "ecowaste/datos.py": "35464c2283176ce3c697bf8af990c8391a1c3f912d399f9179cb5333cd002bde",
+    "ecowaste/datos_v28_2.py": "10745159c43e13c181429a5b9c0c2ba01e8cde7cc458bfc02e89252f84b94b20",
+    "ecowaste/datos_v29.py": "b0a854fc7ac38971a5a90b2074b9e03c5b68ea3689bfc1ae24fb412053b31955",
+    "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+    "ecowaste/detector_centros.py": "508fa240f46f6b0931942644c7669684f202bd5e06a798c058214da1c230926c",
+    "ecowaste/detector_consultas.py": "1eab3281acb6120963803104a4ecde7b56e73d4fe45f0fcea20a7a876654f9fd",
+    "ecowaste/detector_hibrido.py": "309737c93f6440a26cfdb12a8c63576b25707a125a594913647519da9c37637e",
+    "ecowaste/detector_hibrido_instancias.py": "6b5b4546052c6e2ad5888d8917b27b77e21cec166330dd09ad0d184f7e79f5db",
+    "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+    "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+    "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+    "ecowaste/evaluacion.py": "4943ac34c4b8472ea8bacd5f9626a7f02735ccf24fb99332f954167f474edfc4",
+    "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+    "ecowaste/evaluacion_v28_2.py": "23299a64dac0dccc81a0e0b5efeca79c37a4bc473179965aa23584f137c1b0f2",
+    "ecowaste/experimento_v28_2.py": "93f5c6632629e23e0045c13a9bf7fc7e483d5c764eba905ca01670a550eb1e69",
+    "ecowaste/experimento_v29.py": "3d2d15d7c5b7fd9ee00879ba06023568edea1268183d45e9ae24682ac506f869",
+    "ecowaste/experimento_v30.py": "08a2533879862b6085e460eec516fcc1e6f4ead05ff4f09b7508ff6ad4bd15ff",
+    "ecowaste/incorporacion.py": "0650a7137e7c657affca5d617aeae50fbf9c9611ce5975e7f890368886796762",
+    "ecowaste/inferencia_detector.py": "1c6a8c43183aa6c5e8959a9d089992117265ac606ef4de6bc180c1e398caae1a",
+    "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+    "ecowaste/observacion_backend.py": "04848e7835d46c4f8171d8cf1c7d693f9d35455ade6f5109b067f94162a2891e",
+    "ecowaste/perdida_detector.py": "a6ea83a6b3645c65aafc89341415b8ec33f7961c983af7813587264175ff28bf",
+    "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+    "ecowaste/preparacion_v28.py": "a90764e37469fadc338824b2bf36dc802c9fcce29310804fe1aaead2f91f516f",
+    "ecowaste/propuestas_publicas.py": "1ba98e39243f63ea3be6e98ba71023cbd924670afad0e53b2b89d4119aaea420",
+    "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+    "ecowaste/reanudacion_v20.py": "bcd9cabc1e5100d29f1ebe9823083dc36ed46217c2077287ea6d2f44f7b4fea5",
+    "ecowaste/recortes.py": "98557c5c8d74f64ae79d263fa5cfda29808fb07a042194c8f01a7d06eb459976",
+    "ecowaste/refinamiento.py": "c006ea4d087be7ee804118f44ff94d9b526099c9f653495d65b85c9179134c4f",
+    "ecowaste/reproducibilidad_v20.py": "0005cc41e1adc1ed2c176ebc5650a28118737ea2377520444dcb5933352007b5",
+    "ecowaste/revision_datos.py": "af3d7063d4cb8953bd03e11774fe888d60fb53c2097e8d6ac62a80d444c216a8",
+    "ecowaste/revision_ia_v28_4.py": "662f7e0845c3c5f206b68739d034de7d3340d7b16755e5fef8563e163f78c46f",
+    "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+    "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+    "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+    "ecowaste/validacion_anotaciones.py": "8b8a56205251ef9c33df69770d0d5e0a7212a5e351b088e3791f5afcc17e5308",
+    "ecowaste/video.py": "5f0242d8b21e32b653fb9e45d0a2ef72420d2855f1b335d8d0fea4d764af414c",
+    "ecowaste/video_v30.py": "81a3c7d0dcf2bc8837df275e16b20c7309f3f52cb3a346a7228d0e9e9903deb3",
+    "pruebas/test_hibrido_v30.py": "158d56c691acce17afa1d49a4d9c5bc1d663273c56c8217aeb0037ffc6372118",
+    "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+    "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+    "scripts/demostrar_v30.py": "cde38dabb10fd1e999234788cb152f76ef59eafe3adc80683b01e625124926d0",
+    "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+    "scripts/entrenar_v30.py": "d757e54d6be41143553f8e64fd268546cfa086c275c6b3e992bdf7739d752a17",
+    "scripts/evaluar_v28_2.py": "e9c25d6af9fe4776c39304807d69cc8f6c334f83f9c802bd1d576033c2ba8042",
+    "scripts/evaluar_v30.py": "b213fc1b338b4b7dd353ff4de71652a65804fcd723ffc8c417e6a048129ca0e6",
+    "scripts/informar_v30.py": "42c179af979702f31e8167f72892a47a631a214373fbdeda8c49caa8334829e9",
+    "scripts/probar_integracion_v30.py": "3e9f854a365719ed925fcb763fae625151eb9f3d09827e596d8a7f8e6478aa61",
+    "scripts/probar_v30.py": "6cc4b217e11ce623ad0fd7d3cf305b130b4d11df050f3720796968fde2e185e6",
+    "scripts/verificar_v30.py": "df6707aa479cf2307cc9d0b7c24840f2350f8237a18eb2a23092fa876bf863f9",
+    "scripts/visualizar_v30.py": "f0b30191fd6dc6249bfc5fd4e944307d5fc55d9d1672ba445a69fced6492ee31"
+  },
+  "protocolo": {
+    "config": {
+      "version": "v30_cnn_mapas_desde_cero_2_amp1024",
+      "semilla": 3001,
+      "imagen": 384,
+      "dimension": 96,
+      "historico_batch": 8,
+      "nuevo_batch": 4,
+      "auxiliar_batch": 16,
+      "coeficiente_nuevos": 0.5,
+      "coeficiente_auxiliar_global": 0.5,
+      "coeficiente_fondo": 3.0,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.01,
+      "clipping": 1.0,
+      "actualizaciones": 2400,
+      "checkpoints": [
+        0,
+        200,
+        800,
+        1600,
+        2400
+      ],
+      "puerta_200": {
+        "reduccion_loss_minima": 0.1,
+        "comparar_media_primeros": 25,
+        "comparar_media_ultimos": 25
+      },
+      "puerta_800": {
+        "dominio": "desarrollo",
+        "vistas": 1,
+        "map50_minimo_B": 0.01,
+        "recall_minimo_B": 0.05,
+        "ampliar_si_falla": false
+      },
+      "memorizacion": {
+        "pasos": 240,
+        "reduccion_loss_minima": 0.35,
+        "accuracy_fg_minima": 0.5,
+        "accuracy_por_material_minima": 0.3
+      },
+      "coleccion": "datos/nuevos/v29/coleccion",
+      "sha256_coleccion": "0763d2e4faa312f95131695307b73028d4ac28b4d0fd51e60dc9a8b94221e6e9",
+      "checkpoint_referencia": "checkpoints/detector_mapas_v6_auxiliar_ext48_mejor.pt",
+      "sha256_referencia": "eb8fd00ee536ead21e3a2a0ecd5b06baad04acb2e437b22e0eac3686a7bf36b9",
+      "inicializacion": "aleatoria_propia_sin_pesos_ep19_ni_externos",
+      "backend": "V23_completo",
+      "warmup": false,
+      "parada_por_metricas_val": false,
+      "test": false,
+      "generalizacion_bloqueada": true,
+      "adopcion_automatica": false,
+      "vistas": [
+        1,
+        5
+      ],
+      "umbral": 0.05,
+      "area_minima": 2,
+      "politica": "argmax7",
+      "nms": 0.5,
+      "top100": true,
+      "variante_C": "alternativa propia implementada y probada; entrenamiento separado diferido para aislar CNN en A/B",
+      "restricciones_academicas": {
+        "cnn_propia": true,
+        "transformer_propio": true,
+        "pesos_aleatorios": true,
+        "pesos_externos": false,
+        "inicializacion_epoca19": false,
+        "servicios_detectores": false,
+        "sam_inferencia": false,
+        "coco_autores_solo_datos_y_licencias": true
+      },
+      "justificacion_presupuesto": "Desde cero: 2400 pasos fijos, unas 20 exposiciones del train historico y 9 del nuevo, en vez de 600 pasos de continuacion V29. Puerta train-only a 200 pasos; no ampliar por resultados bajos. Mismos 8 historicos + 2 PackWISE + 2 CLICK + 16 globales en A/B. CNN incrementa computo, no exposicion.",
+      "criterio_integracion": "B supera A y original al menos 0.005 mAP50 en val desarrollo 5v, recall no inferior y FP <=1.10*original; retenido externo B>=A. No implica fiabilidad ni generalizacion de seis clases.",
+      "grad_scaler_init_scale": 1024.0,
+      "revision_numerica": "Escala inicial conservadora tras overflow escalado reproducido en paso 49 de memorizacion; mismos logits y pesos producen gradientes finitos con escala1024 y FP32. No cambia arquitectura, loss, LR ni presupuesto."
+    },
+    "codigo": {
+      "ecowaste/__init__.py": "af9b6c7049f976b57f614fae007c978d43152fc4da36b3142a5828431517ad31",
+      "ecowaste/ablacion_fondo.py": "7cae6e9c0aee89d31b55927e3d6adbbeb3130a450935502379aa194e5509b38c",
+      "ecowaste/ajustes_ia_v28_3.py": "7207a344e1706f529c5b58d700240d97dab00b7131fddaeaadaaee8d62d7f118",
+      "ecowaste/asignacion_optima.py": "9c301a76fff293d52e8fbe65244a80f00296e6629424e7d10a372e1d85f9d066",
+      "ecowaste/asistente.py": "5454a4f31d40025808949b5506b81da6edf06a330708e87e72ca6198d258ba22",
+      "ecowaste/asistente_sam2.py": "946992addce93f33066f75c40754ca46b34dddbfdaa7038f9896e2d79332d4ef",
+      "ecowaste/auditoria_datos_representacion.py": "5740ddfd768445f5d9b702b57167bff001465f9f1d43c9f7b7fa05f2bef06f9e",
+      "ecowaste/auditoria_deteccion.py": "dae204baa9199fcd8b50011104c990b3b290f99e056465bbd0602ea36717683f",
+      "ecowaste/auditoria_instancias.py": "b4ba98ab5dd97362374af19a099e69679c087eea41c2f1425552826e88e5f99e",
+      "ecowaste/auditoria_propuestas_internas.py": "e87a04aee5efe49326baec425075b6fac3fa0944ca3202780f1494dadaf50b20",
+      "ecowaste/auxiliar_clasificacion.py": "b37bf903354e1544bbf085bb61b404a5cdee9953d787cc6ec92eaac060d4821e",
+      "ecowaste/auxiliares_publicos.py": "5374d724fc3dbf9fe8e66024cb30a5f7fcc0541c15239867556b2053d19c5aff",
+      "ecowaste/backbone_cnn.py": "5870a2981ee2282c37e69cdbd4ff571dd8a3307565dab2912a183519842b199f",
+      "ecowaste/backend_numerico.py": "3df9ce74b9e58a64c1ccaeb49357c5af232fc173e11d495c5ffb30d03b720b1a",
+      "ecowaste/cajas.py": "0d7325a62623b59f554e3f0808c1b10f2becae7a78f66bf99d1d5d9a5d2d6d6e",
+      "ecowaste/clasificador.py": "5b9b6181bd2ff026f6d44ea81726d2ca9f2712c62f95c36494ff6186144af266",
+      "ecowaste/coleccion_nueva.py": "2f2ff588bb54a9ad957697be1d1d6aa83ebf543f2978b5d964bf6221e91ef2a8",
+      "ecowaste/continuacion.py": "016e6bffe9c64d309cb6b20c3eb2ebe97152fd0c9409550e8a21251731c691a0",
+      "ecowaste/correcciones_v28_3.py": "4f13f45a053ba65eabb4647b7d1dd57e91686f43e6c157345b1e8d72177e7476",
+      "ecowaste/datasets.py": "20baa14dfbbf29202f2f4a43b234f130d0af3add3fd04169b54bace59914531d",
+      "ecowaste/datos.py": "35464c2283176ce3c697bf8af990c8391a1c3f912d399f9179cb5333cd002bde",
+      "ecowaste/datos_v28_2.py": "10745159c43e13c181429a5b9c0c2ba01e8cde7cc458bfc02e89252f84b94b20",
+      "ecowaste/datos_v29.py": "b0a854fc7ac38971a5a90b2074b9e03c5b68ea3689bfc1ae24fb412053b31955",
+      "ecowaste/detector.py": "d1cfd7cb630a2b8ad4bf53382d96edee3cbcf233e1a8742b2cbf623544357f5f",
+      "ecowaste/detector_centros.py": "508fa240f46f6b0931942644c7669684f202bd5e06a798c058214da1c230926c",
+      "ecowaste/detector_consultas.py": "1eab3281acb6120963803104a4ecde7b56e73d4fe45f0fcea20a7a876654f9fd",
+      "ecowaste/detector_hibrido.py": "309737c93f6440a26cfdb12a8c63576b25707a125a594913647519da9c37637e",
+      "ecowaste/detector_hibrido_instancias.py": "6b5b4546052c6e2ad5888d8917b27b77e21cec166330dd09ad0d184f7e79f5db",
+      "ecowaste/detector_mapas.py": "9459b9d08e5626d29b99e6ff5c734a4e9d276cd1cf05ad31b71aa8c59c470bfe",
+      "ecowaste/discriminacion_mapas.py": "b27580ad427d21e0f45176725eb3500adf0ae39b2aec604173c78743509e6c53",
+      "ecowaste/ejecucion_detector.py": "c13cc201ab27da9d90e9927486d89f5b40df95236e6b001dc33573e392ddbabf",
+      "ecowaste/evaluacion.py": "4943ac34c4b8472ea8bacd5f9626a7f02735ccf24fb99332f954167f474edfc4",
+      "ecowaste/evaluacion_detector.py": "eb50cb4369d5d35f78aa79adb380cef3cde300c0c458eb89aec5d3a8befa984e",
+      "ecowaste/evaluacion_v28_2.py": "23299a64dac0dccc81a0e0b5efeca79c37a4bc473179965aa23584f137c1b0f2",
+      "ecowaste/experimento_v28_2.py": "93f5c6632629e23e0045c13a9bf7fc7e483d5c764eba905ca01670a550eb1e69",
+      "ecowaste/experimento_v29.py": "3d2d15d7c5b7fd9ee00879ba06023568edea1268183d45e9ae24682ac506f869",
+      "ecowaste/experimento_v30.py": "08a2533879862b6085e460eec516fcc1e6f4ead05ff4f09b7508ff6ad4bd15ff",
+      "ecowaste/incorporacion.py": "0650a7137e7c657affca5d617aeae50fbf9c9611ce5975e7f890368886796762",
+      "ecowaste/inferencia_detector.py": "1c6a8c43183aa6c5e8959a9d089992117265ac606ef4de6bc180c1e398caae1a",
+      "ecowaste/mosaico.py": "86e6bcdb9874fcee5fff33aecfc13d3c20086858f215a59201ef28fcaefe8ccc",
+      "ecowaste/observacion_backend.py": "04848e7835d46c4f8171d8cf1c7d693f9d35455ade6f5109b067f94162a2891e",
+      "ecowaste/perdida_detector.py": "a6ea83a6b3645c65aafc89341415b8ec33f7961c983af7813587264175ff28bf",
+      "ecowaste/poligonos.py": "c56c5498d698d4d1638676ceb7677d8a1aac74b793b11c7fd3b2024d27bc5670",
+      "ecowaste/preparacion_v28.py": "a90764e37469fadc338824b2bf36dc802c9fcce29310804fe1aaead2f91f516f",
+      "ecowaste/propuestas_publicas.py": "1ba98e39243f63ea3be6e98ba71023cbd924670afad0e53b2b89d4119aaea420",
+      "ecowaste/reanudacion_regional.py": "8322f98bdb284c54f35b745760b46bef2aca52be75528b36956e4e88f42a169f",
+      "ecowaste/reanudacion_v20.py": "bcd9cabc1e5100d29f1ebe9823083dc36ed46217c2077287ea6d2f44f7b4fea5",
+      "ecowaste/recortes.py": "98557c5c8d74f64ae79d263fa5cfda29808fb07a042194c8f01a7d06eb459976",
+      "ecowaste/refinamiento.py": "c006ea4d087be7ee804118f44ff94d9b526099c9f653495d65b85c9179134c4f",
+      "ecowaste/reproducibilidad_v20.py": "0005cc41e1adc1ed2c176ebc5650a28118737ea2377520444dcb5933352007b5",
+      "ecowaste/revision_datos.py": "af3d7063d4cb8953bd03e11774fe888d60fb53c2097e8d6ac62a80d444c216a8",
+      "ecowaste/revision_ia_v28_4.py": "662f7e0845c3c5f206b68739d034de7d3340d7b16755e5fef8563e163f78c46f",
+      "ecowaste/supervision_regional.py": "5b489ba8d35094e0985b572c5f79a842f66ad0f157ab2780e0ae97bc5d80853d",
+      "ecowaste/transformer.py": "b7d32ed6155b6ef003acb21427e4189b57cc89d50e9ee048400710f07d463596",
+      "ecowaste/traza_propuestas.py": "b2c48551cc7222ea02dad39f1a53e9f704b986735da71d96a07b911f8e6b9dfe",
+      "ecowaste/validacion_anotaciones.py": "8b8a56205251ef9c33df69770d0d5e0a7212a5e351b088e3791f5afcc17e5308",
+      "ecowaste/video.py": "5f0242d8b21e32b653fb9e45d0a2ef72420d2855f1b335d8d0fea4d764af414c",
+      "ecowaste/video_v30.py": "81a3c7d0dcf2bc8837df275e16b20c7309f3f52cb3a346a7228d0e9e9903deb3",
+      "pruebas/test_hibrido_v30.py": "158d56c691acce17afa1d49a4d9c5bc1d663273c56c8217aeb0037ffc6372118",
+      "scripts/ablacion_fondo.py": "7616cc1a24d84748f18d156830aa5fb205cfb50385fd25fae9865491ea662f53",
+      "scripts/auditar_propuestas_internas.py": "984eb45ee5f6eb2f7e6fba24f8b4121dc733dda1c2bea6cade086e6fd4fbfb93",
+      "scripts/demostrar_v30.py": "cde38dabb10fd1e999234788cb152f76ef59eafe3adc80683b01e625124926d0",
+      "scripts/entrenar_detector_mapas.py": "6d5fa7ffd7bbc4aa106e1096aa985d0d8ea96fe3bbab7ded67e769bd2985877f",
+      "scripts/entrenar_v30.py": "d757e54d6be41143553f8e64fd268546cfa086c275c6b3e992bdf7739d752a17",
+      "scripts/evaluar_v28_2.py": "e9c25d6af9fe4776c39304807d69cc8f6c334f83f9c802bd1d576033c2ba8042",
+      "scripts/evaluar_v30.py": "b213fc1b338b4b7dd353ff4de71652a65804fcd723ffc8c417e6a048129ca0e6",
+      "scripts/informar_v30.py": "42c179af979702f31e8167f72892a47a631a214373fbdeda8c49caa8334829e9",
+      "scripts/probar_integracion_v30.py": "3e9f854a365719ed925fcb763fae625151eb9f3d09827e596d8a7f8e6478aa61",
+      "scripts/probar_v30.py": "6cc4b217e11ce623ad0fd7d3cf305b130b4d11df050f3720796968fde2e185e6",
+      "scripts/verificar_v30.py": "df6707aa479cf2307cc9d0b7c24840f2350f8237a18eb2a23092fa876bf863f9",
+      "scripts/visualizar_v30.py": "f0b30191fd6dc6249bfc5fd4e944307d5fc55d9d1672ba445a69fced6492ee31"
+    },
+    "plan": "d92aa5925af4e52adc4209c7361befe78d3c991d4325878ece0fa979b7d4862e",
+    "datos": {
+      "datos/procesados/deteccion/train.jsonl": "fdefe4c1908db374da7bd8caa2ca113e5709698e0a8416ded906df871ecaece8",
+      "datos/procesados/deteccion/val.jsonl": "6f752328e8f9db49e8a1f2ef4a86b98427fbcafe4eec5bbcce10386708db5c40",
+      "datos/procesados/clasificacion/train.jsonl": "855288574e1bd6146e95c73d98f96f3573cb73eac73496aec74708a32605c81b",
+      "datos/nuevos/v29/coleccion/MANIFIESTO.json": "0763d2e4faa312f95131695307b73028d4ac28b4d0fd51e60dc9a8b94221e6e9"
+    }
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  },
+  "presupuesto_maximo": 2400,
+  "paso_evaluado": 800,
+  "presupuesto_completo_ejecutado": false,
+  "motivo_parada": "B no supera mAP50>=0.01 en gate de 800, criterio prefijado",
+  "puerta_integracion_superada": false,
+  "entradas_A_B_identicas": true,
+  "test": false,
+  "generalizacion_desbloqueada": false,
+  "adopcion": false,
+  "advertencia": "Desarrollo histórico; retenido externo solo plástico/papel/metal e independencia física no demostrada."
+}

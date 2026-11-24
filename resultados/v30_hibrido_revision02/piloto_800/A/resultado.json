@@ -1,0 +1,66 @@
+{
+  "metricas": {
+    "map50": 0.005116226329858547,
+    "map50_95": 0.0017284885917946992,
+    "recall50": 0.10249307479224377,
+    "precision50": 0.09068627450980392,
+    "tp50": 37,
+    "fp50": 371,
+    "fn50": 324,
+    "ap50_por_material": {
+      "plastico": 0.027397027774022358,
+      "papel": 0.003300330205128925,
+      "carton": 0.0,
+      "vidrio": 0.0,
+      "metal": 0.0,
+      "organico": 0.0
+    }
+  },
+  "archivos": {
+    "piloto_800/A/logits/0000.pt": "269295307ad7fa5336505e4b94aba8cb4ad93b6b6ae509c5660d60eda7b87b5d",
+    "piloto_800/A/logits/0008.pt": "9eb73854f47b09596518c0a56d2c4d32e5358c39d2f77e03a1a962a7034747af",
+    "piloto_800/A/logits/0016.pt": "56c24036c1f7445ec91a0bc0d786b83d237eae468ffd91ee41273c34f83f206b",
+    "piloto_800/A/logits/0024.pt": "9e6a1df7f4343d640ba629c959d05dbffe9008fe6714938d0e5ff99e6476eb15",
+    "piloto_800/A/logits/0032.pt": "a9dc43a3a1f02ffb5c68c577352919addabb020ae2752afc2d52756b25ea9333",
+    "piloto_800/A/logits/0040.pt": "91bcf12f1603773614875841a97ff17d764900bf669cc98bb35feeb9b1387fb4",
+    "piloto_800/A/logits/0048.pt": "aee0776d9649f3af53a070d51e6b08fcfdd85867b13c98b9a58257534cfd3735",
+    "piloto_800/A/logits/0056.pt": "9bc3f52ecc39aab80775b46f725581f2d02566e744f72bc1ae85374699e8a266",
+    "piloto_800/A/logits/0064.pt": "e6708b66b6d0f3e3eb527a63fd58f6f5729f6fa04a349c43f0694ec7f7fe11be",
+    "piloto_800/A/logits/0072.pt": "76076d6fca29b3e185a6570a3f2d81902aa786d3f02a4ba6795545b7bd99017b",
+    "piloto_800/A/logits/0080.pt": "77475217316f809e8a62bc6e61016ea7654a88c55633cdab5710648953002ba2",
+    "piloto_800/A/logits/0088.pt": "fa4658758b02a0ff4b7007d1023755591d9c29b5d9e1e249cef1140bbb332f0d",
+    "piloto_800/A/logits/0096.pt": "e50826e62f00620163fe5e80d3267294f48fad093430d5a9c2e9d6cf9852de96",
+    "piloto_800/A/logits/0104.pt": "ed2d7842769e0ea3077e99138114bfb4ac00df94c8ca79b1d421611529fc15e0",
+    "piloto_800/A/logits/0112.pt": "94f4560d7e49949b854dd69ea53ec22463877c0ed687fb8a9397545137f4c7a6",
+    "piloto_800/A/logits/0120.pt": "ddf4dff4f4a0111c91a25e46adc66f4d82eb4627cfefd8e4d76c5ad0fe50d3cb",
+    "piloto_800/A/logits/0128.pt": "5ba01a5ee5c715716fdff4c73d07537a042891e817da11bcef7609f1a4324542",
+    "piloto_800/A/logits/0136.pt": "71471c8c29a5f019268fa36068bf7b2a3151f159cd155335c2316f64c027b12e",
+    "piloto_800/A/logits/0144.pt": "e3a490de3b7c5d1609a4345207389d1fc918ffc77c39fc1a668cd880e5db900f",
+    "piloto_800/A/logits/0152.pt": "aff6ed038f2de27d76394f608a8b6d9c092d2509163e587e1067f63951e70994",
+    "piloto_800/A/logits/0160.pt": "4cb2ef93930471733b370c9decac5a79f00fc59e83cb8b86779f42ac151bd941",
+    "piloto_800/A/logits/0168.pt": "b169bb20ba6f7228aa01ef8b9697ec0cb22a84e39cd8a38e2a8813a9226d95a1",
+    "piloto_800/A/logits/0176.pt": "55644989cf642708c1506ba0f2e46a57ad5dff32d3d6ee15d4cc763835f19acb"
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  }
+}

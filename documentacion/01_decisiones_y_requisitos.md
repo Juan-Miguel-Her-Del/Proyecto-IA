@@ -40,13 +40,20 @@ Evaluación: F1 macro y por intención, matriz de confusión, ejemplos con lengu
 
 Sin checkpoint entrenado y evaluado, la aplicación no habilitará respuestas neuronales como si fueran fiables. El modo de prueba de reglas deberá identificarse como tal.
 
-## 3. Restricciones de implementación
+## 3. Restricciones de implementación — actualización V30
 
-- Mantener modelos visuales propios con núcleo Transformer y entrenar los tres modelos desde cero.
-- No descargar pesos, importar detectores/clasificadores completos, usar fine-tuning externo ni reutilizar checkpoints anteriores.
-- Se pueden usar Linear, LayerNorm, operaciones de atención, funciones de pérdida y optimizadores. Usar matemáticas publicadas no equivale a inventarlas; citar sus fuentes.
-- Los límites académicos proceden del registro de la indicación verbal del profesor. Adoptamos su interpretación conservadora; no afirmamos que todas esas prohibiciones estén escritas en el enunciado.
-- No introducir CNN como sustituto del Transformer visual para este diseño. Una recomendación del artículo de referencia no modifica estas restricciones.
+El usuario comunica una nueva indicación verbal del profesor: **«Solo debes utilizar modelos, nada de herramientas ni modelos preentrenados»** y confirma explícitamente que **se permite una CNN propia combinada con nuestro Transformer**. Esta actualización sustituye la restricción anterior contra CNN; no atribuye al docente autorización de pesos externos ni de reutilización de checkpoints propios. Se conserva el documento anterior completo en `resultados/v30_hibrido/requisitos_previos.md` (SHA256 `30df8614ea377ac54088d6bc3cbe1436d51279ed2e62b24ca2a93bb793ee38dc`).
+
+- Implementar CNN y Transformer propios usando capas y operaciones básicas de PyTorch. El Transformer participa efectivamente en las características usadas para detectar.
+- Inicializar la arquitectura nueva con pesos aleatorios. No cargar ResNet, YOLO, RT-DETR, SAM, EfficientNet ni otros modelos/pesos preentrenados; tampoco los modelos publicados por los proveedores de datasets.
+- El checkpoint propio de época 19 se conserva como referencia y opción histórica, **no se usa para inicializar V30**. Reutilizarlo como inicialización de una arquitectura nueva exige autorización académica explícita adicional.
+- La detección, localización y clasificación de las seis clases deben proceder del modelo neuronal propio. No delegarlas en APIs, servicios externos o herramientas que las resuelvan por él. SAM queda excluido de la inferencia final.
+- PyTorch (`Conv2d`, `Linear`, `GroupNorm`, `LayerNorm`, activaciones, atención, pérdidas y AdamW) aporta operaciones matemáticas y diferenciación automática, no un detector importado. Pillow/OpenCV se usan para lectura, geometría, componentes/NMS/visualización y video; NumPy y el codec COCO para datos y máscaras. No se presentan esas utilidades como reconocimiento neuronal. La cabeza alternativa por consultas predice cajas y ausencia de objeto dentro de la red.
+- Los datasets públicos se usan únicamente como fotografías/anotaciones, con licencia y procedencia verificadas. No se convierte una etiqueta global en una caja ni se inventa una revisión humana. El uso de COCO autorizado por el usuario no se describe como una aprobación docente individual de cada fuente.
+- El uso histórico de SAM/SAM 2 y del editor para propuestas de anotación permanece documentado: propuestas IA pendientes, correcciones del usuario, anotaciones externas de autores y aceptación V26 son estados distintos. No se incorporan propuestas pendientes como GT humano. CLICK declara anotación asistida y corregida por sus autores; se mantiene esa procedencia.
+- No usar test ni desbloquear generalización para decidir arquitectura o presupuesto. Conservar modelos, resultados y anotaciones anteriores. No adoptar automáticamente el híbrido.
+
+Los límites académicos proceden de lo comunicado por el usuario sobre la indicación verbal; no se afirma que todo figure en el enunciado escrito. V30 separa en su informe los modelos propios, las librerías matemáticas y las herramientas auxiliares históricas. Las continuaciones V17–V29 documentadas conservan su historia; esta nueva prohibición de inicialización reutilizada se aplica al experimento V30.
 
 ## 4. Matriz de trazabilidad y aceptación
 
