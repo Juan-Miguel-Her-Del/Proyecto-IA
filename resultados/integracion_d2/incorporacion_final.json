@@ -1,0 +1,41 @@
+{
+  "equipo": "Código y pesos Vision-IA aportados por un integrante del mismo equipo académico; sin modelos externos",
+  "archivos_originales": {
+    "training/detector_own.py": "80e961a7229ba09687e3d30f0daa0b99c364496fae9719ebd5052cfb9ad01697",
+    "training/detection_data.py": "d3d2c3611fb90dc7333967b74896c60bc9188d0c3706e49af140c91075376469",
+    "training/detection_metrics.py": "425bc09955270fb27c1d8446413d65b84f7bd0f554ce9f8b208b4e1e5a1bcc0b",
+    "app/detector.py": "c5b2a62ab4d4f3dbd7f0df4020c1717317b10056e025bfb3adb7ace7a6c52f26",
+    "app/localization.py": "7587aad4c6adcc774a40f79bc19d3bf5103d3979b802c6e1bdd493fc5c29e694",
+    "app/vision.py": "aa371ee7cc9f5dc7a957b0433ceea4e0218e9a0008f10434c60879916ac58754",
+    "app/stability.py": "d4948280b290650842e143efe62da0ad6132a7d0a5d824513b5728e0281e4ee5",
+    "training/model.py": "50cb8e5d8c0e67ab48907955dde20fec9b8df6ca95560609bf77cd6db82e6a60",
+    "training/compact.py": "301d22db35f7b69d2c0f097c219816aa5101f38165ac4ef5eacb441b062c49b2",
+    "training/runtime.py": "a78de43611a7aa032e2ccb5f9eec5d48e382759ec9e7bf3d8dd4b837d7861fb5",
+    "training/data.py": "8f9389462997b48ed6b4399164c4b035f57b4c07c0834821efb27904b1053fd7",
+    "training/prediction.py": "ac758080f1d2e2560c5fb848a1b0d26e717f50fa531b6fe5c6d3e2c839748088",
+    "utils/config.py": "3ff5df4c628bdb23aa626390b620b9e13e50ad835051b7bdbdc2effc948f1057",
+    "config/app.json": "0ef33adc6182a8cbcaeb54c27bcdf36875ee4d38e7eac7835d3c15ec955bb900",
+    "models/runtime/manifest.json": "95764c1ba42c2c6b8ea966abd16b529b2d33119eef9bccee2cac5a928d0af44f"
+  },
+  "pesos": {
+    "detector_D2.pth": "060e15526da7077c8517b67593901f3fee41774fdcee776f8158437fc81106e8",
+    "classifier_materials.pth": "368ab8c3d2a1b9858db9d7483aeda66817f012cc4cdce11b16ae86eac448de7b",
+    "classifier_scene.pth": "487f5dcb0b2c5fe7d6edc2cf902e5b115fa4ad2952111d4a8cac663097c2d6fd",
+    "classifier_B.pth": "10f25c75048b45459247e3a7cc51204e2c6413ac7735be0a46821622cd4d931c"
+  },
+  "adaptaciones": [
+    "namespace ecowaste.vision_equipo",
+    "extracción solo inferencia; sin entrenamiento ni selector de objeto principal",
+    "import sha local",
+    "opción device explícita; float32; CPU predeterminada fiel al original"
+  ],
+  "archivos_extraidos": {
+    "ecowaste/vision_equipo/compacto.py": "73d5207c65b429d6a5c96a25642263df691df6e75147fe3ffb5031e444dc2e7d",
+    "ecowaste/vision_equipo/detector.py": "05152bd70920e6a74a98f37dcd336cdbb2041516bdc6a57fdb44a1ca76d9e44c",
+    "ecowaste/vision_equipo/localizador.py": "d369d43035e0339fa7457a09e84be9b43c1ecb3f76635ba2a52de43b5503c6e9",
+    "ecowaste/vision_equipo/metricas.py": "1e47b1d562fd8c65fa06fcdd0b2c148424f04ae86784c3b27a70af9ac656abfb",
+    "ecowaste/vision_equipo/modelo.py": "50cb8e5d8c0e67ab48907955dde20fec9b8df6ca95560609bf77cd6db82e6a60",
+    "ecowaste/vision_equipo/preprocesado.py": "2385a016d28aef1b46b863b43b48bfbf081c20bfa7f930f866251a578eb0918c",
+    "ecowaste/vision_equipo/__init__.py": "e7424fe2d819d906f2a36501aa00e6c4ff5d6cd09c6cb84eeff9cd8a47065acf"
+  }
+}

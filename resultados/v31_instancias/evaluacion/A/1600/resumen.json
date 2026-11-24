@@ -1,0 +1,59 @@
+{
+  "rama": "A",
+  "paso": 1600,
+  "resultados": {
+    "desarrollo": {
+      "analisis": "resultados/v31_instancias/evaluacion/A/1600/desarrollo/analisis.json",
+      "sha256": "64b261388a4643a7394980b12d5edd89eae099c370917ddce60c99fbc89f1b6b",
+      "metricas": {
+        "1": {
+          "map50": 0.0002145995708680389,
+          "map50_95": 9.3835616244538e-05,
+          "recall50": 0.00554016620498615,
+          "precision50": 0.004158004158004158,
+          "tp50": 2,
+          "fp50": 479,
+          "fn50": 359,
+          "ap50_por_material": {
+            "plastico": 0.0,
+            "papel": 0.0,
+            "carton": 0.0012875974252082333,
+            "vidrio": 0.0,
+            "metal": 0.0,
+            "organico": 0.0
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 1.3146287999989,
+          "pico_gpu_bytes": 187082240
+        }
+      }
+    }
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  },
+  "test": false,
+  "adopcion": false
+}

@@ -1,0 +1,132 @@
+{
+  "resultados": {
+    "A": {
+      "historico_train": {
+        "pequeno": {
+          "gt": 1375,
+          "con_geometria_iou50": 26,
+          "material_correcto_mayor_iou": 7,
+          "ausencia_objeto": 15
+        },
+        "mediano": {
+          "gt": 831,
+          "con_geometria_iou50": 193,
+          "material_correcto_mayor_iou": 34,
+          "ausencia_objeto": 125
+        },
+        "grande": {
+          "gt": 299,
+          "con_geometria_iou50": 158,
+          "material_correcto_mayor_iou": 70,
+          "ausencia_objeto": 56
+        }
+      },
+      "nuevo_train": {
+        "pequeno": {
+          "gt": 1588,
+          "con_geometria_iou50": 18,
+          "material_correcto_mayor_iou": 1,
+          "ausencia_objeto": 16
+        },
+        "mediano": {
+          "gt": 2433,
+          "con_geometria_iou50": 838,
+          "material_correcto_mayor_iou": 346,
+          "ausencia_objeto": 384
+        },
+        "grande": {
+          "gt": 603,
+          "con_geometria_iou50": 357,
+          "material_correcto_mayor_iou": 263,
+          "ausencia_objeto": 63
+        }
+      },
+      "desarrollo": {
+        "pequeno": {
+          "gt": 239,
+          "con_geometria_iou50": 6,
+          "material_correcto_mayor_iou": 0,
+          "ausencia_objeto": 5
+        },
+        "mediano": {
+          "gt": 108,
+          "con_geometria_iou50": 23,
+          "material_correcto_mayor_iou": 2,
+          "ausencia_objeto": 19
+        },
+        "grande": {
+          "gt": 14,
+          "con_geometria_iou50": 5,
+          "material_correcto_mayor_iou": 1,
+          "ausencia_objeto": 3
+        }
+      }
+    },
+    "B": {
+      "historico_train": {
+        "pequeno": {
+          "gt": 1375,
+          "con_geometria_iou50": 30,
+          "material_correcto_mayor_iou": 7,
+          "ausencia_objeto": 21
+        },
+        "mediano": {
+          "gt": 831,
+          "con_geometria_iou50": 167,
+          "material_correcto_mayor_iou": 37,
+          "ausencia_objeto": 83
+        },
+        "grande": {
+          "gt": 299,
+          "con_geometria_iou50": 165,
+          "material_correcto_mayor_iou": 94,
+          "ausencia_objeto": 35
+        }
+      },
+      "nuevo_train": {
+        "pequeno": {
+          "gt": 1588,
+          "con_geometria_iou50": 30,
+          "material_correcto_mayor_iou": 1,
+          "ausencia_objeto": 26
+        },
+        "mediano": {
+          "gt": 2433,
+          "con_geometria_iou50": 828,
+          "material_correcto_mayor_iou": 446,
+          "ausencia_objeto": 253
+        },
+        "grande": {
+          "gt": 603,
+          "con_geometria_iou50": 301,
+          "material_correcto_mayor_iou": 249,
+          "ausencia_objeto": 24
+        }
+      },
+      "desarrollo": {
+        "pequeno": {
+          "gt": 239,
+          "con_geometria_iou50": 3,
+          "material_correcto_mayor_iou": 0,
+          "ausencia_objeto": 3
+        },
+        "mediano": {
+          "gt": 108,
+          "con_geometria_iou50": 20,
+          "material_correcto_mayor_iou": 2,
+          "ausencia_objeto": 11
+        },
+        "grande": {
+          "gt": 14,
+          "con_geometria_iou50": 5,
+          "material_correcto_mayor_iou": 1,
+          "ausencia_objeto": 2
+        }
+      }
+    }
+  },
+  "paso": 2400,
+  "vistas": 1,
+  "criterio": "Área bbox en lienzo letterbox 384; pequeño <32², mediano <96², grande resto. Desglose posthoc descriptivo, no AP COCO por área original. Consulta raw mayor IoU, no asignación uno a uno.",
+  "inferencia_repetida": false
+}

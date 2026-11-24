@@ -1,0 +1,79 @@
+{
+  "paso": 806,
+  "loss": {
+    "historico": 8.628776550292969,
+    "nuevo": 5.01518440246582,
+    "global": 1.1690515279769897
+  },
+  "loss_total": 11.720894515514374,
+  "componentes": {
+    "historico": {
+      "objetos_asignados": 20,
+      "loss_clase": 5.113828182220459,
+      "loss_fondo": 0.7968199253082275,
+      "loss_l1": 0.21285615861415863,
+      "loss_giou": 0.826923668384552
+    },
+    "nuevo": {
+      "objetos_asignados": 25,
+      "loss_clase": 1.8702284097671509,
+      "loss_fondo": 0.48556840419769287,
+      "loss_l1": 0.21184714138507843,
+      "loss_giou": 0.8000759482383728
+    }
+  },
+  "norma": 16.223182678222656,
+  "normas": {
+    "backbone": 0.0,
+    "detalle": 4.157436847686768,
+    "contexto": 2.7286217212677,
+    "decodificador": 9.684388160705566,
+    "material": 6.2743754386901855,
+    "caja": 2.6117472648620605
+  },
+  "scaler": {
+    "scale": 1024.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 806
+  },
+  "entradas_sha256": "736ed9ab15ac7d6eca3fbf39a7737cb18da541abc62891c11b9153eefef79d08",
+  "indices": {
+    "historico": [
+      928,
+      877,
+      809,
+      554,
+      791,
+      471,
+      85,
+      11
+    ],
+    "nuevo": [
+      199,
+      51,
+      952,
+      456
+    ],
+    "global": [
+      143,
+      658,
+      2675,
+      779,
+      1478,
+      898,
+      2039,
+      1363,
+      627,
+      1883,
+      951,
+      1467,
+      2110,
+      654,
+      2231,
+      1316
+    ]
+  },
+  "rng": "262b0e9809d86210a8dbee846d267e8b1dd219ae4245f75dda6599e1246fae5a"
+}

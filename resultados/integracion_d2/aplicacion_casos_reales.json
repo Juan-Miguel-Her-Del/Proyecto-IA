@@ -1,0 +1,152 @@
+{
+  "casos": {
+    "varios_objetos_GT": {
+      "id": "taco:201",
+      "GT_objetos": 3,
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/casos/varios_objetos_GT",
+      "sha256_detecciones": "906ab817a75d75b3c1af60dac35acb6597d8d109cdb89082d8e9684d1f349f37"
+    },
+    "objetos_cerca_borde": {
+      "id": "taco:202",
+      "GT_objetos": 3,
+      "detecciones": 1,
+      "directorio_privado": "datos/nuevos/integracion_d2/casos/objetos_cerca_borde",
+      "sha256_detecciones": "a7f0c98e421647b5b28e021683ea08b4caef3359617fdd3dcff6f812dd2c9cc5"
+    },
+    "un_objeto_GT": {
+      "id": "taco:203",
+      "GT_objetos": 1,
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/casos/un_objeto_GT",
+      "sha256_detecciones": "507080361c0ace7f84068268560014c42130e4249571a69f24252468a3f26cbb"
+    },
+    "objetos_proximos": {
+      "id": "taco:204",
+      "GT_objetos": 5,
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/casos/objetos_proximos",
+      "sha256_detecciones": "e5b0410fc03a20388105a53ed3a75e9c2c22cc14591c93f767113cb59ee02bdc"
+    },
+    "foto_sin_propuestas_D2": {
+      "id": "taco:208",
+      "GT_objetos": 1,
+      "detecciones": 0,
+      "directorio_privado": "datos/nuevos/integracion_d2/casos/foto_sin_propuestas_D2",
+      "sha256_detecciones": "5b82d1e1561731c684c37800cfaa53147f512da1ac29525eb588798883874a22"
+    },
+    "alternativa_refinado": {
+      "id": "taco:201",
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/alternativas/refinado",
+      "sha256_detecciones": "9b235321164b4609c66be45ef418395b608ab44e44d95fdfb6f2b025ac0461b9"
+    },
+    "alternativa_escena": {
+      "id": "taco:201",
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/alternativas/escena",
+      "sha256_detecciones": "5fcffa449f019591bb4c32740a6dbc86a48067070d0358dce4f02d9a0a650ecc"
+    },
+    "alternativa_combinado": {
+      "id": "taco:201",
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/alternativas/combinado",
+      "sha256_detecciones": "d01214b961f77b08ac5fefac6c055052acac83ee61575a51a8ea1d5e02d73995"
+    },
+    "alternativa_historico": {
+      "id": "taco:201",
+      "detecciones": 2,
+      "directorio_privado": "datos/nuevos/integracion_d2/alternativas/historico",
+      "sha256_detecciones": "83844cf0601b2953800d0ea4069c5c8284b2400c163d8ed9d6795c28eae19325"
+    }
+  },
+  "seleccion": "Primer ID en D2 val autorizada que cumple cantidad/proximidad/borde GT, sin seleccionar aciertos. Ausencia: primer ID sin propuestas; puede contener residuos omitidos, no se afirma escena vacía.",
+  "asistente_con_detecciones_reales": [
+    {
+      "pregunta": "¿Qué residuos aparecen en la imagen?",
+      "intencion": "resumen",
+      "puntuacion": 0.9329673647880554,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. En los resultados suministrados hay 1 detecciones: 1 de carton. Es un conteo de esta imagen o fotograma.",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    },
+    {
+      "pregunta": "¿Qué materiales se identificaron?",
+      "intencion": "abstencion",
+      "puntuacion": 0.4473287761211395,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. No interpreté la pregunta con suficiente claridad. Puedes preguntar por el material, la separación o los resultados detectados.",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    },
+    {
+      "pregunta": "¿Cuáles son orgánicos o inorgánicos?",
+      "intencion": "abstencion",
+      "puntuacion": 0.8160191178321838,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. No interpreté la pregunta con suficiente claridad. Puedes preguntar por el material, la separación o los resultados detectados.",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    },
+    {
+      "pregunta": "¿Cómo debo separarlos?",
+      "intencion": "abstencion",
+      "puntuacion": 0.6431961059570312,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. No interpreté la pregunta con suficiente claridad. Puedes preguntar por el material, la separación o los resultados detectados.",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    },
+    {
+      "pregunta": "¿En qué recipiente los deposito?",
+      "intencion": "separacion",
+      "puntuacion": 0.7824045419692993,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. Predicciones: 1 de carton. carton: si es aprovechable corresponde al blanco; si es un residuo ordinario no aprovechable corresponde al negro. ¿Está limpio y lo recibe el sistema local de aprovechamiento? Fuente del código de colores: https://www.minambiente.gov.co/preguntas-frecuentes/",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    },
+    {
+      "pregunta": "¿Qué material detectaste?",
+      "intencion": "abstencion",
+      "puntuacion": 0.627705991268158,
+      "respuesta": "Hay 2 detecciones; 1 tienen material de baja confianza y requieren confirmación visual. No interpreté la pregunta con suficiente claridad. Puedes preguntar por el material, la separación o los resultados detectados.",
+      "origen": "detecciones_reales_de_esta_imagen_o_ultimo_frame",
+      "objetos_total": 2,
+      "objetos_baja_confianza": 1,
+      "materiales_usados_en_recomendacion": [
+        "carton"
+      ],
+      "modelo": "EcoWasteFormer-Assistant propio",
+      "puntuaciones_no_calibradas": true
+    }
+  ],
+  "GT_en_inferencia": false,
+  "test": false
+}

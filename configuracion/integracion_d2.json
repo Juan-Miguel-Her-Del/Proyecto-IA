@@ -1,0 +1,21 @@
+{
+  "version": "ecowaste_d2_equipo_transformer_1",
+  "motor": "d2-transformer",
+  "clasificador": "transformer",
+  "dispositivo": "cpu",
+  "cpu_threads": 2,
+  "detector": "checkpoints/vision_equipo/detector_D2.pth",
+  "manifest": "checkpoints/vision_equipo/manifest.json",
+  "vistas": [[512, false], [640, false], [512, true]],
+  "umbral_deteccion": 0.27,
+  "nms_iou": 0.45,
+  "margen_recorte": 0.12,
+  "baja_confianza_clasificador": 0.65,
+  "peso_refinado": 0.65,
+  "peso_escena": 0.35,
+  "transformer": "checkpoints/clasificador_v3_regularizado_mejor.pt",
+  "sha256_transformer": "0bb9fb2ffdad655cd3fa30e27ae66254e02b1280e11fe4b7eaa8284e6c81aed4",
+  "asistente": "checkpoints/asistente_v1.pt",
+  "entrenamiento": false,
+  "seguimiento_identidades": false
+}

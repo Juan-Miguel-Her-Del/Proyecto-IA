@@ -1,0 +1,440 @@
+{
+  "rama": "A",
+  "pasos": {
+    "800": {
+      "rama": "A",
+      "paso": 800,
+      "resultados": {
+        "desarrollo": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/0800/desarrollo/analisis.json",
+          "sha256": "ad06a79ca5e22a367ce2da10887e276050111643cf754f9fc2d1412f5ecf1484",
+          "metricas": {
+            "1": {
+              "map50": 0.001553131548861478,
+              "map50_95": 0.00015635099450261533,
+              "recall50": 0.0110803324099723,
+              "precision50": 0.0032388663967611335,
+              "tp50": 4,
+              "fp50": 1231,
+              "fn50": 357,
+              "ap50_por_material": {
+                "plastico": 0.00019413706763546064,
+                "papel": 0.008250825328402,
+                "carton": 0.0008115565201433578,
+                "vidrio": 6.227037698805037e-05,
+                "metal": 0.0,
+                "organico": 0.0
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 2.4451520000002347,
+              "pico_gpu_bytes": 187082240
+            }
+          }
+        }
+      },
+      "backend": {
+        "torch": "2.14.1+cu126",
+        "cuda": "12.6",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "threads": 4,
+        "threads_interop": 8,
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "deterministic_algorithms": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "tf32_matmul": false,
+        "tf32_cudnn": false,
+        "float32_matmul_precision": "highest",
+        "sdpa": {
+          "flash": false,
+          "efficient": false,
+          "math": true,
+          "cudnn": false
+        },
+        "adam": null
+      },
+      "test": false,
+      "adopcion": false
+    },
+    "1600": {
+      "rama": "A",
+      "paso": 1600,
+      "resultados": {
+        "desarrollo": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/1600/desarrollo/analisis.json",
+          "sha256": "64b261388a4643a7394980b12d5edd89eae099c370917ddce60c99fbc89f1b6b",
+          "metricas": {
+            "1": {
+              "map50": 0.0002145995708680389,
+              "map50_95": 9.3835616244538e-05,
+              "recall50": 0.00554016620498615,
+              "precision50": 0.004158004158004158,
+              "tp50": 2,
+              "fp50": 479,
+              "fn50": 359,
+              "ap50_por_material": {
+                "plastico": 0.0,
+                "papel": 0.0,
+                "carton": 0.0012875974252082333,
+                "vidrio": 0.0,
+                "metal": 0.0,
+                "organico": 0.0
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 1.3146287999989,
+              "pico_gpu_bytes": 187082240
+            }
+          }
+        }
+      },
+      "backend": {
+        "torch": "2.14.1+cu126",
+        "cuda": "12.6",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "threads": 4,
+        "threads_interop": 8,
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "deterministic_algorithms": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "tf32_matmul": false,
+        "tf32_cudnn": false,
+        "float32_matmul_precision": "highest",
+        "sdpa": {
+          "flash": false,
+          "efficient": false,
+          "math": true,
+          "cudnn": false
+        },
+        "adam": null
+      },
+      "test": false,
+      "adopcion": false
+    },
+    "2400": {
+      "rama": "A",
+      "paso": 2400,
+      "resultados": {
+        "historico_train": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/2400/historico_train/analisis.json",
+          "sha256": "8f24397feb2617c8fa908053ac30fe7ba70615a0523ba760e2bfb90c140cc35d",
+          "metricas": {
+            "1": {
+              "map50": 0.030866755020463526,
+              "map50_95": 0.008239131269395572,
+              "recall50": 0.047105788423153695,
+              "precision50": 0.02857142857142857,
+              "tp50": 118,
+              "fp50": 4012,
+              "fn50": 2387,
+              "ap50_por_material": {
+                "plastico": 0.005134186827310241,
+                "papel": 0.035682900264711666,
+                "carton": 0.03923664101869753,
+                "vidrio": 0.00033913406146929997,
+                "metal": 0.0008472719109884583,
+                "organico": 0.10396039603960396
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 6.522531099995831,
+              "pico_gpu_bytes": 187082240
+            }
+          }
+        },
+        "nuevo_train": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/2400/nuevo_train/analisis.json",
+          "sha256": "54fa13b43ccc6aee115b25014d68c0adf24644fe29d7f73211adf84648f7aea6",
+          "metricas": {
+            "1": {
+              "map50": 0.006602048320640432,
+              "map50_95": 0.0013008925468444197,
+              "recall50": 0.1342993079584775,
+              "precision50": 0.07531837477258944,
+              "tp50": 621,
+              "fp50": 7624,
+              "fn50": 4003,
+              "ap50_por_material": {
+                "plastico": 0.02253271226245578,
+                "papel": 0.0038754810201059474,
+                "carton": 0.0,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 6.5730585000128485,
+              "pico_gpu_bytes": 186319872
+            }
+          }
+        },
+        "desarrollo": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/2400/desarrollo/analisis.json",
+          "sha256": "207e456e4889e22299bf20cc72a9f3e9f2da919fa408aed07356726ce702dd84",
+          "metricas": {
+            "1": {
+              "map50": 0.010223578833805846,
+              "map50_95": 0.0024667880654630093,
+              "recall50": 0.008310249307479225,
+              "precision50": 0.0041265474552957355,
+              "tp50": 3,
+              "fp50": 724,
+              "fn50": 358,
+              "ap50_por_material": {
+                "plastico": 0.0005211047459356856,
+                "papel": 0.0,
+                "carton": 0.06082036825689939,
+                "vidrio": 0.0,
+                "metal": 0.0,
+                "organico": 0.0
+              }
+            },
+            "5": {
+              "map50": 0.003155757599316611,
+              "map50_95": 0.000680869179178435,
+              "recall50": 0.0221606648199446,
+              "precision50": 0.002638522427440633,
+              "tp50": 8,
+              "fp50": 3024,
+              "fn50": 353,
+              "ap50_por_material": {
+                "plastico": 0.00019801979755411053,
+                "papel": 0.001125112544782091,
+                "carton": 0.0175247525077055,
+                "vidrio": 0.0,
+                "metal": 8.666074585796583e-05,
+                "organico": 0.0
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 1.3272677999921143,
+              "pico_gpu_bytes": 186319872
+            },
+            "5": {
+              "segundos_incluye_E_S_y_postproceso": 63.426171400002204,
+              "pico_gpu_bytes": 130500096
+            }
+          }
+        },
+        "externo_retenido": {
+          "analisis": "resultados/v31_instancias/evaluacion/A/2400/externo_retenido/analisis.json",
+          "sha256": "f80b68a363a1c340f4b446c53259c074524b6f403fcb4a3baddb3a51615ba929",
+          "metricas": {
+            "1": {
+              "map50": 0.006560070569267367,
+              "map50_95": 0.0018961775113548775,
+              "recall50": 0.10550458715596331,
+              "precision50": 0.06534090909090909,
+              "tp50": 115,
+              "fp50": 1645,
+              "fn50": 975,
+              "ap50_por_material": {
+                "plastico": 0.019069876706246103,
+                "papel": 0.000610335001556,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            },
+            "5": {
+              "map50": 0.00840383027326746,
+              "map50_95": 0.0018374164480402476,
+              "recall50": 0.1981651376146789,
+              "precision50": 0.0423861852433281,
+              "tp50": 216,
+              "fp50": 4880,
+              "fn50": 874,
+              "ap50_por_material": {
+                "plastico": 0.024378697286442954,
+                "papel": 0.0008327935333594238,
+                "carton": null,
+                "vidrio": null,
+                "metal": 0.0,
+                "organico": null
+              }
+            }
+          },
+          "costes": {
+            "1": {
+              "segundos_incluye_E_S_y_postproceso": 1.8215245000028517,
+              "pico_gpu_bytes": 186319872
+            },
+            "5": {
+              "segundos_incluye_E_S_y_postproceso": 107.75022480002372,
+              "pico_gpu_bytes": 130508800
+            }
+          }
+        }
+      },
+      "backend": {
+        "torch": "2.14.1+cu126",
+        "cuda": "12.6",
+        "cudnn": 91002,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "threads": 4,
+        "threads_interop": 8,
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "deterministic_algorithms": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "tf32_matmul": false,
+        "tf32_cudnn": false,
+        "float32_matmul_precision": "highest",
+        "sdpa": {
+          "flash": false,
+          "efficient": false,
+          "math": true,
+          "cudnn": false
+        },
+        "adam": null
+      },
+      "test": false,
+      "adopcion": false
+    }
+  },
+  "mejor_paso_por_map50_desarrollo_1v": 2400,
+  "mejor": {
+    "desarrollo": {
+      "analisis": "resultados/v31_instancias/evaluacion/A/2400/desarrollo/analisis.json",
+      "sha256": "207e456e4889e22299bf20cc72a9f3e9f2da919fa408aed07356726ce702dd84",
+      "metricas": {
+        "1": {
+          "map50": 0.010223578833805846,
+          "map50_95": 0.0024667880654630093,
+          "recall50": 0.008310249307479225,
+          "precision50": 0.0041265474552957355,
+          "tp50": 3,
+          "fp50": 724,
+          "fn50": 358,
+          "ap50_por_material": {
+            "plastico": 0.0005211047459356856,
+            "papel": 0.0,
+            "carton": 0.06082036825689939,
+            "vidrio": 0.0,
+            "metal": 0.0,
+            "organico": 0.0
+          }
+        },
+        "5": {
+          "map50": 0.003155757599316611,
+          "map50_95": 0.000680869179178435,
+          "recall50": 0.0221606648199446,
+          "precision50": 0.002638522427440633,
+          "tp50": 8,
+          "fp50": 3024,
+          "fn50": 353,
+          "ap50_por_material": {
+            "plastico": 0.00019801979755411053,
+            "papel": 0.001125112544782091,
+            "carton": 0.0175247525077055,
+            "vidrio": 0.0,
+            "metal": 8.666074585796583e-05,
+            "organico": 0.0
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 1.3272677999921143,
+          "pico_gpu_bytes": 186319872
+        },
+        "5": {
+          "segundos_incluye_E_S_y_postproceso": 63.426171400002204,
+          "pico_gpu_bytes": 130500096
+        }
+      }
+    },
+    "externo_retenido": {
+      "analisis": "resultados/v31_instancias/evaluacion/A/2400/externo_retenido/analisis.json",
+      "sha256": "f80b68a363a1c340f4b446c53259c074524b6f403fcb4a3baddb3a51615ba929",
+      "metricas": {
+        "1": {
+          "map50": 0.006560070569267367,
+          "map50_95": 0.0018961775113548775,
+          "recall50": 0.10550458715596331,
+          "precision50": 0.06534090909090909,
+          "tp50": 115,
+          "fp50": 1645,
+          "fn50": 975,
+          "ap50_por_material": {
+            "plastico": 0.019069876706246103,
+            "papel": 0.000610335001556,
+            "carton": null,
+            "vidrio": null,
+            "metal": 0.0,
+            "organico": null
+          }
+        },
+        "5": {
+          "map50": 0.00840383027326746,
+          "map50_95": 0.0018374164480402476,
+          "recall50": 0.1981651376146789,
+          "precision50": 0.0423861852433281,
+          "tp50": 216,
+          "fp50": 4880,
+          "fn50": 874,
+          "ap50_por_material": {
+            "plastico": 0.024378697286442954,
+            "papel": 0.0008327935333594238,
+            "carton": null,
+            "vidrio": null,
+            "metal": 0.0,
+            "organico": null
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 1.8215245000028517,
+          "pico_gpu_bytes": 186319872
+        },
+        "5": {
+          "segundos_incluye_E_S_y_postproceso": 107.75022480002372,
+          "pico_gpu_bytes": 130508800
+        }
+      }
+    }
+  },
+  "seleccion_prefijada": true,
+  "test": false,
+  "generalizacion_desbloqueada": false,
+  "adopcion": false,
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  }
+}

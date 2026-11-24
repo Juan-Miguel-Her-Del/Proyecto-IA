@@ -1,0 +1,4801 @@
+{
+  "cohorte": "ecowaste_val_conocida_por_d2",
+  "imagenes": 181,
+  "GT_materiales": 361,
+  "GT_genericos": 586,
+  "localizacion_sin_material": {
+    "map50": 0.3839659555123584,
+    "map50_95": 0.2374518144912649,
+    "recall50": 0.43856655290102387,
+    "precision50": 0.5990675990675991,
+    "tp50": 257,
+    "fp50": 172,
+    "fn50": 329,
+    "AP50_clase_residuo": 0.3839659555123584
+  },
+  "clasificacion_sobre_recortes_D2_matcheados_IoU50": {
+    "transformer": {
+      "objetos": 216,
+      "aciertos": 28,
+      "accuracy": 0.12962962962962962,
+      "macro_F1_clases_con_GT": 0.10170380821320602,
+      "matriz_confusion_GT_filas_pred_columnas": [
+        [
+          11,
+          29,
+          24,
+          0,
+          23,
+          53
+        ],
+        [
+          1,
+          2,
+          2,
+          0,
+          1,
+          10
+        ],
+        [
+          3,
+          4,
+          2,
+          0,
+          6,
+          4
+        ],
+        [
+          0,
+          2,
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          6,
+          7,
+          0,
+          13,
+          6
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "clases": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_material": {
+        "plastico": {
+          "gt": 140,
+          "correctos": 11,
+          "recall": 0.07857142857142857,
+          "precision": 0.6470588235294118
+        },
+        "papel": {
+          "gt": 16,
+          "correctos": 2,
+          "recall": 0.125,
+          "precision": 0.046511627906976744
+        },
+        "carton": {
+          "gt": 19,
+          "correctos": 2,
+          "recall": 0.10526315789473684,
+          "precision": 0.05128205128205128
+        },
+        "vidrio": {
+          "gt": 6,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": null
+        },
+        "metal": {
+          "gt": 34,
+          "correctos": 13,
+          "recall": 0.38235294117647056,
+          "precision": 0.29545454545454547
+        },
+        "organico": {
+          "gt": 1,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": 0.0
+        }
+      }
+    },
+    "refinado": {
+      "objetos": 216,
+      "aciertos": 33,
+      "accuracy": 0.1527777777777778,
+      "macro_F1_clases_con_GT": 0.13159629080731872,
+      "matriz_confusion_GT_filas_pred_columnas": [
+        [
+          12,
+          56,
+          34,
+          3,
+          34,
+          1
+        ],
+        [
+          1,
+          4,
+          10,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          8,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          11,
+          13,
+          1,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "clases": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_material": {
+        "plastico": {
+          "gt": 140,
+          "correctos": 12,
+          "recall": 0.08571428571428572,
+          "precision": 0.8
+        },
+        "papel": {
+          "gt": 16,
+          "correctos": 4,
+          "recall": 0.25,
+          "precision": 0.04938271604938271
+        },
+        "carton": {
+          "gt": 19,
+          "correctos": 8,
+          "recall": 0.42105263157894735,
+          "precision": 0.12307692307692308
+        },
+        "vidrio": {
+          "gt": 6,
+          "correctos": 1,
+          "recall": 0.16666666666666666,
+          "precision": 0.16666666666666666
+        },
+        "metal": {
+          "gt": 34,
+          "correctos": 8,
+          "recall": 0.23529411764705882,
+          "precision": 0.16666666666666666
+        },
+        "organico": {
+          "gt": 1,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": 0.0
+        }
+      }
+    },
+    "escena": {
+      "objetos": 216,
+      "aciertos": 111,
+      "accuracy": 0.5138888888888888,
+      "macro_F1_clases_con_GT": 0.30022348325627013,
+      "matriz_confusion_GT_filas_pred_columnas": [
+        [
+          75,
+          4,
+          3,
+          12,
+          46,
+          0
+        ],
+        [
+          10,
+          3,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          4,
+          1,
+          2,
+          0,
+          12,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          4,
+          27,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "clases": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_material": {
+        "plastico": {
+          "gt": 140,
+          "correctos": 75,
+          "recall": 0.5357142857142857,
+          "precision": 0.7978723404255319
+        },
+        "papel": {
+          "gt": 16,
+          "correctos": 3,
+          "recall": 0.1875,
+          "precision": 0.375
+        },
+        "carton": {
+          "gt": 19,
+          "correctos": 2,
+          "recall": 0.10526315789473684,
+          "precision": 0.3333333333333333
+        },
+        "vidrio": {
+          "gt": 6,
+          "correctos": 4,
+          "recall": 0.6666666666666666,
+          "precision": 0.2
+        },
+        "metal": {
+          "gt": 34,
+          "correctos": 27,
+          "recall": 0.7941176470588235,
+          "precision": 0.3068181818181818
+        },
+        "organico": {
+          "gt": 1,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": null
+        }
+      }
+    },
+    "combinado": {
+      "objetos": 216,
+      "aciertos": 85,
+      "accuracy": 0.39351851851851855,
+      "macro_F1_clases_con_GT": 0.2804800314420985,
+      "matriz_confusion_GT_filas_pred_columnas": [
+        [
+          47,
+          25,
+          22,
+          6,
+          39,
+          1
+        ],
+        [
+          7,
+          6,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          4,
+          5,
+          0,
+          8,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          3,
+          2,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "clases": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_material": {
+        "plastico": {
+          "gt": 140,
+          "correctos": 47,
+          "recall": 0.3357142857142857,
+          "precision": 0.8103448275862069
+        },
+        "papel": {
+          "gt": 16,
+          "correctos": 6,
+          "recall": 0.375,
+          "precision": 0.15
+        },
+        "carton": {
+          "gt": 19,
+          "correctos": 5,
+          "recall": 0.2631578947368421,
+          "precision": 0.15151515151515152
+        },
+        "vidrio": {
+          "gt": 6,
+          "correctos": 3,
+          "recall": 0.5,
+          "precision": 0.2727272727272727
+        },
+        "metal": {
+          "gt": 34,
+          "correctos": 24,
+          "recall": 0.7058823529411765,
+          "precision": 0.3287671232876712
+        },
+        "organico": {
+          "gt": 1,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": 0.0
+        }
+      }
+    },
+    "historico": {
+      "objetos": 216,
+      "aciertos": 19,
+      "accuracy": 0.08796296296296297,
+      "macro_F1_clases_con_GT": 0.07302765891993175,
+      "matriz_confusion_GT_filas_pred_columnas": [
+        [
+          0,
+          83,
+          24,
+          0,
+          33,
+          0
+        ],
+        [
+          1,
+          6,
+          6,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          8,
+          5,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          20,
+          6,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "clases": [
+        "plastico",
+        "papel",
+        "carton",
+        "vidrio",
+        "metal",
+        "organico"
+      ],
+      "por_material": {
+        "plastico": {
+          "gt": 140,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": 0.0
+        },
+        "papel": {
+          "gt": 16,
+          "correctos": 6,
+          "recall": 0.375,
+          "precision": 0.049586776859504134
+        },
+        "carton": {
+          "gt": 19,
+          "correctos": 5,
+          "recall": 0.2631578947368421,
+          "precision": 0.12195121951219512
+        },
+        "vidrio": {
+          "gt": 6,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": null
+        },
+        "metal": {
+          "gt": 34,
+          "correctos": 8,
+          "recall": 0.23529411764705882,
+          "precision": 0.1509433962264151
+        },
+        "organico": {
+          "gt": 1,
+          "correctos": 0,
+          "recall": 0.0,
+          "precision": null
+        }
+      }
+    }
+  },
+  "deteccion_conjunta_por_clasificador": {
+    "transformer": {
+      "map50": 0.017544669606307944,
+      "map50_95": 0.012713864073772044,
+      "recall50": 0.07756232686980609,
+      "precision50": 0.07387862796833773,
+      "tp50": 28,
+      "fp50": 351,
+      "fn50": 333,
+      "ap50_por_material": {
+        "plastico": 0.040754075687710604,
+        "papel": 0.007804606958190993,
+        "carton": 0.015422696229254846,
+        "vidrio": 0.0,
+        "metal": 0.04128663876269123,
+        "organico": 0.0
+      }
+    },
+    "refinado": {
+      "map50": 0.0274585239011364,
+      "map50_95": 0.018060822194140933,
+      "recall50": 0.09141274238227147,
+      "precision50": 0.0870712401055409,
+      "tp50": 33,
+      "fp50": 346,
+      "fn50": 328,
+      "ap50_por_material": {
+        "plastico": 0.04620462065876121,
+        "papel": 0.006800350982068789,
+        "carton": 0.06458339154130162,
+        "vidrio": 0.00990099024654615,
+        "metal": 0.03726178997814065,
+        "organico": 0.0
+      }
+    },
+    "escena": {
+      "map50": 0.10291928252076159,
+      "map50_95": 0.06554239452893387,
+      "recall50": 0.3074792243767313,
+      "precision50": 0.2928759894459103,
+      "tp50": 111,
+      "fp50": 268,
+      "fn50": 250,
+      "ap50_por_material": {
+        "plastico": 0.24173633237876516,
+        "papel": 0.09320587244364295,
+        "carton": 0.03195319553413013,
+        "vidrio": 0.08806670184182648,
+        "metal": 0.1625535929262048,
+        "organico": 0.0
+      }
+    },
+    "combinado": {
+      "map50": 0.0762875826396171,
+      "map50_95": 0.04810483634668608,
+      "recall50": 0.23545706371191136,
+      "precision50": 0.22427440633245382,
+      "tp50": 85,
+      "fp50": 294,
+      "fn50": 276,
+      "ap50_por_material": {
+        "plastico": 0.14826539276850106,
+        "papel": 0.034962999643665726,
+        "carton": 0.05016847943315412,
+        "vidrio": 0.08976897980907175,
+        "metal": 0.13455964418330996,
+        "organico": 0.0
+      }
+    },
+    "historico": {
+      "map50": 0.010114643132627601,
+      "map50_95": 0.006156877298276909,
+      "recall50": 0.05263157894736842,
+      "precision50": 0.05013192612137203,
+      "tp50": 19,
+      "fp50": 360,
+      "fn50": 342,
+      "ap50_por_material": {
+        "plastico": 0.0,
+        "papel": 0.009245476141424463,
+        "carton": 0.021629400772623496,
+        "vidrio": 0.0,
+        "metal": 0.029812981881717646,
+        "organico": 0.0
+      }
+    }
+  },
+  "costes_por_imagen": [
+    {
+      "id": "taco:686",
+      "detector_ms": 161.35140002006665,
+      "clasificadores_ms": {
+        "transformer": 12.160699989181012,
+        "refinado": 12.683800014201552,
+        "escena": 15.232999983709306,
+        "combinado": 26.042499986942858,
+        "historico": 11.672599997837096
+      }
+    },
+    {
+      "id": "taco:687",
+      "detector_ms": 131.67949998751283,
+      "clasificadores_ms": {
+        "transformer": 15.75819996651262,
+        "refinado": 11.057999974582344,
+        "escena": 15.059900004416704,
+        "combinado": 21.663699997588992,
+        "historico": 8.768700005020946
+      }
+    },
+    {
+      "id": "taco:688",
+      "detector_ms": 135.7533999835141,
+      "clasificadores_ms": {
+        "transformer": 13.387499959208071,
+        "refinado": 11.239700019359589,
+        "escena": 13.60239996574819,
+        "combinado": 22.092600003816187,
+        "historico": 10.73859998723492
+      }
+    },
+    {
+      "id": "taco:689",
+      "detector_ms": 134.22770000761375,
+      "clasificadores_ms": {
+        "transformer": 104.93780003162101,
+        "refinado": 128.85820004157722,
+        "escena": 133.47639999119565,
+        "combinado": 267.7918000263162,
+        "historico": 125.88269996922463
+      }
+    },
+    {
+      "id": "taco:691",
+      "detector_ms": 138.85370001662523,
+      "clasificadores_ms": {
+        "transformer": 15.927900036331266,
+        "refinado": 9.511100011877716,
+        "escena": 15.611500013619661,
+        "combinado": 22.037899994757026,
+        "historico": 7.779700041282922
+      }
+    },
+    {
+      "id": "taco:692",
+      "detector_ms": 135.01800002995878,
+      "clasificadores_ms": {
+        "transformer": 24.370200000703335,
+        "refinado": 24.275699979625642,
+        "escena": 29.27509997971356,
+        "combinado": 57.282500027213246,
+        "historico": 24.134599952958524
+      }
+    },
+    {
+      "id": "taco:693",
+      "detector_ms": 132.95300002209842,
+      "clasificadores_ms": {
+        "transformer": 55.710599990561604,
+        "refinado": 57.27039999328554,
+        "escena": 75.70269994903356,
+        "combinado": 137.5150000094436,
+        "historico": 65.33949996810406
+      }
+    },
+    {
+      "id": "taco:694",
+      "detector_ms": 133.9921000180766,
+      "clasificadores_ms": {
+        "transformer": 25.35160002298653,
+        "refinado": 25.57850000448525,
+        "escena": 31.292099971324205,
+        "combinado": 54.67410001438111,
+        "historico": 25.75480000814423
+      }
+    },
+    {
+      "id": "taco:695",
+      "detector_ms": 131.31289999000728,
+      "clasificadores_ms": {
+        "transformer": 5.042399978265166,
+        "refinado": 3.5319000016897917,
+        "escena": 4.976199998054653,
+        "combinado": 11.22020004549995,
+        "historico": 3.709400014486164
+      }
+    },
+    {
+      "id": "taco:696",
+      "detector_ms": 131.8047999520786,
+      "clasificadores_ms": {
+        "transformer": 5.928999977186322,
+        "refinado": 4.061300016473979,
+        "escena": 5.811300012283027,
+        "combinado": 9.337199968285859,
+        "historico": 3.732800018042326
+      }
+    },
+    {
+      "id": "taco:697",
+      "detector_ms": 132.40209996001795,
+      "clasificadores_ms": {
+        "transformer": 6.8721999996341765,
+        "refinado": 5.9785000048577785,
+        "escena": 6.426199979614466,
+        "combinado": 10.890799982007593,
+        "historico": 5.4302000207826495
+      }
+    },
+    {
+      "id": "taco:699",
+      "detector_ms": 136.22960000066087,
+      "clasificadores_ms": {
+        "transformer": 15.167000005021691,
+        "refinado": 10.474200011231005,
+        "escena": 16.475900018122047,
+        "combinado": 24.73270002519712,
+        "historico": 12.36260001314804
+      }
+    },
+    {
+      "id": "taco:700",
+      "detector_ms": 133.42730002477765,
+      "clasificadores_ms": {
+        "transformer": 4.883799992967397,
+        "refinado": 3.4863000037148595,
+        "escena": 5.507399968337268,
+        "combinado": 9.28090000525117,
+        "historico": 3.2635999959893525
+      }
+    },
+    {
+      "id": "taco:701",
+      "detector_ms": 134.34270001016557,
+      "clasificadores_ms": {
+        "transformer": 9.84969997080043,
+        "refinado": 6.694299983792007,
+        "escena": 10.816399997565895,
+        "combinado": 17.449299979489297,
+        "historico": 5.926000012550503
+      }
+    },
+    {
+      "id": "taco:702",
+      "detector_ms": 136.30910002393648,
+      "clasificadores_ms": {
+        "transformer": 14.344399969559163,
+        "refinado": 8.008399978280067,
+        "escena": 13.083500030916184,
+        "combinado": 22.817600052803755,
+        "historico": 7.647600024938583
+      }
+    },
+    {
+      "id": "taco:703",
+      "detector_ms": 127.60349997552112,
+      "clasificadores_ms": {
+        "transformer": 11.14009995944798,
+        "refinado": 11.447500030044466,
+        "escena": 13.257600017823279,
+        "combinado": 24.523900006897748,
+        "historico": 11.601600039284676
+      }
+    },
+    {
+      "id": "taco:704",
+      "detector_ms": 136.8845000397414,
+      "clasificadores_ms": {
+        "transformer": 13.772699981927872,
+        "refinado": 7.334799971431494,
+        "escena": 12.998000020161271,
+        "combinado": 20.630999992135912,
+        "historico": 7.985700038261712
+      }
+    },
+    {
+      "id": "taco:705",
+      "detector_ms": 134.25010000355542,
+      "clasificadores_ms": {
+        "transformer": 61.13450002158061,
+        "refinado": 72.93780002510175,
+        "escena": 84.20949999708682,
+        "combinado": 153.9222999708727,
+        "historico": 67.25510000251234
+      }
+    },
+    {
+      "id": "taco:706",
+      "detector_ms": 134.24580002902076,
+      "clasificadores_ms": {
+        "transformer": 90.37680004257709,
+        "refinado": 114.95260003721341,
+        "escena": 116.40299996361136,
+        "combinado": 205.1056000054814,
+        "historico": 96.49579995311797
+      }
+    },
+    {
+      "id": "taco:707",
+      "detector_ms": 154.6368999988772,
+      "clasificadores_ms": {
+        "transformer": 0.05269999383017421,
+        "refinado": 0.006299989763647318,
+        "escena": 0.004999979864805937,
+        "combinado": 0.003400025889277458,
+        "historico": 0.003100023604929447
+      }
+    },
+    {
+      "id": "taco:708",
+      "detector_ms": 160.43489996809512,
+      "clasificadores_ms": {
+        "transformer": 34.90810003131628,
+        "refinado": 22.51439995598048,
+        "escena": 31.305400014389306,
+        "combinado": 51.77199997706339,
+        "historico": 18.70100002270192
+      }
+    },
+    {
+      "id": "taco:709",
+      "detector_ms": 144.07199999550357,
+      "clasificadores_ms": {
+        "transformer": 28.37289997842163,
+        "refinado": 19.349500013049692,
+        "escena": 29.828500002622604,
+        "combinado": 44.9464000412263,
+        "historico": 22.562500031199306
+      }
+    },
+    {
+      "id": "taco:710",
+      "detector_ms": 158.33809995092452,
+      "clasificadores_ms": {
+        "transformer": 10.884899995289743,
+        "refinado": 6.611299992073327,
+        "escena": 10.336600011214614,
+        "combinado": 16.549799998756498,
+        "historico": 5.800299986731261
+      }
+    },
+    {
+      "id": "taco:711",
+      "detector_ms": 158.6082000285387,
+      "clasificadores_ms": {
+        "transformer": 31.411699950695038,
+        "refinado": 27.39220001967624,
+        "escena": 37.77100000297651,
+        "combinado": 61.45440001273528,
+        "historico": 31.24260000186041
+      }
+    },
+    {
+      "id": "taco:712",
+      "detector_ms": 140.78249997692183,
+      "clasificadores_ms": {
+        "transformer": 23.631199961528182,
+        "refinado": 21.87719999346882,
+        "escena": 31.418099999427795,
+        "combinado": 56.9029999896884,
+        "historico": 27.90289995027706
+      }
+    },
+    {
+      "id": "taco:713",
+      "detector_ms": 145.65429999493062,
+      "clasificadores_ms": {
+        "transformer": 16.627200006041676,
+        "refinado": 10.161599959246814,
+        "escena": 15.675099974032491,
+        "combinado": 27.056400023866445,
+        "historico": 11.698499962221831
+      }
+    },
+    {
+      "id": "taco:714",
+      "detector_ms": 154.1445999755524,
+      "clasificadores_ms": {
+        "transformer": 11.28400000743568,
+        "refinado": 6.071899959351867,
+        "escena": 11.417000030633062,
+        "combinado": 20.564100006595254,
+        "historico": 6.4138000016100705
+      }
+    },
+    {
+      "id": "taco:715",
+      "detector_ms": 144.07920005032793,
+      "clasificadores_ms": {
+        "transformer": 52.13719996390864,
+        "refinado": 40.94380000606179,
+        "escena": 53.24889998883009,
+        "combinado": 102.53410000586882,
+        "historico": 47.08359995856881
+      }
+    },
+    {
+      "id": "taco:716",
+      "detector_ms": 153.00809999462217,
+      "clasificadores_ms": {
+        "transformer": 17.092699999921024,
+        "refinado": 11.454000021331012,
+        "escena": 16.18489995598793,
+        "combinado": 30.123600037768483,
+        "historico": 10.900699999183416
+      }
+    },
+    {
+      "id": "taco:717",
+      "detector_ms": 145.91369999106973,
+      "clasificadores_ms": {
+        "transformer": 4.906800051685423,
+        "refinado": 2.915400022175163,
+        "escena": 5.0805999781005085,
+        "combinado": 8.105700020678341,
+        "historico": 2.8740999987348914
+      }
+    },
+    {
+      "id": "taco:718",
+      "detector_ms": 155.00620001694188,
+      "clasificadores_ms": {
+        "transformer": 5.309600033797324,
+        "refinado": 3.412499965634197,
+        "escena": 4.774699977133423,
+        "combinado": 8.384099986869842,
+        "historico": 3.0798999941907823
+      }
+    },
+    {
+      "id": "taco:719",
+      "detector_ms": 156.0446000075899,
+      "clasificadores_ms": {
+        "transformer": 5.740299995522946,
+        "refinado": 4.526600008830428,
+        "escena": 6.050600029993802,
+        "combinado": 10.292200022377074,
+        "historico": 4.2437000083737075
+      }
+    },
+    {
+      "id": "taco:720",
+      "detector_ms": 151.00420004455373,
+      "clasificadores_ms": {
+        "transformer": 5.432299978565425,
+        "refinado": 3.5020000068470836,
+        "escena": 6.109899957664311,
+        "combinado": 7.88220000686124,
+        "historico": 3.937800007406622
+      }
+    },
+    {
+      "id": "taco:721",
+      "detector_ms": 141.9029000098817,
+      "clasificadores_ms": {
+        "transformer": 25.20049997838214,
+        "refinado": 15.849600022193044,
+        "escena": 25.103399995714426,
+        "combinado": 38.69860002305359,
+        "historico": 16.75409998279065
+      }
+    },
+    {
+      "id": "taco:722",
+      "detector_ms": 143.74279999174178,
+      "clasificadores_ms": {
+        "transformer": 15.316399978473783,
+        "refinado": 10.76680002734065,
+        "escena": 20.69959999062121,
+        "combinado": 28.060600045137107,
+        "historico": 12.471400026697665
+      }
+    },
+    {
+      "id": "taco:723",
+      "detector_ms": 153.0598000390455,
+      "clasificadores_ms": {
+        "transformer": 17.301300016697496,
+        "refinado": 12.796199996955693,
+        "escena": 16.186999971978366,
+        "combinado": 31.497100018896163,
+        "historico": 11.035500036086887
+      }
+    },
+    {
+      "id": "taco:724",
+      "detector_ms": 156.8777000065893,
+      "clasificadores_ms": {
+        "transformer": 5.799499980639666,
+        "refinado": 3.9056999958120286,
+        "escena": 5.96789998235181,
+        "combinado": 9.417199995368719,
+        "historico": 3.9544000173918903
+      }
+    },
+    {
+      "id": "taco:725",
+      "detector_ms": 164.16460002074018,
+      "clasificadores_ms": {
+        "transformer": 28.29580003162846,
+        "refinado": 19.445599988102913,
+        "escena": 25.8938999613747,
+        "combinado": 56.15170003147796,
+        "historico": 22.27130002574995
+      }
+    },
+    {
+      "id": "taco:726",
+      "detector_ms": 163.62020000815392,
+      "clasificadores_ms": {
+        "transformer": 18.882500007748604,
+        "refinado": 10.78899996355176,
+        "escena": 17.882600019220263,
+        "combinado": 30.96119995461777,
+        "historico": 12.607800017576665
+      }
+    },
+    {
+      "id": "taco:727",
+      "detector_ms": 163.61350001534447,
+      "clasificadores_ms": {
+        "transformer": 86.34459995664656,
+        "refinado": 56.03690003044903,
+        "escena": 101.24039999209344,
+        "combinado": 161.0155000234954,
+        "historico": 60.33799995202571
+      }
+    },
+    {
+      "id": "taco:728",
+      "detector_ms": 154.38620001077652,
+      "clasificadores_ms": {
+        "transformer": 18.587699974887073,
+        "refinado": 12.450299982447177,
+        "escena": 18.152199976611882,
+        "combinado": 34.80159997707233,
+        "historico": 12.206299987155944
+      }
+    },
+    {
+      "id": "taco:729",
+      "detector_ms": 147.34799996949732,
+      "clasificadores_ms": {
+        "transformer": 4.800499998964369,
+        "refinado": 3.4161999938078225,
+        "escena": 5.129700002726167,
+        "combinado": 8.008299977518618,
+        "historico": 4.177299968432635
+      }
+    },
+    {
+      "id": "taco:730",
+      "detector_ms": 153.49090000381693,
+      "clasificadores_ms": {
+        "transformer": 24.609200016129762,
+        "refinado": 14.366899966262281,
+        "escena": 24.40180000849068,
+        "combinado": 50.39479996776208,
+        "historico": 20.97200002754107
+      }
+    },
+    {
+      "id": "taco:731",
+      "detector_ms": 157.36630000174046,
+      "clasificadores_ms": {
+        "transformer": 6.124200008343905,
+        "refinado": 4.338399972766638,
+        "escena": 6.591600016690791,
+        "combinado": 13.794800033792853,
+        "historico": 6.020699976943433
+      }
+    },
+    {
+      "id": "taco:732",
+      "detector_ms": 137.00410001911223,
+      "clasificadores_ms": {
+        "transformer": 42.26300003938377,
+        "refinado": 34.8562000435777,
+        "escena": 43.170299963094294,
+        "combinado": 89.40729999449104,
+        "historico": 40.79729999648407
+      }
+    },
+    {
+      "id": "taco:733",
+      "detector_ms": 144.9255999759771,
+      "clasificadores_ms": {
+        "transformer": 8.90729995444417,
+        "refinado": 7.397299981676042,
+        "escena": 9.872200025711209,
+        "combinado": 16.56259997980669,
+        "historico": 6.172699970193207
+      }
+    },
+    {
+      "id": "taco:735",
+      "detector_ms": 133.36139998864383,
+      "clasificadores_ms": {
+        "transformer": 8.922800014261156,
+        "refinado": 5.724499991629273,
+        "escena": 9.270000038668513,
+        "combinado": 14.099200023338199,
+        "historico": 5.28779998421669
+      }
+    },
+    {
+      "id": "taco:736",
+      "detector_ms": 135.06100000813603,
+      "clasificadores_ms": {
+        "transformer": 9.180900000501424,
+        "refinado": 7.495900033973157,
+        "escena": 10.459099954459816,
+        "combinado": 16.837500035762787,
+        "historico": 6.425700034014881
+      }
+    },
+    {
+      "id": "taco:737",
+      "detector_ms": 129.19690000126138,
+      "clasificadores_ms": {
+        "transformer": 17.07549998536706,
+        "refinado": 13.946899969596416,
+        "escena": 21.499900030903518,
+        "combinado": 34.206499985884875,
+        "historico": 12.167699984274805
+      }
+    },
+    {
+      "id": "taco:739",
+      "detector_ms": 133.54129996150732,
+      "clasificadores_ms": {
+        "transformer": 5.634999950416386,
+        "refinado": 3.242200007662177,
+        "escena": 4.934199969284236,
+        "combinado": 8.377299993298948,
+        "historico": 3.2167999888770282
+      }
+    },
+    {
+      "id": "taco:740",
+      "detector_ms": 133.81460000528023,
+      "clasificadores_ms": {
+        "transformer": 4.583000030834228,
+        "refinado": 3.1165999826043844,
+        "escena": 4.793600004632026,
+        "combinado": 7.729999953880906,
+        "historico": 2.9762000194750726
+      }
+    },
+    {
+      "id": "taco:741",
+      "detector_ms": 130.24919998133555,
+      "clasificadores_ms": {
+        "transformer": 5.1253000274300575,
+        "refinado": 3.354899992700666,
+        "escena": 5.891799984965473,
+        "combinado": 9.413600026164204,
+        "historico": 4.1594000067561865
+      }
+    },
+    {
+      "id": "taco:742",
+      "detector_ms": 142.6975000067614,
+      "clasificadores_ms": {
+        "transformer": 5.880100012291223,
+        "refinado": 3.7544000078924,
+        "escena": 5.300000018905848,
+        "combinado": 9.25839995034039,
+        "historico": 3.854700014926493
+      }
+    },
+    {
+      "id": "taco:743",
+      "detector_ms": 146.46419999189675,
+      "clasificadores_ms": {
+        "transformer": 18.199599988292903,
+        "refinado": 14.160699967760593,
+        "escena": 21.754799992777407,
+        "combinado": 38.33210002630949,
+        "historico": 16.95659995311871
+      }
+    },
+    {
+      "id": "taco:744",
+      "detector_ms": 134.41400002921,
+      "clasificadores_ms": {
+        "transformer": 10.282000002916902,
+        "refinado": 10.371599986683577,
+        "escena": 10.759000026155263,
+        "combinado": 17.826000053901225,
+        "historico": 6.597700004931539
+      }
+    },
+    {
+      "id": "taco:745",
+      "detector_ms": 143.74729996779934,
+      "clasificadores_ms": {
+        "transformer": 16.185599961318076,
+        "refinado": 9.49570001102984,
+        "escena": 17.037399986293167,
+        "combinado": 24.10559996496886,
+        "historico": 11.285700020380318
+      }
+    },
+    {
+      "id": "taco:746",
+      "detector_ms": 148.27940001850948,
+      "clasificadores_ms": {
+        "transformer": 13.84699996560812,
+        "refinado": 8.951700001489371,
+        "escena": 12.163399951532483,
+        "combinado": 25.17840004293248,
+        "historico": 10.89430000865832
+      }
+    },
+    {
+      "id": "taco:748",
+      "detector_ms": 153.42089999467134,
+      "clasificadores_ms": {
+        "transformer": 7.845500018447638,
+        "refinado": 4.969900008291006,
+        "escena": 6.194799963850528,
+        "combinado": 12.160799989942461,
+        "historico": 5.29380002990365
+      }
+    },
+    {
+      "id": "taco:749",
+      "detector_ms": 150.9688000078313,
+      "clasificadores_ms": {
+        "transformer": 8.881199988536537,
+        "refinado": 4.220900009386241,
+        "escena": 6.364199973177165,
+        "combinado": 8.638900006189942,
+        "historico": 2.955600037239492
+      }
+    },
+    {
+      "id": "taco:750",
+      "detector_ms": 160.3276000241749,
+      "clasificadores_ms": {
+        "transformer": 8.298100030515343,
+        "refinado": 6.448200030717999,
+        "escena": 8.346899994648993,
+        "combinado": 13.691000000108033,
+        "historico": 7.917200040537864
+      }
+    },
+    {
+      "id": "taco:751",
+      "detector_ms": 153.34219997748733,
+      "clasificadores_ms": {
+        "transformer": 7.032699999399483,
+        "refinado": 4.7710000071674585,
+        "escena": 7.049100007861853,
+        "combinado": 10.810900013893843,
+        "historico": 3.887799975927919
+      }
+    },
+    {
+      "id": "taco:752",
+      "detector_ms": 168.72690001036972,
+      "clasificadores_ms": {
+        "transformer": 21.29769994644448,
+        "refinado": 15.613700030371547,
+        "escena": 19.781500042881817,
+        "combinado": 35.36030004033819,
+        "historico": 18.58519995585084
+      }
+    },
+    {
+      "id": "taco:753",
+      "detector_ms": 164.87169999163598,
+      "clasificadores_ms": {
+        "transformer": 20.507699984591454,
+        "refinado": 17.517600033897907,
+        "escena": 25.770600012037903,
+        "combinado": 42.86009998759255,
+        "historico": 17.243899987079203
+      }
+    },
+    {
+      "id": "taco:754",
+      "detector_ms": 159.62300001410767,
+      "clasificadores_ms": {
+        "transformer": 39.78529997402802,
+        "refinado": 60.54979999316856,
+        "escena": 59.61629998637363,
+        "combinado": 114.47859997861087,
+        "historico": 50.81639997661114
+      }
+    },
+    {
+      "id": "taco:755",
+      "detector_ms": 168.37800003122538,
+      "clasificadores_ms": {
+        "transformer": 13.002699997741729,
+        "refinado": 8.231399988289922,
+        "escena": 11.926800012588501,
+        "combinado": 23.995399998966604,
+        "historico": 8.065599948167801
+      }
+    },
+    {
+      "id": "taco:756",
+      "detector_ms": 173.60589996678755,
+      "clasificadores_ms": {
+        "transformer": 6.355699966661632,
+        "refinado": 4.627600021194667,
+        "escena": 7.396400033030659,
+        "combinado": 11.71199994860217,
+        "historico": 3.6573000252246857
+      }
+    },
+    {
+      "id": "taco:758",
+      "detector_ms": 186.37960002524778,
+      "clasificadores_ms": {
+        "transformer": 35.984600021038204,
+        "refinado": 26.68100001756102,
+        "escena": 36.06219997163862,
+        "combinado": 57.11160000646487,
+        "historico": 23.563899972941726
+      }
+    },
+    {
+      "id": "taco:759",
+      "detector_ms": 196.99759996728972,
+      "clasificadores_ms": {
+        "transformer": 11.582799954339862,
+        "refinado": 8.494200010318309,
+        "escena": 11.776899977121502,
+        "combinado": 20.227200002409518,
+        "historico": 8.003800001461059
+      }
+    },
+    {
+      "id": "taco:760",
+      "detector_ms": 170.30920000979677,
+      "clasificadores_ms": {
+        "transformer": 6.756199989467859,
+        "refinado": 5.314499954693019,
+        "escena": 5.90580003336072,
+        "combinado": 11.844400025438517,
+        "historico": 4.041199979837984
+      }
+    },
+    {
+      "id": "taco:761",
+      "detector_ms": 172.19650000333786,
+      "clasificadores_ms": {
+        "transformer": 17.345700005535036,
+        "refinado": 11.245800007600337,
+        "escena": 17.72449997952208,
+        "combinado": 32.62010001344606,
+        "historico": 12.251599982846528
+      }
+    },
+    {
+      "id": "taco:762",
+      "detector_ms": 152.16569998301566,
+      "clasificadores_ms": {
+        "transformer": 22.42870000191033,
+        "refinado": 23.05850002449006,
+        "escena": 29.597500048112124,
+        "combinado": 59.675200027413666,
+        "historico": 25.85689997067675
+      }
+    },
+    {
+      "id": "taco:763",
+      "detector_ms": 163.12149999430403,
+      "clasificadores_ms": {
+        "transformer": 13.330599991604686,
+        "refinado": 10.680600011255592,
+        "escena": 12.38930004183203,
+        "combinado": 22.261800011619925,
+        "historico": 8.102299994789064
+      }
+    },
+    {
+      "id": "taco:764",
+      "detector_ms": 168.31149999052286,
+      "clasificadores_ms": {
+        "transformer": 13.185899995733052,
+        "refinado": 8.638900006189942,
+        "escena": 12.021000031381845,
+        "combinado": 20.010799984447658,
+        "historico": 7.8112000483088195
+      }
+    },
+    {
+      "id": "taco:765",
+      "detector_ms": 168.3014999725856,
+      "clasificadores_ms": {
+        "transformer": 8.09690001187846,
+        "refinado": 6.121399987023324,
+        "escena": 9.266300010494888,
+        "combinado": 13.705999997910112,
+        "historico": 6.563800037838519
+      }
+    },
+    {
+      "id": "taco:766",
+      "detector_ms": 167.59659996023402,
+      "clasificadores_ms": {
+        "transformer": 0.05289999535307288,
+        "refinado": 0.007199996616691351,
+        "escena": 0.0037999707274138927,
+        "combinado": 0.003800028935074806,
+        "historico": 0.0030999653972685337
+      }
+    },
+    {
+      "id": "taco:767",
+      "detector_ms": 173.35180001100525,
+      "clasificadores_ms": {
+        "transformer": 7.088899961672723,
+        "refinado": 4.780800023581833,
+        "escena": 7.720099994912744,
+        "combinado": 13.540599960833788,
+        "historico": 5.088399979285896
+      }
+    },
+    {
+      "id": "taco:768",
+      "detector_ms": 159.1791000100784,
+      "clasificadores_ms": {
+        "transformer": 13.850999996066093,
+        "refinado": 8.510700019542128,
+        "escena": 14.375099970493466,
+        "combinado": 23.62689998699352,
+        "historico": 9.076000016648322
+      }
+    },
+    {
+      "id": "taco:769",
+      "detector_ms": 149.61180003592744,
+      "clasificadores_ms": {
+        "transformer": 6.986199994571507,
+        "refinado": 4.869299998972565,
+        "escena": 8.03169998107478,
+        "combinado": 14.345399977173656,
+        "historico": 4.963000013958663
+      }
+    },
+    {
+      "id": "taco:770",
+      "detector_ms": 154.81920004822314,
+      "clasificadores_ms": {
+        "transformer": 7.029200030956417,
+        "refinado": 3.1917999731376767,
+        "escena": 6.3927999581210315,
+        "combinado": 8.260300033725798,
+        "historico": 3.072699997574091
+      }
+    },
+    {
+      "id": "taco:773",
+      "detector_ms": 161.98089998215437,
+      "clasificadores_ms": {
+        "transformer": 7.618800038471818,
+        "refinado": 4.295499995350838,
+        "escena": 7.193900004494935,
+        "combinado": 11.84260001173243,
+        "historico": 4.693999944720417
+      }
+    },
+    {
+      "id": "taco:774",
+      "detector_ms": 163.81689999252558,
+      "clasificadores_ms": {
+        "transformer": 6.664099986664951,
+        "refinado": 5.326199985574931,
+        "escena": 6.857799948193133,
+        "combinado": 10.632699995767325,
+        "historico": 4.327700007706881
+      }
+    },
+    {
+      "id": "taco:775",
+      "detector_ms": 144.70689999870956,
+      "clasificadores_ms": {
+        "transformer": 9.551500028464943,
+        "refinado": 6.290399993304163,
+        "escena": 11.163999966811389,
+        "combinado": 15.951399982441217,
+        "historico": 6.464599980972707
+      }
+    },
+    {
+      "id": "taco:776",
+      "detector_ms": 144.23889998579398,
+      "clasificadores_ms": {
+        "transformer": 7.422199996653944,
+        "refinado": 6.675599957816303,
+        "escena": 7.6212999993003905,
+        "combinado": 17.510299978312105,
+        "historico": 8.04069999139756
+      }
+    },
+    {
+      "id": "taco:777",
+      "detector_ms": 108.9100000099279,
+      "clasificadores_ms": {
+        "transformer": 6.322100001852959,
+        "refinado": 4.376900033093989,
+        "escena": 6.703899998683482,
+        "combinado": 8.083100023213774,
+        "historico": 3.5319000016897917
+      }
+    },
+    {
+      "id": "taco:1400",
+      "detector_ms": 151.1929000262171,
+      "clasificadores_ms": {
+        "transformer": 19.12609999999404,
+        "refinado": 11.701300041750073,
+        "escena": 19.41479998640716,
+        "combinado": 36.58659994835034,
+        "historico": 11.228299990762025
+      }
+    },
+    {
+      "id": "taco:1401",
+      "detector_ms": 146.07040002010763,
+      "clasificadores_ms": {
+        "transformer": 11.435499996878207,
+        "refinado": 9.858999983407557,
+        "escena": 16.81920001283288,
+        "combinado": 26.25860000262037,
+        "historico": 9.85120004042983
+      }
+    },
+    {
+      "id": "taco:1402",
+      "detector_ms": 166.08320001978427,
+      "clasificadores_ms": {
+        "transformer": 8.603900030720979,
+        "refinado": 8.472200017422438,
+        "escena": 11.032899958081543,
+        "combinado": 19.368100038263947,
+        "historico": 8.080100000370294
+      }
+    },
+    {
+      "id": "taco:1403",
+      "detector_ms": 167.44950000429526,
+      "clasificadores_ms": {
+        "transformer": 24.93690000846982,
+        "refinado": 20.84200002718717,
+        "escena": 27.67909999238327,
+        "combinado": 47.37179999938235,
+        "historico": 19.459000031929463
+      }
+    },
+    {
+      "id": "taco:1404",
+      "detector_ms": 170.98520003492013,
+      "clasificadores_ms": {
+        "transformer": 30.819899984635413,
+        "refinado": 18.77329999115318,
+        "escena": 33.316099958028644,
+        "combinado": 55.69190002279356,
+        "historico": 18.994699988979846
+      }
+    },
+    {
+      "id": "taco:1405",
+      "detector_ms": 174.13010000018403,
+      "clasificadores_ms": {
+        "transformer": 26.809100003447384,
+        "refinado": 18.518200027756393,
+        "escena": 30.762900016270578,
+        "combinado": 50.086200004443526,
+        "historico": 14.710399962496012
+      }
+    },
+    {
+      "id": "taco:1406",
+      "detector_ms": 171.13829997833818,
+      "clasificadores_ms": {
+        "transformer": 13.273899967316538,
+        "refinado": 8.63479997497052,
+        "escena": 12.647700030356646,
+        "combinado": 21.05069998651743,
+        "historico": 7.99169996753335
+      }
+    },
+    {
+      "id": "taco:1407",
+      "detector_ms": 174.4110999861732,
+      "clasificadores_ms": {
+        "transformer": 14.538299990817904,
+        "refinado": 11.174599989317358,
+        "escena": 14.657400024589151,
+        "combinado": 27.254399959929287,
+        "historico": 10.56540000718087
+      }
+    },
+    {
+      "id": "taco:1408",
+      "detector_ms": 166.67549998965114,
+      "clasificadores_ms": {
+        "transformer": 41.58849996747449,
+        "refinado": 30.761900008656085,
+        "escena": 45.45680002775043,
+        "combinado": 71.11729995813221,
+        "historico": 30.947200022637844
+      }
+    },
+    {
+      "id": "taco:1409",
+      "detector_ms": 167.88399999495596,
+      "clasificadores_ms": {
+        "transformer": 6.4211999997496605,
+        "refinado": 4.292999976314604,
+        "escena": 5.4496999946422875,
+        "combinado": 9.925599966663867,
+        "historico": 3.751100040972233
+      }
+    },
+    {
+      "id": "taco:1410",
+      "detector_ms": 172.55999997723848,
+      "clasificadores_ms": {
+        "transformer": 22.25969999562949,
+        "refinado": 13.434200023766607,
+        "escena": 19.797499990090728,
+        "combinado": 36.01339994929731,
+        "historico": 17.698500014375895
+      }
+    },
+    {
+      "id": "taco:1411",
+      "detector_ms": 239.41259999992326,
+      "clasificadores_ms": {
+        "transformer": 0.03850000211969018,
+        "refinado": 0.005999987479299307,
+        "escena": 0.003400025889277458,
+        "combinado": 0.0039000296965241432,
+        "historico": 0.002800021320581436
+      }
+    },
+    {
+      "id": "taco:1412",
+      "detector_ms": 163.84330001892522,
+      "clasificadores_ms": {
+        "transformer": 11.192600009962916,
+        "refinado": 7.032599998638034,
+        "escena": 11.591300019063056,
+        "combinado": 18.830300017725676,
+        "historico": 6.721600017044693
+      }
+    },
+    {
+      "id": "taco:1414",
+      "detector_ms": 171.13079997943714,
+      "clasificadores_ms": {
+        "transformer": 34.131099993828684,
+        "refinado": 27.553900028578937,
+        "escena": 38.1374999997206,
+        "combinado": 63.23090003570542,
+        "historico": 22.83470000838861
+      }
+    },
+    {
+      "id": "taco:1415",
+      "detector_ms": 156.999500002712,
+      "clasificadores_ms": {
+        "transformer": 11.123399948701262,
+        "refinado": 7.994099985808134,
+        "escena": 14.242300007026643,
+        "combinado": 20.378399989567697,
+        "historico": 8.18140001501888
+      }
+    },
+    {
+      "id": "taco:1416",
+      "detector_ms": 157.9671999788843,
+      "clasificadores_ms": {
+        "transformer": 6.384900014381856,
+        "refinado": 5.351400002837181,
+        "escena": 6.638799968641251,
+        "combinado": 14.111299999058247,
+        "historico": 4.571099998429418
+      }
+    },
+    {
+      "id": "taco:1417",
+      "detector_ms": 159.1855000006035,
+      "clasificadores_ms": {
+        "transformer": 6.388399982824922,
+        "refinado": 4.669499990995973,
+        "escena": 6.843300012405962,
+        "combinado": 14.020900009199977,
+        "historico": 4.225200042128563
+      }
+    },
+    {
+      "id": "taco:1418",
+      "detector_ms": 155.00889997929335,
+      "clasificadores_ms": {
+        "transformer": 8.253200037870556,
+        "refinado": 7.515500008594245,
+        "escena": 9.256199991796166,
+        "combinado": 18.603800039272755,
+        "historico": 7.898200012277812
+      }
+    },
+    {
+      "id": "taco:1419",
+      "detector_ms": 158.6271999985911,
+      "clasificadores_ms": {
+        "transformer": 11.253000004217029,
+        "refinado": 10.820500028785318,
+        "escena": 12.539000017568469,
+        "combinado": 24.673499981872737,
+        "historico": 10.639999993145466
+      }
+    },
+    {
+      "id": "taco:1420",
+      "detector_ms": 154.97419994790107,
+      "clasificadores_ms": {
+        "transformer": 11.999899987131357,
+        "refinado": 15.48430003458634,
+        "escena": 19.746200006920844,
+        "combinado": 34.4457000028342,
+        "historico": 16.366199997719377
+      }
+    },
+    {
+      "id": "taco:1421",
+      "detector_ms": 150.41120001114905,
+      "clasificadores_ms": {
+        "transformer": 21.245700016152114,
+        "refinado": 14.52860003337264,
+        "escena": 20.6074999878183,
+        "combinado": 37.986200011800975,
+        "historico": 18.34089995827526
+      }
+    },
+    {
+      "id": "taco:1422",
+      "detector_ms": 155.31059994827956,
+      "clasificadores_ms": {
+        "transformer": 19.044099957682192,
+        "refinado": 12.243000033777207,
+        "escena": 15.983999997843057,
+        "combinado": 26.659500028472394,
+        "historico": 10.928599978797138
+      }
+    },
+    {
+      "id": "taco:1423",
+      "detector_ms": 153.44100003130734,
+      "clasificadores_ms": {
+        "transformer": 15.998899994883686,
+        "refinado": 10.885499999858439,
+        "escena": 12.69590004812926,
+        "combinado": 24.988400051370263,
+        "historico": 10.381800006143749
+      }
+    },
+    {
+      "id": "taco:1424",
+      "detector_ms": 155.98290000343695,
+      "clasificadores_ms": {
+        "transformer": 10.843100026249886,
+        "refinado": 10.252100008074194,
+        "escena": 12.439800018910319,
+        "combinado": 25.08819999638945,
+        "historico": 12.0943000074476
+      }
+    },
+    {
+      "id": "taco:1425",
+      "detector_ms": 152.95229997718707,
+      "clasificadores_ms": {
+        "transformer": 7.790400006342679,
+        "refinado": 5.882800032850355,
+        "escena": 8.17529996857047,
+        "combinado": 11.607699969317764,
+        "historico": 4.43600001744926
+      }
+    },
+    {
+      "id": "taco:1426",
+      "detector_ms": 154.68120004516095,
+      "clasificadores_ms": {
+        "transformer": 11.421000002883375,
+        "refinado": 5.8670000289566815,
+        "escena": 10.667699971236289,
+        "combinado": 18.194400006905198,
+        "historico": 7.632499968167394
+      }
+    },
+    {
+      "id": "taco:1427",
+      "detector_ms": 160.5824999860488,
+      "clasificadores_ms": {
+        "transformer": 20.148799987509847,
+        "refinado": 14.299199974630028,
+        "escena": 18.749099981505424,
+        "combinado": 32.76620001997799,
+        "historico": 13.137799978721887
+      }
+    },
+    {
+      "id": "taco:1428",
+      "detector_ms": 153.2586000394076,
+      "clasificadores_ms": {
+        "transformer": 5.723699985537678,
+        "refinado": 4.027099988888949,
+        "escena": 6.603399990126491,
+        "combinado": 8.446099993307143,
+        "historico": 2.6726999785751104
+      }
+    },
+    {
+      "id": "taco:1429",
+      "detector_ms": 158.9069000328891,
+      "clasificadores_ms": {
+        "transformer": 25.057199993170798,
+        "refinado": 15.690399974118918,
+        "escena": 29.228100029285997,
+        "combinado": 46.94610001752153,
+        "historico": 22.047500009648502
+      }
+    },
+    {
+      "id": "taco:1430",
+      "detector_ms": 161.58980003092438,
+      "clasificadores_ms": {
+        "transformer": 10.26320003438741,
+        "refinado": 6.6692999680526555,
+        "escena": 10.951799980830401,
+        "combinado": 18.47250002902001,
+        "historico": 6.667500012554228
+      }
+    },
+    {
+      "id": "taco:1431",
+      "detector_ms": 143.8285000040196,
+      "clasificadores_ms": {
+        "transformer": 6.550699996296316,
+        "refinado": 4.239200032316148,
+        "escena": 5.742600013036281,
+        "combinado": 7.649599981959909,
+        "historico": 2.7897999971173704
+      }
+    },
+    {
+      "id": "taco:1432",
+      "detector_ms": 147.8771999827586,
+      "clasificadores_ms": {
+        "transformer": 10.938999999780208,
+        "refinado": 16.20160002494231,
+        "escena": 16.933599952608347,
+        "combinado": 28.17559998948127,
+        "historico": 14.565899968147278
+      }
+    },
+    {
+      "id": "taco:1434",
+      "detector_ms": 144.70520004397258,
+      "clasificadores_ms": {
+        "transformer": 14.489000022877008,
+        "refinado": 12.71219999762252,
+        "escena": 14.928199991118163,
+        "combinado": 24.275599978864193,
+        "historico": 11.68679998954758
+      }
+    },
+    {
+      "id": "taco:1435",
+      "detector_ms": 139.17750003747642,
+      "clasificadores_ms": {
+        "transformer": 5.5754000204615295,
+        "refinado": 5.684100033249706,
+        "escena": 5.160999950021505,
+        "combinado": 8.941800042521209,
+        "historico": 3.7702000117860734
+      }
+    },
+    {
+      "id": "taco:1436",
+      "detector_ms": 125.84490003064275,
+      "clasificadores_ms": {
+        "transformer": 9.753799997270107,
+        "refinado": 6.570700032170862,
+        "escena": 10.61559998197481,
+        "combinado": 17.019999970216304,
+        "historico": 6.213999993633479
+      }
+    },
+    {
+      "id": "taco:1437",
+      "detector_ms": 137.462200014852,
+      "clasificadores_ms": {
+        "transformer": 5.1441999967209995,
+        "refinado": 3.8266999763436615,
+        "escena": 4.778900009114295,
+        "combinado": 7.250499969813973,
+        "historico": 3.343000018503517
+      }
+    },
+    {
+      "id": "taco:1438",
+      "detector_ms": 147.86289999028668,
+      "clasificadores_ms": {
+        "transformer": 4.854800004977733,
+        "refinado": 3.1869999947957695,
+        "escena": 5.459600011818111,
+        "combinado": 8.44210002105683,
+        "historico": 4.6591999707743526
+      }
+    },
+    {
+      "id": "taco:1439",
+      "detector_ms": 130.9012999990955,
+      "clasificadores_ms": {
+        "transformer": 8.632100012619048,
+        "refinado": 7.241599960252643,
+        "escena": 9.85730002867058,
+        "combinado": 14.464800013229251,
+        "historico": 5.189599993173033
+      }
+    },
+    {
+      "id": "taco:1440",
+      "detector_ms": 131.84450002154335,
+      "clasificadores_ms": {
+        "transformer": 4.304200003389269,
+        "refinado": 3.1612999737262726,
+        "escena": 5.25970000308007,
+        "combinado": 6.759400013834238,
+        "historico": 2.7383999549783766
+      }
+    },
+    {
+      "id": "taco:1441",
+      "detector_ms": 134.16369998594746,
+      "clasificadores_ms": {
+        "transformer": 11.392800020985305,
+        "refinado": 8.81699996534735,
+        "escena": 13.022600032854825,
+        "combinado": 21.708100044634193,
+        "historico": 8.933600038290024
+      }
+    },
+    {
+      "id": "taco:1442",
+      "detector_ms": 133.6810999782756,
+      "clasificadores_ms": {
+        "transformer": 6.324100017081946,
+        "refinado": 3.386500000488013,
+        "escena": 4.698599979747087,
+        "combinado": 8.558999979868531,
+        "historico": 3.0741000082343817
+      }
+    },
+    {
+      "id": "taco:1443",
+      "detector_ms": 132.9132000100799,
+      "clasificadores_ms": {
+        "transformer": 15.846599999349564,
+        "refinado": 10.703700012527406,
+        "escena": 14.658699976280332,
+        "combinado": 24.81099998112768,
+        "historico": 9.617300005629659
+      }
+    },
+    {
+      "id": "taco:1444",
+      "detector_ms": 125.632899987977,
+      "clasificadores_ms": {
+        "transformer": 6.537900015246123,
+        "refinado": 3.7601999938488007,
+        "escena": 5.047099955845624,
+        "combinado": 10.494599991943687,
+        "historico": 3.9416999788954854
+      }
+    },
+    {
+      "id": "taco:1445",
+      "detector_ms": 135.54700004169717,
+      "clasificadores_ms": {
+        "transformer": 7.094400003552437,
+        "refinado": 6.279599969275296,
+        "escena": 7.762900029774755,
+        "combinado": 16.20710000861436,
+        "historico": 7.2051999741233885
+      }
+    },
+    {
+      "id": "taco:1446",
+      "detector_ms": 139.7805000306107,
+      "clasificadores_ms": {
+        "transformer": 11.29709999077022,
+        "refinado": 6.907899980433285,
+        "escena": 9.760599990841001,
+        "combinado": 18.90949998050928,
+        "historico": 7.172200013883412
+      }
+    },
+    {
+      "id": "taco:1447",
+      "detector_ms": 140.76380000915378,
+      "clasificadores_ms": {
+        "transformer": 14.547400001902133,
+        "refinado": 6.487399979960173,
+        "escena": 9.979400027077645,
+        "combinado": 17.413000052329153,
+        "historico": 5.61980000929907
+      }
+    },
+    {
+      "id": "taco:1448",
+      "detector_ms": 146.84290002333,
+      "clasificadores_ms": {
+        "transformer": 8.851399994455278,
+        "refinado": 8.628099982161075,
+        "escena": 12.029699981212616,
+        "combinado": 17.483300005551428,
+        "historico": 10.282500006724149
+      }
+    },
+    {
+      "id": "taco:1450",
+      "detector_ms": 139.00179998017848,
+      "clasificadores_ms": {
+        "transformer": 35.93670000554994,
+        "refinado": 42.422300030011684,
+        "escena": 48.23499999474734,
+        "combinado": 89.45179998409003,
+        "historico": 40.51879997132346
+      }
+    },
+    {
+      "id": "taco:1451",
+      "detector_ms": 150.64569999231026,
+      "clasificadores_ms": {
+        "transformer": 5.982999980915338,
+        "refinado": 3.860500000882894,
+        "escena": 7.127400022000074,
+        "combinado": 9.901999961584806,
+        "historico": 3.5174000076949596
+      }
+    },
+    {
+      "id": "taco:1452",
+      "detector_ms": 159.98599998420104,
+      "clasificadores_ms": {
+        "transformer": 43.81409997586161,
+        "refinado": 44.72089995397255,
+        "escena": 56.52199999894947,
+        "combinado": 91.03680000407621,
+        "historico": 35.39649996673688
+      }
+    },
+    {
+      "id": "taco:1453",
+      "detector_ms": 133.12109996331856,
+      "clasificadores_ms": {
+        "transformer": 21.721199969761074,
+        "refinado": 16.01170003414154,
+        "escena": 24.604300037026405,
+        "combinado": 43.24059997452423,
+        "historico": 18.132299999706447
+      }
+    },
+    {
+      "id": "taco:1454",
+      "detector_ms": 119.60459995316342,
+      "clasificadores_ms": {
+        "transformer": 8.314899983815849,
+        "refinado": 5.9077999903820455,
+        "escena": 9.210699994582683,
+        "combinado": 15.186799981165677,
+        "historico": 7.642499986104667
+      }
+    },
+    {
+      "id": "taco:1455",
+      "detector_ms": 128.24049999471754,
+      "clasificadores_ms": {
+        "transformer": 16.969899996183813,
+        "refinado": 11.816499987617135,
+        "escena": 19.033599994145334,
+        "combinado": 28.987300000153482,
+        "historico": 10.40239998837933
+      }
+    },
+    {
+      "id": "taco:1456",
+      "detector_ms": 125.01650000922382,
+      "clasificadores_ms": {
+        "transformer": 20.435200014617294,
+        "refinado": 13.658099982421845,
+        "escena": 19.030599971301854,
+        "combinado": 29.050700017251074,
+        "historico": 13.388500025030226
+      }
+    },
+    {
+      "id": "taco:1457",
+      "detector_ms": 135.98840002669021,
+      "clasificadores_ms": {
+        "transformer": 14.861599949654192,
+        "refinado": 8.84510000469163,
+        "escena": 15.788999968208373,
+        "combinado": 27.198499999940395,
+        "historico": 9.536899975501
+      }
+    },
+    {
+      "id": "taco:1458",
+      "detector_ms": 121.492899954319,
+      "clasificadores_ms": {
+        "transformer": 8.16959998337552,
+        "refinado": 5.417699983809143,
+        "escena": 9.289200010243803,
+        "combinado": 16.820899967569858,
+        "historico": 7.271300011780113
+      }
+    },
+    {
+      "id": "taco:1459",
+      "detector_ms": 135.2181999827735,
+      "clasificadores_ms": {
+        "transformer": 10.177900025155395,
+        "refinado": 7.145999989006668,
+        "escena": 9.690299979411066,
+        "combinado": 16.480199992656708,
+        "historico": 6.138700002338737
+      }
+    },
+    {
+      "id": "taco:1460",
+      "detector_ms": 124.57070004893467,
+      "clasificadores_ms": {
+        "transformer": 12.831200030632317,
+        "refinado": 8.488499966915697,
+        "escena": 12.391900003422052,
+        "combinado": 22.29379996424541,
+        "historico": 8.047200040891767
+      }
+    },
+    {
+      "id": "taco:1461",
+      "detector_ms": 133.46799998544157,
+      "clasificadores_ms": {
+        "transformer": 4.2548999772407115,
+        "refinado": 2.68470001174137,
+        "escena": 4.707299987785518,
+        "combinado": 7.359999988693744,
+        "historico": 3.141299996059388
+      }
+    },
+    {
+      "id": "taco:1462",
+      "detector_ms": 133.70400003623217,
+      "clasificadores_ms": {
+        "transformer": 13.192399987019598,
+        "refinado": 6.069299997761846,
+        "escena": 9.532099997159094,
+        "combinado": 15.228900010697544,
+        "historico": 6.622399960178882
+      }
+    },
+    {
+      "id": "taco:1463",
+      "detector_ms": 125.08719996549189,
+      "clasificadores_ms": {
+        "transformer": 4.421500023454428,
+        "refinado": 3.057900001294911,
+        "escena": 4.402899998240173,
+        "combinado": 7.305499981157482,
+        "historico": 3.0735000036656857
+      }
+    },
+    {
+      "id": "taco:1464",
+      "detector_ms": 124.89519995870069,
+      "clasificadores_ms": {
+        "transformer": 13.21429997915402,
+        "refinado": 8.579000015743077,
+        "escena": 14.95679997606203,
+        "combinado": 21.823599992785603,
+        "historico": 7.876599964220077
+      }
+    },
+    {
+      "id": "taco:1465",
+      "detector_ms": 119.87719999160618,
+      "clasificadores_ms": {
+        "transformer": 15.012299991212785,
+        "refinado": 9.680999966803938,
+        "escena": 15.186100034043193,
+        "combinado": 25.961400009691715,
+        "historico": 9.081900003366172
+      }
+    },
+    {
+      "id": "taco:1466",
+      "detector_ms": 128.28279996756464,
+      "clasificadores_ms": {
+        "transformer": 13.843600056134164,
+        "refinado": 11.160399997606874,
+        "escena": 14.162899984512478,
+        "combinado": 21.978500008117408,
+        "historico": 8.73259996296838
+      }
+    },
+    {
+      "id": "taco:1467",
+      "detector_ms": 121.15279998397455,
+      "clasificadores_ms": {
+        "transformer": 20.541300007607788,
+        "refinado": 22.207100002560765,
+        "escena": 29.079100000672042,
+        "combinado": 49.24389999359846,
+        "historico": 21.284200018271804
+      }
+    },
+    {
+      "id": "taco:1468",
+      "detector_ms": 121.13220000173897,
+      "clasificadores_ms": {
+        "transformer": 4.58399998024106,
+        "refinado": 3.15579999005422,
+        "escena": 4.648000001907349,
+        "combinado": 7.73110002046451,
+        "historico": 3.1423000036738813
+      }
+    },
+    {
+      "id": "taco:1469",
+      "detector_ms": 131.44359999569133,
+      "clasificadores_ms": {
+        "transformer": 9.9651999771595,
+        "refinado": 6.418100034352392,
+        "escena": 9.312600013799965,
+        "combinado": 15.536999970208853,
+        "historico": 5.911500018555671
+      }
+    },
+    {
+      "id": "taco:1470",
+      "detector_ms": 121.36950000422075,
+      "clasificadores_ms": {
+        "transformer": 16.789000015705824,
+        "refinado": 11.48379995720461,
+        "escena": 20.007200015243143,
+        "combinado": 29.24519998487085,
+        "historico": 11.087499966379255
+      }
+    },
+    {
+      "id": "taco:1471",
+      "detector_ms": 122.92499997420236,
+      "clasificadores_ms": {
+        "transformer": 17.691300017759204,
+        "refinado": 13.60280002700165,
+        "escena": 19.90089996252209,
+        "combinado": 30.85129999089986,
+        "historico": 13.517800020053983
+      }
+    },
+    {
+      "id": "taco:1472",
+      "detector_ms": 127.18589999713004,
+      "clasificadores_ms": {
+        "transformer": 9.203099994920194,
+        "refinado": 7.567399996332824,
+        "escena": 10.010000027250499,
+        "combinado": 16.4678999572061,
+        "historico": 6.244299991521984
+      }
+    },
+    {
+      "id": "taco:1473",
+      "detector_ms": 123.96539998007938,
+      "clasificadores_ms": {
+        "transformer": 20.116600033361465,
+        "refinado": 17.311799980234355,
+        "escena": 23.291999998036772,
+        "combinado": 37.40489995107055,
+        "historico": 13.91520001925528
+      }
+    },
+    {
+      "id": "taco:1474",
+      "detector_ms": 132.45049997931346,
+      "clasificadores_ms": {
+        "transformer": 5.219400045461953,
+        "refinado": 3.3796000061556697,
+        "escena": 5.351200001314282,
+        "combinado": 11.315900017507374,
+        "historico": 3.6862000124529004
+      }
+    },
+    {
+      "id": "taco:1475",
+      "detector_ms": 155.68649995839223,
+      "clasificadores_ms": {
+        "transformer": 9.019499993883073,
+        "refinado": 5.754400044679642,
+        "escena": 9.873800037894398,
+        "combinado": 17.705799953546375,
+        "historico": 5.998899985570461
+      }
+    },
+    {
+      "id": "taco:1476",
+      "detector_ms": 118.5892999637872,
+      "clasificadores_ms": {
+        "transformer": 20.0745000038296,
+        "refinado": 15.334099996834993,
+        "escena": 20.273200003430247,
+        "combinado": 38.20329997688532,
+        "historico": 19.070099981036037
+      }
+    },
+    {
+      "id": "taco:1477",
+      "detector_ms": 128.48999997368082,
+      "clasificadores_ms": {
+        "transformer": 8.454399998299778,
+        "refinado": 6.061799998860806,
+        "escena": 8.953200012911111,
+        "combinado": 14.367999974638224,
+        "historico": 5.000700009986758
+      }
+    },
+    {
+      "id": "taco:1478",
+      "detector_ms": 121.13749998388812,
+      "clasificadores_ms": {
+        "transformer": 5.620699957944453,
+        "refinado": 3.9090000209398568,
+        "escena": 5.706000025384128,
+        "combinado": 10.111599985975772,
+        "historico": 4.019899992272258
+      }
+    },
+    {
+      "id": "taco:1479",
+      "detector_ms": 121.67110003065318,
+      "clasificadores_ms": {
+        "transformer": 4.98710002284497,
+        "refinado": 2.6295999996364117,
+        "escena": 4.214199958369136,
+        "combinado": 6.5101999789476395,
+        "historico": 3.086299984715879
+      }
+    },
+    {
+      "id": "taco:1480",
+      "detector_ms": 120.70070003392175,
+      "clasificadores_ms": {
+        "transformer": 13.195500010624528,
+        "refinado": 10.301899979822338,
+        "escena": 13.276899990160018,
+        "combinado": 19.90399998612702,
+        "historico": 8.401200000662357
+      }
+    },
+    {
+      "id": "taco:1481",
+      "detector_ms": 124.71290002577007,
+      "clasificadores_ms": {
+        "transformer": 8.102000050712377,
+        "refinado": 6.132600014097989,
+        "escena": 9.588600019924343,
+        "combinado": 14.112100005149841,
+        "historico": 5.155400023795664
+      }
+    },
+    {
+      "id": "taco:1482",
+      "detector_ms": 122.79239995405078,
+      "clasificadores_ms": {
+        "transformer": 0.04379998426884413,
+        "refinado": 0.004699977580457926,
+        "escena": 0.00300002284348011,
+        "combinado": 0.004499976057559252,
+        "historico": 0.003700028173625469
+      }
+    },
+    {
+      "id": "taco:1483",
+      "detector_ms": 126.20689999312162,
+      "clasificadores_ms": {
+        "transformer": 8.615200000349432,
+        "refinado": 8.275299973320216,
+        "escena": 8.967400004621595,
+        "combinado": 17.430300009436905,
+        "historico": 8.25840001925826
+      }
+    },
+    {
+      "id": "taco:1484",
+      "detector_ms": 129.25510003697127,
+      "clasificadores_ms": {
+        "transformer": 8.161899982951581,
+        "refinado": 4.85959998331964,
+        "escena": 8.147099986672401,
+        "combinado": 15.882200037594885,
+        "historico": 5.3595000063069165
+      }
+    },
+    {
+      "id": "taco:1485",
+      "detector_ms": 125.22369995713234,
+      "clasificadores_ms": {
+        "transformer": 4.1588000021874905,
+        "refinado": 2.733500034082681,
+        "escena": 4.422999976668507,
+        "combinado": 7.1604999830015,
+        "historico": 3.0931999790482223
+      }
+    },
+    {
+      "id": "taco:1486",
+      "detector_ms": 123.4847999876365,
+      "clasificadores_ms": {
+        "transformer": 12.394099961966276,
+        "refinado": 8.534700027666986,
+        "escena": 14.62500001071021,
+        "combinado": 20.64190001692623,
+        "historico": 7.789800001773983
+      }
+    },
+    {
+      "id": "taco:1487",
+      "detector_ms": 122.50190001213923,
+      "clasificadores_ms": {
+        "transformer": 11.962299991864711,
+        "refinado": 7.752500008791685,
+        "escena": 14.786799962166697,
+        "combinado": 20.72929998394102,
+        "historico": 8.095900004263967
+      }
+    },
+    {
+      "id": "taco:1488",
+      "detector_ms": 129.6969000250101,
+      "clasificadores_ms": {
+        "transformer": 8.001099980901927,
+        "refinado": 5.536200013011694,
+        "escena": 11.3314000191167,
+        "combinado": 16.91229996504262,
+        "historico": 6.272400030866265
+      }
+    },
+    {
+      "id": "taco:1489",
+      "detector_ms": 128.62929998664185,
+      "clasificadores_ms": {
+        "transformer": 0.044899992644786835,
+        "refinado": 0.005099980626255274,
+        "escena": 0.004400033503770828,
+        "combinado": 0.0036999699659645557,
+        "historico": 0.00300002284348011
+      }
+    },
+    {
+      "id": "taco:1490",
+      "detector_ms": 121.93780002417043,
+      "clasificadores_ms": {
+        "transformer": 17.695999995339662,
+        "refinado": 12.074800033587962,
+        "escena": 18.312899977900088,
+        "combinado": 27.40550000453368,
+        "historico": 12.300900008995086
+      }
+    },
+    {
+      "id": "taco:1491",
+      "detector_ms": 123.69709997437894,
+      "clasificadores_ms": {
+        "transformer": 15.1849000249058,
+        "refinado": 8.853400009684265,
+        "escena": 14.368099975399673,
+        "combinado": 24.67000001342967,
+        "historico": 9.254199976567179
+      }
+    },
+    {
+      "id": "taco:1492",
+      "detector_ms": 124.8879000195302,
+      "clasificadores_ms": {
+        "transformer": 4.647199995815754,
+        "refinado": 4.355399985797703,
+        "escena": 4.746799997519702,
+        "combinado": 8.125799999106675,
+        "historico": 3.2626999891363084
+      }
+    },
+    {
+      "id": "taco:1493",
+      "detector_ms": 144.94760002708063,
+      "clasificadores_ms": {
+        "transformer": 4.866700037382543,
+        "refinado": 2.7673000004142523,
+        "escena": 4.307900031562895,
+        "combinado": 7.549100031610578,
+        "historico": 2.8081999626010656
+      }
+    },
+    {
+      "id": "taco:1494",
+      "detector_ms": 122.23010003799573,
+      "clasificadores_ms": {
+        "transformer": 9.307899978011847,
+        "refinado": 5.870199995115399,
+        "escena": 9.91199997952208,
+        "combinado": 16.317799978423864,
+        "historico": 6.139100005384535
+      }
+    },
+    {
+      "id": "taco:1495",
+      "detector_ms": 136.05470000766218,
+      "clasificadores_ms": {
+        "transformer": 33.24019996216521,
+        "refinado": 24.09660001285374,
+        "escena": 37.01379999984056,
+        "combinado": 64.89779998082668,
+        "historico": 24.290099972859025
+      }
+    },
+    {
+      "id": "taco:1496",
+      "detector_ms": 155.2339000045322,
+      "clasificadores_ms": {
+        "transformer": 0.040700018871575594,
+        "refinado": 0.00689999433234334,
+        "escena": 0.005499983672052622,
+        "combinado": 0.005600042641162872,
+        "historico": 0.004600035026669502
+      }
+    },
+    {
+      "id": "taco:1497",
+      "detector_ms": 169.26719999173656,
+      "clasificadores_ms": {
+        "transformer": 20.381300011649728,
+        "refinado": 12.687699985690415,
+        "escena": 20.452999975532293,
+        "combinado": 34.358999982941896,
+        "historico": 13.692400010768324
+      }
+    },
+    {
+      "id": "taco:1498",
+      "detector_ms": 151.87519998289645,
+      "clasificadores_ms": {
+        "transformer": 13.025699998252094,
+        "refinado": 14.051200007088482,
+        "escena": 16.153000004123896,
+        "combinado": 27.287100034300238,
+        "historico": 15.554400044493377
+      }
+    },
+    {
+      "id": "taco:1499",
+      "detector_ms": 149.81790003366768,
+      "clasificadores_ms": {
+        "transformer": 8.289199962746352,
+        "refinado": 7.623200013767928,
+        "escena": 12.686500034760684,
+        "combinado": 19.20040004188195,
+        "historico": 9.276600030716509
+      }
+    }
+  ],
+  "matches": [
+    {
+      "id": "taco:686",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9601049423217773
+        }
+      ]
+    },
+    {
+      "id": "taco:687",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "vidrio",
+          "IoU": 0.7088631987571716
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.923521101474762
+        }
+      ]
+    },
+    {
+      "id": "taco:688",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.7494625449180603
+        }
+      ]
+    },
+    {
+      "id": "taco:689",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 5,
+          "GT": "carton",
+          "IoU": 0.8937857151031494
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8262853026390076
+        },
+        {
+          "indice_deteccion": 3,
+          "indice_GT_generico": 6,
+          "GT": "plastico",
+          "IoU": 0.8577424883842468
+        },
+        {
+          "indice_deteccion": 4,
+          "indice_GT_generico": 3,
+          "GT": "papel",
+          "IoU": 0.8720940947532654
+        },
+        {
+          "indice_deteccion": 5,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.7644138932228088
+        }
+      ]
+    },
+    {
+      "id": "taco:691",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9122301340103149
+        }
+      ]
+    },
+    {
+      "id": "taco:692",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.7938204407691956
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.9020628929138184
+        }
+      ]
+    },
+    {
+      "id": "taco:693",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.9085988402366638
+        },
+        {
+          "indice_deteccion": 3,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.8252289891242981
+        }
+      ]
+    },
+    {
+      "id": "taco:694",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9440604448318481
+        }
+      ]
+    },
+    {
+      "id": "taco:695",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.9082562923431396
+        }
+      ]
+    },
+    {
+      "id": "taco:696",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8672326803207397
+        }
+      ]
+    },
+    {
+      "id": "taco:697",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.9460731148719788
+        }
+      ]
+    },
+    {
+      "id": "taco:699",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "papel",
+          "IoU": 0.9100850224494934
+        }
+      ]
+    },
+    {
+      "id": "taco:700",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9627570509910583
+        }
+      ]
+    },
+    {
+      "id": "taco:701",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8080040216445923
+        }
+      ]
+    },
+    {
+      "id": "taco:702",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8590896129608154
+        }
+      ]
+    },
+    {
+      "id": "taco:703",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9158488512039185
+        }
+      ]
+    },
+    {
+      "id": "taco:704",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7825667858123779
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 3,
+          "GT": "papel",
+          "IoU": 0.6916413307189941
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "organico",
+          "IoU": 0.7033270597457886
+        }
+      ]
+    },
+    {
+      "id": "taco:705",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.8563011288642883
+        }
+      ]
+    },
+    {
+      "id": "taco:706",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 3,
+          "GT": "vidrio",
+          "IoU": 0.865894615650177
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9401986598968506
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 2,
+          "GT": "vidrio",
+          "IoU": 0.7109658122062683
+        },
+        {
+          "indice_deteccion": 6,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.8825197219848633
+        }
+      ]
+    },
+    {
+      "id": "taco:707",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:708",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9218857884407043
+        }
+      ]
+    },
+    {
+      "id": "taco:709",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.672245442867279
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 4,
+          "GT": "metal",
+          "IoU": 0.738715648651123
+        },
+        {
+          "indice_deteccion": 4,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.7486969232559204
+        }
+      ]
+    },
+    {
+      "id": "taco:710",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:711",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9241165518760681
+        }
+      ]
+    },
+    {
+      "id": "taco:712",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9434834122657776
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.861823320388794
+        }
+      ]
+    },
+    {
+      "id": "taco:713",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.8858673572540283
+        }
+      ]
+    },
+    {
+      "id": "taco:714",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:715",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9535395503044128
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.9102156162261963
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.9138793349266052
+        }
+      ]
+    },
+    {
+      "id": "taco:716",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7216434478759766
+        }
+      ]
+    },
+    {
+      "id": "taco:717",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:718",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8880143761634827
+        }
+      ]
+    },
+    {
+      "id": "taco:719",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9432944059371948
+        }
+      ]
+    },
+    {
+      "id": "taco:720",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7753233313560486
+        }
+      ]
+    },
+    {
+      "id": "taco:721",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.7975927591323853
+        }
+      ]
+    },
+    {
+      "id": "taco:722",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.7906767725944519
+        }
+      ]
+    },
+    {
+      "id": "taco:723",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.8282775282859802
+        }
+      ]
+    },
+    {
+      "id": "taco:724",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8836624622344971
+        }
+      ]
+    },
+    {
+      "id": "taco:725",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.8020473718643188
+        }
+      ]
+    },
+    {
+      "id": "taco:726",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.7561520338058472
+        }
+      ]
+    },
+    {
+      "id": "taco:727",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.904276967048645
+        }
+      ]
+    },
+    {
+      "id": "taco:728",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7841119170188904
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.7129302620887756
+        }
+      ]
+    },
+    {
+      "id": "taco:729",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8767882585525513
+        }
+      ]
+    },
+    {
+      "id": "taco:730",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.7473310828208923
+        }
+      ]
+    },
+    {
+      "id": "taco:731",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8242440223693848
+        }
+      ]
+    },
+    {
+      "id": "taco:732",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.7947903871536255
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7679333686828613
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.8124093413352966
+        },
+        {
+          "indice_deteccion": 4,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.7888484001159668
+        }
+      ]
+    },
+    {
+      "id": "taco:733",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9681252241134644
+        }
+      ]
+    },
+    {
+      "id": "taco:735",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9208782315254211
+        }
+      ]
+    },
+    {
+      "id": "taco:736",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8516138792037964
+        }
+      ]
+    },
+    {
+      "id": "taco:737",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.7278810739517212
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.7217797040939331
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 3,
+          "GT": "papel",
+          "IoU": 0.8093357682228088
+        },
+        {
+          "indice_deteccion": 3,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8715164661407471
+        }
+      ]
+    },
+    {
+      "id": "taco:739",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.880643367767334
+        }
+      ]
+    },
+    {
+      "id": "taco:740",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9334567785263062
+        }
+      ]
+    },
+    {
+      "id": "taco:741",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9001186490058899
+        }
+      ]
+    },
+    {
+      "id": "taco:742",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "papel",
+          "IoU": 0.8790470957756042
+        }
+      ]
+    },
+    {
+      "id": "taco:743",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8582013845443726
+        }
+      ]
+    },
+    {
+      "id": "taco:744",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.6040326356887817
+        }
+      ]
+    },
+    {
+      "id": "taco:745",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "metal",
+          "IoU": 0.9331913590431213
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.8067031502723694
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.9231972694396973
+        }
+      ]
+    },
+    {
+      "id": "taco:746",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.6205046772956848
+        }
+      ]
+    },
+    {
+      "id": "taco:748",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8357141017913818
+        }
+      ]
+    },
+    {
+      "id": "taco:749",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.960971474647522
+        }
+      ]
+    },
+    {
+      "id": "taco:750",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.9278106093406677
+        }
+      ]
+    },
+    {
+      "id": "taco:751",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "vidrio",
+          "IoU": 0.5962674021720886
+        }
+      ]
+    },
+    {
+      "id": "taco:752",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.8848248720169067
+        }
+      ]
+    },
+    {
+      "id": "taco:753",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9317702054977417
+        }
+      ]
+    },
+    {
+      "id": "taco:754",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "papel",
+          "IoU": 0.7859916090965271
+        }
+      ]
+    },
+    {
+      "id": "taco:755",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9238098859786987
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.8222231864929199
+        }
+      ]
+    },
+    {
+      "id": "taco:756",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.6975474953651428
+        }
+      ]
+    },
+    {
+      "id": "taco:758",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 6,
+          "GT": "plastico",
+          "IoU": 0.7767983675003052
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "vidrio",
+          "IoU": 0.8747238516807556
+        },
+        {
+          "indice_deteccion": 3,
+          "indice_GT_generico": 0,
+          "GT": "vidrio",
+          "IoU": 0.9361130595207214
+        }
+      ]
+    },
+    {
+      "id": "taco:759",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.7609055042266846
+        }
+      ]
+    },
+    {
+      "id": "taco:760",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:761",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.5044839978218079
+        }
+      ]
+    },
+    {
+      "id": "taco:762",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.6748058795928955
+        }
+      ]
+    },
+    {
+      "id": "taco:763",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8319640755653381
+        }
+      ]
+    },
+    {
+      "id": "taco:764",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.67520672082901
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 6,
+          "GT": "plastico",
+          "IoU": 0.7568700909614563
+        }
+      ]
+    },
+    {
+      "id": "taco:765",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9251687526702881
+        }
+      ]
+    },
+    {
+      "id": "taco:766",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:767",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.5110650658607483
+        }
+      ]
+    },
+    {
+      "id": "taco:768",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8884462714195251
+        }
+      ]
+    },
+    {
+      "id": "taco:769",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8933045268058777
+        }
+      ]
+    },
+    {
+      "id": "taco:770",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8042565584182739
+        }
+      ]
+    },
+    {
+      "id": "taco:773",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.8983116149902344
+        }
+      ]
+    },
+    {
+      "id": "taco:774",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.8134359121322632
+        }
+      ]
+    },
+    {
+      "id": "taco:775",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.9342287182807922
+        }
+      ]
+    },
+    {
+      "id": "taco:776",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9459360241889954
+        }
+      ]
+    },
+    {
+      "id": "taco:777",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8508970141410828
+        }
+      ]
+    },
+    {
+      "id": "taco:1400",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.7853374481201172
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7258643507957458
+        }
+      ]
+    },
+    {
+      "id": "taco:1401",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.7366943955421448
+        }
+      ]
+    },
+    {
+      "id": "taco:1402",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7680480480194092
+        }
+      ]
+    },
+    {
+      "id": "taco:1403",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8417807817459106
+        }
+      ]
+    },
+    {
+      "id": "taco:1404",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1405",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7689081430435181
+        }
+      ]
+    },
+    {
+      "id": "taco:1406",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9205719828605652
+        }
+      ]
+    },
+    {
+      "id": "taco:1407",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.947184145450592
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7035154700279236
+        }
+      ]
+    },
+    {
+      "id": "taco:1408",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9461798667907715
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 3,
+          "GT": "metal",
+          "IoU": 0.7486917972564697
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.8790589570999146
+        },
+        {
+          "indice_deteccion": 3,
+          "indice_GT_generico": 11,
+          "GT": "plastico",
+          "IoU": 0.8267071843147278
+        },
+        {
+          "indice_deteccion": 4,
+          "indice_GT_generico": 10,
+          "GT": "metal",
+          "IoU": 0.8484194874763489
+        }
+      ]
+    },
+    {
+      "id": "taco:1409",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1410",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.52635258436203
+        }
+      ]
+    },
+    {
+      "id": "taco:1411",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1412",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.5996738076210022
+        }
+      ]
+    },
+    {
+      "id": "taco:1414",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.8836265206336975
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.5212286710739136
+        },
+        {
+          "indice_deteccion": 4,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.5359690189361572
+        }
+      ]
+    },
+    {
+      "id": "taco:1415",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "papel",
+          "IoU": 0.7554744482040405
+        }
+      ]
+    },
+    {
+      "id": "taco:1416",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8546331524848938
+        }
+      ]
+    },
+    {
+      "id": "taco:1417",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8435282111167908
+        }
+      ]
+    },
+    {
+      "id": "taco:1418",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.771260678768158
+        }
+      ]
+    },
+    {
+      "id": "taco:1419",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.7297401428222656
+        }
+      ]
+    },
+    {
+      "id": "taco:1420",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8625772595405579
+        }
+      ]
+    },
+    {
+      "id": "taco:1421",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7324645519256592
+        }
+      ]
+    },
+    {
+      "id": "taco:1422",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7328028678894043
+        }
+      ]
+    },
+    {
+      "id": "taco:1423",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.833766758441925
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.761215090751648
+        }
+      ]
+    },
+    {
+      "id": "taco:1424",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9349474310874939
+        }
+      ]
+    },
+    {
+      "id": "taco:1425",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9578465819358826
+        }
+      ]
+    },
+    {
+      "id": "taco:1426",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7452142238616943
+        }
+      ]
+    },
+    {
+      "id": "taco:1427",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.8077255487442017
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.7921331524848938
+        }
+      ]
+    },
+    {
+      "id": "taco:1428",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1429",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8741534948348999
+        }
+      ]
+    },
+    {
+      "id": "taco:1430",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7577372193336487
+        }
+      ]
+    },
+    {
+      "id": "taco:1431",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1432",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7170345783233643
+        }
+      ]
+    },
+    {
+      "id": "taco:1434",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7617362141609192
+        }
+      ]
+    },
+    {
+      "id": "taco:1435",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8249685764312744
+        }
+      ]
+    },
+    {
+      "id": "taco:1436",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8280426263809204
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.6826575994491577
+        }
+      ]
+    },
+    {
+      "id": "taco:1437",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7744594216346741
+        }
+      ]
+    },
+    {
+      "id": "taco:1438",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.860842764377594
+        }
+      ]
+    },
+    {
+      "id": "taco:1439",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.759268045425415
+        }
+      ]
+    },
+    {
+      "id": "taco:1440",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1441",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.6140352487564087
+        }
+      ]
+    },
+    {
+      "id": "taco:1442",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8222706317901611
+        }
+      ]
+    },
+    {
+      "id": "taco:1443",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7619088888168335
+        }
+      ]
+    },
+    {
+      "id": "taco:1444",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8931968212127686
+        }
+      ]
+    },
+    {
+      "id": "taco:1445",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.5860313773155212
+        }
+      ]
+    },
+    {
+      "id": "taco:1446",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8240407705307007
+        }
+      ]
+    },
+    {
+      "id": "taco:1447",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7635238766670227
+        }
+      ]
+    },
+    {
+      "id": "taco:1448",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8837324976921082
+        }
+      ]
+    },
+    {
+      "id": "taco:1450",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.8069688081741333
+        }
+      ]
+    },
+    {
+      "id": "taco:1451",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1452",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1453",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 6,
+          "GT": "plastico",
+          "IoU": 0.5006551742553711
+        }
+      ]
+    },
+    {
+      "id": "taco:1454",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1455",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8368787169456482
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.7640255093574524
+        }
+      ]
+    },
+    {
+      "id": "taco:1456",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.9061628580093384
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8803094625473022
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 0,
+          "GT": "papel",
+          "IoU": 0.794399619102478
+        }
+      ]
+    },
+    {
+      "id": "taco:1457",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8564885258674622
+        }
+      ]
+    },
+    {
+      "id": "taco:1458",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8613330721855164
+        }
+      ]
+    },
+    {
+      "id": "taco:1459",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8681221604347229
+        }
+      ]
+    },
+    {
+      "id": "taco:1460",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7738626003265381
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8648614883422852
+        }
+      ]
+    },
+    {
+      "id": "taco:1461",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8294316530227661
+        }
+      ]
+    },
+    {
+      "id": "taco:1462",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8597334027290344
+        }
+      ]
+    },
+    {
+      "id": "taco:1463",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.9107453227043152
+        }
+      ]
+    },
+    {
+      "id": "taco:1464",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8169410228729248
+        }
+      ]
+    },
+    {
+      "id": "taco:1465",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.7544332146644592
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.8285747170448303
+        }
+      ]
+    },
+    {
+      "id": "taco:1466",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1467",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8631253838539124
+        }
+      ]
+    },
+    {
+      "id": "taco:1468",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9045243263244629
+        }
+      ]
+    },
+    {
+      "id": "taco:1469",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9681007266044617
+        }
+      ]
+    },
+    {
+      "id": "taco:1470",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.9149948358535767
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8247497081756592
+        }
+      ]
+    },
+    {
+      "id": "taco:1471",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7622410655021667
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.7784401178359985
+        }
+      ]
+    },
+    {
+      "id": "taco:1472",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7481860518455505
+        }
+      ]
+    },
+    {
+      "id": "taco:1473",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.9248756766319275
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.7857650518417358
+        }
+      ]
+    },
+    {
+      "id": "taco:1474",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.659896194934845
+        }
+      ]
+    },
+    {
+      "id": "taco:1475",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7517095804214478
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.715773344039917
+        }
+      ]
+    },
+    {
+      "id": "taco:1476",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1477",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.6787648797035217
+        }
+      ]
+    },
+    {
+      "id": "taco:1478",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8903364539146423
+        }
+      ]
+    },
+    {
+      "id": "taco:1479",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9229992032051086
+        }
+      ]
+    },
+    {
+      "id": "taco:1480",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 4,
+          "GT": "plastico",
+          "IoU": 0.7635207772254944
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.809650182723999
+        }
+      ]
+    },
+    {
+      "id": "taco:1481",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8379461169242859
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.8055272698402405
+        }
+      ]
+    },
+    {
+      "id": "taco:1482",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1483",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.8944500684738159
+        }
+      ]
+    },
+    {
+      "id": "taco:1484",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1485",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.7419981956481934
+        }
+      ]
+    },
+    {
+      "id": "taco:1486",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 2,
+          "GT": "plastico",
+          "IoU": 0.7365167737007141
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "carton",
+          "IoU": 0.7070141434669495
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 1,
+          "GT": "carton",
+          "IoU": 0.7153393030166626
+        }
+      ]
+    },
+    {
+      "id": "taco:1487",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7638741135597229
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 1,
+          "GT": "metal",
+          "IoU": 0.8235383033752441
+        },
+        {
+          "indice_deteccion": 2,
+          "indice_GT_generico": 2,
+          "GT": "papel",
+          "IoU": 0.8469191789627075
+        }
+      ]
+    },
+    {
+      "id": "taco:1488",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "papel",
+          "IoU": 0.9032608866691589
+        }
+      ]
+    },
+    {
+      "id": "taco:1489",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1490",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "metal",
+          "IoU": 0.6419333219528198
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 3,
+          "GT": "plastico",
+          "IoU": 0.8848528861999512
+        }
+      ]
+    },
+    {
+      "id": "taco:1491",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1492",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.7973467111587524
+        }
+      ]
+    },
+    {
+      "id": "taco:1493",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.9066655039787292
+        }
+      ]
+    },
+    {
+      "id": "taco:1494",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 1,
+          "GT": "plastico",
+          "IoU": 0.8359883427619934
+        },
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.6448758840560913
+        }
+      ]
+    },
+    {
+      "id": "taco:1495",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 6,
+          "indice_GT_generico": 5,
+          "GT": "plastico",
+          "IoU": 0.831368625164032
+        }
+      ]
+    },
+    {
+      "id": "taco:1496",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1497",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 1,
+          "indice_GT_generico": 2,
+          "GT": "metal",
+          "IoU": 0.8801732659339905
+        }
+      ]
+    },
+    {
+      "id": "taco:1498",
+      "matches_material_IoU50": []
+    },
+    {
+      "id": "taco:1499",
+      "matches_material_IoU50": [
+        {
+          "indice_deteccion": 0,
+          "indice_GT_generico": 0,
+          "GT": "plastico",
+          "IoU": 0.905161440372467
+        }
+      ]
+    }
+  ],
+  "umbral_detector": 0.27,
+  "AP_truncado_por_umbral_aplicacion": true,
+  "score_conjunto": "score_D2 * prob_material; no calibrado; fijado antes de evaluar",
+  "independencia_fisica_demostrada": false,
+  "test_evaluado": false,
+  "seleccion_modelo_por_resultados": false,
+  "limitaciones": [
+    "Cohorte de desarrollo ya usada por Vision-IA; no prueba independiente",
+    "EcoWaste val es train de D2: no medir generalización D2 allí",
+    "La referencia de mapas puede haber entrenado fotos de D2 val; no es comparación causal de entrenamiento",
+    "No se abren fotografías ni anotaciones del test EcoWaste"
+  ],
+  "nota_organico": "Sin GT orgánico en D2 val autorizada; no puede evaluarse allí su AP. Un GT en EcoWaste val es train de D2."
+}

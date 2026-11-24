@@ -1,0 +1,188 @@
+{
+  "rama": "B",
+  "paso": 2400,
+  "resultados": {
+    "historico_train": {
+      "analisis": "resultados/v31_instancias/evaluacion/B/2400/historico_train/analisis.json",
+      "sha256": "e8fcacd8180bacb108c2252cadb2fbf0488d692cfb0cce3d05052375be2da087",
+      "metricas": {
+        "1": {
+          "map50": 0.01595629592466079,
+          "map50_95": 0.003361982131319615,
+          "recall50": 0.059880239520958084,
+          "precision50": 0.027609055770292656,
+          "tp50": 150,
+          "fp50": 5283,
+          "fn50": 2355,
+          "ap50_por_material": {
+            "plastico": 0.009610753174465482,
+            "papel": 0.010062493752725053,
+            "carton": 0.04513317025681533,
+            "vidrio": 0.0011001100191975583,
+            "metal": 0.004459961216048439,
+            "organico": 0.025371287128712873
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 7.229601400002139,
+          "pico_gpu_bytes": 188694528
+        }
+      }
+    },
+    "nuevo_train": {
+      "analisis": "resultados/v31_instancias/evaluacion/B/2400/nuevo_train/analisis.json",
+      "sha256": "fefdf348c8079276c26e5b79c35d83070ec40a5572494740914da51a7f135b37",
+      "metricas": {
+        "1": {
+          "map50": 0.01127898540822697,
+          "map50_95": 0.002009613478341887,
+          "recall50": 0.15116782006920415,
+          "precision50": 0.07210645760264081,
+          "tp50": 699,
+          "fp50": 8995,
+          "fn50": 3925,
+          "ap50_por_material": {
+            "plastico": 0.03654611147571318,
+            "papel": 0.008543427517213443,
+            "carton": 0.0,
+            "vidrio": null,
+            "metal": 2.640263998124859e-05,
+            "organico": null
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 7.753620799980126,
+          "pico_gpu_bytes": 186621440
+        }
+      }
+    },
+    "desarrollo": {
+      "analisis": "resultados/v31_instancias/evaluacion/B/2400/desarrollo/analisis.json",
+      "sha256": "628ac94d4ac917649952eef4e2067690b1ac2e38e69a82d3ee9a4ed91e27ac37",
+      "metricas": {
+        "1": {
+          "map50": 0.00034503450789319796,
+          "map50_95": 5.356418030342646e-05,
+          "recall50": 0.008310249307479225,
+          "precision50": 0.0035335689045936395,
+          "tp50": 3,
+          "fp50": 846,
+          "fn50": 358,
+          "ap50_por_material": {
+            "plastico": 0.00198019804930923,
+            "papel": 0.0,
+            "carton": 0.0,
+            "vidrio": 0.0,
+            "metal": 9.000899804995791e-05,
+            "organico": 0.0
+          }
+        },
+        "5": {
+          "map50": 0.00037403320494067946,
+          "map50_95": 6.183214084531115e-05,
+          "recall50": 0.0332409972299169,
+          "precision50": 0.0037025609379821045,
+          "tp50": 12,
+          "fp50": 3229,
+          "fn50": 349,
+          "ap50_por_material": {
+            "plastico": 0.0015265153407460392,
+            "papel": 0.0,
+            "carton": 0.0006528125365845638,
+            "vidrio": 0.0,
+            "metal": 6.487135231347368e-05,
+            "organico": 0.0
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 1.6248121999960858,
+          "pico_gpu_bytes": 186621440
+        },
+        "5": {
+          "segundos_incluye_E_S_y_postproceso": 61.572176999994554,
+          "pico_gpu_bytes": 131347968
+        }
+      }
+    },
+    "externo_retenido": {
+      "analisis": "resultados/v31_instancias/evaluacion/B/2400/externo_retenido/analisis.json",
+      "sha256": "bbc229be10c28c4ab9bd5256e7b9ead382a0c17a36cb15c941a346b500836362",
+      "metricas": {
+        "1": {
+          "map50": 0.011013606378790175,
+          "map50_95": 0.0025108173784643114,
+          "recall50": 0.13944954128440368,
+          "precision50": 0.06504065040650407,
+          "tp50": 152,
+          "fp50": 2185,
+          "fn50": 938,
+          "ap50_por_material": {
+            "plastico": 0.03260987052823057,
+            "papel": 0.000430948608139954,
+            "carton": null,
+            "vidrio": null,
+            "metal": 0.0,
+            "organico": null
+          }
+        },
+        "5": {
+          "map50": 0.011844614489932265,
+          "map50_95": 0.0023283834152673633,
+          "recall50": 0.21926605504587157,
+          "precision50": 0.04044677610424776,
+          "tp50": 239,
+          "fp50": 5670,
+          "fn50": 851,
+          "ap50_por_material": {
+            "plastico": 0.03537782786948846,
+            "papel": 0.0001560156003083333,
+            "carton": null,
+            "vidrio": null,
+            "metal": 0.0,
+            "organico": null
+          }
+        }
+      },
+      "costes": {
+        "1": {
+          "segundos_incluye_E_S_y_postproceso": 1.9793941999960225,
+          "pico_gpu_bytes": 186621440
+        },
+        "5": {
+          "segundos_incluye_E_S_y_postproceso": 108.53098000001046,
+          "pico_gpu_bytes": 131356672
+        }
+      }
+    }
+  },
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": null
+  },
+  "test": false,
+  "adopcion": false
+}

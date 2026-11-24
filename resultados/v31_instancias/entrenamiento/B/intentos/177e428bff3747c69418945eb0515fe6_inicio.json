@@ -1,0 +1,36 @@
+{
+  "paso_inicial": 400,
+  "backend": {
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "cudnn": 91002,
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "threads": 4,
+    "threads_interop": 8,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "tf32_matmul": false,
+    "tf32_cudnn": false,
+    "float32_matmul_precision": "highest",
+    "sdpa": {
+      "flash": false,
+      "efficient": false,
+      "math": true,
+      "cudnn": false
+    },
+    "adam": [
+      {
+        "foreach": false,
+        "fused": false
+      }
+    ]
+  },
+  "huellas_restauradas": {
+    "pesos": "896ac4e190934bf8834b8ff3d152b8e53d68f300ef02f20a0843e97be53a14d1",
+    "adamw": "349af3bd988ca10186b47ef7b9db9fc34e6d78a1c92ad6dad822a2c5f357b5fd",
+    "scaler": "7c06a116ffa6da32d721e84b3ef317dc6b608dc1ef494312eae0a845e6f0ece9",
+    "rng": "9a9e69dc42eb73250749080720da8bf777e3e3086cf2468c6fd6aeed28602a3f"
+  }
+}
